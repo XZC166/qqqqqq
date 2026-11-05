@@ -48,7 +48,7 @@ Scrapy 遵守 robots.txt，默认同一网域并发为 1、请求延迟 1 秒并
 
 当前内置并完成真实页面全文试采的站点适配器针对白宫事实清单页面。另有通用 JSON-LD 新闻/文章适配器：只有当来源发布的 `articleBody` 与页面 `itemprop="articleBody"` 正文完全一致、标题一致且访问属性未标记为付费时才接收；这个通用格式目前通过离线 fixture 验证，尚未逐站点实测。通用政府页面适配器只接受明示的 `article[data-full-text="true"]` 模板。
 
-另有美国国务院 2021-2025 归档站点讲话页适配器，依据该站公开页面的主内容版式编写并通过离线 fixture 测试。对页面 `https://2021-2025.state.gov/remarks-at-the-asia-society-on-countering-economic-coercion/` 做过一次 Scrapy 实测：候选 1 条、已核实全文 0 条、待核验 1 条。Scrapy 保存的 HTTP 200 原始响应是 “Technical Difficulties” 页面，故正文没有进入正式资料表。Firecrawl 对同一 URL 返回了该页主内容 HTML，可用于识别版式；这份 Firecrawl 结果没有冒充 Scrapy 原始响应，也没有导入资料库。纽约时报、美联社、CNN、路透社、智库、其他政府来源、社交平台和研究文献尚无已实测的专用适配器；相应材料应留作候选或待核验，不应声称已经覆盖。
+另有美国国务院 2021-2025 归档站点讲话页适配器，依据该站公开页面的主内容版式编写并通过离线 fixture 测试。对页面 `https://2021-2025.state.gov/remarks-at-the-asia-society-on-countering-economic-coercion/` 直接使用 Scrapy 时，候选 1 条、已核实全文 0 条、待核验 1 条；保存的 HTTP 200 响应是 “Technical Difficulties” 页面，未将其误收为正文。随后通过 Firecrawl 获取同一页面完整 `rawHtml` 并用 `import-firecrawl` 导入：候选 1 条、已核实全文 1 条、待核验 0 条。导出的工作簿为九列、一条记录；正文 10,031 字符，与 SQLite 正文一致，证据文件与捕获 HTML 的哈希一致。该验证只覆盖这一篇国务院讲话。纽约时报、美联社、CNN、路透社、智库、其他政府来源、社交平台和研究文献尚无已实测的专用适配器；相应材料应留作候选或待核验，不应声称已经覆盖。
 
 ## 授权全文导入
 
@@ -84,7 +84,7 @@ Scrapy 遵守 robots.txt，默认同一网域并发为 1、请求延迟 1 秒并
 
 ## 导入 Firecrawl 原始 HTML
 
-当配置的 Firecrawl 工具能访问某个公开原始页面、而本机 Scrapy 不能直接取到页面时，可用 Firecrawl 对已知原始 URL 执行一次 `scrape`，请求 `rawHtml` 格式，并把完整工具结果（保留 `structuredContent`、`rawHtml` 和 `metadata`）保存为 UTF-8 JSON。不要把 Markdown、summary、highlights 或搜索结果作为正文导入。捕获文件至少应保留 Firecrawl 返回的 `success`、`rawHtml` 及 `metadata.sourceURL`、`metadata.statusCode`、`metadata.scrapeId`。
+当配置的 Firecrawl 工具能访问某个公开原始页面、而本机 Scrapy 不能直接取到页面时，可用 Firecrawl 对已知原始 URL 执行一次 `scrape`，请求 `rawHtml` 格式，并把完整工具结果（保留 `structuredContent`、`rawHtml` 和 `metadata`）保存为 UTF-8 JSON。不要把 Markdown、summary、highlights 或搜索结果作为正文导入。捕获文件至少应保留 `rawHtml` 及 Firecrawl 返回的 `metadata.sourceURL`、`metadata.url`、`metadata.statusCode`、`metadata.scrapeId`。如果结果包含 `success` 或 `error` 字段，也须原样保留。
 
 ```powershell
 .\.venv\Scripts\research-crawler.exe import-firecrawl `
@@ -97,7 +97,7 @@ Scrapy 遵守 robots.txt，默认同一网域并发为 1、请求延迟 1 秒并
   --evidence-dir data/evidence
 ```
 
-导入器只接受 Firecrawl 原始 HTML 字段，要求成功状态、来源 URL 与候选 URL 一致、HTTP 状态码及 scrape ID 存在；随后通过现有来源适配器和同一核验管线。原始 HTML 按 UTF-8 保存并记录 SHA-256、抓取方式和 scrape ID。缺少专用版式、日期或完整正文核验的内容继续标记待核验，不会写入正式 Excel。此命令导入已保存的 Firecrawl 工具结果；Firecrawl 检索仍由配置的 MCP 工具执行。
+导入器只接受 Firecrawl 原始 HTML 字段；若工具结果显式报告失败则拒绝，否则要求来源 URL 和最终 URL 均与候选 URL 一致，并核验 HTTP 状态码及 scrape ID。随后通过现有来源适配器和同一核验管线。原始 HTML 按 UTF-8 保存并记录 SHA-256、抓取方式和 scrape ID。缺少专用版式、日期或完整正文核验的内容继续标记待核验，不会写入正式 Excel。此命令导入已保存的 Firecrawl 工具结果；Firecrawl 检索仍由配置的 MCP 工具执行。
 
 ## 报告与导出
 

@@ -15,7 +15,6 @@ URL = "https://2021-2025.state.gov/remarks-at-the-asia-society-on-countering-eco
 def _capture(html: str) -> dict:
     return {
         "structuredContent": {
-            "success": True,
             "rawHtml": html,
             "metadata": {
                 "sourceURL": URL,
@@ -70,7 +69,7 @@ def test_import_firecrawl_raw_html_uses_same_verification_pipeline(tmp_path):
         ({"success": True, "markdown": "a summary", "metadata": {"sourceURL": URL, "statusCode": 200, "scrapeId": "x"}}, "rawHtml"),
         ({"success": True, "rawHtml": "<html></html>", "metadata": {"sourceURL": "https://other.example/page", "statusCode": 200, "scrapeId": "x"}}, "sourceURL"),
         ({"success": True, "rawHtml": "<html></html>", "metadata": {"sourceURL": URL, "url": "https://other.example/page", "statusCode": 200, "scrapeId": "x"}}, "metadata url"),
-        ({"success": False, "rawHtml": "<html></html>", "metadata": {"sourceURL": URL, "statusCode": 200, "scrapeId": "x"}}, "success"),
+        ({"success": False, "rawHtml": "<html></html>", "metadata": {"sourceURL": URL, "statusCode": 200, "scrapeId": "x"}}, "failed request"),
         ({"success": True, "rawHtml": "<html></html>", "metadata": {"sourceURL": URL, "url": URL, "statusCode": 200}}, "scrapeId"),
     ],
 )

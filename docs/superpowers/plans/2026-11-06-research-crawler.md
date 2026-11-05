@@ -24,6 +24,7 @@
 - `src/research_crawler/pipelines.py`: Scrapy item validation and state persistence.
 - `src/research_crawler/export.py`: nine-column XLSX generation and long-body file handling.
 - `src/research_crawler/import_authorized.py`: import user-provided authorized full-text files.
+- `src/research_crawler/firecrawl_import.py`: validate and ingest saved Firecrawl raw HTML captures through the shared source adapter and verification pipeline.
 - `src/research_crawler/settings.py`: Scrapy throttling, robots, retries, and pipeline defaults.
 - `src/research_crawler/spiders/government.py`: first public government-source adapter interface and spider.
 - `tests/fixtures/government_page.html`: deterministic public-page fixture.
@@ -150,7 +151,13 @@
 - [x] Run one Scrapy request against a public remarks URL and inspect the saved response evidence.
 - [x] Record the observed batch result: one candidate, zero verified full texts, one pending because direct Scrapy received a Technical Difficulties page.
 - [x] Run the full suite; 45 tests pass.
-- [x] Add an `import-firecrawl` path that accepts the configured Firecrawl tool's complete `structuredContent` capture, requires the original `rawHtml` field and matching source URL/status/scrape ID, then passes it through the same source adapter and verification pipeline.
+
+## Task 12: Ingest Firecrawl raw HTML captures
+
+**Files:** `src/research_crawler/firecrawl_import.py`, `src/research_crawler/items.py`, `src/research_crawler/store.py`, `src/research_crawler/cli.py`, `tests/test_firecrawl_import.py`, `tests/test_store.py`, `tests/test_validation.py`, `README.md`
+
+- [x] Add an `import-firecrawl` path that accepts the configured Firecrawl tool's complete `structuredContent` capture, requires the original `rawHtml` field and matching requested/final URL, HTTP status, and scrape ID, then passes it through the same source adapter and verification pipeline. An explicit tool failure is rejected; the tool schema makes its `success` field optional.
 - [x] Store retrieval method and Firecrawl scrape ID with evidence; migrate existing SQLite evidence tables with safe defaults.
 - [x] Test successful capture ingestion, exact evidence bytes/hash, rejected Markdown-only/unmatched/failed captures, and legacy database migration.
-- [ ] Run the importer with a saved full Firecrawl capture for the State Department live page. The MCP result was inspected in the previous batch but its raw response was not saved locally, so this live end-to-end ingestion remains unverified.
+- [x] Run the importer with a saved full Firecrawl capture for the State Department live page; verify batch counts (1 candidate, 1 verified, 0 pending), nine-column workbook, body equality with SQLite, source HTML byte equality, SHA-256, retrieval method, and scrape ID.
+- [x] Run the full suite; 52 tests pass.

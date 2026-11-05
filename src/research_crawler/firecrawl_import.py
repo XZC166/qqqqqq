@@ -27,8 +27,8 @@ def import_firecrawl_capture(
         raise ValidationError("Firecrawl capture must be readable JSON") from exc
 
     payload = capture.get("structuredContent", capture)
-    if not isinstance(payload, dict) or payload.get("success") is not True:
-        raise ValidationError("Firecrawl capture success must be true")
+    if not isinstance(payload, dict) or payload.get("success") is False or payload.get("error"):
+        raise ValidationError("Firecrawl capture reports a failed request")
     raw_html = payload.get("rawHtml")
     if not isinstance(raw_html, str) or not raw_html.strip():
         raise ValidationError("Firecrawl capture must contain rawHtml; Markdown is not accepted")
