@@ -43,6 +43,7 @@ def import_authorized_full_text(
         metadata_verified=True,
         body_format="authorized_text",
         authorization_note=authorization_note.strip(),
+        retrieval_method="authorized_import",
     )
     imported = validate_material(
         imported,

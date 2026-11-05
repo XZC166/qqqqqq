@@ -150,4 +150,7 @@
 - [x] Run one Scrapy request against a public remarks URL and inspect the saved response evidence.
 - [x] Record the observed batch result: one candidate, zero verified full texts, one pending because direct Scrapy received a Technical Difficulties page.
 - [x] Run the full suite; 45 tests pass.
-- [ ] Integrate an approved Firecrawl retrieval path into the collector so a successful Firecrawl page fetch can be stored as raw source evidence and passed through the same adapter/verification pipeline. Until then, Firecrawl-derived page content is not inserted into the verified materials table.
+- [x] Add an `import-firecrawl` path that accepts the configured Firecrawl tool's complete `structuredContent` capture, requires the original `rawHtml` field and matching source URL/status/scrape ID, then passes it through the same source adapter and verification pipeline.
+- [x] Store retrieval method and Firecrawl scrape ID with evidence; migrate existing SQLite evidence tables with safe defaults.
+- [x] Test successful capture ingestion, exact evidence bytes/hash, rejected Markdown-only/unmatched/failed captures, and legacy database migration.
+- [ ] Run the importer with a saved full Firecrawl capture for the State Department live page. The MCP result was inspected in the previous batch but its raw response was not saved locally, so this live end-to-end ingestion remains unverified.

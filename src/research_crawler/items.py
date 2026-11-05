@@ -36,6 +36,8 @@ class SourceEvidence:
     body_format: str = "source_text"
     original_page_verified: bool = False
     authorization_note: str = ""
+    retrieval_method: str = "scrapy"
+    retrieval_id: str = ""
 
 
 @dataclass(frozen=True)

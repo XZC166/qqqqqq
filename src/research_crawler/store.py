@@ -90,8 +90,9 @@ class ResearchStore:
             """INSERT INTO evidence(
                    candidate_id, source_url, fetched_at, status_code, content_sha256,
                    evidence_path, body_complete, metadata_verified, body_format,
-                   original_page_verified, access_status, authorization_note
-               ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                   original_page_verified, access_status, authorization_note,
+                   retrieval_method, retrieval_id
+               ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 candidate_id,
                 evidence.source_url,
@@ -105,6 +106,8 @@ class ResearchStore:
                 int(evidence.original_page_verified),
                 access_status,
                 evidence.authorization_note,
+                evidence.retrieval_method,
+                evidence.retrieval_id,
             ),
         )
         if access_status == "restricted":
@@ -302,7 +305,9 @@ class ResearchStore:
                 body_format TEXT NOT NULL DEFAULT 'source_text',
                 original_page_verified INTEGER NOT NULL DEFAULT 0,
                 access_status TEXT NOT NULL,
-                authorization_note TEXT NOT NULL DEFAULT ''
+                authorization_note TEXT NOT NULL DEFAULT '',
+                retrieval_method TEXT NOT NULL DEFAULT 'scrapy',
+                retrieval_id TEXT NOT NULL DEFAULT ''
             );
             CREATE TABLE IF NOT EXISTS duplicate_discoveries (
                 id INTEGER PRIMARY KEY,
@@ -326,6 +331,17 @@ class ResearchStore:
             );
             """
         )
+        evidence_columns = {
+            row["name"] for row in self.connection.execute("PRAGMA table_info(evidence)")
+        }
+        if "retrieval_method" not in evidence_columns:
+            self.connection.execute(
+                "ALTER TABLE evidence ADD COLUMN retrieval_method TEXT NOT NULL DEFAULT 'scrapy'"
+            )
+        if "retrieval_id" not in evidence_columns:
+            self.connection.execute(
+                "ALTER TABLE evidence ADD COLUMN retrieval_id TEXT NOT NULL DEFAULT ''"
+            )
         self.connection.commit()
 
 

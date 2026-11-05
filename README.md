@@ -82,6 +82,23 @@ Scrapy 遵守 robots.txt，默认同一网域并发为 1、请求延迟 1 秒并
 
 授权说明由使用者提供；程序不会自行判定用户授权范围。源文件按 UTF-8 原样读取并记录哈希和路径。
 
+## 导入 Firecrawl 原始 HTML
+
+当配置的 Firecrawl 工具能访问某个公开原始页面、而本机 Scrapy 不能直接取到页面时，可用 Firecrawl 对已知原始 URL 执行一次 `scrape`，请求 `rawHtml` 格式，并把完整工具结果（保留 `structuredContent`、`rawHtml` 和 `metadata`）保存为 UTF-8 JSON。不要把 Markdown、summary、highlights 或搜索结果作为正文导入。捕获文件至少应保留 Firecrawl 返回的 `success`、`rawHtml` 及 `metadata.sourceURL`、`metadata.statusCode`、`metadata.scrapeId`。
+
+```powershell
+.\.venv\Scripts\research-crawler.exe import-firecrawl `
+  --capture data/captures/state-remarks.json `
+  --url https://2021-2025.state.gov/remarks-at-the-asia-society-on-countering-economic-coercion/ `
+  --period 2017-2025 `
+  --category government `
+  --query-label state-dept-remarks-economic-coercion `
+  --db data/research.sqlite3 `
+  --evidence-dir data/evidence
+```
+
+导入器只接受 Firecrawl 原始 HTML 字段，要求成功状态、来源 URL 与候选 URL 一致、HTTP 状态码及 scrape ID 存在；随后通过现有来源适配器和同一核验管线。原始 HTML 按 UTF-8 保存并记录 SHA-256、抓取方式和 scrape ID。缺少专用版式、日期或完整正文核验的内容继续标记待核验，不会写入正式 Excel。此命令导入已保存的 Firecrawl 工具结果；Firecrawl 检索仍由配置的 MCP 工具执行。
+
 ## 报告与导出
 
 ```powershell

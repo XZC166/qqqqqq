@@ -123,6 +123,7 @@ def test_authorized_full_text_import_records_hash_path_and_material(tmp_path, ma
     assert row["evidence_path"] == str(source_file)
     assert row["authorization_note"] == "Provided by researcher from university library access."
     assert row["content_sha256"]
+    assert row["retrieval_method"] == "authorized_import"
     store.close()
 
 

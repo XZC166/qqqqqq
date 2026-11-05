@@ -40,6 +40,8 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if args.command == "import-authorized":
         return _import_authorized(args.manifest, args.file, args.db)
+    if args.command == "import-firecrawl":
+        return _import_firecrawl(args)
     parser.error("unknown command")
     return 2
 
@@ -84,6 +86,17 @@ def _build_parser() -> argparse.ArgumentParser:
     authorized.add_argument("--manifest", required=True)
     authorized.add_argument("--file", required=True)
     authorized.add_argument("--db", default="data/research.sqlite3")
+
+    firecrawl = commands.add_parser(
+        "import-firecrawl", help="verify and import raw HTML from a Firecrawl capture"
+    )
+    firecrawl.add_argument("--capture", required=True)
+    firecrawl.add_argument("--url", required=True)
+    firecrawl.add_argument("--period", required=True, choices=("1949-1972", "1972-1991", "1992-2016", "2017-2025"))
+    firecrawl.add_argument("--category", required=True)
+    firecrawl.add_argument("--query-label", required=True)
+    firecrawl.add_argument("--db", default="data/research.sqlite3")
+    firecrawl.add_argument("--evidence-dir", default="data/evidence")
     return parser
 
 
@@ -196,4 +209,20 @@ def _import_authorized(manifest_path: str, file_path: str, database_path: str) -
     finally:
         store.close()
     print("Authorized full text imported and verified")
+    return 0
+
+
+def _import_firecrawl(args) -> int:
+    from research_crawler.firecrawl_import import import_firecrawl_capture
+
+    status = import_firecrawl_capture(
+        capture_path=args.capture,
+        source_url=args.url,
+        period=args.period,
+        source_category=args.category,
+        query_label=args.query_label,
+        database_path=args.db,
+        evidence_dir=args.evidence_dir,
+    )
+    print(f"Firecrawl capture processed; candidate status: {status}")
     return 0

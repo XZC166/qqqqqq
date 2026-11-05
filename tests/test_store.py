@@ -1,3 +1,5 @@
+import sqlite3
+
 from research_crawler.items import MaterialCandidate, SourceEvidence, VerifiedMaterial
 from research_crawler.store import ResearchStore
 
@@ -28,7 +30,6 @@ def test_batch_candidate_and_evidence_survive_reopening(tmp_path):
         access_status="allow",
     )
     store.close()
-
     reopened = ResearchStore(database)
     summary = reopened.batch_summary(batch_id)
     assert summary == {
@@ -41,6 +42,47 @@ def test_batch_candidate_and_evidence_survive_reopening(tmp_path):
     }
     assert evidence_id > 0
     reopened.close()
+
+
+def test_existing_evidence_schema_is_migrated_with_retrieval_provenance(tmp_path):
+    database = tmp_path / "legacy.sqlite3"
+    connection = sqlite3.connect(database)
+    connection.execute(
+        """CREATE TABLE evidence (
+            id INTEGER PRIMARY KEY,
+            candidate_id INTEGER NOT NULL,
+            source_url TEXT NOT NULL,
+            fetched_at TEXT NOT NULL,
+            status_code INTEGER NOT NULL,
+            content_sha256 TEXT NOT NULL,
+            evidence_path TEXT,
+            body_complete INTEGER NOT NULL,
+            metadata_verified INTEGER NOT NULL,
+            body_format TEXT NOT NULL DEFAULT 'source_text',
+            original_page_verified INTEGER NOT NULL DEFAULT 0,
+            access_status TEXT NOT NULL,
+            authorization_note TEXT NOT NULL DEFAULT ''
+        )"""
+    )
+    connection.execute(
+        """INSERT INTO evidence VALUES
+           (1, 1, 'https://example.org/a', '2026-11-06T00:00:00Z', 200, 'hash',
+            NULL, 1, 1, 'source_text', 0, 'allow', '')"""
+    )
+    connection.commit()
+    connection.close()
+
+    store = ResearchStore(database)
+
+    columns = {
+        row["name"] for row in store.connection.execute("PRAGMA table_info(evidence)")
+    }
+    assert {"retrieval_method", "retrieval_id"}.issubset(columns)
+    migrated = store.connection.execute(
+        "SELECT retrieval_method, retrieval_id FROM evidence WHERE id = 1"
+    ).fetchone()
+    assert tuple(migrated) == ("scrapy", "")
+    store.close()
 
 
 def test_duplicate_material_keeps_one_row_and_increments_count(tmp_path):
