@@ -18,6 +18,10 @@ class GovernmentArticleAdapter:
         hostname = (urlsplit(response.url).hostname or "").lower()
         if hostname == "whitehouse.gov" or hostname.endswith(".whitehouse.gov"):
             return WhiteHouseFactSheetAdapter().extract(response, candidate)
+        if hostname == "2021-2025.state.gov":
+            state_result = StateDepartmentRemarksAdapter().extract(response, candidate)
+            if state_result["material"] is not None or state_result["decision"] is AccessDecision.RESTRICTED:
+                return state_result
 
         structured = JsonLdArticleAdapter().extract(response, candidate)
         if structured["material"] is not None or structured["decision"] is AccessDecision.RESTRICTED:
@@ -282,6 +286,73 @@ class WhiteHouseFactSheetAdapter:
         if material is not None:
             result["field_sources"] = field_sources
             result["abstract_origin"] = abstract_origin
+        return result
+
+
+class StateDepartmentRemarksAdapter:
+    def extract(self, response: Response, candidate: MaterialCandidate) -> dict:
+        decision = classify_response(response.url, response.status, response.text)
+        digest = sha256(response.body).hexdigest()
+        fetched_at = datetime.now(timezone.utc).isoformat()
+        if decision is not AccessDecision.ALLOW:
+            return {
+                "decision": decision,
+                "evidence": SourceEvidence(response.url, fetched_at, response.status, digest),
+                "material": None,
+            }
+
+        article = response.css("main.nav__main-content article")
+        content = article.css(".entry-content")
+        title = _normalized_text(content.css(".featured-content__headline").xpath(".//text()").getall())
+        visible_date = _normalized_text(content.css(".article-meta__publish-date").xpath(".//text()").getall())
+        publication_date = _publication_date(visible_date, "")
+        author_text = _normalized_text(content.css(".article-meta__author-bureau").xpath(".//text()").getall())
+        source = response.css("meta[property='og:site_name']::attr(content)").get(default="").strip()
+        body_container = content.css(".classic-block-wrapper")
+        body_blocks = []
+        if body_container:
+            for block in body_container.xpath(".//p | .//h2 | .//h3 | .//blockquote | .//ul | .//ol"):
+                tag = block.root.tag.lower()
+                if tag in {"ul", "ol"}:
+                    items = [
+                        _normalized_text(item.xpath(".//text()").getall())
+                        for item in block.xpath("./li")
+                    ]
+                    value = "\n".join(f"• {item}" for item in items if item)
+                else:
+                    value = _normalized_text(block.xpath(".//text()").getall())
+                if value:
+                    body_blocks.append(value)
+        body = "\n\n".join(body_blocks)
+        complete = bool(article and content and body_container and title and publication_date and body)
+        material = None
+        result = {"decision": decision, "material": None}
+        if complete and source:
+            material = VerifiedMaterial(
+                source=source,
+                time=publication_date,
+                author=author_text or "未注明",
+                title=title,
+                abstract="",
+                keywords="",
+                body=body,
+                source_url=response.url,
+            )
+            result["material"] = material
+        result["evidence"] = SourceEvidence(
+            source_url=response.url,
+            fetched_at=fetched_at,
+            status_code=response.status,
+            content_sha256=digest,
+            body_complete=complete and material is not None,
+            metadata_verified=material is not None,
+            body_format="source_text",
+        )
+        if material is not None:
+            result["field_sources"] = {
+                name: response.url for name in ("source", "time", "author", "title")
+            }
+            result["abstract_origin"] = "none"
         return result
 
 

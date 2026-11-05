@@ -11,6 +11,7 @@ from research_crawler.spiders.government import (
     GovernmentArticleAdapter,
     GovernmentSpider,
     JsonLdArticleAdapter,
+    StateDepartmentRemarksAdapter,
     WhiteHouseFactSheetAdapter,
 )
 
@@ -133,6 +134,45 @@ def test_white_house_adapter_uses_visible_publication_date_and_excludes_related_
     )
     assert "Related item" not in extracted["material"].body
     assert "Footer" not in extracted["material"].body
+
+
+def test_state_department_adapter_extracts_remarks_metadata_and_body_only():
+    url = "https://2021-2025.state.gov/remarks-at-the-asia-society-on-countering-economic-coercion/"
+    candidate = MaterialCandidate(url, "2017-2025", "government", "trade-war")
+
+    extracted = StateDepartmentRemarksAdapter().extract(
+        response_for("state_department_remarks.html", url), candidate
+    )
+
+    material = extracted["material"]
+    assert material.source == "United States Department of State"
+    assert material.time == "2024-09-05"
+    assert material.author == (
+        "Jose W. Fernandez, Under Secretary for Economic Growth, Energy, and the Environment"
+    )
+    assert material.title == "Remarks at the Asia Society on Countering Economic Coercion"
+    assert material.abstract == ""
+    assert material.keywords == ""
+    assert material.body == (
+        "As prepared.\n\nThank you very much Wendy for that great introduction."
+        "\n\nU.S. ECONOMIC SECURITY\n\n"
+        "Thank you again to the Asia Society for hosting me here today."
+    )
+    assert "Economic Prosperity" not in material.body
+    assert extracted["evidence"].body_complete is True
+
+
+def test_state_department_technical_difficulties_page_is_not_material():
+    url = "https://2021-2025.state.gov/remarks-at-the-asia-society-on-countering-economic-coercion/"
+    html = b"<html><head><title>Technical Difficulties</title></head><body><p>We are experiencing technical difficulties.</p></body></html>"
+    response = HtmlResponse(url=url, request=Request(url), body=html, encoding="utf-8", status=200)
+
+    extracted = StateDepartmentRemarksAdapter().extract(
+        response, MaterialCandidate(url, "2017-2025", "government", "trade-war")
+    )
+
+    assert extracted["material"] is None
+    assert extracted["evidence"].body_complete is False
 
 
 def test_jsonld_adapter_requires_full_body_to_match_visible_article():

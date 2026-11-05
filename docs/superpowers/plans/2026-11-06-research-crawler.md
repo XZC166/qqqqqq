@@ -140,3 +140,14 @@
 - [x] Inspect the generated workbook: exact nine headers, source URL, visible publication date, body content, and evidence hash match.
 - [x] Generate and inspect a batch report with actual counts and an explicit non-exhaustive coverage statement.
 - [x] Run `python -m pytest -q` (43 passed), `scrapy list`, and `git diff --check`.
+
+## Task 11: Add a State Department archive remarks adapter
+
+**Files:** `src/research_crawler/spiders/government.py`, `tests/fixtures/state_department_remarks.html`, `tests/test_spider.py`, `README.md`
+
+- [x] Use the official archived State Department page structure to define selectors for its visible title, author/bureau line, publication date, and main-body blocks.
+- [x] Add offline tests for correct metadata/body extraction and rejection of a same-URL technical-difficulties response.
+- [x] Run one Scrapy request against a public remarks URL and inspect the saved response evidence.
+- [x] Record the observed batch result: one candidate, zero verified full texts, one pending because direct Scrapy received a Technical Difficulties page.
+- [x] Run the full suite; 45 tests pass.
+- [ ] Integrate an approved Firecrawl retrieval path into the collector so a successful Firecrawl page fetch can be stored as raw source evidence and passed through the same adapter/verification pipeline. Until then, Firecrawl-derived page content is not inserted into the verified materials table.

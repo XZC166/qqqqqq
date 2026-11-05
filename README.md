@@ -46,7 +46,9 @@ https://www.whitehouse.gov/fact-sheets/2025/02/fact-sheet-president-donald-j-tru
 
 Scrapy 遵守 robots.txt，默认同一网域并发为 1、请求延迟 1 秒并启用 AutoThrottle。401、402、403 和明确付费墙信号会被标记为受限；系统不登录、不注入 Cookie、不绕过付费墙或其他访问控制。Scrapy 的解析器只为已实现的来源版型提供字段；没有可靠匹配的页面会留在待核验状态。
 
-当前内置并完成真实页面试采的站点适配器针对白宫事实清单页面。另有通用 JSON-LD 新闻/文章适配器：只有当来源发布的 `articleBody` 与页面 `itemprop="articleBody"` 正文完全一致、标题一致且访问属性未标记为付费时才接收；这个通用格式目前通过离线 fixture 验证，尚未逐站点实测。通用政府页面适配器只接受明示的 `article[data-full-text="true"]` 模板。纽约时报、美联社、CNN、路透社、智库、社交平台和研究文献尚无已实测的专用适配器；相应材料应留作候选或待核验，不应声称已经覆盖。
+当前内置并完成真实页面全文试采的站点适配器针对白宫事实清单页面。另有通用 JSON-LD 新闻/文章适配器：只有当来源发布的 `articleBody` 与页面 `itemprop="articleBody"` 正文完全一致、标题一致且访问属性未标记为付费时才接收；这个通用格式目前通过离线 fixture 验证，尚未逐站点实测。通用政府页面适配器只接受明示的 `article[data-full-text="true"]` 模板。
+
+另有美国国务院 2021-2025 归档站点讲话页适配器，依据该站公开页面的主内容版式编写并通过离线 fixture 测试。对页面 `https://2021-2025.state.gov/remarks-at-the-asia-society-on-countering-economic-coercion/` 做过一次 Scrapy 实测：候选 1 条、已核实全文 0 条、待核验 1 条。Scrapy 保存的 HTTP 200 原始响应是 “Technical Difficulties” 页面，故正文没有进入正式资料表。Firecrawl 对同一 URL 返回了该页主内容 HTML，可用于识别版式；这份 Firecrawl 结果没有冒充 Scrapy 原始响应，也没有导入资料库。纽约时报、美联社、CNN、路透社、智库、其他政府来源、社交平台和研究文献尚无已实测的专用适配器；相应材料应留作候选或待核验，不应声称已经覆盖。
 
 ## 授权全文导入
 
