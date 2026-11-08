@@ -42,6 +42,11 @@ REVIEWED = {
         "据正文整理：里根在上海市长王道涵主持的宴会上回顾《上海公报》及中美关系发展，谈及政治、经济、文化联系、和平与合作。",
         "Ronald Reagan; Wang Daohan; Shanghai Communique; U.S.-China relations; political and cultural exchange",
     ),
+    "https://www.presidency.ucsb.edu/documents/question-and-answer-session-with-reporters-the-trip-china": (
+        "37abfc2b5af281bb796f15c08c38871b8194f33b32605b7461ff1510b2a9738e",
+        "据正文整理：里根在访华期间回答记者提问，谈及其对中国现代化的印象、中美制度差异、对华关系的延续、公开表达美国价值及双方在和平与地区事务上的共识。",
+        "Ronald Reagan; China visit; press interview; U.S.-China relations; modernization; public diplomacy",
+    ),
 }
 
 
