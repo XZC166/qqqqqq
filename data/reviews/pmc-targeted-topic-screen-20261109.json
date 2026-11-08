@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-11-08T23:38:29.767898+00:00",
+  "input_materials": 6,
+  "retained": 2,
+  "withdrawn": 4,
+  "retained_records": [
+    {
+      "material_id": 4315,
+      "candidate_id": 3461,
+      "title": "Did the popularization of the Internet impact Chinese citizens’ attitude towards foreign countries? An empirical study based on two surveys",
+      "source": "PLOS ONE",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511065/"
+    },
+    {
+      "material_id": 4313,
+      "candidate_id": 5592,
+      "title": "The 2024 Taiwanese Presidential Election on social media: Identity, policy, and affective virality",
+      "source": "PNAS Nexus",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11018540/"
+    }
+  ],
+  "withdrawn_records": [
+    {
+      "material_id": 4310,
+      "candidate_id": 5586,
+      "title": "Telemedicine Public Reimbursement Models for National and Subnational Jurisdictions: Scoping Review",
+      "source": "Journal of Medical Internet Research",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12341443/",
+      "reason": "topic-screen: PMC full text is not directly about US-China discourse, China/Taiwan media, public opinion, propaganda, or influence"
+    },
+    {
+      "material_id": 4311,
+      "candidate_id": 5588,
+      "title": "Analyzing Themes, Sentiments, and Coping Strategies Regarding Online News Coverage of Depression in Hong Kong: Mixed Methods Study",
+      "source": "Journal of Medical Internet Research",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11888067/",
+      "reason": "topic-screen: PMC full text is not directly about US-China discourse, China/Taiwan media, public opinion, propaganda, or influence"
+    },
+    {
+      "material_id": 4312,
+      "candidate_id": 5591,
+      "title": "Prominent misinformation interventions reduce misperceptions but increase scepticism",
+      "source": "Nature Human Behaviour",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11343704/",
+      "reason": "topic-screen: PMC full text is not directly about US-China discourse, China/Taiwan media, public opinion, propaganda, or influence"
+    },
+    {
+      "material_id": 4314,
+      "candidate_id": 5593,
+      "title": "UN peacekeeper health and risk factors --- a systematic scoping review",
+      "source": "Global Health Research and Policy",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11005225/",
+      "reason": "topic-screen: PMC full text is not directly about US-China discourse, China/Taiwan media, public opinion, propaganda, or influence"
+    }
+  ],
+  "backup": "data/research-pre-pmc-targeted-topic-screen-20261109.sqlite3"
+}
