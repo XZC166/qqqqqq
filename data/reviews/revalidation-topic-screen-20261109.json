@@ -1,0 +1,1406 @@
+{
+  "generated_at": "2026-11-08T23:05:09.231211+00:00",
+  "input_promoted": 199,
+  "retained": 26,
+  "withdrawn": 173,
+  "missing": 0,
+  "retained_records": [
+    {
+      "candidate_id": 3748,
+      "material_id": 3782,
+      "title": "Image of China in Slovakia: ambivalence, adoration, and fake news",
+      "source": "Asia Europe Journal",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 483,
+      "material_id": 3631,
+      "title": "Tourism Development and Propaganda in Contemporary Lhasa, Tibet Autonomous Region (TAR), China",
+      "source": "Asian Tourism",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 4946,
+      "material_id": 3611,
+      "title": "@csis.org on Bluesky",
+      "source": "CSIS",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3686,
+      "material_id": 3740,
+      "title": "Intermedia Agenda Setting amid the Pandemic: A Computational Analysis of China's Online News",
+      "source": "Computational Intelligence and Neuroscience",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3685,
+      "material_id": 3739,
+      "title": "Mapping state-sponsored information operations with multi-view modularity clustering",
+      "source": "Epj Data Science",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3744,
+      "material_id": 3778,
+      "title": "Media representation of older people’s vulnerability during the COVID-19 pandemic in China",
+      "source": "European Journal of Ageing",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3594,
+      "material_id": 3691,
+      "title": "“Our City Will Be the First to Hold Both Summer and Winter Olympics”: A comparative analysis of how media coverage and public opinion were framed on social media in the lead up to the Beijing 2022 winter Olympic games",
+      "source": "Frontiers in Psychology",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3545,
+      "material_id": 3667,
+      "title": "How does the media contribute to the rise of hate crimes against foreign domestic helpers in Hong Kong? An unfair problem frame and agenda setting",
+      "source": "Frontiers in Sociology",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3568,
+      "material_id": 3674,
+      "title": "Use of metadiscourse for identity construction in tourist city publicity：A comparative study of Chinese and Australian social media discourse",
+      "source": "Heliyon",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3523,
+      "material_id": 3648,
+      "title": "Fake news, real needs: A qualitative study on Sino-Japanese theurgy fighting",
+      "source": "Heliyon",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3570,
+      "material_id": 3676,
+      "title": "Misinformation During the COVID-19 Outbreak in China: Cultural, Social and Political Entanglements",
+      "source": "Ieee Transactions on Big Data",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3789,
+      "material_id": 3806,
+      "title": "Using Social Media to Mine and Analyze Public Opinion Related to COVID-19 in China",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3765,
+      "material_id": 3789,
+      "title": "Influencing overseas Chinese by tweets: text-images as the key tactic of Chinese propaganda",
+      "source": "Journal of Computational Social Science",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3790,
+      "material_id": 3807,
+      "title": "Chinese Public's Attention to the COVID-19 Epidemic on Social Media: Observational Descriptive Study",
+      "source": "Journal of Medical Internet Research",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3760,
+      "material_id": 3785,
+      "title": "Concerns Expressed by Chinese Social Media Users During the COVID-19 Pandemic: Content Analysis of Sina Weibo Microblogging Data",
+      "source": "Journal of Medical Internet Research",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3626,
+      "material_id": 3708,
+      "title": "Opinion Leaders and Structural Hole Spanners Influencing Echo Chambers in Discussions About COVID-19 Vaccines on Social Media in China: Network Analysis",
+      "source": "Journal of Medical Internet Research",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3739,
+      "material_id": 3773,
+      "title": "The New Colombo Plan: addressing the barriers to scholarship recipients’ contributing to Australia’s public diplomacy goals in China",
+      "source": "Place Branding and Public Diplomacy",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3706,
+      "material_id": 3752,
+      "title": "From soft power to reputational security: rethinking public diplomacy and cultural diplomacy for a dangerous age",
+      "source": "Place Branding and Public Diplomacy",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3722,
+      "material_id": 3760,
+      "title": "Attraction or Distraction? Impacts of Pro-regime Social Media Comments on Chinese Netizens",
+      "source": "Political Behavior",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3740,
+      "material_id": 3774,
+      "title": "Characteristics of Misinformation Spreading on Social Media During the COVID-19 Outbreak in China: A Descriptive Analysis",
+      "source": "Risk Management and Healthcare Policy",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3565,
+      "material_id": 3672,
+      "title": "Inductive detection of influence operations via graph learning",
+      "source": "Scientific Reports",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 496,
+      "material_id": 3632,
+      "title": "Representations of SARS in the British newspapers",
+      "source": "Social Science & Medicine (1982)",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 3636,
+      "material_id": 3716,
+      "title": "How local outbreak of COVID-19 affect the risk of internet public opinion: A Chinese social media case study",
+      "source": "Technology in Society",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 4414,
+      "material_id": 3221,
+      "title": "@nytopinion.nytimes.com on Bluesky",
+      "source": "The New York Times",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 4321,
+      "material_id": 3176,
+      "title": "@nytopinion.nytimes.com on Bluesky",
+      "source": "The New York Times",
+      "reason": "direct theme relevance retained"
+    },
+    {
+      "candidate_id": 4316,
+      "material_id": 3174,
+      "title": "@nytopinion.nytimes.com on Bluesky",
+      "source": "The New York Times",
+      "reason": "direct theme relevance retained"
+    }
+  ],
+  "withdrawn_records": [
+    {
+      "candidate_id": 3759,
+      "material_id": 3784,
+      "title": "Pandemic infection rates are deterministic but cannot be modeled",
+      "source": "AIP Advances",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3718,
+      "material_id": 3756,
+      "title": "The Impact of Information on Attitudes toward Sustainable Wildlife Utilization and Management: A Survey of the Chinese Public",
+      "source": "Animals : an Open Access Journal from MDPI",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3709,
+      "material_id": 3754,
+      "title": "Drivers of global media attention and representations for antimicrobial resistance risk: an analysis of online English and Chinese news media data, 2015–2018",
+      "source": "Antimicrobial Resistance and Infection Control",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3908,
+      "material_id": 3822,
+      "title": "COVID-19 denial in Turkmenistan veiling the real situation",
+      "source": "Archives of Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3763,
+      "material_id": 3787,
+      "title": "A comparison of health communication effectiveness and the improvement of management strategies: taking two Chinese traditional medicine hospitals’ WeChat public accounts as examples",
+      "source": "BMC Health Services Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3743,
+      "material_id": 3777,
+      "title": "Status, causes and consequences of physicians’ self-perceived professional reputation damage in China: a cross-sectional survey",
+      "source": "BMC Health Services Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3812,
+      "material_id": 3816,
+      "title": "Demographic profile and ocular characteristics of stage 5 retinopathy of prematurity at a referral center in Northwest China: implications for implementation",
+      "source": "BMC Ophthalmology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 756,
+      "material_id": 3635,
+      "title": "Fever phobia: a comparison survey between caregivers in the inpatient ward and caregivers at the outpatient department in a children’s hospital in China",
+      "source": "BMC Pediatrics",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 1593,
+      "material_id": 3646,
+      "title": "The growth in newspaper coverage of tobacco control in China, 2000-2010",
+      "source": "BMC Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 1583,
+      "material_id": 3645,
+      "title": "Chinese newspaper coverage of genetically modified organisms",
+      "source": "BMC Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3730,
+      "material_id": 3767,
+      "title": "Moderating effect of people-oriented public health services on depression among people under mandatory social isolation during the COVID-19 pandemic: a cross-sectional study in China",
+      "source": "BMC Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3533,
+      "material_id": 3655,
+      "title": "An exploratory qualitative analysis of public awareness, communication dynamics, and behavioral patterns regarding food safety in Mainland China",
+      "source": "BMC Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3814,
+      "material_id": 3818,
+      "title": "Optimal Thromboprophylaxis in Elderly Chinese Patients with Atrial Fibrillation (ChiOTEAF) registry: protocol for a prospective, observational nationwide cohort study",
+      "source": "BMJ Open",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3813,
+      "material_id": 3817,
+      "title": "Impact of adverse media reporting on public perceptions of the doctor–patient relationship in China: an analysis with propensity score matching method",
+      "source": "BMJ Open",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3548,
+      "material_id": 3669,
+      "title": "Real experience of caregivers of patients with HIV/AIDS from the perspective of iceberg theory: a qualitative research",
+      "source": "BMJ Open",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3582,
+      "material_id": 3684,
+      "title": "Analysis of COVID-19-Related User Content on the Baseball Bulletin Board in 2020 through Text Mining",
+      "source": "Behavioral Sciences",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3578,
+      "material_id": 3680,
+      "title": "Social Interaction, Survival Stress and Smoking Behavior of Migrant Workers in China—An Empirical Analysis Using CHARLS Data from 2013–2018",
+      "source": "Behavioral Sciences",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3651,
+      "material_id": 3722,
+      "title": "Responsible governance of human germline genome editing in China",
+      "source": "Biology of Reproduction",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3803,
+      "material_id": 3812,
+      "title": "Analysis of Mortality and Survival Rate of Liver Cancer in Zhejiang Province in China: A General Population-Based Study",
+      "source": "Canadian Journal of Gastroenterology & Hepatology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3704,
+      "material_id": 3751,
+      "title": "Government responsiveness and public acceptance of big-data technology in urban governance: Evidence from China during the COVID-19 pandemic",
+      "source": "Cities (London, England)",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3721,
+      "material_id": 3759,
+      "title": "Analysis of public opinion evolution of COVID-19 based on LDA-ARMA hybrid model",
+      "source": "Complex & Intelligent Systems",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 757,
+      "material_id": 3636,
+      "title": "Neural Cognition and Affective Computing on Cyber Language",
+      "source": "Computational Intelligence and Neuroscience",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3682,
+      "material_id": 3737,
+      "title": "An Entity Relationship Extraction Model Based on BERT-BLSTM-CRF for Food Safety Domain",
+      "source": "Computational Intelligence and Neuroscience",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3592,
+      "material_id": 3689,
+      "title": "Applying Blockchain Technology in Network Public Opinion Risk Management System in Big Data Environment",
+      "source": "Computational Intelligence and Neuroscience",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3633,
+      "material_id": 3714,
+      "title": "A Decision Model for the Control and Dissemination of the Online Public Opinions: An Empirical Study of Public Opinion Dissemination on Fraudulent Insurance Claims in Taihe, China",
+      "source": "Computational and Mathematical Methods in Medicine",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3601,
+      "material_id": 3697,
+      "title": "Exploring the impact of sentiment on multi-dimensional information dissemination using COVID-19 data in China",
+      "source": "Computers in Human Behavior",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3725,
+      "material_id": 3763,
+      "title": "The impact of media reports on energy and environmental efficiency in China: evidence from modified dynamic DEA with undesirable outputs",
+      "source": "Cost Effectiveness and Resource Allocation : C/E",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3770,
+      "material_id": 3794,
+      "title": "German and Chinese dataset on attitudes regarding COVID-19 policies, perception of the crisis, and belief in conspiracy theories",
+      "source": "Data in Brief",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3773,
+      "material_id": 3797,
+      "title": "Internet Public Opinion Evolution in the COVID-19 Event and Coping Strategies",
+      "source": "Disaster Medicine and Public Health Preparedness",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3694,
+      "material_id": 3747,
+      "title": "Tracking public opinion about online education over COVID-19 in China",
+      "source": "Educational Technology Research and Development",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3624,
+      "material_id": 3706,
+      "title": "A Linguistic Analysis of News Coverage of E-Healthcare in China with a Heterogeneous Graphical Model",
+      "source": "Entropy",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3585,
+      "material_id": 3687,
+      "title": "User Real-Time Influence Ranking Algorithm of Social Networks Considering Interactivity and Topicality",
+      "source": "Entropy",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3720,
+      "material_id": 3758,
+      "title": "Does air pollution prompt corporations to implement green management? Evidence from China",
+      "source": "Environmental Science and Pollution Research International",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3688,
+      "material_id": 3742,
+      "title": "Corporate climate risk and stock market reaction to performance briefings in China",
+      "source": "Environmental Science and Pollution Research International",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3788,
+      "material_id": 3805,
+      "title": "Parallel evolution and response decision method for public sentiment based on system dynamics",
+      "source": "European Journal of Operational Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3650,
+      "material_id": 3721,
+      "title": "Consumer Cognition Analysis of Food Additives Based on Internet Public Opinion in China",
+      "source": "Foods",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3600,
+      "material_id": 3696,
+      "title": "Crisis Management Experience from Social Media: Public Response to the Safety Crisis of Imported Aquatic Products in China during the Pandemic",
+      "source": "Foods",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3684,
+      "material_id": 3738,
+      "title": "Standards for Collection, Preservation, and Transportation of Fecal Samples in TCM Clinical Trials",
+      "source": "Frontiers in Cellular and Infection Microbiology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3672,
+      "material_id": 3730,
+      "title": "Impact of COVID-19 Pandemic on Elevated Anxiety Symptoms of Maintenance Hemodialysis Patients in China: A One-Year Follow-Up Study",
+      "source": "Frontiers in Psychiatry",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3731,
+      "material_id": 3768,
+      "title": "Social Media and Attitude Change: Information Booming Promote or Resist Persuasion?",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3719,
+      "material_id": 3757,
+      "title": "China Public Psychology Analysis About COVID-19 Under Considering Sina Weibo Data",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3675,
+      "material_id": 3732,
+      "title": "Understanding the Reality of China’s Health Tourism and Consumer Demand From the Perspective of Consumers: A Cross-Sectional Study",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3671,
+      "material_id": 3729,
+      "title": "Public Social Media Discussions on Agricultural Product Safety Incidents: Chinese African Swine Fever Debate on Weibo",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3655,
+      "material_id": 3726,
+      "title": "The Impact of Public Opinion Pressure on Construction Company Green Innovations: The Mediating Effect of Leaders' Environmental Intention and the Moderating Effect of Environmental Regulation",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3654,
+      "material_id": 3725,
+      "title": "Research on the Public Opinion Guidance Mechanism of Major Public Health Incidents",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3634,
+      "material_id": 3715,
+      "title": "Event history analysis of the duration of online public opinions regarding major health emergencies",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3631,
+      "material_id": 3712,
+      "title": "Does environmental uncertainty of enterprises aggravate the accrual anomaly in the stock market? Evidence from China",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3625,
+      "material_id": 3707,
+      "title": "A mediation model of the relationship between university students’ news media literacy and xenophobia: The role of intellectual humility, perceived threat, and blind patriotism",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3622,
+      "material_id": 3704,
+      "title": "The impact of COVID-19 on the employment status and psychological expectations of college graduates: Empirical evidence from the survey data of Chinese recruitment websites",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3607,
+      "material_id": 3698,
+      "title": "Factors influencing the financing behavior of large professional households engaged in green agricultural production in China",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3526,
+      "material_id": 3649,
+      "title": "College students’ psychology and behavior in the context of online public opinion: a cross-sectional study in Jiangsu Province, China",
+      "source": "Frontiers in Psychology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3742,
+      "material_id": 3776,
+      "title": "Study on the Experience of Public Health System Construction in China's COVID-19 Prevention",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3724,
+      "material_id": 3762,
+      "title": "Public Opinion and Expectations: Development of Public Health Education in China After COVID-19 Pandemic",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3691,
+      "material_id": 3744,
+      "title": "Influencing Factors on College Students' Willingness to Spread Internet Public Opinion: Analysis Based on COVID-19 Data in China",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3681,
+      "material_id": 3736,
+      "title": "Whether Social Participation Can Affect the Central Government Public Policy Response to the COVID-19 in China",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3670,
+      "material_id": 3728,
+      "title": "Changes of COVID-19 Knowledge, Attitudes, Practices and Vaccination Willingness Among Residents in Jinan, China",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3648,
+      "material_id": 3719,
+      "title": "The Association of Internet Use Intensity and Lifestyle Behaviors During the COVID-19 Pandemic: A Cross-Sectional Study in Chinese Adults",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3647,
+      "material_id": 3718,
+      "title": "Improving the Communication and Credibility of Government Media in Response to Public Health Emergencies: Analysis of Tweets From the WeChat Official Accounts of 10 Chinese Health Commissioners",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3571,
+      "material_id": 3677,
+      "title": "Public opinion communication mechanism of public health emergencies in Weibo: take the COVID-19 epidemic as an example",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3566,
+      "material_id": 3673,
+      "title": "Unfolding COVID-19 vaccine communication campaigns in China’s neighborhoods: a qualitative study of stakeholders’ narratives",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3550,
+      "material_id": 3671,
+      "title": "An online survey on public awareness of drug clinical trials in inland cities of northern China",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3543,
+      "material_id": 3665,
+      "title": "Identifying factors influencing local governments’ adoption of comprehensive smoke-free policies: an event history analysis based on panel data from 36 key cities in China (2013–2021)",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3536,
+      "material_id": 3658,
+      "title": "Exploring public opinion on health effects of prepared dishes in China through social media comments",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3529,
+      "material_id": 3651,
+      "title": "Generation paths of online public opinion impact in public health emergency: a fuzzy-set qualitative comparative analysis based on Chinese data",
+      "source": "Frontiers in Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3741,
+      "material_id": 3775,
+      "title": "Lyrics and artistic improvisations in health promotion for the COVID-19 pandemic control in East Africa",
+      "source": "Global Health Promotion",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3810,
+      "material_id": 3814,
+      "title": "Probing popular and political discourse on antimicrobial resistance in China",
+      "source": "Global Health Research and Policy",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3542,
+      "material_id": 3664,
+      "title": "Achilles’ heel: elderly COVID-19 vaccination policy in China",
+      "source": "Health Research Policy and Systems",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3771,
+      "material_id": 3795,
+      "title": "Structure Reversal of Online Public Opinion for the Heterogeneous Health Concerns under NIMBY Conflict Environmental Mass Events in China",
+      "source": "Healthcare",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3728,
+      "material_id": 3766,
+      "title": "Analysis of Social Effects on Employment Promotion Policies for College Graduates Based on Data Mining for Online Use Review in China during the COVID-19 Pandemic",
+      "source": "Healthcare",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3692,
+      "material_id": 3745,
+      "title": "Public Attention and Sentiment toward Intimate Partner Violence Based on Weibo in China: A Text Mining Approach",
+      "source": "Healthcare",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3630,
+      "material_id": 3711,
+      "title": "Revealing Personality Triggers for Media Vicarious Traumatization: A Fuzzy-Set Qualitative Comparative Analysis",
+      "source": "Healthcare",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3764,
+      "material_id": 3788,
+      "title": "Determining Public Opinion of the COVID-19 Pandemic in South Korea and Japan: Social Network Mining on Twitter",
+      "source": "Healthcare Informatics Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3669,
+      "material_id": 3727,
+      "title": "Can retail investors induce corporate green innovation? -Evidence from Baidu Search Index",
+      "source": "Heliyon",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3596,
+      "material_id": 3692,
+      "title": "Media coverage and stock market returns: Evidence from China Pakistan economic corridor (CPEC)",
+      "source": "Heliyon",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3580,
+      "material_id": 3682,
+      "title": "Sentiment analysis and prediction model based on Chinese government affairs microblogs",
+      "source": "Heliyon",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3573,
+      "material_id": 3678,
+      "title": "Spatiotemporal pattern evolution and influencing factors of online public opinion——Evidence from the early-stage of COVID-19 in China",
+      "source": "Heliyon",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3574,
+      "material_id": 3679,
+      "title": "The influence of trade friction on the stability of stock market: Evidence from China",
+      "source": "Heliyon",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3544,
+      "material_id": 3666,
+      "title": "Cognitively motivated or emotionally charged? Issue-switching mechanism of second screening-facilitated political participation during the 2022 COVID-19 waves in China",
+      "source": "Heliyon",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3540,
+      "material_id": 3662,
+      "title": "A pathway towards corporate sustainability: Does media attention matter?",
+      "source": "Heliyon",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3537,
+      "material_id": 3659,
+      "title": "Multiple benefits of new-energy vehicle power battery recycling strategies based on the theory of planned behavior and stimulus organism response",
+      "source": "Heliyon",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3584,
+      "material_id": 3686,
+      "title": "An investigation on cervical cancer and human papillomavirus vaccine knowledge, and analysis of influencing factors for choosing domestic or imported 2vHPV vaccine among females in Shenzhen, China",
+      "source": "Human Vaccines & Immunotherapeutics",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3539,
+      "material_id": 3661,
+      "title": "HPV vaccination intention among guardians of female secondary school students in Chongqing, China",
+      "source": "Human Vaccines & Immunotherapeutics",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3839,
+      "material_id": 3821,
+      "title": "Addressing male HPV vaccination in China: A narrative review of challenges and opportunities",
+      "source": "Human Vaccines & Immunotherapeutics",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3679,
+      "material_id": 3734,
+      "title": "Sense and Sensibility: Characterizing Social Media Users Regarding the Use of Controversial Terms for COVID-19",
+      "source": "Ieee Transactions on Big Data",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3766,
+      "material_id": 3790,
+      "title": "Knowledge, Attitude, Practice, and Associated Factors Regarding the Novel Coronavirus Disease 2019 (COVID-19) Pandemic",
+      "source": "Infection and Drug Resistance",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 971,
+      "material_id": 3640,
+      "title": "Chinese social media reaction to the MERS-CoV and avian influenza A(H7N9) outbreaks",
+      "source": "Infectious Diseases of Poverty",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3775,
+      "material_id": 3799,
+      "title": "The effect of control measures on COVID-19 transmission in Italy: Comparison with Guangdong province in China",
+      "source": "Infectious Diseases of Poverty",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3707,
+      "material_id": 3753,
+      "title": "Multi-stage Internet public opinion risk grading analysis of public health emergencies: An empirical study on Microblog in COVID-19",
+      "source": "Information Processing & Management",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3614,
+      "material_id": 3700,
+      "title": "Community pandemic prevention and control measures and their influence on citizen satisfaction during the COVID-19 pandemic in China",
+      "source": "International Journal of Disaster Risk Reduction",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 654,
+      "material_id": 3634,
+      "title": "Prevention of Asbestos-Related Disease in Countries Currently Using Asbestos",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3816,
+      "material_id": 3820,
+      "title": "Do Authoritarian Governments Respond to Public Opinion on the Environment? Evidence from China",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3811,
+      "material_id": 3815,
+      "title": "Media Exposure and General Trust as Predictors of Post-traumatic Stress Disorder: Ten Years after the 5.12 Wenchuan Earthquake in China",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3778,
+      "material_id": 3802,
+      "title": "Online Newspaper Framing of Non-Communicable Diseases: Comparison of Mainland China, Taiwan, Hong Kong and Macao",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3757,
+      "material_id": 3783,
+      "title": "An Analysis of Rural Households’ Earthquake-Resistant Construction Behavior: Evidence from Pingliang and Yuxi, China",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3726,
+      "material_id": 3764,
+      "title": "How Does Risk-Information Communication Affect the Rebound of Online Public Opinion of Public Emergencies in China?",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3723,
+      "material_id": 3761,
+      "title": "Diverging from News Media: An Exploratory Study on the Changing Dynamics between Media and Public Attention on Cancer in China from 2011–2020",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3913,
+      "material_id": 3823,
+      "title": "The Particularities of Pharmaceutical Care in Improving Public Health Service during the COVID-19 Pandemic",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3710,
+      "material_id": 3755,
+      "title": "Public Perception and Reception of Robotic Applications in Public Health Emergencies Based on a Questionnaire Survey Conducted during COVID-19",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3703,
+      "material_id": 3750,
+      "title": "Civic Participation in Chinese Cyberpolitics: A Grounded Theory Approach of Para-Xylene Projects",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3698,
+      "material_id": 3748,
+      "title": "Synonyms and Symptoms of COVID-19 and Individual and Official Actions against the Disease—A Brief Online Survey 6 Months into the Pandemic and on the Threshold of the Second Wave in Germany",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3693,
+      "material_id": 3746,
+      "title": "Online Public Rumor Engagement Model and Intervention Strategy in Major Public Health Emergencies: From the Perspective of Social Psychological Stress",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3689,
+      "material_id": 3743,
+      "title": "Diffusion Path Identification of Public Opinion Involving Enterprise Green Technology Adoption: An Interpretive-Structural-Modeling-Based Approach",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3678,
+      "material_id": 3733,
+      "title": "Self-Reported Gum Bleeding, Perception, Knowledge, and Behavior in Working-Age Hong Kong Chinese—A Cross-Sectional Study",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3674,
+      "material_id": 3731,
+      "title": "Social Stability Risk Assessment of Disaster-Preventive Migration in Ethnic Minority Areas of Southwest China",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3629,
+      "material_id": 3710,
+      "title": "Revealing Public Opinion towards the COVID-19 Vaccine with Weibo Data in China: BertFDA-Based Model",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3623,
+      "material_id": 3705,
+      "title": "Using Grounded Theory to Identify Online Public Opinion in China to Improve Risk Management—The Case of COVID-19",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3599,
+      "material_id": 3695,
+      "title": "Attention and Sentiment of the Chinese Public toward a 3D Greening System Based on Sina Weibo",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3597,
+      "material_id": 3693,
+      "title": "Narratives of Women and Gender Relations in Chinese COVID-19 Frontline Reports in 2020",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3598,
+      "material_id": 3694,
+      "title": "An Agenda-Setting Account for Psychological Typhoon Eye Effect on Responses to the Outbreak of COVID-19 in Wuhan",
+      "source": "International Journal of Environmental Research and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3746,
+      "material_id": 3780,
+      "title": "Gendered Justice in China: Victim–Offender Mediation as the “Different Voice” of Female Judges",
+      "source": "International Journal of Offender Therapy and Comparative Criminology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3787,
+      "material_id": 3804,
+      "title": "Correlations of Online Search Engine Trends With Coronavirus Disease (COVID-19) Incidence: Infodemiology Study",
+      "source": "JMIR Public Health and Surveillance",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3777,
+      "material_id": 3801,
+      "title": "COVID-19 in India: Statewise Analysis and Prediction",
+      "source": "JMIR Public Health and Surveillance",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3583,
+      "material_id": 3685,
+      "title": "Effects of Tobacco Versus Electronic Cigarette Usage on Nonsuicidal Self-Injury and Suicidality Among Chinese Youth: Cross-Sectional Self-Report Survey Study",
+      "source": "JMIR Public Health and Surveillance",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3737,
+      "material_id": 3772,
+      "title": "A Relational Reflection on Pandemic Nationalism",
+      "source": "Journal of Chinese Political Science",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3762,
+      "material_id": 3786,
+      "title": "Misinformation, manipulation, and abuse on social media in the era of COVID-19",
+      "source": "Journal of Computational Social Science",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 1666,
+      "material_id": 3647,
+      "title": "Revised Subjects of the Current Korean Oriental Pharmacists' Licensing Examination",
+      "source": "Journal of Educational Evaluation for Health Professions",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3652,
+      "material_id": 3723,
+      "title": "An Exploration of the Environment, Composition, and Transmission of the Development of Local Theater and Music in the Natural Environment and Folklore Activities of Tea Picking",
+      "source": "Journal of Environmental and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3637,
+      "material_id": 3717,
+      "title": "Construction and Implementation of Marxist Learning Platform in New Media Environment",
+      "source": "Journal of Environmental and Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3581,
+      "material_id": 3683,
+      "title": "Retracted: The Construction of National Image of China by English World Media in Public Health Emergencies",
+      "source": "Journal of Environmental and Public Health",
+      "reason": "topic-screen: retracted article excluded from formal corpus"
+    },
+    {
+      "candidate_id": 3800,
+      "material_id": 3811,
+      "title": "Using an evidence-based safety approach to develop China’s road safety strategies",
+      "source": "Journal of Global Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3786,
+      "material_id": 3803,
+      "title": "Global COVID-19: Warnings and suggestions based on experience of China",
+      "source": "Journal of Global Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3538,
+      "material_id": 3660,
+      "title": "Development of an Internet-based Product-related Child Injury Textual Data Platform (IPCITDP) in China",
+      "source": "Journal of Global Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3687,
+      "material_id": 3741,
+      "title": "The Impact of a Knowledge Discovery-Based Psychoanalytic Intervention in the Treatment of Tuberculosis in University Students with Different Doses of Isoniazid",
+      "source": "Journal of Healthcare Engineering",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 962,
+      "material_id": 3639,
+      "title": "Importance of Internet Surveillance in Public Health Emergency Control and Prevention: Evidence From a Digital Epidemiologic Study During Avian Influenza A H7N9 Outbreaks",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3791,
+      "material_id": 3808,
+      "title": "Health Communication Through News Media During the Early Stage of the COVID-19 Outbreak in China: Digital Topic Modeling Approach",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3776,
+      "material_id": 3800,
+      "title": "Real-Time Forecasting of the COVID-19 Outbreak in Chinese Provinces: Machine Learning Approach Using Novel Digital Data and Estimates From Mechanistic Models",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3768,
+      "material_id": 3792,
+      "title": "Application of Big Data Technology for COVID-19 Prevention and Control in China: Lessons and Recommendations",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3769,
+      "material_id": 3793,
+      "title": "Public Opinion About E-Cigarettes on Chinese Social Media: A Combined Study of Text Mining Analysis and Correspondence Analysis",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3747,
+      "material_id": 3781,
+      "title": "Measuring Public Reaction to Violence Against Doctors in China: Interrupted Time Series Analysis of Media Reports",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3727,
+      "material_id": 3765,
+      "title": "COVID-19 Information Dissemination Using the WeChat Communication Index: Retrospective Analysis Study",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3914,
+      "material_id": 3824,
+      "title": "Association Between What People Learned About COVID-19 Using Web Searches and Their Behavior Toward Public Health Guidelines: Empirical Infodemiology Study",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3530,
+      "material_id": 3652,
+      "title": "Impact of Concurrent Media Exposure on Professional Identity: Cross-Sectional Study of 1087 Medical Students During Long COVID",
+      "source": "Journal of Medical Internet Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3915,
+      "material_id": 3825,
+      "title": "Will Procreation Ever Be The Same After COVID-19?",
+      "source": "Journal of Obstetrics and Gynaecology of India",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3735,
+      "material_id": 3770,
+      "title": "Linking the disease transmission to information dissemination dynamics: An insight from a multi-scale model study",
+      "source": "Journal of Theoretical Biology",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3541,
+      "material_id": 3663,
+      "title": "Study on health education methods based on rural residents’ infectious disease-specific health literacy in Shandong, China",
+      "source": "Medicine",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3745,
+      "material_id": 3779,
+      "title": "Gendered Disease Iconography through the Lens of COVID-19 in Hong Kong",
+      "source": "Men and Masculinities",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3632,
+      "material_id": 3713,
+      "title": "The Association of Tonsil Hypertrophy with Pediatric Dentofacial Development: Evidence from a Cross-Sectional Study of Young Children in Shanghai, China",
+      "source": "Nature and Science of Sleep",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 899,
+      "material_id": 3638,
+      "title": "Treatment of epilepsy in China: Formal or informal",
+      "source": "Neural Regeneration Research",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3649,
+      "material_id": 3720,
+      "title": "Development and Validation of Nutrition Literacy Assessment Instrument for Chinese Pregnant Women",
+      "source": "Nutrients",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3609,
+      "material_id": 3699,
+      "title": "The Association between the School Environment and Adolescent Alcohol Drinking Behavior in Six Cities in China",
+      "source": "Nutrients",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3702,
+      "material_id": 3749,
+      "title": "Major concerns regarding food services based on news media reports during the COVID-19 outbreak using the topic modeling approach",
+      "source": "Nutrition Research and Practice",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3535,
+      "material_id": 3657,
+      "title": "How policy advocacy promotes regulated antibiotic use: Evidence from meat duck farmers of China",
+      "source": "One Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3593,
+      "material_id": 3690,
+      "title": "Financing malaria",
+      "source": "PLOS Global Public Health",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3628,
+      "material_id": 3709,
+      "title": "Public perceptions About Foreign Investment, A PLS-SEM Analysis toward republic sustainable infrastructure",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3587,
+      "material_id": 3688,
+      "title": "Competition for popularity and interventions on a Chinese microblogging site",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3569,
+      "material_id": 3675,
+      "title": "Environmental disclosure practices in mixed ownership models: A study of Chinese private enterprises",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3549,
+      "material_id": 3670,
+      "title": "Reports on sexual violence published in an online Chinese newspaper: A new frame research",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3547,
+      "material_id": 3668,
+      "title": "Direct interaction in digital interactive media and stock performance: Evidence from Panorama",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3534,
+      "material_id": 3656,
+      "title": "Text classification algorithm of tourist attractions subcategories with modified TF-IDF and Word2Vec",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3532,
+      "material_id": 3654,
+      "title": "The effect of CEO’s compensation in driving corporate ESG greenwashing: Evidence from China",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3531,
+      "material_id": 3653,
+      "title": "Media coverage as a moderator in the nexus between audit quality and ESG performance: Evidence from China",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3527,
+      "material_id": 3650,
+      "title": "Machine learning and game theory for cyber governance: Enhancing public opinion and regional sustainable development",
+      "source": "PLOS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 1517,
+      "material_id": 3643,
+      "title": "Assessing the Impact of the National Smoking Ban in Indoor Public Places in China: Evidence from Quit Smoking Related Online Searches",
+      "source": "PLoS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 1511,
+      "material_id": 3642,
+      "title": "Knowledge Levels and Training Needs of Disaster Medicine among Health Professionals, Medical Students, and Local Residents in Shanghai, China",
+      "source": "PLoS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3815,
+      "material_id": 3819,
+      "title": "Study on essential drug use status and its influencing factors among cerebral infarction inpatients in county level hospitals of Anhui Province, China",
+      "source": "PLoS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3809,
+      "material_id": 3813,
+      "title": "Risk assessment of earthquake network public opinion based on global search BP neural network",
+      "source": "PLoS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3774,
+      "material_id": 3798,
+      "title": "Building a green Belt and Road: A systematic review and comparative assessment of the Chinese and English-language literature",
+      "source": "PLoS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3772,
+      "material_id": 3796,
+      "title": "Increased awareness and decreased acceptance of genome-editing technology: The impact of the Chinese twin babies",
+      "source": "PLoS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3732,
+      "material_id": 3769,
+      "title": "The impact of the Covid-19 related media coverage upon the five major developing markets",
+      "source": "PLoS ONE",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 972,
+      "material_id": 3641,
+      "title": "Strategies for changing negative public attitudes toward organ donation in the People’s Republic of China",
+      "source": "Patient preference and adherence",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3680,
+      "material_id": 3735,
+      "title": "The correlations among COVID-19, the effect of public opinion, and the systemic risks of China’s financial industries",
+      "source": "Physica a",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3653,
+      "material_id": 3724,
+      "title": "The Effects of Information-Seeking Behaviors on Risk Perception During the COVID-19 Pandemic: A Cross-Sectional Correlational Survey",
+      "source": "Psychology Research and Behavior Management",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3579,
+      "material_id": 3681,
+      "title": "Understanding public opinion regarding organ donation in China: A social media content analysis",
+      "source": "Science Progress",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 854,
+      "material_id": 3637,
+      "title": "Media impact switching surface during an infectious disease outbreak",
+      "source": "Scientific Reports",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3736,
+      "material_id": 3771,
+      "title": "Exploring the role of non-pharmaceutical interventions (NPIs) in flattening the Greek COVID-19 epidemic curve",
+      "source": "Scientific Reports",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3621,
+      "material_id": 3703,
+      "title": "Improving urban flood resilience via GDELT GKG analyses in China's Sponge Cities",
+      "source": "Scientific Reports",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3795,
+      "material_id": 3810,
+      "title": "Mobile Phone Media and Its Public Opinion Management",
+      "source": "Social Media in China",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3794,
+      "material_id": 3809,
+      "title": "Making Universities Grow: The New Zealand Experience",
+      "source": "Sustainable Futures for Higher Education",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3767,
+      "material_id": 3791,
+      "title": "Role of media coverage in mitigating COVID-19 transmission: Evidence from China",
+      "source": "Technological Forecasting and Social Change",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3620,
+      "material_id": 3702,
+      "title": "WHO approves? Relative trust, the WHO, and China’s COVID-19 vaccines",
+      "source": "The Review of International Organizations",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 1535,
+      "material_id": 3644,
+      "title": "China and the Global Uranium Market: Prospects for Peaceful Coexistence",
+      "source": "The Scientific World Journal",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 578,
+      "material_id": 3633,
+      "title": "Online responses to the ending of the one-child policy in China: implications for preconception care",
+      "source": "Upsala Journal of Medical Sciences",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    },
+    {
+      "candidate_id": 3619,
+      "material_id": 3701,
+      "title": "Trusted information sources in the early months of the COVID-19 pandemic predict vaccination uptake over one year later",
+      "source": "Vaccine",
+      "reason": "topic-screen: title/body indicates biomedical, domestic policy, or non-US-China subject without direct media/influence/public-diplomacy relevance"
+    }
+  ],
+  "missing_records": [],
+  "backup": "data/research-pre-revalidation-topic-screen-20261109.sqlite3"
+}
