@@ -440,6 +440,42 @@ PBS_REVIEWED_PROGRAM_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str, 
 # Tuple fields: period, source, author, date, title, selector, body length, body SHA-256,
 # publisher abstract (empty when no relevant abstract is provided), body-derived keywords.
 PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
+    "https://time.com/archive/6791512/china-last-phase/": (
+        "1949-1972", "TIME", "TIME", "1949-12-12", "CHINA: Last Phase",
+        "time", "2103",
+        "d49f0211124f9eeadc984d40d9ac63bb0058cdaf95598b62e878151ffccc8d9d",
+        "", "China; Chinese Civil War; Chongqing; Chiang Kai-shek; Communist forces", "4", "4",
+    ),
+    "https://time.com/archive/6792534/china-last-stand/": (
+        "1949-1972", "TIME", "TIME", "1949-12-19", "CHINA: Last Stand",
+        "time", "3173",
+        "6a64e4eb8291800268faf7f5f0dcc2af7bdd7ad1038e7eec92b55b4085824210",
+        "", "China; Nationalist government; Chiang Kai-shek; Taiwan; Communist forces", "6", "6",
+    ),
+    "https://time.com/archive/6604246/china-the-communists-have-come/": (
+        "1949-1972", "TIME", "TIME", "1949-06-06", "CHINA: The Communists Have Come",
+        "time", "8026",
+        "65959a1d0775e49618a7461ec9bcf757d311cdfc437a2115f374deb0f346261c",
+        "", "China; Shanghai; Chinese Civil War; Communist forces; Nationalist government", "18", "18",
+    ),
+    "https://time.com/archive/6607475/china-next-chungking/": (
+        "1949-1972", "TIME", "TIME", "1949-10-24", "CHINA: Next: Chungking",
+        "time", "2082",
+        "9afcfa2f9bc5cac5a4aebe4a6ec178456868db21b448ea9955897cadeabe45e8",
+        "", "China; Guangzhou; Chongqing; Chinese Civil War; Nationalist government", "6", "6",
+    ),
+    "https://time.com/archive/6793782/china-coup/": (
+        "1949-1972", "TIME", "TIME", "1949-11-21", "CHINA: Coup",
+        "time", "2962",
+        "832aad57256ce77f6641f3441d72287182ee346276a27c134b2ef5ba0376c0ec",
+        "", "China; civil aviation; Chinese Civil War; airlines; U.S. personnel", "5", "5",
+    ),
+    "https://time.com/archive/6793693/china-ultimatum/": (
+        "1949-1972", "TIME", "TIME", "1949-04-25", "CHINA: Ultimatum",
+        "time", "1385",
+        "07ecabebb3dd58f1af656e2a57b3050d41d863658152610109a861a7a0141c40",
+        "", "China; Chinese Civil War; Li Zongren; Mao Zedong; peace negotiations", "4", "4",
+    ),
     "https://time.com/archive/6785414/china-what-can-li-do/": (
         "1949-1972", "TIME", "TIME", "1949-01-31", "CHINA: What Can Li Do?",
         "time", "1759",
@@ -499,6 +535,36 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
         "time", "10669",
         "ac50a31ee3edf18b0e288924fe82269224c17431c639e261d2f074dd8e76a885",
         "", "Richard Nixon; China visit; U.S.-China relations; diplomacy; People's Republic of China", "23", "23",
+    ),
+    "https://www.abc.net.au/worldtoday/archive/articles/2000/09/20/s181924.htm": (
+        "1992-2016", "ABC Radio (The World Today)", "Tom O'Byrne", "2000-09-20",
+        "US to restore trading relations with China", "abc_archive", "4143",
+        "ef0821832148baaf832f83923dc73f2677e499df076df7535449b76fd209ef82",
+        "", "China; United States; permanent normal trade relations; U.S. Senate; trade policy", "14", "14",
+    ),
+    "https://www.abc.net.au/worldtoday/archive/articles/2001/10/19/s395557.htm": (
+        "1992-2016", "ABC Radio (The World Today)", "Michael Vincent", "2001-10-19",
+        "Question mark hangs over warming of US-Chinese relations", "abc_archive", "3708",
+        "443f5a70a177f59be88085709f4884d236ba796cf11322b0fb20f51e4e49c196",
+        "", "China; United States; George W. Bush; APEC; EP-3 incident; bilateral relations", "16", "16",
+    ),
+    "https://www.abc.net.au/worldtoday/archive/articles/2001/04/09/s274512.htm": (
+        "1992-2016", "ABC Radio (The World Today)", "Michael Carey", "2001-04-09",
+        "US and China send mixed messages", "abc_archive", "3653",
+        "f46433b43f6ee08a53e22a389554353881ce309fc971ff7a4dcc7d2c55dde216",
+        "", "China; United States; EP-3 incident; diplomatic statements; Hainan Island", "17", "17",
+    ),
+    "https://www.abc.net.au/pm/archive/articles/2001/04/06/s273403.htm": (
+        "1992-2016", "ABC Radio (PM)", "Tom O'Byrne", "2001-04-06",
+        "China eases stance over US spy plane", "abc_archive", "6351",
+        "1b8a8493da9accf4bdbaae4c78a961c6cc7cccb1838dbfd6b0f357e96f529d52",
+        "", "China; United States; EP-3 incident; Hainan Island; diplomatic rhetoric", "24", "24",
+    ),
+    "https://www.abc.net.au/pm/archive/articles/2001/04/03/s271358.htm": (
+        "1992-2016", "ABC Radio (PM)", "Tom O'Byrne", "2001-04-03",
+        "US patience wears as China withholds plane", "abc_archive", "8023",
+        "f26ce1fbdc3fdbf7e85708d53079ce86024127f2a8868288d4cc5623a185f1b0",
+        "", "China; United States; EP-3 incident; Hainan Island; diplomacy", "31", "31",
     ),
     "https://www.theguardian.com/world/1989/may/17/china.fromthearchive": (
         "1972-1991", "The Guardian", "Leader", "1989-05-17",
@@ -604,6 +670,28 @@ PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://time.com/archive/6791512/china-last-phase/":
+        "据正文整理：文章报道国民党政权在重庆等地撤退及共产党军队推进，并提及美国决策者面临的战略背景。",
+    "https://time.com/archive/6792534/china-last-stand/":
+        "据正文整理：文章叙述国民党政府撤往台湾前后的军事与政治安排，并描述对台湾内部安全的担忧。",
+    "https://time.com/archive/6604246/china-the-communists-have-come/":
+        "据正文整理：文章报道上海在中国内战末期转入共产党控制，并记录城市居民、国民党守军及外国人员的经历。",
+    "https://time.com/archive/6607475/china-next-chungking/":
+        "据正文整理：文章报道广州转入共产党控制及国民党政府和军队向其他地区撤退的情况。",
+    "https://time.com/archive/6793782/china-coup/":
+        "据正文整理：文章报道中国商业航空公司及其人员在内战期间被共产党接管的经过。",
+    "https://time.com/archive/6793693/china-ultimatum/":
+        "据正文整理：文章报道国共和平谈判和共产党提出的条件，并描述长江沿线军事局势。",
+    "https://www.abc.net.au/worldtoday/archive/articles/2000/09/20/s181924.htm":
+        "据正文整理：报道美国参议院通过给予中国永久正常贸易关系后，美国与中国恢复贸易关系的政策背景和各方反应。",
+    "https://www.abc.net.au/worldtoday/archive/articles/2001/10/19/s395557.htm":
+        "据正文整理：报道布什赴上海参加亚太经合组织峰会期间中美关系变化，并讨论EP-3事件、对台军售及反恐合作背景。",
+    "https://www.abc.net.au/worldtoday/archive/articles/2001/04/09/s274512.htm":
+        "据正文整理：报道EP-3飞机在海南岛降落后美中双方的公开表态、机组人员处境及外交接触。",
+    "https://www.abc.net.au/pm/archive/articles/2001/04/06/s273403.htm":
+        "据正文整理：报道EP-3机组人员领事接触安排的变化及中美围绕飞机与机组人员问题的交涉。",
+    "https://www.abc.net.au/pm/archive/articles/2001/04/03/s271358.htm":
+        "据正文整理：报道美国与中国在EP-3飞机和机组人员问题上的紧张局势及双方各自关切。",
     "https://time.com/archive/6785414/china-what-can-li-do/":
         "据正文整理：文章讨论李宗仁在国民党政权中的处境及其在中国内战局势下可能采取的政治行动。",
     "https://time.com/archive/6602114/china-defeat/":

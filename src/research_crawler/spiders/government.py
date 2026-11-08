@@ -348,6 +348,24 @@ class ReviewedPublicMediaAdapter:
                 value.startswith(published_on) for value in date_values
             )
             visible_title_matches = h1 == [title]
+        elif page_kind == "abc_archive":
+            containers = response.css(".article-body")
+            program = "The World Today" if source.endswith("The World Today)") else "PM"
+            source_matches = response.css(
+                'meta[property="og:site_name"]::attr(content)'
+            ).getall() == [program]
+            intro = [
+                _normalized_text(node.xpath(".//text()").getall())
+                for node in response.css("article > p")
+            ]
+            author_matches = sum(
+                line.startswith("Broadcast ") and line.endswith(f"Reporter: {author}")
+                for line in intro
+            ) == 1
+            schema_matches = len(intro) == 3
+            visible_title_matches = (
+                document_title == f"{title} - {program} Archive - ABC listen"
+            )
         elif page_kind == "guardian":
             containers = response.css(".article-body-commercial-selector")
             source_matches = (
