@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-11-08T23:48:30.987042+00:00",
+  "screened_queue": 16,
+  "technical_verified_new": 4,
+  "retained": 4,
+  "withdrawn": 0,
+  "retained_records": [
+    {
+      "material_id": 4321,
+      "source": "International Journal for the Semiotics of Law",
+      "published_on": "2021-07-10",
+      "title": "Politicizing COVID-19 Vaccines in the Press: A Critical Discourse Analysis",
+      "candidate_id": 5619,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8271332/"
+    },
+    {
+      "material_id": 4322,
+      "source": "BMJ Global Health",
+      "published_on": "2021-01-29",
+      "title": "Words matter: political and gender analysis of speeches made by heads of government during the COVID-19 pandemic",
+      "candidate_id": 5623,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7849321/"
+    },
+    {
+      "material_id": 4323,
+      "source": "Journal of Computational Social Science",
+      "published_on": "2020-10-28",
+      "title": "Conspiracy in the time of corona: automatic detection of emerging COVID-19 conspiracy theories in social media and the news",
+      "candidate_id": 5625,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7591696/"
+    },
+    {
+      "material_id": 4324,
+      "source": "Science Advances",
+      "published_on": "2020-07-22",
+      "title": "Content-based features predict social media influence operations",
+      "candidate_id": 5629,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7439640/"
+    }
+  ],
+  "rule": "Retained because each full text directly addresses China/US media discourse, Taiwan/US public messaging, Chinese influence operations targeting the US, or China-related misinformation narratives."
+}
