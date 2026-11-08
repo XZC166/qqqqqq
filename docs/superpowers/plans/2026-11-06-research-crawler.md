@@ -2041,3 +2041,11 @@ Search evidence is saved under `research/firecrawl/early-media-tiananmen-1989-ga
 - [x] Refresh the formal-record count and field audit: 2,453 unique materials, with no blank abstracts, keywords, or bodies and no invalid publication dates. Counts by publication date: 1949-1972 40; 1973-1991 25; 1992-2016 694; 2017-2025 1,694. Current candidate status totals: 2,492 verified candidates (including duplicate discoveries), 560 pending, 99 restricted, 90 excluded, and 3 candidate.
 - [x] Re-export the workbook after detecting the prior 2,446-row workbook lagged the 2,453-row database, rebuild the delivery ZIP, and verify 2,453 workbook rows, exact nine-column headers, SQLite integrity and foreign keys, and ZIP CRC.
 - [ ] Continue early media / think-tank / research-literature discovery while maintaining parallel collection for 1992-2025 sources; do not claim exhaustive coverage.
+
+## Follow-up: 2026-11-08 PMC 2017-2025 queue
+
+- [x] Re-fetch the targeted 118-row PMC media/research candidate CSV with robots compliance and the polite fast profile. Skip 38 already-verified source URLs; fetch 80 candidates, all with HTTP 200 responses and accepted page items.
+- [x] Promote 54 additional unique full-text research materials after the source date, metadata, and complete body checks passed. The remaining fetched items did not add unique formal rows. Current total: 2,507 unique materials; the 2017-2025 period has 1,748 records.
+- [x] Reconcile final candidate statuses after this batch: 2,546 verified candidates (including duplicates), 569 pending, 99 restricted, 27 excluded, and 3 candidate. Refresh workbook, coverage audit and delivery ZIP before reporting these totals.
+- [x] Verify the regenerated workbook has 2,507 data rows and exactly the required nine columns; abstracts, keywords and bodies are nonempty for every row. SQLite integrity passes with zero foreign-key errors; all 7,846 ZIP entries pass CRC validation.
+- [ ] Continue early-period discovery and concurrent 1992-2025 source collection. The volume goal has been reached; quality, source balance and unresolved access gaps remain active.
