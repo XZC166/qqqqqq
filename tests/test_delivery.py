@@ -50,6 +50,9 @@ def test_delivery_includes_exact_workbook_long_body_and_both_evidence_files(tmp_
         index = json.loads(archive.read("reports/provenance-index.json"))
         assert len(index) == 1
         assert len(index[0]["evidence"]) == 2
+        coverage = json.loads(archive.read("reports/coverage.json"))
+        assert len(coverage["yearly"]) == 77
+        assert len(coverage["discovery_batches"]) == 1
         for evidence in index[0]["evidence"]:
             assert hashlib.sha256(archive.read(evidence["file"])).hexdigest() == evidence["sha256"]
         assert "reports/batch-1.txt" in archive.namelist()

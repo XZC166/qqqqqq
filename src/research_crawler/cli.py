@@ -16,7 +16,13 @@ from research_crawler.discovery import (
 )
 from research_crawler.export import export_verified
 from research_crawler.delivery import build_delivery
-from research_crawler.coverage import coverage_gaps, coverage_matrix, verification_gaps
+from research_crawler.coverage import (
+    coverage_gaps,
+    coverage_matrix,
+    discovery_batch_coverage,
+    verification_gaps,
+    yearly_coverage,
+)
 from research_crawler.import_authorized import import_authorized_full_text
 from research_crawler.items import VerifiedMaterial
 from research_crawler.report import render_batch_report
@@ -638,13 +644,21 @@ def _coverage_audit(args) -> int:
         matrix = coverage_matrix(store)
         gaps = coverage_gaps(store)
         full_text_gaps = verification_gaps(store)
+        yearly = yearly_coverage(store)
+        batches = discovery_batch_coverage(store)
     finally:
         store.close()
     destination = Path(args.output)
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(
         json.dumps(
-            {"matrix": matrix, "gaps": gaps, "verification_gaps": full_text_gaps},
+            {
+                "matrix": matrix,
+                "yearly": yearly,
+                "discovery_batches": batches,
+                "gaps": gaps,
+                "verification_gaps": full_text_gaps,
+            },
             ensure_ascii=False,
             indent=2,
         ),

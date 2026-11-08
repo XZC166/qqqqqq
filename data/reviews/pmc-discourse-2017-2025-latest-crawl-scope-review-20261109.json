@@ -1,0 +1,42 @@
+{
+  "reviewed_on": "2026-11-09",
+  "scope": "Five PMC full texts newly verified from the 2017-2025 discovery batch",
+  "basis": "Compared the source title and abstract with the thesis scope. Only research directly addressing U.S.-China media/discourse competition or a clearly documented comparative communication context is retained as formal full text.",
+  "retained_material_ids": [
+    {
+      "material_id": 2812,
+      "title": "COVID-19 vaccines as a game-changing tool? A corpus-based study of vaccine communication in People's Daily and The New York Times",
+      "decision": "verified",
+      "reason": "Directly compares vaccine communication in People's Daily and The New York Times and discusses U.S.-China strategic rivalry."
+    }
+  ],
+  "pending_materials": [
+    {
+      "material_id": 2813,
+      "title": "Did the popularization of the Internet impact Chinese citizens’ attitude towards foreign countries? An empirical study based on two surveys",
+      "decision": "pending",
+      "reason": "Studies Chinese public attitudes and media channels but the reviewed title and abstract do not establish a direct U.S. or U.S.-China communication focus."
+    },
+    {
+      "material_id": 2816,
+      "title": "Worsening British views of China in 2020: evidence from public opinion, parliament, and the media",
+      "decision": "pending",
+      "reason": "Studies UK public opinion, parliament, and media; its comparative value to the U.S. case needs explicit researcher review before formal inclusion."
+    }
+  ],
+  "excluded_materials": [
+    {
+      "material_id": 2814,
+      "title": "Perspectives on Surrogacy in Chinese Social Media: A Content Analysis of Microblogs on Weibo",
+      "decision": "excluded",
+      "reason": "Concerns domestic social media debate about surrogacy and does not address U.S.-China discourse or communication competition."
+    },
+    {
+      "material_id": 2815,
+      "title": "Housing safety and health academic and public opinion mining from 1945 to 2021: PRISMA, cluster analysis, and natural language processing approaches",
+      "decision": "excluded",
+      "reason": "Concerns housing safety and health research and public discussion, unrelated to the thesis topic."
+    }
+  ],
+  "evidence_policy": "Excluded or pending full-text materials are removed from the formal materials table; original source evidence and candidate history are retained."
+}

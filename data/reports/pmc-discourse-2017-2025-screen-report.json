@@ -1,0 +1,1346 @@
+{
+  "input_count": 357,
+  "metadata_records": 357,
+  "screened_count": 24,
+  "manual_review_count": 333,
+  "excluded_count": 0,
+  "manual_review": [
+    {
+      "pmcid": "PMC12685082",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12885366",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12579107",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12511122",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12500682",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12503339",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12490850",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12444218",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12411518",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12410782",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12399590",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12393757",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12386289",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12356946",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12303279",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12222139",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12224183",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12225214",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12219491",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12217757",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12183273",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12176173",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12119951",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12103563",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12089361",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12002785",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11983825",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11969123",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11959759",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11941162",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11929391",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11872605",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11870363",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11851718",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11804818",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11795794",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11691881",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC11637082",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11628265",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11620416",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11555446",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11540682",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11528167",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11527248",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11500961",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11490028",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11488746",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11462372",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11427877",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11408834",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11342019",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11328880",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11324807",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11315526",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11299290",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11240852",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11225761",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11169724",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11150764",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11132475",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11086469",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11086924",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11043599",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10977776",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10957737",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10907359",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10902763",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10871520",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10867957",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10866532",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10854670",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10846699",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10833090",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10823630",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10810527",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10803794",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10768132",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10730915",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10720319",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10720904",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10703839",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10688842",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8769030",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10665477",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10590802",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10559807",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10550516",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10522863",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10521725",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10469626",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10451940",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10454996",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10448066",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10396624",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10376575",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10362422",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10332218",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10297424",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10286809",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10204960",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10016907",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10169383",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10138020",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10101474",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10023232",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10021190",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10016145",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10013709",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10009534",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10002341",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10001814",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10002033",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10000672",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9991332",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9965175",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9937109",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9911650",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9915454",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9891173",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9873355",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9868397",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9865810",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9859488",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9851897",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9780485",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9778805",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9767881",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9756003",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9733691",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9732492",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9728140",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9722679",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9684827",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9700821",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9692114",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9690304",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9689216",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9679528",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9678332",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9593905",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9651572",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9602858",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9601371",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9595132",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9588286",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9519317",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9513521",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9482068",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9463078",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9458409",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9443650",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9442209",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9427286",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9420056",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9403913",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9410812",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9402371",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9386655",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9378987",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9354850",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9326102",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9320244",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9325181",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9310509",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9296327",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9285848",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9277344",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9263538",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9264268",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264208",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264229",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264261",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264176",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264247",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264164",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264154",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9256499",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9245366",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9242932",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9234552",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9233579",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9224219",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9213041",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9201017",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9163493",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9165425",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9160521",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9151658",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9141950",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9120936",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9107107",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9107000",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9103544",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8851431",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9095084",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9093180",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9071985",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9071242",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9065286",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9014406",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9012972",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8959992",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8923102",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8910213",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8907873",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8894182",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8871728",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8871882",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8862705",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8854764",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8856540",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8809069",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8761114",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8750519",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8743377",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8701337",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8678273",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8636390",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8656783",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8656336",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7612054",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8571967",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8556697",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8548864",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8542296",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8536172",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8519257",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8511417",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8500994",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8495447",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8486649",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8480968",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8475392",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8467217",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8456024",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8425850",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8416577",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8417687",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8391632",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8383066",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8366015",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8345355",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8288647",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8307509",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8280558",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8272985",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8264363",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8248702",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8259554",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8143385",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8175100",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8175358",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8167390",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8150621",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8136110",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8121282",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8072075",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8107211",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8048359",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7971386",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7957333",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7882994",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7925148",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7927779",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7903215",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7884098",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7845521",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7842485",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7813210",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7804060",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7798069",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7784222",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7730066",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7727274",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7709495",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7695542",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7681173",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7680254",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7677096",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7674818",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7608205",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7603646",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7604032",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7561444",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7593864",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7553996",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7551636",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7500613",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7506165",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7492099",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7492796",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7459435",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7431238",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7432841",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7437442",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7420160",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7385634",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7361027",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7345754",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7335244",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7284412",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7244931",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7244220",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7244451",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7215577",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7199804",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7189789",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7158945",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7155546",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7123547",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7123255",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7123927",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7117024",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7098126",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6905411",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6858991",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6701581",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6651263",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6652059",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6550219",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6518036",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6488518",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6480262",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6479821",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6405059",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6394084",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6266127",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6267009",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6104794",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC5942423",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC5886397",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC5858335",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC5642795",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    }
+  ],
+  "excluded": [],
+  "metadata_missing_candidates_retained": [],
+  "abstract_records": 328,
+  "metadata_fetch_error": "",
+  "policy": "Discovery-only title and PubMed citation abstracts; no article body was fetched or added to formal materials. Missing abstracts are retained for manual review."
+}

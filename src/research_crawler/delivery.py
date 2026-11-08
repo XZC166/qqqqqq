@@ -11,7 +11,13 @@ from zipfile import ZIP_DEFLATED, ZipFile
 from openpyxl import load_workbook
 
 from research_crawler.export import EXCEL_CELL_LIMIT, _excel_character_count, export_verified
-from research_crawler.coverage import coverage_matrix
+from research_crawler.coverage import (
+    coverage_gaps,
+    coverage_matrix,
+    discovery_batch_coverage,
+    verification_gaps,
+    yearly_coverage,
+)
 from research_crawler.items import EXPORT_COLUMNS
 from research_crawler.report import render_batch_report
 from research_crawler.store import ResearchStore, canonicalize_url
@@ -44,7 +50,13 @@ def build_delivery(store: ResearchStore, destination: str | Path) -> Path:
             reports.mkdir()
             _write_json(reports / "provenance-index.json", index)
             _write_json(reports / "candidate-evidence-index.json", candidate_evidence)
-            _write_json(reports / "coverage.json", coverage_matrix(store))
+            _write_json(reports / "coverage.json", {
+                "matrix": coverage_matrix(store),
+                "yearly": yearly_coverage(store),
+                "discovery_batches": discovery_batch_coverage(store),
+                "gaps": coverage_gaps(store),
+                "verification_gaps": verification_gaps(store),
+            })
             for batch in store.connection.execute("SELECT id FROM batches ORDER BY id"):
                 (reports / f"batch-{batch['id']}.txt").write_text(
                     render_batch_report(store, batch["id"]), encoding="utf-8"

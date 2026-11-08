@@ -60,6 +60,82 @@ def verification_gaps(store: ResearchStore) -> list[dict]:
     ]
 
 
+def yearly_coverage(store: ResearchStore) -> list[dict]:
+    """Count formal records by publication year and discovered source category."""
+    material_counts = {
+        row["year"]: row["count"]
+        for row in store.connection.execute(
+            """SELECT CAST(substr(published_on,1,4) AS INTEGER) AS year, COUNT(*) AS count
+               FROM materials
+               WHERE published_on >= '1949-01-01' AND published_on < '2026-01-01'
+               GROUP BY year"""
+        )
+    }
+    category_counts: dict[int, dict[str, int]] = {}
+    for row in store.connection.execute(
+        """SELECT CAST(substr(m.published_on,1,4) AS INTEGER) AS year,
+                  c.source_category, COUNT(DISTINCT m.id) AS count
+           FROM materials m JOIN candidates c ON c.identity_key=m.identity_key
+           WHERE m.published_on >= '1949-01-01' AND m.published_on < '2026-01-01'
+             AND c.status != 'excluded'
+           GROUP BY year, c.source_category"""
+    ):
+        category_counts.setdefault(row["year"], {})[row["source_category"]] = row["count"]
+
+    rows = []
+    for year in range(1949, 2026):
+        if year <= 1972:
+            period = "1949-1972"
+        elif year <= 1991:
+            period = "1972-1991"
+        elif year <= 2016:
+            period = "1992-2016"
+        else:
+            period = "2017-2025"
+        rows.append({
+            "year": year,
+            "period": period,
+            "formal_unique_full_texts": material_counts.get(year, 0),
+            "by_source_category": category_counts.get(year, {}),
+        })
+    return rows
+
+
+def discovery_batch_coverage(store: ResearchStore) -> list[dict]:
+    """Report source/period/query labels without inferring an event taxonomy."""
+    batches = store.connection.execute(
+        """SELECT b.id, b.period, b.source_category, b.query_label,
+                  COUNT(DISTINCT c.id) AS candidate_count,
+                  COUNT(DISTINCT CASE WHEN c.status != 'excluded' THEN m.id END)
+                    AS formal_unique_materials,
+                  COUNT(DISTINCT d.id) AS duplicate_discoveries
+           FROM batches b
+           LEFT JOIN candidates c ON c.batch_id=b.id
+           LEFT JOIN materials m ON m.identity_key=c.identity_key
+           LEFT JOIN duplicate_discoveries d ON d.candidate_id=c.id
+           GROUP BY b.id, b.period, b.source_category, b.query_label
+           ORDER BY b.id"""
+    ).fetchall()
+    rows = []
+    for batch in batches:
+        statuses = store.connection.execute(
+            """SELECT status, COUNT(*) AS count FROM candidates
+               WHERE batch_id=? GROUP BY status""",
+            (batch["id"],),
+        ).fetchall()
+        rows.append({
+            "batch_id": batch["id"],
+            "period": batch["period"],
+            "source_category": batch["source_category"],
+            "query_label": batch["query_label"],
+            "candidate_count": batch["candidate_count"],
+            "formal_unique_materials": batch["formal_unique_materials"],
+            "duplicate_discoveries": batch["duplicate_discoveries"],
+            "status_counts": {row["status"]: row["count"] for row in statuses},
+        })
+    return rows
+
+
 def _applicability(period: str, source_category: str) -> tuple[bool, str]:
     if source_category == "new_media" and period in {"1949-1972", "1972-1991"}:
         return False, "Out of scope: the collection specification includes new-media content only from 2006 onward."

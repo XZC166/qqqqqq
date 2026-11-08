@@ -1,4 +1,10 @@
-from research_crawler.coverage import coverage_gaps, coverage_matrix, verification_gaps
+from research_crawler.coverage import (
+    coverage_gaps,
+    coverage_matrix,
+    verification_gaps,
+    yearly_coverage,
+    discovery_batch_coverage,
+)
 from research_crawler.discovery import PERIODS, SOURCE_TERMS
 from research_crawler.items import MaterialCandidate
 from research_crawler.store import ResearchStore
@@ -103,4 +109,46 @@ def test_new_media_is_not_a_gap_before_the_requested_2006_start(tmp_path):
     assert all(row["applicable"] is False for row in old_cells)
     assert all("2006" in row["applicability_note"] for row in old_cells)
     assert all(row not in coverage_gaps(store) for row in old_cells)
+    store.close()
+
+
+def test_yearly_coverage_includes_empty_years_and_assigns_1972_to_early_period(tmp_path):
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    add_verified(store, "A body")
+
+    rows = yearly_coverage(store)
+
+    assert len(rows) == 77
+    assert rows[0] == {
+        "year": 1949,
+        "period": "1949-1972",
+        "formal_unique_full_texts": 0,
+        "by_source_category": {},
+    }
+    assert rows[23] == {
+        "year": 1972,
+        "period": "1949-1972",
+        "formal_unique_full_texts": 0,
+        "by_source_category": {},
+    }
+    assert rows[-1]["year"] == 2025
+    assert sum(row["formal_unique_full_texts"] for row in rows) == 1
+    assert rows[71]["year"] == 2020
+    assert rows[71]["by_source_category"] == {"government": 1}
+    store.close()
+
+
+def test_discovery_batch_coverage_preserves_query_labels_and_duplicate_counts(tmp_path):
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    add_verified(store, "A body", duplicate_count=1)
+
+    rows = discovery_batch_coverage(store)
+
+    assert len(rows) == 2
+    assert rows[0]["query_label"] == "sample"
+    assert rows[0]["formal_unique_materials"] == 1
+    assert rows[0]["candidate_count"] == 1
+    assert rows[1]["query_label"] == "sample-duplicate-1"
+    assert rows[1]["formal_unique_materials"] == 1
+    assert rows[1]["duplicate_discoveries"] == 1
     store.close()

@@ -1,0 +1,98 @@
+{
+  "input_count": 21,
+  "metadata_records": 21,
+  "screened_count": 0,
+  "manual_review_count": 21,
+  "excluded_count": 0,
+  "manual_review": [
+    {
+      "pmcid": "PMC7155663",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7127057",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC5098486",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4998793",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4956912",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4881119",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4612412",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4600947",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4441944",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4296304",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4232311",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4145945",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3906895",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3878123",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3869936",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3691157",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3679166",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3628662",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3370988",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3315399",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC2631202",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    }
+  ],
+  "excluded": [],
+  "metadata_missing_candidates_retained": [],
+  "abstract_records": 20,
+  "metadata_fetch_error": "",
+  "policy": "Discovery-only title and PubMed citation abstracts; no article body was fetched or added to formal materials. Missing abstracts are retained for manual review."
+}
