@@ -440,6 +440,56 @@ PBS_REVIEWED_PROGRAM_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str, 
 # Tuple fields: period, source, author, date, title, selector, body length, body SHA-256,
 # publisher abstract (empty when no relevant abstract is provided), body-derived keywords.
 PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
+    "https://time.com/archive/6615999/war-late-entry/": (
+        "1949-1972", "TIME", "TIME", "1950-11-06", "War: Late Entry",
+        "time", "1445", "bb038e0c6a4e7669c6d3b8aa4fb23b697f7e6ce9cea0b01767a5f013047725fe",
+        "", "Korean War; China; Chinese troops; Manchuria; U.S. military assessments", "5", "5",
+    ),
+    "https://time.com/archive/6616371/battle-of-korea-after-the-breakthrough/": (
+        "1949-1972", "TIME", "TIME", "1950-12-11", "BATTLE OF KOREA: After the Breakthrough",
+        "time", "5684", "4c06f568792fefbdf1a82608d02aa20c7b596a7855f2b49af36b55cd87d5d946",
+        "", "Korean War; Chinese forces; United Nations forces; U.S. military; retreat", "13", "13",
+    ),
+    "https://time.com/archive/6615045/war-in-asia-not-too-late/": (
+        "1949-1972", "TIME", "TIME", "1950-07-03", "WAR IN ASIA: Not Too Late?",
+        "time", "8079", "e0cef87e2537be205d111c0a70eb08060d54b07d52c6abea53ccb4b1f293a948",
+        "", "Korean War; United States; North Korea; China; international response", "22", "22",
+    ),
+    "https://time.com/archive/6887156/war-in-korea-three-fronts/": (
+        "1949-1972", "TIME", "TIME", "1952-09-22", "WAR IN KOREA: Three Fronts",
+        "time", "1554", "b0592f064181e12dfa584a01143910406d2c32b75cc907680a6da089c30c8f97",
+        "", "Korean War; Chinese forces; armistice negotiations; United Nations; U.S. military", "3", "3",
+    ),
+    "https://time.com/archive/6620963/korea-tug-of-war/": (
+        "1949-1972", "TIME", "TIME", "1953-08-10", "KOREA: Tug of War",
+        "time", "2700", "ab308ba72ea861e9df030b8c808c1370cd136ccc81984bc21d4507df5dda12eb",
+        "", "Korean War; China; United States; postwar negotiations; John Foster Dulles", "6", "6",
+    ),
+    "https://time.com/archive/6608182/china-uprisings-against-the-reds/": (
+        "1949-1972", "TIME", "TIME", "1951-03-12", "CHINA: Uprisings Against the Reds",
+        "time", "2443", "99640e8333d8334fcda66220ed92d550b515db7ba825900538b07d4d9a6fd405",
+        "", "China; Chinese Communist Party; Korean War; domestic resistance; U.S. claims", "6", "6",
+    ),
+    "https://time.com/archive/6886123/united-nations-seven-months-after/": (
+        "1949-1972", "TIME", "TIME", "1951-01-29", "UNITED NATIONS: Seven Months After",
+        "time", "4746", "383bb33d7c3c9f3c7534de90aad1a61d27d736362f561b601481f17fa1772a81",
+        "", "United Nations; China; Korean War; cease-fire; Formosa; diplomacy", "15", "15",
+    ),
+    "https://time.com/archive/6607993/the-nations-comrades-or-competitors/": (
+        "1949-1972", "TIME", "TIME", "1951-01-08", "THE NATIONS: Comrades or Competitors?",
+        "time", "4312", "5360a87ce7e04cc6ca55d72b5cb58f1a67b0c87949d306e0f9ded4c221dd1b5e",
+        "", "China; Soviet Union; Korean War; Communist relations; international affairs", "13", "13",
+    ),
+    "https://time.com/archive/6617273/china-rubber-communist/": (
+        "1949-1972", "TIME", "TIME", "1951-06-18", "CHINA: Rubber Communist",
+        "time", "20360", "a7ef7f0276d3a19e03fb038d6bd8e2dfffe6a6b7c8cac763fe3ea9c2d9d6d14c",
+        "", "China; Chinese Communist Party; Korean War; U.S.-China conflict; domestic politics", "45", "45",
+    ),
+    "https://time.com/archive/6885350/the-enemy-human-sea/": (
+        "1949-1972", "TIME", "TIME", "1951-02-12", "THE ENEMY: Human Sea",
+        "time", "4089", "770db66c5d6ce48d3e586e610a6dfed2d926668d4385ffe7f7f3ab2e67e731be",
+        "", "China; Chinese military; Korean War; U.S. intelligence; People's Liberation Army", "10", "10",
+    ),
     "https://time.com/archive/6791512/china-last-phase/": (
         "1949-1972", "TIME", "TIME", "1949-12-12", "CHINA: Last Phase",
         "time", "2103",
@@ -670,6 +720,26 @@ PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://time.com/archive/6615999/war-late-entry/":
+        "据正文整理：文章报道有关中国军队进入朝鲜参战的情报与美方、韩国方面的战场判断。",
+    "https://time.com/archive/6616371/battle-of-korea-after-the-breakthrough/":
+        "据正文整理：文章描述中国军队发动攻势后联合国军在朝鲜战场的撤退、战斗及人员处境。",
+    "https://time.com/archive/6615045/war-in-asia-not-too-late/":
+        "据正文整理：文章报道朝鲜战争爆发初期的军事行动、美国反应及半岛局势。",
+    "https://time.com/archive/6887156/war-in-korea-three-fronts/":
+        "据正文整理：文章分别叙述朝鲜战场地面作战、空袭行动和停战谈判相关动态。",
+    "https://time.com/archive/6620963/korea-tug-of-war/":
+        "据正文整理：文章讨论停战后朝鲜政治会议前夕美国、韩国及英国对中国问题和谈判的不同立场。",
+    "https://time.com/archive/6608182/china-uprisings-against-the-reds/":
+        "据正文整理：文章报道中国共产党政府对国内反抗活动的描述及其在朝鲜战争背景下的政策表态。",
+    "https://time.com/archive/6886123/united-nations-seven-months-after/":
+        "据正文整理：文章讨论联合国停火提议、中国方面的回应，以及朝鲜、台湾和远东安排等议题。",
+    "https://time.com/archive/6607993/the-nations-comrades-or-competitors/":
+        "据正文整理：文章讨论朝鲜战争期间中苏关系及双方在亚洲共产党事务中的竞争可能。",
+    "https://time.com/archive/6617273/china-rubber-communist/":
+        "据正文整理：文章依据外交官、难民、战俘陈述及中国媒体资料描述中国国内政治和朝鲜战争相关情况。",
+    "https://time.com/archive/6885350/the-enemy-human-sea/":
+        "据正文整理：文章介绍美国方面对朝鲜战争中中国军队规模、组织、装备及作战方式的评估。",
     "https://time.com/archive/6791512/china-last-phase/":
         "据正文整理：文章报道国民党政权在重庆等地撤退及共产党军队推进，并提及美国决策者面临的战略背景。",
     "https://time.com/archive/6792534/china-last-stand/":
