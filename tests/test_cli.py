@@ -161,6 +161,52 @@ def test_candidate_filter_skips_verified_materials_unless_refresh_is_requested(t
     store.close()
 
 
+def test_candidate_filter_never_retries_scope_excluded_materials(tmp_path):
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    batch_id = store.create_batch("2017-2025", "research_literature", "excluded-filter")
+    candidate_id = store.add_candidate(
+        batch_id,
+        MaterialCandidate(
+            "https://example.org/out-of-scope",
+            "2017-2025",
+            "research_literature",
+            "excluded-filter",
+        ),
+    )
+    store.update_candidate_status(candidate_id, "excluded", "outside thesis scope")
+
+    eligible = cli._unverified_candidates(
+        [
+            MaterialCandidate(
+                "https://example.org/out-of-scope",
+                "2017-2025",
+                "research_literature",
+                "rediscovered-query",
+            )
+        ],
+        store,
+    )
+    refreshed = cli._unverified_candidates(
+        [
+            MaterialCandidate(
+                "https://example.org/out-of-scope",
+                "2017-2025",
+                "research_literature",
+                "rediscovered-query",
+            )
+        ],
+        store,
+        refresh_verified=True,
+    )
+
+    assert eligible == []
+    assert refreshed == []
+    assert store.connection.execute(
+        "SELECT status FROM candidates WHERE id = ?", (candidate_id,)
+    ).fetchone()[0] == "excluded"
+    store.close()
+
+
 def test_candidate_directory_merges_files_and_deduplicates_urls(tmp_path, monkeypatch):
     first = tmp_path / "a.csv"
     second = tmp_path / "b.csv"

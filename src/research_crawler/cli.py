@@ -459,11 +459,18 @@ def _crawl_candidates(args) -> int:
 
 
 def _unverified_candidates(candidates, store, *, refresh_verified: bool = False):
-    if refresh_verified:
-        return candidates
     eligible = []
     for candidate in candidates:
         identity = store._resolve_identity_key(candidate.source_url, candidate.platform_id)
+        excluded = store.connection.execute(
+            "SELECT 1 FROM candidates WHERE identity_key = ? AND status = 'excluded' LIMIT 1",
+            (identity,),
+        ).fetchone()
+        if excluded:
+            continue
+        if refresh_verified:
+            eligible.append(candidate)
+            continue
         exists = store.connection.execute(
             "SELECT 1 FROM materials WHERE identity_key = ?", (identity,)
         ).fetchone()
