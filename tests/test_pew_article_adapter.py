@@ -80,7 +80,7 @@ def test_reviewed_pew_pages_bind_exact_metadata_and_body_hashes():
         "f8f857cc6403f1f838775f8bf722911f4455683b83fb08f186c09c4324c9389b",
         "U.S.-China relations; China threat perceptions; China as an enemy; economic influence; U.S. public opinion",
     )
-    assert len(PEW_REVIEWED_ARTICLES) == 10
+    assert len(PEW_REVIEWED_ARTICLES) == 11
 
 
 def test_2023_pew_articles_extract_reviewed_prose_from_collapsible_and_quote_blocks():

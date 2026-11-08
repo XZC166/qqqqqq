@@ -213,6 +213,13 @@ BROOKINGS_REVIEWED_ABSTRACTS: dict[str, tuple[str, str]] = {
 }
 
 PEW_REVIEWED_ARTICLES: dict[str, tuple[str, str, str, str, str]] = {
+    "https://www.pewresearch.org/global/2025/07/15/international-views-of-china-turn-slightly-more-positive/": (
+        "2025-07-15",
+        "International Views of China Turn Slightly More Positive",
+        "Laura Silver, Laura Clancy, Jonathan Schulman, William Miner, Christine Huang",
+        "94356cab1086389aecae2dcd87b94ebc24c08c3c285593561bc28a42354eda75",
+        "global public opinion; views of China; China image; Xi Jinping; leading economic power; U.S.-China relations",
+    ),
     "https://www.pewresearch.org/global/2023/07/27/views-of-china/": (
         "2023-07-27",
         "1. Views of China",
@@ -1426,6 +1433,16 @@ PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.presidency.ucsb.edu/documents/executive-order-12143-maintaining-unofficial-relations-with-the-people-taiwan": (
+        "fda7bff5db10129645f69583e744ea3ab57464c1e3d16d080941c3c851b1e643",
+        "据正文整理：卡特依据《台湾关系法》发布行政命令，安排美国政府部门通过非官方机构维持与台湾民众的商业、文化及其他关系。",
+        "Taiwan Relations Act; U.S.-Taiwan relations; executive order; Jimmy Carter; unofficial relations",
+    ),
+    "https://www.presidency.ucsb.edu/documents/toasts-the-president-and-premier-zhao-ziyang-china-the-state-dinner": (
+        "88f32dd7db5f52e156cbfe228ecf7c7004a5366c1e4c377c33b6a2fbfad89b7f",
+        "据正文整理：里根与中国国务院总理赵紫阳在国宴上致祝酒词，谈及中美关系、两国合作以及民间交往。",
+        "U.S.-China relations; normalization; Zhao Ziyang; public diplomacy; Ronald Reagan",
+    ),
     "https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device": (
         "d09bad6396b5c051506366522066434c098887f434db7b18da3d66b29de2c3cd",
         "据正文整理：约翰逊就中国首次核试验发表声明，称美国已确认试验发生，并讨论其军事意义、美国在亚洲的防务承诺及核扩散影响。",

@@ -27,6 +27,20 @@ def test_1951_truman_and_1955_eisenhower_records_have_hash_bound_metadata():
             "据正文整理：艾森豪威尔在签署保卫福尔摩沙联合决议时感谢国会支持，并表示美国将抵抗共产主义武装侵略、支持联合国推动结束台湾海峡敌对行动，同时维护台湾地区防卫。",
             "Formosa Resolution; Taiwan Strait; U.S. public statement; Communist armed aggression; Congress; United Nations",
         ),
+        (
+            "https://www.presidency.ucsb.edu/documents/executive-order-12143-maintaining-unofficial-relations-with-the-people-taiwan",
+            "presidency_taiwan_eo_1979.html",
+            "1979-06-22",
+            "据正文整理：卡特依据《台湾关系法》发布行政命令，安排美国政府部门通过非官方机构维持与台湾民众的商业、文化及其他关系。",
+            "Taiwan Relations Act; U.S.-Taiwan relations; executive order; Jimmy Carter; unofficial relations",
+        ),
+        (
+            "https://www.presidency.ucsb.edu/documents/toasts-the-president-and-premier-zhao-ziyang-china-the-state-dinner",
+            "presidency_reagan_zhao_1984.html",
+            "1984-01-10",
+            "据正文整理：里根与中国国务院总理赵紫阳在国宴上致祝酒词，谈及中美关系、两国合作以及民间交往。",
+            "U.S.-China relations; normalization; Zhao Ziyang; public diplomacy; Ronald Reagan",
+        ),
     )
 
     for url, fixture, published_on, abstract, keywords in cases:

@@ -5314,6 +5314,17 @@ def _pew_body_text(content) -> tuple[str, bool]:
                 heading = _pew_inline_text(title_nodes[0])
                 paragraphs = [_pew_inline_text(block) for block in text_blocks]
                 body_parts.extend(part for part in [heading, *paragraphs] if part)
+            elif "wp-block-group" in classes and "is-style-callout" in classes:
+                children = node.xpath("./*")
+                if (
+                    len(children) < 2
+                    or children[0].root.tag.lower() not in {"h2", "h3", "h4"}
+                    or children[0].root.tag.lower() != "h4"
+                    or any(child.root.tag.lower() != "p" for child in children[1:])
+                ):
+                    supported_structure = False
+                    continue
+                body_parts.extend(text for text in (_pew_inline_text(child) for child in children) if text)
             elif "wp-block-group" in classes:
                 blockquotes = node.xpath("./blockquote")
                 children = node.xpath("./*")
