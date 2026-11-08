@@ -397,6 +397,14 @@ PBS_REVIEWED_ARTICLES: dict[str, tuple[str, str, str, str]] = {
 }
 
 PBS_REVIEWED_VIDEO_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str]] = {
+    'https://www.pbs.org/newshour/show/what-are-the-ripple-effects-of-a-u-s-china-trade-war': (
+        '2018-07-06',
+        'What are the ripple effects of a U.S.-China trade war?',
+        7812,
+        '42968a0566a3d750c1d75ca58585ed4e368832412c9725cd37af6a4519afe90a',
+        'Thank you.',
+        '未注明',
+    ),
     'https://www.pbs.org/newshour/show/30-years-later-the-lasting-tragedy-of-tiananmen-square': (
         '2019-06-04',
         "30 years later, the 'lasting tragedy' of Tiananmen Square",

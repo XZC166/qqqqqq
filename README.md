@@ -54,6 +54,8 @@ PMC 批次 271、307 本轮从开放全文索引发现 134 条候选，跳过 26
 
 交付前字段检查发现 4 条新入库记录缺来源摘要/关键词；利用同一 URL 的公开原文重新核验后，从匹配正文整理摘要与关键词，并绑定来源 URL 和正文 SHA-256。修复记录为 GovInfo 国会听证 1 条及 The American Presidency Project 3 条。正式表 2,367 条资料现在摘要、关键词和正文均无空值；证据保留在原始抓取记录中。
 
+批次 369 补充 PBS NewsHour 2018 年中美贸易争端公开报道。5 个候选原始页及 robots.txt 均返回 HTTP 200；其中 “What are the ripple effects of a U.S.-China trade war?” 的 2018-07-06 来源页全文与 transcript 完整标记、元数据及正文 SHA-256 一致，新增 1 条 verified。另 4 个页面虽可抓取，但当前适配器未能核验完整正文或元数据，保持 pending，不以页面摘要替代全文。批次统计 5 candidate、1 verified、4 pending、0 restricted/duplicate/unprocessed；正式表由 2,480 增至 2,481 条。当前四个时期分别为 42、29、693、1,717 条；早期材料仍是明显缺口，后续继续补充，同时维持 1992—2025 的来源采集。候选和逐条状态见 SQLite 批次 369；本批测试全套 311 passed，`scrapy check` 为 0 contracts、OK。
+
 上一批来源发现与逐条核验结论（批次 265—270）如下：
 
 已增加目录级批量抓取和 NCBI PMC 开放全文批量发现。通过 PMC E-utilities 分页发现 2,523 个候选，Scrapy 在 ROBOTSTXT_OBEY 下分 7 个时期批次抓取，原始来源页响应均为 HTTP 200；`--fast` 配置的实测总体吞吐约 63—71 页/分钟。经原始页面适配器、日期/元数据/全文门槛和去重后，正式资料为 2,082 条，候选记录 3,002 条（其中 5 条明确排除的离题误检）。批次 265—270 从 Voice of America 新增 6 篇对华舆论、选举影响与台湾虚假信息报道；原始页面均 HTTP 200，逐条核验日期、标题、作者及完整正文，合计 6 条 verified。批次报告见交付包 `reports/batch-265.txt` 至 `reports/batch-270.txt`，合并审计见 `data/reviews/voa-open-broadcast-batch-20261108.json`。正式表当前 9 列字段完整性审计无空值；数据库 `integrity_check` 与外键检查通过。批次 255—258 首页及 259—260 第二页各批报告随交付包保存；第三页批次 261 见 `reports/batch-261.txt`，批次 262 见 `reports/batch-262.txt`。批次 262 的 Jakobson 1990 扫描 OCR 报告和批次 245 的 Friends Journal 扫描期刊文章均因未逐字校订而保持 pending；更正审计分别见 `data/reviews/shorenstein-jakobson-1990-20261108.json` 与 `data/reviews/friends-journal-china-united-states-1971-20261107.json`。
