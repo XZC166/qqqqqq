@@ -1426,6 +1426,16 @@ PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-542": (
+        "681cd7fa340c62319c7251cc8ae8a7cb57ce038db0a759b3805664ba1ca86bdf",
+        "据正文整理：杜鲁门在记者会上回应中国共产党拒绝朝鲜停火提议后的美国行动，并表示将推动联合国认定中国为侵略者。",
+        "Chinese Communist rejection of ceasefire; Korean War; United Nations; aggressor designation; presidential press conference",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-the-president-upon-signing-the-joint-resolution-the-defense-formosa": (
+        "6f116ff076cc028eb640a8a6bf0a5833f489920027ad75d24ab507331117b4f8",
+        "据正文整理：艾森豪威尔在签署保卫福尔摩沙联合决议时感谢国会支持，并表示美国将抵抗共产主义武装侵略、支持联合国推动结束台湾海峡敌对行动，同时维护台湾地区防卫。",
+        "Formosa Resolution; Taiwan Strait; U.S. public statement; Communist armed aggression; Congress; United Nations",
+    ),
     "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-586": (
         "9a6b81e40a788f95177c572749728408a1a7b61ce3465b7ae0f1f60989a53ffe",
         "据正文整理：杜鲁门在记者会上宣读美国对台湾（福尔摩沙）政策说明，重申尊重中国领土完整，并表示美国无意军事介入中国内战或在台湾建立基地。",
