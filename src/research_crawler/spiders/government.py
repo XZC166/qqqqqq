@@ -169,6 +169,34 @@ def _reviewed_bluesky_metadata(source_url: str, body: str) -> tuple[str, str]:
     return "", ""
 
 
+def _derive_bluesky_metadata(body: str) -> tuple[str, str]:
+    protected = body.replace("U.S.", "U<dot>S<dot>").replace("A.I.", "A<dot>I<dot>")
+    first_sentence = re.split(r"(?<=[.!?])\s+", protected.strip(), maxsplit=1)[0]
+    first_sentence = first_sentence.replace("U<dot>S<dot>", "U.S.").replace("A<dot>I<dot>", "A.I.")
+    if len(first_sentence) > 220:
+        first_sentence = first_sentence[:220].rsplit(" ", 1)[0]
+    abstract = f"据正文整理：{first_sentence}" if first_sentence else ""
+    terms = (
+        ("U.S.-China", r"\bU\.S\.-China\b"),
+        ("United States", r"\bUnited States\b|\bU\.S\.(?!-)(?=\W|$)"),
+        ("China", r"\bChina\b"),
+        ("Chinese", r"\bChinese\b"),
+        ("Taiwan", r"\bTaiwan(?:ese)?\b"),
+        ("Hong Kong", r"\bHong Kong\b"),
+        ("Xinjiang", r"\bXinjiang\b"),
+        ("trade war", r"\btrade war\b"),
+        ("tariffs", r"\btariffs?\b"),
+        ("technology", r"\btechnolog(?:y|ical)\b"),
+        ("artificial intelligence", r"\b(?:A\.I\.|AI)\b"),
+        ("military", r"\bmilitary\b"),
+        ("democracy", r"\bdemocrac(?:y|ies)\b"),
+        ("public opinion", r"\bpublic opinion\b"),
+        ("TikTok", r"\bTikTok\b"),
+    )
+    keywords = [label for label, pattern in terms if re.search(pattern, body, re.I)]
+    return abstract, "; ".join(keywords)
+
+
 def _bluesky_post_text_matches(
     page_text: str, body: str, record: dict, external_url: str = "", page_links=()
 ) -> bool:
@@ -2865,6 +2893,8 @@ class BlueskyPostAdapter:
         if not complete:
             return result
         abstract, keywords = _reviewed_bluesky_metadata(response.url, body)
+        if not abstract or not keywords:
+            abstract, keywords = _derive_bluesky_metadata(body)
         result["material"] = VerifiedMaterial(
             self.sources[handle], publication_date, author["displayName"], title,
             abstract, keywords, body, response.url,
@@ -4834,8 +4864,8 @@ class PresidencyProjectDocumentAdapter:
         material = None
         if complete:
             reviewed_metadata = _reviewed_presidency_metadata(response.url, body)
-            abstract = reviewed_metadata[0] if reviewed_metadata else ""
-            keywords = reviewed_metadata[1] if reviewed_metadata else ""
+            abstract = reviewed_metadata[0] if reviewed_metadata else _presidency_derived_abstract(body)
+            keywords = reviewed_metadata[1] if reviewed_metadata else _presidency_derived_keywords(body)
             material = VerifiedMaterial(
                 source="The American Presidency Project",
                 time=publication_date,
@@ -4866,7 +4896,12 @@ class PresidencyProjectDocumentAdapter:
                 )
                 result["abstract_origin"] = "derived"
             else:
-                result["abstract_origin"] = "none"
+                result["abstract_origin"] = "derived" if abstract else "none"
+                if abstract:
+                    result["field_sources"]["abstract"] = response.url
+                if keywords:
+                    result["field_sources"]["keywords"] = response.url
+                    result["keywords_origin"] = "derived"
         return result
 
 
@@ -4919,6 +4954,27 @@ def _presidency_body_blocks(container) -> list[str] | None:
         else:
             return None
     return blocks
+
+
+def _presidency_derived_keywords(body: str) -> str:
+    terms = (
+        "China", "Chinese", "Taiwan", "Formosa", "Peking", "Beijing",
+        "Taiwan Strait", "Sino-American", "people's republic of China",
+        "public opinion", "public diplomacy", "international broadcasting",
+        "Voice of America", "propaganda", "psychological warfare",
+        "political warfare", "information operations", "strategic communication",
+        "foreign policy", "Korean War", "Tiananmen", "Hong Kong", "Xinjiang",
+    )
+    body_folded = body.casefold()
+    return "; ".join(term for term in terms if term.casefold() in body_folded)
+
+
+def _presidency_derived_abstract(body: str) -> str:
+    paragraphs = [paragraph.strip() for paragraph in body.split("\n\n") if paragraph.strip()]
+    summary = " ".join(paragraphs[:2])
+    if len(summary) > 420:
+        summary = summary[:420].rsplit(" ", 1)[0].rstrip(" ,;:")
+    return f"据正文整理：{summary}" if summary else ""
 
 
 class PMCFulTextArticleAdapter:

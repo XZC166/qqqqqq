@@ -1,0 +1,46 @@
+{
+  "batch": "app-historical-index-1949-1991-20261109",
+  "source": "The American Presidency Project",
+  "periods": [
+    "1949-1972",
+    "1973-1991"
+  ],
+  "source_category": "government",
+  "candidates": 276,
+  "source_page_http_200": 276,
+  "robots_status": "allowed; robots.txt returned 200",
+  "candidate_status": {
+    "verified_full_text": 264,
+    "pending": 12,
+    "restricted": 0,
+    "failed": 0
+  },
+  "unique_materials_before_topic_review": 215,
+  "duplicate_candidates": 49,
+  "topic_screen": {
+    "distinct_materials_with_direct_China_or_Taiwan_body_terms": 161,
+    "distinct_materials_without_those_direct_terms": 7,
+    "note": "Keyword presence is a review signal, not an automatic relevance verdict. Korea-only presidential items were withdrawn from the formal table."
+  },
+  "index_discovery_errors": 36,
+  "index_discovery_candidate_urls": 276,
+  "current_material_pool": {
+    "unique_rows": 2766,
+    "by_period": {
+      "1949-1972": 126,
+      "1973-1991": 160,
+      "1992-2016": 705,
+      "2017-2025": 1775
+    }
+  },
+  "other_review_actions": {
+    "app_korea_only_rows_withdrawn": 96,
+    "previously_excluded_pmc_rows_rewithdrawn": 49,
+    "evidence_preserved": true,
+    "backup_files": [
+      "data/research-pre-topic-exclusion-20261109.sqlite3",
+      "data/research-pre-pmc-rewithdraw-20261109.sqlite3"
+    ]
+  },
+  "next": "Continue high-yield open government and historical media batches across all periods; finish the remaining PMC topic review separately. Videos are skipped."
+}

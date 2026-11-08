@@ -5,6 +5,7 @@ from research_crawler.reviewed_sources import (
 from research_crawler.spiders.government import (
     BlueskyPostAdapter,
     _bluesky_post_text_matches,
+    _derive_bluesky_metadata,
     _reviewed_bluesky_metadata,
 )
 
@@ -146,3 +147,13 @@ def test_bluesky_post_text_match_allows_platform_expanded_link_only():
     links = ["https://freedomhouse.org/country/taiwan/freedom-world/2025"]
     assert _bluesky_post_text_matches(page, body, record, page_links=links)
     assert not _bluesky_post_text_matches(page.replace("Taiwan", "China", 1), body, record, page_links=links)
+
+
+def test_bluesky_fallback_metadata_is_extractive_and_uses_only_body_terms():
+    body = "U.S.-China competition is changing policy. Taiwan and Hong Kong appear in the debate."
+    abstract, keywords = _derive_bluesky_metadata(body)
+    assert abstract == "据正文整理：U.S.-China competition is changing policy."
+    assert keywords == "U.S.-China; China; Taiwan; Hong Kong"
+    assert _derive_bluesky_metadata(
+        "TikTok signs a deal for its U.S. business."
+    )[1] == "United States; TikTok"

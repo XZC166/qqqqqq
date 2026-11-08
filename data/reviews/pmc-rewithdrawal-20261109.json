@@ -1,0 +1,380 @@
+{
+  "reviewed_on": "2026-11-09",
+  "backup": "data/research-pre-pmc-rewithdraw-20261109.sqlite3",
+  "source_reports": [
+    "coverage-audit-20261108-pmc-title-fix.json",
+    "offline-pending-revalidation-20261108-pmc-title-fix.json",
+    "open-retry-pmc-screening-20261109.json",
+    "pmc-bulk-topic-screen-20261108.json",
+    "pmc-derived-metadata-repair-20261108-batch2.json",
+    "pmc-derived-metadata-repair-20261108.json",
+    "pmc-discourse-2017-2025-latest-crawl-scope-review-20261109.json",
+    "pmc-discourse-2017-2025-screening-20261109.json",
+    "pmc-discourse-bulk-crawl-scope-review-20261109.json",
+    "pmc-discourse-expanded-2017-2025-screening-20261109.json",
+    "pmc-discourse-expanded-screen-report-1992-2016.json",
+    "pmc-discourse-expanded-screen-report-2017-2025.json",
+    "pmc-metadata-screen-crawl-review-20261108.json",
+    "pmc-metadata-screen-pilot-20261108.json",
+    "pmc-old-period-discovery-noise-20261108.json",
+    "pmc-pending-metadata-screen-20261108.json",
+    "pmc-pending-revalidation-topic-screen-20261108.json",
+    "pmc-precise-us-china-media-batch-20261108.json",
+    "pmc-public-opinion-2017-2025-latest-crawl-scope-review-20261109.json",
+    "pmc-research-promotion-2021-2024-20261107.json",
+    "pmc-scope-exclusion-reapplication-20261108.json",
+    "pmc-targeted-discourse-20261108.json",
+    "pmc-topic-screen-20261108.json",
+    "pmc-unresolved-materials-withdrawal-20261108.json",
+    "pmc-us-china-communication-screening-20261109.json",
+    "pmc-us-public-opinion-image-screen-report-2017-2025.json",
+    "pmc-visible-footnote-title-fix-20261108.json"
+  ],
+  "removed_from_formal_materials": 49,
+  "evidence_preserved": true,
+  "records": [
+    {
+      "material_id": 2592,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC7971385",
+      "title": "Are Peruvians Enticed by the “China Model”? Chinese Investment and Public Opinion in Peru",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7971385/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2593,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC7827900",
+      "title": "Surrogacy and “Procreative Tourism”. What Does the Future Hold from the Ethical and Legal Perspectives?",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7827900/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2594,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC6214510",
+      "title": "Next generation media monitoring: Global coverage of electronic nicotine delivery systems (electronic cigarettes) on Bing, Google and Twitter, 2013-2018",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6214510/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2595,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC5984296",
+      "title": "Outdoor air pollution and respiratory health: a bibliometric analysis of publications in peer-reviewed journals (1900 – 2017)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5984296/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2604,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC10840215",
+      "title": "MycoNews 2023: Editorial, news, reports, awards, personalia, and book news",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10840215/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2605,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC10777282",
+      "title": "Social Media as an Effective Provider of Quality-Assured and Accurate Information to Increase Vaccine Rates: Systematic Review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10777282/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2606,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC10740350",
+      "title": "Background check: cross-cultural differences in the spatial context of comic scenes",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10740350/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2607,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC10685290",
+      "title": "Quantifying Health Policy Uncertainty in China Using Newspapers: Text Mining Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10685290/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2608,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC10544126",
+      "title": "Patient Education with New Media Integration Self-Management Support Model Improves Therapeutic Outcomes of Rosacea Patients",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10544126/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2619,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC10027756",
+      "title": "Understanding the role of fear of missing out and deficient self-regulation in sharing of deepfakes on social media: Evidence from eight countries",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10027756/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2620,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC9937112",
+      "title": "Examining Rural and Urban Sentiment Difference in COVID-19–Related Topics on Twitter: Word Embedding–Based Retrospective Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9937112/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2621,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC9932659",
+      "title": "A systematic review of urban green space research over the last 30 years: A bibliometric analysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9932659/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2566,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC9876347",
+      "title": "The ecological discourse analysis of news discourse based on deep learning from the perspective of ecological philosophy",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9876347/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2627,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC9237455",
+      "title": "Understanding the Relative Impact of Dual Identification on Brand Loyalty on Social Media: The Regulatory Fit Perspective in Different Cultures",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9237455/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2568,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC8963941",
+      "title": "Nationalistic Media Obsession With Olympic Medal Counts: The Case of the 2020 Tokyo Olympic Games",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8963941/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2634,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC8295589",
+      "title": "The Impact of Pandemic Perception, National Feeling, and Media Use on the Evaluation of the Performance of Different Countries in Controlling COVID-19 by Chinese Residents",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8295589/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2635,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC8212965",
+      "title": "Social Media and Research Publication Activity During Early Stages of the COVID-19 Pandemic: Longitudinal Trend Analysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8212965/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2650,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC8188387",
+      "title": "Twitter discourse reveals geographical and temporal variation in concerns about COVID-19 vaccines in the United States",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8188387/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2636,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC8175778",
+      "title": "Millennials and COVID-19",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8175778/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2637,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC7919844",
+      "title": "Influence of Health Beliefs on Adherence to COVID-19 Preventative Practices: International, Social Media–Based Survey Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7919844/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2638,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC7885750",
+      "title": "Comparison of COVID-19 and influenza characteristics",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7885750/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2639,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC7833558",
+      "title": "The psychological impact of COVID-19 and restrictive measures in the world",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7833558/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2646,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC6533657",
+      "title": "Comparison of surgical field visibility during propofol or desflurane anesthesia for middle ear microsurgery",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6533657/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2647,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC6371067",
+      "title": "Data Analysis and Visualization of Newspaper Articles on Thirdhand Smoke: A Topic Modeling Approach",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6371067/",
+      "reason": "题名和摘要显示主题不直接涉及美国对华传播、美国涉华话语/媒体表述，或美中话语竞争；不纳入正式文献库。"
+    },
+    {
+      "material_id": 2648,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC5995266",
+      "title": "Soft Robotics: Academic Insights and Perspectives Through Bibliometric Analysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5995266/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2649,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC5244405",
+      "title": "Temporal Topic Modeling to Assess Associations between News Trends and Infectious Disease Outbreaks",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5244405/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 840,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12668507",
+      "title": "Bridging knowledge gaps: An observational study on HPV awareness and misconceptions among young adults in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12668507/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 849,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12661881",
+      "title": "Understanding the drivers and barriers of elderly vaccination in post-pandemic China: a qualitative study in Shenzhen",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12661881/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 932,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12588461",
+      "title": "Sentiment analysis of cancer screening in Chinese social media: Qualitative studies based on machine learning",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12588461/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 1283,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12449667",
+      "title": "Quality and Reliability of Adolescent Sexuality Education on Chinese Video Platforms: Sentiment-Topic Analysis and Cross-Sectional Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12449667/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 1424,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12369092",
+      "title": "Decoding vaccine hesitancy: a health belief model-driven comparative study of vaccination awareness dynamics in COVID-19 vaccination intentions",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12369092/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 1481,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12326865",
+      "title": "Public concerns about human metapneumovirus: insights from Google search trends, X social networks, and web news mining to enhance public health communication",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12326865/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 1707,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12155137",
+      "title": "Unpacking Young Adults’ Fact-Checking Intent on Oral Health Misinformation: Parallel Mediating Roles of Need for Cognition and Perceived Seriousness—A Cross-Sectional Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12155137/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 1812,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12081985",
+      "title": "TikTok's cardiopulmonary exercise testing videos: A content analysis of quality and misinformation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12081985/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2255,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC11958673",
+      "title": "China’s social fake news database release with brain structural, functional, and behavioural measures",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11958673/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2118,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC11829516",
+      "title": "The effect of post-traumatic stress disorder on misinformation beliefs among survivors of the 2008 China earthquake: the mediating roles of rumination and fear of missing out",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11829516/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2287,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC4570843",
+      "title": "Attitudes towards suicide attempts broadcast on social media: an exploratory study of Chinese microblogs",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4570843/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 805,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12698530",
+      "title": "Implicit bias in digital health: systematic biases in large language models’ representation of global public health attitudes and challenges to health equity",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12698530/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 1325,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12428441",
+      "title": "A Scoping Review of the Use and Determinants of Social Media Among College Students",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12428441/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 1740,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12130654",
+      "title": "Assessment of health information in Chinese atopic dermatitis-related videos: A cross-sectional study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12130654/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2379,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12067534",
+      "title": "Leveraging artificial intelligence in disaster management: A comprehensive bibliometric review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12067534/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2251,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC12020778",
+      "title": "Comparative Quality Analysis of Bullous Pemphigoid Information Across Six Social Media Platforms",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12020778/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 1987,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC11963265",
+      "title": "Understanding global mobility of dietetic talents: a survey study of overseas-educated dietetic returnees in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11963265/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2078,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC11866807",
+      "title": "Relationship between e-cigarette media content and product use: A scoping review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11866807/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2557,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC9360671",
+      "title": "Brexit, the Rise of China, and the Future of the Liberal International Order and Great Power Competition",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9360671/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2508,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC7332744",
+      "title": "Politicizing the Pandemic: A Schemata Analysis of COVID-19 News in Two Selected Newspapers",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7332744/",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "material_id": 2643,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC7275260",
+      "title": "A Cross-Cultural Comparison of an Extended Planned Risk Information Seeking Model on Mental Health Among College Students: Cross-Sectional Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7275260/",
+      "reason": "Revalidated from an earlier broad PMC query, but the article concerns general clinical or health communication rather than U.S. communication/discourse about China or U.S.-China discourse competition."
+    },
+    {
+      "material_id": 2591,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC2605899",
+      "title": "“Efforts to Reprioritise the Agenda” in China: British American Tobacco's Efforts to Influence Public Policy on Secondhand Smoke in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2605899/",
+      "reason": "Revalidated from an earlier broad PMC query, but the article concerns general clinical or health communication rather than U.S. communication/discourse about China or U.S.-China discourse competition."
+    },
+    {
+      "material_id": 2817,
+      "identity_key": "platform:pmc.ncbi.nlm.nih.gov:PMC9716157",
+      "title": "Sino-US Competition: Is Liberal Democracy an Asset or Liability?",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9716157/",
+      "reason": "no thesis-topic term in title/abstract"
+    }
+  ]
+}
