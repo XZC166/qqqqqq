@@ -1,0 +1,867 @@
+{
+  "captured_unique_fulltexts": 139,
+  "retained_screened": 1,
+  "pending_manual_scope_review": 105,
+  "excluded_metadata_no_topic_signal": 33,
+  "records": [
+    {
+      "pmcid": "PMC11795794",
+      "title": "Fake news, real needs: A qualitative study on Sino-Japanese theurgy fighting",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11795794/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11342019",
+      "title": "Development of an Internet-based Product-related Child Injury Textual Data Platform (IPCITDP) in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11342019/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11328880",
+      "title": "HPV vaccination intention among guardians of female secondary school students in Chongqing, China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11328880/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11324807",
+      "title": "A pathway towards corporate sustainability: Does media attention matter?",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11324807/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11315526",
+      "title": "Study on health education methods based on rural residents’ infectious disease-specific health literacy in Shandong, China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11315526/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11299290",
+      "title": "Achilles’ heel: elderly COVID-19 vaccination policy in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11299290/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11240852",
+      "title": "Identifying factors influencing local governments’ adoption of comprehensive smoke-free policies: an event history analysis based on panel data from 36 key cities in China (2013–2021)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11240852/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11225761",
+      "title": "Cognitively motivated or emotionally charged? Issue-switching mechanism of second screening-facilitated political participation during the 2022 COVID-19 waves in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11225761/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11169724",
+      "title": "How does the media contribute to the rise of hate crimes against foreign domestic helpers in Hong Kong? An unfair problem frame and agenda setting",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11169724/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11132475",
+      "title": "Direct interaction in digital interactive media and stock performance: Evidence from Panorama",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11132475/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10730915",
+      "title": "Inductive detection of influence operations via graph learning",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10730915/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10720319",
+      "title": "Unfolding COVID-19 vaccine communication campaigns in China’s neighborhoods: a qualitative study of stakeholders’ narratives",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10720319/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10703839",
+      "title": "Use of metadiscourse for identity construction in tourist city publicity：A comparative study of Chinese and Australian social media discourse",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10703839/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10688842",
+      "title": "Environmental disclosure practices in mixed ownership models: A study of Chinese private enterprises",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10688842/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8769030",
+      "title": "Misinformation During the COVID-19 Outbreak in China: Cultural, Social and Political Entanglements",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8769030/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10665477",
+      "title": "Public opinion communication mechanism of public health emergencies in Weibo: take the COVID-19 epidemic as an example",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10665477/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10559807",
+      "title": "Spatiotemporal pattern evolution and influencing factors of online public opinion——Evidence from the early-stage of COVID-19 in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10559807/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10550516",
+      "title": "The influence of trade friction on the stability of stock market: Evidence from China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10550516/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10023232",
+      "title": "Applying Blockchain Technology in Network Public Opinion Risk Management System in Big Data Environment",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10023232/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10021190",
+      "title": "Financing malaria",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10021190/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10016145",
+      "title": "“Our City Will Be the First to Hold Both Summer and Winter Olympics”: A comparative analysis of how media coverage and public opinion were framed on social media in the lead up to the Beijing 2022 winter Olympic games",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10016145/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10009534",
+      "title": "Media coverage and stock market returns: Evidence from China Pakistan economic corridor (CPEC)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009534/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10002341",
+      "title": "Narratives of Women and Gender Relations in Chinese COVID-19 Frontline Reports in 2020",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10002341/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10001814",
+      "title": "An Agenda-Setting Account for Psychological Typhoon Eye Effect on Responses to the Outbreak of COVID-19 in Wuhan",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10001814/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10002033",
+      "title": "Attention and Sentiment of the Chinese Public toward a 3D Greening System Based on Sina Weibo",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10002033/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10000672",
+      "title": "Crisis Management Experience from Social Media: Public Response to the Safety Crisis of Imported Aquatic Products in China during the Pandemic",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10000672/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9991332",
+      "title": "Exploring the impact of sentiment on multi-dimensional information dissemination using COVID-19 data in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9991332/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9689216",
+      "title": "A Linguistic Analysis of News Coverage of E-Healthcare in China with a Heterogeneous Graphical Model",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9689216/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9679528",
+      "title": "A mediation model of the relationship between university students’ news media literacy and xenophobia: The role of intellectual humility, perceived threat, and blind patriotism",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9679528/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9678332",
+      "title": "Opinion Leaders and Structural Hole Spanners Influencing Echo Chambers in Discussions About COVID-19 Vaccines on Social Media in China: Network Analysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9678332/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9651572",
+      "title": "Public perceptions About Foreign Investment, A PLS-SEM Analysis toward republic sustainable infrastructure",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9651572/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9602858",
+      "title": "Revealing Public Opinion towards the COVID-19 Vaccine with Weibo Data in China: BertFDA-Based Model",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9602858/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9601371",
+      "title": "Revealing Personality Triggers for Media Vicarious Traumatization: A Fuzzy-Set Qualitative Comparative Analysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9601371/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9595132",
+      "title": "Does environmental uncertainty of enterprises aggravate the accrual anomaly in the stock market? Evidence from China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9595132/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9588286",
+      "title": "The Association of Tonsil Hypertrophy with Pediatric Dentofacial Development: Evidence from a Cross-Sectional Study of Young Children in Shanghai, China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9588286/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9519317",
+      "title": "A Decision Model for the Control and Dissemination of the Online Public Opinions: An Empirical Study of Public Opinion Dissemination on Fraudulent Insurance Claims in Taihe, China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9519317/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9354850",
+      "title": "Improving the Communication and Credibility of Government Media in Response to Public Health Emergencies: Analysis of Tweets From the WeChat Official Accounts of 10 Chinese Health Commissioners",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9354850/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9326102",
+      "title": "The Association of Internet Use Intensity and Lifestyle Behaviors During the COVID-19 Pandemic: A Cross-Sectional Study in Chinese Adults",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9326102/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9325181",
+      "title": "Consumer Cognition Analysis of Food Additives Based on Internet Public Opinion in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9325181/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9320244",
+      "title": "Development and Validation of Nutrition Literacy Assessment Instrument for Chinese Pregnant Women",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9320244/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9310509",
+      "title": "Responsible governance of human germline genome editing in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9310509/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9296327",
+      "title": "An Exploration of the Environment, Composition, and Transmission of the Development of Local Theater and Music in the Natural Environment and Folklore Activities of Tea Picking",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9296327/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9285848",
+      "title": "The Effects of Information-Seeking Behaviors on Risk Perception During the COVID-19 Pandemic: A Cross-Sectional Correlational Survey",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9285848/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9277344",
+      "title": "Research on the Public Opinion Guidance Mechanism of Major Public Health Incidents",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9277344/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9263538",
+      "title": "The Impact of Public Opinion Pressure on Construction Company Green Innovations: The Mediating Effect of Leaders' Environmental Intention and the Moderating Effect of Environmental Regulation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9263538/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9160521",
+      "title": "Impact of COVID-19 Pandemic on Elevated Anxiety Symptoms of Maintenance Hemodialysis Patients in China: A One-Year Follow-Up Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9160521/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9141950",
+      "title": "Social Stability Risk Assessment of Disaster-Preventive Migration in Ethnic Minority Areas of Southwest China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9141950/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9120936",
+      "title": "Understanding the Reality of China’s Health Tourism and Consumer Demand From the Perspective of Consumers: A Cross-Sectional Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9120936/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9103544",
+      "title": "Self-Reported Gum Bleeding, Perception, Knowledge, and Behavior in Working-Age Hong Kong Chinese—A Cross-Sectional Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9103544/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8851431",
+      "title": "Sense and Sensibility: Characterizing Social Media Users Regarding the Use of Controversial Terms for COVID-19",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8851431/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9095084",
+      "title": "The correlations among COVID-19, the effect of public opinion, and the systemic risks of China’s financial industries",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9095084/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9093180",
+      "title": "Whether Social Participation Can Affect the Central Government Public Policy Response to the COVID-19 in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9093180/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9071985",
+      "title": "An Entity Relationship Extraction Model Based on BERT-BLSTM-CRF for Food Safety Domain",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9071985/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8636390",
+      "title": "Major concerns regarding food services based on news media reports during the COVID-19 outbreak using the topic modeling approach",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8636390/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8656783",
+      "title": "Civic Participation in Chinese Cyberpolitics: A Grounded Theory Approach of Para-Xylene Projects",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8656783/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8656336",
+      "title": "Government responsiveness and public acceptance of big-data technology in urban governance: Evidence from China during the COVID-19 pandemic",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8656336/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8633609",
+      "title": "Worsening British views of China in 2020: evidence from public opinion, parliament, and the media",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8633609/",
+      "status": "verified"
+    },
+    {
+      "pmcid": "PMC8571967",
+      "title": "From soft power to reputational security: rethinking public diplomacy and cultural diplomacy for a dangerous age",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8571967/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8556697",
+      "title": "Multi-stage Internet public opinion risk grading analysis of public health emergencies: An empirical study on Microblog in COVID-19",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8556697/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8542296",
+      "title": "Drivers of global media attention and representations for antimicrobial resistance risk: an analysis of online English and Chinese news media data, 2015–2018",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8542296/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8536172",
+      "title": "Public Perception and Reception of Robotic Applications in Public Health Emergencies Based on a Questionnaire Survey Conducted during COVID-19",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8536172/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8272985",
+      "title": "Moderating effect of people-oriented public health services on depression among people under mandatory social isolation during the COVID-19 pandemic: a cross-sectional study in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8272985/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8264363",
+      "title": "Social Media and Attitude Change: Information Booming Promote or Resist Persuasion?",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8264363/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8248702",
+      "title": "The impact of the Covid-19 related media coverage upon the five major developing markets",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8248702/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8175100",
+      "title": "Linking the disease transmission to information dissemination dynamics: An insight from a multi-scale model study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8175100/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8175358",
+      "title": "Exploring the role of non-pharmaceutical interventions (NPIs) in flattening the Greek COVID-19 epidemic curve",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8175358/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8167390",
+      "title": "A Relational Reflection on Pandemic Nationalism",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8167390/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8136110",
+      "title": "The New Colombo Plan: addressing the barriers to scholarship recipients’ contributing to Australia’s public diplomacy goals in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136110/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8121282",
+      "title": "Characteristics of Misinformation Spreading on Social Media During the COVID-19 Outbreak in China: A Descriptive Analysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8121282/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8072075",
+      "title": "Lyrics and artistic improvisations in health promotion for the COVID-19 pandemic control in East Africa",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8072075/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7674818",
+      "title": "Determining Public Opinion of the COVID-19 Pandemic in South Korea and Japan: Social Network Mining on Twitter",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7674818/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7608205",
+      "title": "Influencing overseas Chinese by tweets: text-images as the key tactic of Chinese propaganda",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7608205/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7603646",
+      "title": "Knowledge, Attitude, Practice, and Associated Factors Regarding the Novel Coronavirus Disease 2019 (COVID-19) Pandemic",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7603646/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7604032",
+      "title": "Role of media coverage in mitigating COVID-19 transmission: Evidence from China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7604032/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7593864",
+      "title": "Public Opinion About E-Cigarettes on Chinese Social Media: A Combined Study of Text Mining Analysis and Correspondence Analysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7593864/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7561444",
+      "title": "Application of Big Data Technology for COVID-19 Prevention and Control in China: Lessons and Recommendations",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7561444/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7553996",
+      "title": "German and Chinese dataset on attitudes regarding COVID-19 policies, perception of the crisis, and belief in conspiracy theories",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7553996/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7551636",
+      "title": "Structure Reversal of Online Public Opinion for the Heterogeneous Health Concerns under NIMBY Conflict Environmental Mass Events in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7551636/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7500613",
+      "title": "Increased awareness and decreased acceptance of genome-editing technology: The impact of the Chinese twin babies",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7500613/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7506165",
+      "title": "Internet Public Opinion Evolution in the COVID-19 Event and Coping Strategies",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7506165/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7244931",
+      "title": "Global COVID-19: Warnings and suggestions based on experience of China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7244931/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7244220",
+      "title": "Correlations of Online Search Engine Trends With Coronavirus Disease (COVID-19) Incidence: Infodemiology Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7244220/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7244451",
+      "title": "Parallel evolution and response decision method for public sentiment based on system dynamics",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7244451/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7215577",
+      "title": "Using Social Media to Mine and Analyze Public Opinion Related to COVID-19 in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7215577/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7199804",
+      "title": "Chinese Public's Attention to the COVID-19 Epidemic on Social Media: Observational Descriptive Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7199804/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7189789",
+      "title": "Health Communication Through News Media During the Early Stage of the COVID-19 Outbreak in China: Digital Topic Modeling Approach",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7189789/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7123547",
+      "title": "Making Universities Grow: The New Zealand Experience",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7123547/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7123255",
+      "title": "Mobile Phone Media and Its Public Opinion Management",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7123255/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC6267009",
+      "title": "Demographic profile and ocular characteristics of stage 5 retinopathy of prematurity at a referral center in Northwest China: implications for implementation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6267009/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC6104794",
+      "title": "Impact of adverse media reporting on public perceptions of the doctor–patient relationship in China: an analysis with propensity score matching method",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6104794/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC5942423",
+      "title": "Optimal Thromboprophylaxis in Elderly Chinese Patients with Atrial Fibrillation (ChiOTEAF) registry: protocol for a prospective, observational nationwide cohort study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5942423/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC5886397",
+      "title": "Study on essential drug use status and its influencing factors among cerebral infarction inpatients in county level hospitals of Anhui Province, China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5886397/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC5858335",
+      "title": "Do Authoritarian Governments Respond to Public Opinion on the Environment? Evidence from China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5858335/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC12626049",
+      "title": "Can Large Language Models Draft Safe, Reliable Patient Leaflets on Driving After Stroke in Comparison to the Stroke Association Leaflet?",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12626049/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC12481322",
+      "title": "Behavioural trajectories of delay in seeking medical care in participants with breast cancer-related lymphoedema: a qualitative study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12481322/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC12433993",
+      "title": "Factors associated with reproductive health and health education participation among female college students in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12433993/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC12413035",
+      "title": "Addressing male HPV vaccination in China: A narrative review of challenges and opportunities",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12413035/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC11986497",
+      "title": "Video platforms and sexual healthcare in China: assessment of content on premature ejaculation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11986497/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC11390521",
+      "title": "Investigating the influencing factors of vaccination decisions for newly developed and established vaccines: a comparative study based on latent class logit models in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11390521/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC11256398",
+      "title": "Perception of misinformation on social media among Chinese college students",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11256398/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC11165113",
+      "title": "The status quo of short video as sources of health information on gastroesophageal reflux disease in China: a cross-sectional study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11165113/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC11088137",
+      "title": "Does a perceptual gap lead to actions against digital misinformation? A third-person effect study among medical students",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11088137/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC11043599",
+      "title": "An online survey on public awareness of drug clinical trials in inland cities of northern China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11043599/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC10993428",
+      "title": "Bibliometric analysis of ChatGPT in medicine",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10993428/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC10935988",
+      "title": "Barriers and facilitators to primary care management of type 2 diabetes in Shijiazhuang City, China: a mixed methods study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10935988/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC10355411",
+      "title": "Differential impacts of vaccine scandal by ethnic and socioeconomic factors: Evidence from China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10355411/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC10306119",
+      "title": "COVID-19 Pandemic and How It Affected Sino-Italian Relations",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10306119/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC9873355",
+      "title": "Factors influencing the financing behavior of large professional households engaged in green agricultural production in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9873355/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9865810",
+      "title": "The Association between the School Environment and Adolescent Alcohol Drinking Behavior in Six Cities in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9865810/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9847324",
+      "title": "Nationalism, conspiracy theories and vaccine mandates: Exploring the statism determinants for attitudes to COVID-19 control in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9847324/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC9830523",
+      "title": "The Effect of the COVID-19 Lockdown on the Frequency of Acute Poisoning Presentation to Adult and Pediatric Emergency Departments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9830523/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC9769126",
+      "title": "Assessing COVID-19-related health literacy and associated factors among school teachers in Hong Kong, China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9769126/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC9767881",
+      "title": "Community pandemic prevention and control measures and their influence on citizen satisfaction during the COVID-19 pandemic in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9767881/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC9758388",
+      "title": "Characterizing the dissemination of misinformation on social media in health emergencies: An empirical study based on COVID-19",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9758388/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC9676419",
+      "title": "Use of social media platforms by migrant and ethnic minority populations during the COVID-19 pandemic: a systematic review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9676419/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC9156961",
+      "title": "Explaining education-based difference in systematic processing of COVID-19 information: Insights into global recovery from infodemic",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9156961/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC9012972",
+      "title": "Intermedia Agenda Setting amid the Pandemic: A Computational Analysis of China's Online News",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9012972/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8991995",
+      "title": "Emotion, analytic thinking and susceptibility to misinformation during the COVID-19 outbreak",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8991995/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC8845236",
+      "title": "COVID-19 vaccine hesitancy among different population groups in China: a national multicenter online survey",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8845236/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC8750519",
+      "title": "Synonyms and Symptoms of COVID-19 and Individual and Official Actions against the Disease—A Brief Online Survey 6 Months into the Pandemic and on the Threshold of the Second Wave in Germany",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8750519/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8779795",
+      "title": "Global COVID-19 Vaccine Acceptance: A Systematic Review of Associated Social and Behavioral Factors",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8779795/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC8732945",
+      "title": "Factors Influencing the Accessibility and Reliability of Health Information in the Face of the COVID-19 Outbreak—A Study in Rural China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8732945/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC8724746",
+      "title": "COVID-19 denial in Turkmenistan veiling the real situation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8724746/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC8631744",
+      "title": "“I enjoy thinking critically, and I'm in control”: Examining the influences of media literacy factors on misperceptions amidst the COVID-19 infodemic",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8631744/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC8595240",
+      "title": "Prevalence and Impact Factors of COVID-19 Vaccination Hesitancy Among Breast Cancer Survivors: A Multicenter Cross-Sectional Study in China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8595240/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC8202656",
+      "title": "Assessing COVID-19 Vaccine Hesitancy, Confidence, and Public Engagement: A Global Social Listening Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8202656/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC8160495",
+      "title": "COVID-19 at War: The Joint Forces Operation in Ukraine",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8160495/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC8107211",
+      "title": "Study on the Experience of Public Health System Construction in China's COVID-19 Prevention",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8107211/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7882994",
+      "title": "Gendered Justice in China: Victim–Offender Mediation as the “Different Voice” of Female Judges",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7882994/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC7901213",
+      "title": "Ongoing downplaying of the carcinogenicity of chrysotile asbestos by vested interests",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7901213/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC7866344",
+      "title": "COVID-19 Misinformation and Infodemic in Rural Africa",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7866344/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC7835120",
+      "title": "Coping with the Challenges of COVID-19 Using the Sociotype Framework: A Rehearsal for the Next Pandemic",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835120/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC7775376",
+      "title": "Parental Acceptability of COVID-19 Vaccination for Children Under the Age of 18 Years: Cross-Sectional Online Survey",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7775376/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC7730066",
+      "title": "An Analysis of Rural Households’ Earthquake-Resistant Construction Behavior: Evidence from Pingliang and Yuxi, China",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7730066/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC6858991",
+      "title": "Using an evidence-based safety approach to develop China’s road safety strategies",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6858991/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC6652059",
+      "title": "Analysis of Mortality and Survival Rate of Liver Cancer in Zhejiang Province in China: A General Population-Based Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6652059/",
+      "status": "pending"
+    },
+    {
+      "pmcid": "PMC6604500",
+      "title": "Understanding the Use of Smartphone Apps for Health Information Among Pregnant Chinese Women: Mixed Methods Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6604500/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC6231818",
+      "title": "Nature and Diffusion of Gynecologic Cancer–Related Misinformation on Social Media: Analysis of Tweets",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6231818/",
+      "status": "excluded"
+    },
+    {
+      "pmcid": "PMC5461251",
+      "title": "Dementia Literacy among Community-Dwelling Older Adults in Urban China: A Cross-sectional Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5461251/",
+      "status": "excluded"
+    }
+  ],
+  "reviewed_on": "2026-11-09",
+  "period": "2017-2025",
+  "source_category": "research_literature",
+  "query_label": "pmc-discourse-bulk-2017-2025",
+  "metadata_screen_batches": [
+    357,
+    176
+  ],
+  "metadata_screen_totals": {
+    "queued": 32,
+    "manual_review": 397,
+    "excluded": 104
+  },
+  "crawler_totals": {
+    "candidate_urls": 533,
+    "previously_verified_skipped": 108,
+    "target_pages_requested": 425,
+    "target_http_200": 425,
+    "robots_txt_http_200": 2,
+    "scraped_items": 425,
+    "restricted": 0,
+    "failed_http": 0,
+    "duplicate_discoveries": 0
+  },
+  "note": "Only records that passed the existing title/abstract screen remain formal. Manual-review full texts remain preserved in source evidence but are not counted in the formal workbook pending human thematic review."
+}

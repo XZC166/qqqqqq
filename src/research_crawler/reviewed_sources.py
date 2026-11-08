@@ -1805,6 +1805,14 @@ PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
     ),
 }
 
+BLUESKY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://bsky.app/profile/nytopinion.nytimes.com/post/3llq3zdyafc2c": (
+        "02eaa007b41085b85d6ad90d96bf7198eee5d219ce2e6d830aa7d69d735d266f",
+        "据正文整理：纽约时报意见账号转述台湾作者对台海安全的看法，主张台湾加强防卫以威慑攻击，并讨论台湾与中国和平解决关系的可能路径。",
+        "New York Times Opinion; Taiwan; China; United States; cross-strait relations; deterrence",
+    ),
+}
+
 BUSH41_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
     "https://www.bush41library.gov/digital-research-room/finding-aid/public-papers/statement-press-secretary-fitzwater-united-states": (
         "据正文整理：声明说明美国暂停与中国的高层官员及军事交流，并寻求推迟新的国际金融机构对华贷款，同时表示支持民主诉求和继续发展双边关系。",

@@ -1,0 +1,74 @@
+{
+  "reviewed_on": "2026-11-09",
+  "batch": "open-candidate-retry-20261109",
+  "periods": [
+    "1949-1972",
+    "1972-1991",
+    "1992-2016",
+    "2017-2025"
+  ],
+  "source_categories": [
+    "government",
+    "media",
+    "research_literature",
+    "think_tank"
+  ],
+  "candidate_urls": 839,
+  "previously_verified_skipped": 18,
+  "scrapy_items": 821,
+  "http_response_status_counts": {
+    "200": 838,
+    "301": 2,
+    "302": 5,
+    "404": 16,
+    "406": 3,
+    "420": 2,
+    "502": 2
+  },
+  "download_exceptions_after_retry": 11,
+  "duplicate_discoveries": 50,
+  "largest_failures": [
+    {
+      "source": "GovInfo",
+      "reason": "Approximately 50 MB Congressional Record PDF exceeded the 180-second request timeout after three attempts."
+    },
+    {
+      "source": "Air University",
+      "reason": "Connection lost after retries for a PDF source."
+    }
+  ],
+  "materials_before_crawl": 2640,
+  "materials_after_automatic_full_text_verification": 2742,
+  "new_unique_rows_before_scope_review": 102,
+  "pmc_candidate_screen": {
+    "candidate_urls": 669,
+    "metadata_records": 669,
+    "high_relevance_queue": 11,
+    "manual_review_queue": 287,
+    "metadata_excluded": 371,
+    "abstract_records": 589,
+    "existing_formal_pmc_rows_flagged_manual": 90,
+    "existing_formal_pmc_rows_excluded": 28
+  },
+  "formal_scope_disposition": {
+    "pmc_rows_moved_to_pending": 90,
+    "pmc_rows_excluded": 28,
+    "remaining_non_pmc_formal_rows": 2,
+    "materials_after_scope_review": 2624,
+    "net_change_from_pre_crawl_baseline": -16
+  },
+  "status_counts_by_retry_url_after_review": {
+    "verified": 2,
+    "pending": 804,
+    "restricted": 0,
+    "excluded": 28,
+    "candidate": 5
+  },
+  "limitations": [
+    "The 838 HTTP 200 responses include robots.txt requests; they do not mean 838 article bodies passed verification.",
+    "PMC title and citation abstracts were used only for screening; they were not substituted for article bodies.",
+    "Full text moved to pending remains in local evidence for later manual scope review.",
+    "Video was not downloaded; a platform summary alone does not count as a formal full-text record.",
+    "Local workbook and ZIP contain full text and are not included in public Git commits."
+  ]
+}

@@ -48,6 +48,7 @@ from research_crawler.reviewed_sources import (
     PUBLIC_MEDIA_REVIEWED_META_TITLES,
     PRESIDENCY_REVIEWED_METADATA,
     PRESIDENCY_REVIEWED_HASHED_METADATA,
+    BLUESKY_REVIEWED_HASHED_METADATA,
     PRCLEADER_REVIEWED_ARTICLES,
     RESEARCH_REVIEWED_KEYWORDS,
     SHORENSTEIN_REVIEWED_PDFS,
@@ -159,6 +160,13 @@ def _reviewed_presidency_metadata(source_url: str, body: str):
     if reviewed and sha256(body.encode("utf-8")).hexdigest() == reviewed[0]:
         return reviewed[1], reviewed[2]
     return PRESIDENCY_REVIEWED_METADATA.get(source_url)
+
+
+def _reviewed_bluesky_metadata(source_url: str, body: str) -> tuple[str, str]:
+    reviewed = BLUESKY_REVIEWED_HASHED_METADATA.get(source_url)
+    if reviewed and sha256(body.encode("utf-8")).hexdigest() == reviewed[0]:
+        return reviewed[1], reviewed[2]
+    return "", ""
 
 
 def _reviewed_truman_library_metadata(source_url: str, body: str):
@@ -2824,13 +2832,19 @@ class BlueskyPostAdapter:
         result["evidence"] = evidence
         if not complete:
             return result
+        abstract, keywords = _reviewed_bluesky_metadata(response.url, body)
         result["material"] = VerifiedMaterial(
             self.sources[handle], publication_date, author["displayName"], title,
-            "", "", body, response.url,
+            abstract, keywords, body, response.url,
         )
         result["field_sources"] = {"source": response.url, "title": response.url,
                                     "author": metadata_response.url, "time": metadata_response.url}
-        result["abstract_origin"] = "none"
+        if abstract:
+            result["field_sources"]["abstract"] = response.url
+        if keywords:
+            result["field_sources"]["keywords"] = response.url
+        result["abstract_origin"] = "derived" if abstract else "none"
+        result["keywords_origin"] = "derived" if keywords else "none"
         result["supporting_evidence"] = [{
             "decision": metadata_decision,
             "evidence": SourceEvidence(metadata_response.url, fetched_at, metadata_response.status,

@@ -1,4 +1,8 @@
-from research_crawler.reviewed_sources import PRESIDENCY_REVIEWED_HASHED_METADATA
+from research_crawler.reviewed_sources import (
+    BLUESKY_REVIEWED_HASHED_METADATA,
+    PRESIDENCY_REVIEWED_HASHED_METADATA,
+)
+from research_crawler.spiders.government import _reviewed_bluesky_metadata
 
 
 REVIEWED = {
@@ -76,3 +80,21 @@ def test_reviewed_presidency_metadata_is_bound_to_each_captured_body_hash():
         assert all(character in "0123456789abcdef" for character in expected_hash)
         assert abstract.startswith("据正文整理：")
         assert keywords
+
+
+def test_reviewed_bluesky_post_metadata_is_bound_to_its_captured_body_hash():
+    url = "https://bsky.app/profile/nytopinion.nytimes.com/post/3llq3zdyafc2c"
+    expected = (
+        "02eaa007b41085b85d6ad90d96bf7198eee5d219ce2e6d830aa7d69d735d266f",
+        "据正文整理：纽约时报意见账号转述台湾作者对台海安全的看法，主张台湾加强防卫以威慑攻击，并讨论台湾与中国和平解决关系的可能路径。",
+        "New York Times Opinion; Taiwan; China; United States; cross-strait relations; deterrence",
+    )
+    assert BLUESKY_REVIEWED_HASHED_METADATA[url] == expected
+    body = (
+        '"With China growing in strength and the United States turning its back on the world, '
+        'Taiwan is right to build up its military as a deterrence against attack," writes Yingtai '
+        'Lung from Taitung, Taiwan. "But the only way for Taiwan to peacefully secure its freedom '
+        'is to somehow reconcile with China."'
+    )
+    assert _reviewed_bluesky_metadata(url, body) == expected[1:]
+    assert _reviewed_bluesky_metadata(url, body + " ") == ("", "")

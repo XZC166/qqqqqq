@@ -1,0 +1,26 @@
+{
+  "input_count": 21,
+  "metadata_records": 21,
+  "screened_count": 18,
+  "manual_review_count": 3,
+  "excluded_count": 0,
+  "manual_review": [
+    {
+      "pmcid": "PMC9264268",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264261",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8809069",
+      "reason": "citation abstract unavailable; retain for manual review"
+    }
+  ],
+  "excluded": [],
+  "metadata_missing_candidates_retained": [],
+  "abstract_records": 18,
+  "metadata_fetch_error": "",
+  "policy": "Discovery-only title and PubMed citation abstracts; no article body was fetched or added to formal materials. Missing abstracts are retained for manual review."
+}

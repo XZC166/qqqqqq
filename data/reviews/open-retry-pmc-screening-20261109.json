@@ -1,0 +1,2647 @@
+{
+  "input_count": 669,
+  "metadata_records": 669,
+  "screened_count": 11,
+  "manual_review_count": 287,
+  "excluded_count": 371,
+  "manual_review": [
+    {
+      "pmcid": "PMC10565046",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7155594",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7150167",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7147331",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7133675",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7120598",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7121260",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC5763971",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4998793",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4896250",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC4842606",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC4708665",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC4441944",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4232311",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3906895",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC13429817",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12885366",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12772761",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12795803",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12760944",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12759937",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12760003",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12759772",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12759999",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12760443",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12761236",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12761990",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12762216",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12761922",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12762069",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12763089",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12762182",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12762162",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12761889",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12759563",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12760210",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12760536",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12762664",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12762842",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12763201",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12763504",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12762638",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12763785",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12763777",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12739051",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12738488",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12737989",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12726432",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12726024",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12725305",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12698035",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3692752",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC3614791",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12555347",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12545889",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12546348",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12488362",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12439832",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12436844",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12369990",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12356946",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12308470",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12284738",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12258457",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12244743",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12217757",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12119951",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12103563",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12091581",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12089361",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC12050675",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC12032205",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11950296",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11882096",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11872605",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11859744",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264268",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264261",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC10737040",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9624719",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8771900",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7776202",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7155663",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7127057",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC5098486",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4881119",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4612412",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4600947",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4296304",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC4145945",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3878123",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3869936",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3691157",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3679166",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3628662",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3370988",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC3315399",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC2631202",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11691881",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC11637082",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11628265",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11620416",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11555446",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11540682",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11528167",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11527248",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11500961",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11490028",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11488746",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11462372",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11427877",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11408834",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11150764",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11086469",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC11086924",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10977776",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10957737",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10907359",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10902763",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10871520",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10867957",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10866532",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10854670",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10846699",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10833090",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10823630",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10803794",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10768132",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10590802",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10522863",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10521725",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10469626",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10451940",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10454996",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10448066",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10396624",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10376575",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10362422",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10332218",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10297424",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10286809",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10204960",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10016907",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10169383",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10138020",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10101474",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9965175",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9937109",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9911650",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9915454",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9891173",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9868397",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9859488",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9851897",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9780485",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9778805",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9756003",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9733691",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9732492",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9728140",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9722679",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9684827",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9700821",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9692114",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9690304",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9593905",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9513521",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9482068",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9463078",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9458409",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9443650",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9442209",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9427286",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9403913",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9410812",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9402371",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9386655",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9378987",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9264208",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264229",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264176",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264247",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264164",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9264154",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9256499",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9245366",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9242932",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9234552",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9233579",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9224219",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9213041",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9201017",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9163493",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9165425",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9151658",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9107107",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9071242",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9065286",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC9014406",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8959992",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8923102",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8910213",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8907873",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8894182",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8871728",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8871882",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8862705",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8854764",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8856540",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8761114",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8743377",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8701337",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8678273",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7612054",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8519257",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8511417",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8500994",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8495447",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8486649",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8480968",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8467217",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8456024",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8425850",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8416577",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8417687",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8391632",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8383066",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8366015",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8345355",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8288647",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8307509",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8280558",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8150621",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC8048359",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7971386",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7957333",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7925148",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7927779",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7884098",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7845521",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7842485",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7813210",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7804060",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7798069",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7784222",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7727274",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7709495",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7695542",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7681173",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7680254",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7677096",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7492099",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7492796",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7459435",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7431238",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7432841",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7437442",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7385634",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7361027",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7345754",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7335244",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7284412",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7158945",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7155546",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7123927",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC7117024",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7098126",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6701581",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6651263",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6550219",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6518036",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6488518",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6480262",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6479821",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6405059",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6394084",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC6266127",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC5642795",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC10736082",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9593334",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9594082",
+      "reason": "citation abstract unavailable; retain for manual review"
+    },
+    {
+      "pmcid": "PMC9534273",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8968551",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8468206",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8415385",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC8403817",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    },
+    {
+      "pmcid": "PMC7484600",
+      "reason": "China and communication topic present; U.S. connection unclear"
+    }
+  ],
+  "excluded": [
+    {
+      "pmcid": "PMC7342166",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7147840",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7129404",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7088918",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7089397",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC6761891",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC6238845",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC6268265",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC6268626",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC6015204",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5918852",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5598101",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5314919",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5145691",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5120941",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5107644",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5107852",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5098415",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5072190",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5063797",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5038411",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5047764",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5044914",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC5036745",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4998644",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4999550",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4985394",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4994265",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4731307",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4915894",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4902401",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4872609",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4869219",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4866303",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4806933",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4801056",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4786989",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4770850",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4759888",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4753706",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4754558",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4759076",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4748541",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4722256",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4642799",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4555990",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4677031",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4649781",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4649854",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4607395",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4626615",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4622254",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4620751",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4616457",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4616180",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4380236",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4545289",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4509873",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4522845",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4502736",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4465981",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4472164",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4432325",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4384764",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4400579",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4373827",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4336963",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4335164",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4308652",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4308658",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4233462",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4193173",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4181513",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4178514",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4147101",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4107648",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4105366",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4135365",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4071440",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4099210",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4048566",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4022241",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4031666",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4013401",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3998149",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3989224",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3629437",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3609518",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3950419",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3932545",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3895021",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3777516",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC13614113",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC13524395",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12152529",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9991721",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC13129796",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12340222",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC13069427",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7153464",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC13008599",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC13002279",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12936432",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12869953",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12865010",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12830946",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12828143",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12824325",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12816594",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12811769",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12804756",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12802348",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12795495",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12777663",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12770493",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12764583",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12749995",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12748644",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12745040",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12744820",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12740725",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12734979",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12727792",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12723199",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12719925",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12716413",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12712401",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12705648",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12707854",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12695879",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12681790",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12670570",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12671906",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12666790",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12480398",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12666696",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12661517",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12639026",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12638951",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12639156",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12637997",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12631210",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12627859",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12627637",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12623512",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12617645",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12615816",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12607428",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12606022",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12603664",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12593266",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12574960",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12571963",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12570652",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3777482",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3833114",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3837676",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3795012",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3709970",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3764673",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3757579",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3713824",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3650444",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3647409",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3639253",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3595985",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3587936",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3539339",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3535799",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3071896",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3322912",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3277298",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3024348",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3189756",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3130021",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3130722",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2999892",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3102291",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3089053",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC3034328",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2982816",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2686635",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2866418",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2819857",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2744916",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2739153",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2710009",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2658466",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2630947",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC2447522",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC1566889",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC1567368",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC1257624",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC1241722",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC1241643",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC1240671",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12550015",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12550055",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12542671",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12533047",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12520647",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12516157",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12514542",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12503443",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12461488",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12498229",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12475391",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12450313",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12443354",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12439227",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12435753",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12432318",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12408765",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12396779",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12396772",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12371662",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12373904",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12365015",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12361530",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12358630",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12345061",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12341538",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12334673",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12332024",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12325976",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12322301",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12314152",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12316441",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12313159",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12308009",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12295656",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12303556",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12303359",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12288538",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12284602",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7617926",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12271665",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12270589",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12245725",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12241322",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12245254",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12219563",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12216470",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12215991",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12217722",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12179649",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12180683",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12176572",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12172549",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12159568",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12156977",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12152534",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12148249",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12142239",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12143031",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12139519",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12134099",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12132743",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12122865",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12117468",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12121542",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12104379",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12096741",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12073383",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12075488",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12075711",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12060084",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12051797",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12048820",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12046017",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12035514",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12006377",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11997481",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11997453",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11986600",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11985198",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11985423",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11980899",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11978815",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11975513",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11961830",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11956704",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11934049",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11935581",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11935614",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11929854",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11914095",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11897977",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11894044",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11890559",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11888992",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11868691",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11865306",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11864564",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11850859",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11837800",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11837878",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11833671",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11833020",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11826682",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11806299",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4302457",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC4190865",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11137721",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11015130",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10923455",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10860942",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9929300",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9827353",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9816838",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9816952",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9240759",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7612236",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8969556",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8845251",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8767467",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9252624",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12586582",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12308148",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12309621",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12265952",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12203860",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12135314",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12042457",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC12022522",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11884714",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11776460",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11757974",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11757142",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11665173",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11624041",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11514505",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC11499787",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10690778",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10636930",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10587398",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10468446",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10131805",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10043532",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC10014793",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9986329",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9468740",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9467818",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9464596",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9408054",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9302496",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9198829",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC9180041",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8907875",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8853730",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8582727",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8469168",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8403520",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8357490",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8308952",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8293162",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8047546",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC8023382",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7997233",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7886374",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7674013",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7605843",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7473703",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7402643",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7411495",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7373377",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7384407",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7349466",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7230578",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7202310",
+      "reason": "no thesis-topic term in title/abstract"
+    },
+    {
+      "pmcid": "PMC7052559",
+      "reason": "no thesis-topic term in title/abstract"
+    }
+  ],
+  "metadata_missing_candidates_retained": [],
+  "abstract_records": 589,
+  "metadata_fetch_error": "",
+  "policy": "Discovery-only title and PubMed citation abstracts; no article body was fetched or added to formal materials. Missing abstracts are retained for manual review."
+}
