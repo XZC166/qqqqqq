@@ -212,6 +212,30 @@ BROOKINGS_REVIEWED_ABSTRACTS: dict[str, tuple[str, str]] = {
     ),
 }
 
+PEW_REVIEWED_ARTICLES: dict[str, tuple[str, str, str, str, str]] = {
+    "https://www.pewresearch.org/global/2024/05/01/chinas-relationship-with-the-u-s/": (
+        "2024-05-01",
+        "2. China’s relationship with the U.S.",
+        "Christine Huang, Laura Silver, Laura Clancy",
+        "f8f857cc6403f1f838775f8bf722911f4455683b83fb08f186c09c4324c9389b",
+        "U.S.-China relations; China threat perceptions; China as an enemy; economic influence; U.S. public opinion",
+    ),
+    "https://www.pewresearch.org/global/2025/04/17/views-of-china-as-a-competitor-and-threat-to-the-us/": (
+        "2025-04-17",
+        "4. Views of China as a competitor and threat to the U.S.",
+        "Christine Huang, Laura Silver, Laura Clancy",
+        "b7d9ce0dd890e9b47e3fec0ccd1a08a374afb1a642e8254e8525ca31a23aa117",
+        "China as a U.S. competitor; China threat perceptions; Taiwan Strait; economic security; public opinion",
+    ),
+    "https://www.pewresearch.org/global/2025/04/17/negative-views-of-china-have-softened-slightly-among-americans/": (
+        "2025-04-17",
+        "Negative Views of China Have Softened Slightly Among Americans",
+        "Christine Huang, Laura Silver, Laura Clancy",
+        "3b13ec8d6e1e827b6694e26603252c2538ab9378c81f8d918b2fddb2848c7a13",
+        "U.S. public opinion; China image; China threat perceptions; U.S.-China trade; tariffs; party differences",
+    ),
+}
+
 CSIS_REVIEWED_KEYWORDS: dict[str, tuple[str, str]] = {
     "https://www.csis.org/analysis/understanding-temporary-de-escalation-us-china-trade-war": (
         "962e6d258fff9c41f6e5fa6ab404f9e0e52e40f900fe46c806cc8704bc8b0ec6",
@@ -1113,6 +1137,8 @@ VOA_REVIEWED_KEYWORDS: dict[str, str] = {
 
 TRUMAN_LIBRARY_VISIBLE_PUBLICATION_DATE_URLS = {
     "https://www.trumanlibrary.gov/library/public-papers/171/presidents-news-conference",
+    "https://www.trumanlibrary.gov/library/public-papers/295/presidents-news-conference-key-west",
+    "https://www.trumanlibrary.gov/library/public-papers/77/statement-and-order-president-relieving-general-macarthur-his-commands",
     "https://www.trumanlibrary.gov/library/public-papers/3/presidents-news-conference",
     "https://www.trumanlibrary.gov/library/public-papers/173/statement-president-situation-korea",
     "https://www.trumanlibrary.gov/library/public-papers/193/special-message-congress-reporting-situation-korea",
@@ -1158,6 +1184,19 @@ TRUMAN_LIBRARY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
     "https://www.trumanlibrary.gov/library/public-papers/16/presidents-news-conference": (
         "据正文整理：杜鲁门在记者会上回应中国共产党拒绝朝鲜停火提案的问题，表示美国将推动联合国把中国共产党政府列为侵略者，并谈及台湾方面对大陆采取行动的报道。",
         "Chinese intervention in Korea; United Nations; Taiwan; press conference; U.S. policy",
+    ),
+}
+
+TRUMAN_LIBRARY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.trumanlibrary.gov/library/public-papers/295/presidents-news-conference-key-west": (
+        "cbcac82d26148c678a5143275a26d2baf685853408ea54a4d84f1056e71b442a",
+        "据正文整理：杜鲁门在基韦斯特记者会上回应有关朝鲜与中国军队杀害战俘的提问，表示尚待正式事实报告，并称若报道属实，该行为极其严重。",
+        "Korean War; Chinese forces; prisoners of war; presidential press conference; U.S. public statements",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/77/statement-and-order-president-relieving-general-macarthur-his-commands": (
+        "4645787196c3f7952a73b49067b8ae7b25b8fe18d08665009f94da494d6295f0",
+        "据正文整理：杜鲁门宣布解除麦克阿瑟在远东的指挥职务，说明其公开声明与美国政府及联合国政策不一致，并收录总统命令和相关通信。",
+        "Douglas MacArthur; China policy; Korean War; U.S. foreign policy; presidential statement; public communication",
     ),
 }
 

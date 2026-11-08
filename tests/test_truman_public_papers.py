@@ -3,7 +3,14 @@ from pathlib import Path
 from scrapy.http import HtmlResponse, Request
 
 from research_crawler.items import MaterialCandidate
-from research_crawler.spiders.government import GovernmentArticleAdapter
+from research_crawler.reviewed_sources import (
+    TRUMAN_LIBRARY_REVIEWED_HASHED_METADATA,
+    TRUMAN_LIBRARY_VISIBLE_PUBLICATION_DATE_URLS,
+)
+from research_crawler.spiders.government import (
+    GovernmentArticleAdapter,
+    _reviewed_truman_library_metadata,
+)
 
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -39,3 +46,22 @@ def test_truman_legacy_page_uses_leading_visible_date_and_excludes_page_chrome()
     assert "Korean War" in material.keywords
     assert "Navigation" not in material.body
     assert "Footer text" not in material.body
+
+
+def test_1951_truman_library_metadata_is_bound_to_the_reviewed_body():
+    cases = {
+        "https://www.trumanlibrary.gov/library/public-papers/295/presidents-news-conference-key-west": (
+            "cbcac82d26148c678a5143275a26d2baf685853408ea54a4d84f1056e71b442a",
+        ),
+        "https://www.trumanlibrary.gov/library/public-papers/77/statement-and-order-president-relieving-general-macarthur-his-commands": (
+            "4645787196c3f7952a73b49067b8ae7b25b8fe18d08665009f94da494d6295f0",
+        ),
+    }
+
+    for url, (body_hash,) in cases.items():
+        reviewed_hash, abstract, keywords = TRUMAN_LIBRARY_REVIEWED_HASHED_METADATA[url]
+        assert reviewed_hash == body_hash
+        assert abstract.startswith("据正文整理：")
+        assert keywords
+        assert url in TRUMAN_LIBRARY_VISIBLE_PUBLICATION_DATE_URLS
+        assert _reviewed_truman_library_metadata(url, "changed or incomplete body") == ("", "")

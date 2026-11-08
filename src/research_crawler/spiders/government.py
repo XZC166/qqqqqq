@@ -42,6 +42,7 @@ from research_crawler.reviewed_sources import (
     PBS_REVIEWED_VIDEO_TRANSCRIPTS,
     PBS_REVIEWED_VIDEO_KEYWORDS,
     PBS_REVIEWED_PROGRAM_TRANSCRIPTS,
+    PEW_REVIEWED_ARTICLES,
     PUBLIC_MEDIA_REVIEWED_ARTICLES,
     PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS,
     PUBLIC_MEDIA_REVIEWED_META_TITLES,
@@ -52,6 +53,7 @@ from research_crawler.reviewed_sources import (
     SHORENSTEIN_REVIEWED_PDFS,
     VOA_REVIEWED_KEYWORDS,
     TRUMAN_LIBRARY_REVIEWED_METADATA,
+    TRUMAN_LIBRARY_REVIEWED_HASHED_METADATA,
     TRUMAN_LIBRARY_VISIBLE_PUBLICATION_DATE_URLS,
 )
 
@@ -157,6 +159,13 @@ def _reviewed_presidency_metadata(source_url: str, body: str):
     if reviewed and sha256(body.encode("utf-8")).hexdigest() == reviewed[0]:
         return reviewed[1], reviewed[2]
     return PRESIDENCY_REVIEWED_METADATA.get(source_url)
+
+
+def _reviewed_truman_library_metadata(source_url: str, body: str):
+    reviewed = TRUMAN_LIBRARY_REVIEWED_HASHED_METADATA.get(source_url)
+    if reviewed and sha256(body.encode("utf-8")).hexdigest() == reviewed[0]:
+        return reviewed[1], reviewed[2]
+    return TRUMAN_LIBRARY_REVIEWED_METADATA.get(source_url, ("", ""))
 
 
 def _reviewed_trump_whitehouse_metadata(source_url: str, body: str):
@@ -683,6 +692,8 @@ class GovernmentArticleAdapter:
             return CarnegieResearchArticleAdapter().extract(response, candidate)
         if hostname == "brookings.edu" or hostname.endswith(".brookings.edu"):
             return BrookingsArticleAdapter().extract(response, candidate)
+        if hostname == "pewresearch.org" or hostname.endswith(".pewresearch.org"):
+            return PewResearchArticleAdapter().extract(response, candidate)
         if hostname == "csis.org" or hostname.endswith(".csis.org"):
             return CSISArticleAdapter().extract(response, candidate)
         if hostname == "foreignaffairs.house.gov" or hostname.endswith(".foreignaffairs.house.gov"):
@@ -4353,7 +4364,7 @@ class TrumanLibraryPublicPaperAdapter:
         complete = bool(source and title and publication_date and body_containers and body)
         material = None
         if complete:
-            abstract, keywords = TRUMAN_LIBRARY_REVIEWED_METADATA.get(response.url, ("", ""))
+            abstract, keywords = _reviewed_truman_library_metadata(response.url, body)
             material = VerifiedMaterial(
                 source=source,
                 time=publication_date,
@@ -5245,6 +5256,139 @@ class JsonLdArticleAdapter:
             "material": material,
             "field_sources": field_sources,
             "abstract_origin": "publisher" if abstract else "none",
+        }
+
+
+class PewResearchArticleAdapter:
+    def extract(self, response: Response, candidate: MaterialCandidate) -> dict:
+        decision = classify_response(response.url, response.status, response.text)
+        digest = sha256(response.body).hexdigest()
+        fetched_at = datetime.now(timezone.utc).isoformat()
+        evidence = SourceEvidence(
+            source_url=response.url,
+            fetched_at=fetched_at,
+            status_code=response.status,
+            content_sha256=digest,
+        )
+        if decision is not AccessDecision.ALLOW:
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        article = _find_jsonld_article(response)
+        content = response.css(".entry-content.wp-block-post-content")
+        title = _normalized_text(response.css("h1").xpath(".//text()").getall())
+        visible_title = response.css("meta[property='og:title']::attr(content)").get(default="").strip()
+        source = response.css("meta[property='og:site_name']::attr(content)").get(default="").strip()
+        visible_dates = response.css("article.wp-block-group time")
+        visible_date = (
+            _normalized_text(visible_dates[0].xpath(".//text()").getall())
+            if len(visible_dates) == 1 else ""
+        )
+        structured_dates = response.css("meta[property='article:published_time']::attr(content)").getall()
+        publication_date = _publication_date(visible_date, str(article.get("datePublished", "")) if article else "")
+        authors = list(dict.fromkeys(
+            _normalized_text(node.xpath(".//text()").getall())
+            for node in response.css("div[class*='bylines-display'] a")
+        ))
+        author = ", ".join(value for value in authors if value)
+        structured_authors = article.get("author", []) if article else []
+        if isinstance(structured_authors, dict):
+            structured_authors = [structured_authors]
+        author_names = [
+            _jsonld_name(value) for value in structured_authors
+        ] if isinstance(structured_authors, list) else []
+        publisher = article.get("publisher", {}) if article else {}
+        if isinstance(publisher, list):
+            publisher = publisher[0] if publisher else {}
+        structured_source = _jsonld_name(publisher) if isinstance(publisher, dict) else ""
+        abstract = response.css("meta[name='description']::attr(content)").get(default="").strip()
+        body_parts = []
+        supported_structure = len(content) == 1
+        if supported_structure:
+            for node in content[0].xpath("./*"):
+                tag = node.root.tag.lower()
+                if tag in {"p", "h2", "h3", "h4", "blockquote"}:
+                    text = _normalized_text(node.xpath(".//text()").getall())
+                    if text.startswith(("Related:", "For more on")) and node.xpath(".//a"):
+                        continue
+                    if text:
+                        body_parts.append(text)
+                elif tag in {"ul", "ol"}:
+                    items = [
+                        _normalized_text(item.xpath(".//text()").getall())
+                        for item in node.xpath("./li")
+                    ]
+                    if any(items):
+                        body_parts.append("\n".join(item for item in items if item))
+                elif tag == "figure":
+                    caption = _normalized_text(node.css("figcaption").xpath(".//text()").getall())
+                    if caption:
+                        body_parts.append(caption)
+                elif tag == "details":
+                    details_parts = [
+                        _normalized_text(item.xpath(".//text()").getall())
+                        for item in node.xpath("./summary | .//p | .//h2 | .//h3 | .//li")
+                    ]
+                    body_parts.extend(part for part in details_parts if part)
+                elif tag == "div":
+                    text = _normalized_text(node.xpath(".//text()").getall())
+                    if not text.startswith(("Guide to this report", "Report Materials")):
+                        supported_structure = False
+                else:
+                    supported_structure = False
+        body = "\n\n".join(body_parts)
+        reviewed = PEW_REVIEWED_ARTICLES.get(response.url)
+        body_hash = sha256(body.encode("utf-8")).hexdigest()
+        metadata_match = bool(
+            reviewed
+            and reviewed[:4] == (publication_date, title, author, body_hash)
+            and reviewed[4]
+        )
+        complete = bool(
+            response.url == candidate.source_url
+            and source == structured_source == "Pew Research Center"
+            and title
+            and title == visible_title
+            and len(visible_dates) == len(structured_dates) == 1
+            and publication_date
+            and author
+            and authors == author_names
+            and abstract
+            and body
+            and supported_structure
+            and metadata_match
+        )
+        evidence = replace(
+            evidence,
+            body_complete=complete,
+            metadata_verified=complete,
+            body_format="source_text",
+        )
+        if not complete:
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        material = VerifiedMaterial(
+            source=source,
+            time=publication_date,
+            author=author,
+            title=title,
+            abstract=abstract,
+            keywords=reviewed[4],
+            body=body,
+            source_url=response.url,
+        )
+        return {
+            "decision": decision,
+            "evidence": evidence,
+            "material": material,
+            "field_sources": {
+                "source": response.url,
+                "time": response.url,
+                "author": response.url,
+                "title": response.url,
+                "abstract": response.url,
+                "keywords": "body",
+            },
+            "abstract_origin": "publisher",
         }
 
 
