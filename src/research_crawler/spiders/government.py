@@ -29,6 +29,7 @@ from research_crawler.reviewed_sources import (
     OBAMA_WHITEHOUSE_REVIEWED_VIDEO_TRANSCRIPTS,
     ARCHIVED_STATE_REVIEWED_METADATA,
     BROOKINGS_REVIEWED_PDF_METADATA,
+    BROOKINGS_REVIEWED_ABSTRACTS,
     BROOKINGS_REVIEWED_KEYWORDS,
     CSIS_REVIEWED_KEYWORDS,
     CSIS_REVIEWED_PDFS,
@@ -81,6 +82,13 @@ def _reviewed_brookings_keywords(source_url: str, body: str) -> str:
     # Brookings JSON-LD keywords include taxonomy/program and format tags.
     # Do not treat that field as article themes without a body review.
     reviewed = BROOKINGS_REVIEWED_KEYWORDS.get(source_url)
+    if reviewed and sha256(body.encode("utf-8")).hexdigest() == reviewed[0]:
+        return reviewed[1]
+    return ""
+
+
+def _reviewed_brookings_abstract(source_url: str, body: str) -> str:
+    reviewed = BROOKINGS_REVIEWED_ABSTRACTS.get(source_url)
     if reviewed and sha256(body.encode("utf-8")).hexdigest() == reviewed[0]:
         return reviewed[1]
     return ""
@@ -3510,6 +3518,9 @@ class BrookingsArticleAdapter:
             )
         body = "\n\n".join(body_parts)
         abstract = response.css("meta[name='description']::attr(content)").get(default="").strip()
+        publisher_abstract = bool(abstract)
+        reviewed_abstract = _reviewed_brookings_abstract(response.url, body)
+        abstract = abstract or reviewed_abstract
         keywords = _reviewed_brookings_keywords(response.url, body)
 
         has_expansion_control = bool(response.css(".show-more-btn"))
@@ -3558,7 +3569,9 @@ class BrookingsArticleAdapter:
                 result["field_sources"]["abstract"] = response.url
             if keywords:
                 result["field_sources"]["keywords"] = response.url
-            result["abstract_origin"] = "publisher" if abstract else "none"
+            result["abstract_origin"] = (
+                "publisher" if publisher_abstract else "derived" if reviewed_abstract else "none"
+            )
             result["keywords_origin"] = "derived" if keywords else "none"
         return result
 
@@ -5279,6 +5292,12 @@ class WhiteHouseFactSheetAdapter:
                 if text:
                     body_blocks.append(text)
         body = "\n\n".join(body_blocks)
+        publisher_abstract = bool(abstract)
+        reviewed_abstract, reviewed_keywords = _reviewed_trump_whitehouse_metadata(
+            response.url, body
+        )
+        abstract = abstract or reviewed_abstract
+        keywords = keywords or reviewed_keywords
         complete = bool(title and visible_date and body and content and topper)
         lowered_body = body.casefold()
         if any(marker in lowered_body for marker in ("continue reading", "subscribe to read", "read more")):
@@ -5306,7 +5325,9 @@ class WhiteHouseFactSheetAdapter:
                 field_sources["abstract"] = response.url
             if keywords:
                 field_sources["keywords"] = response.url
-            abstract_origin = "publisher" if abstract else "none"
+            abstract_origin = (
+                "publisher" if publisher_abstract else "derived" if reviewed_abstract else "none"
+            )
             metadata_verified = True
 
         evidence = SourceEvidence(

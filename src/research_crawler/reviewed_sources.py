@@ -115,6 +115,18 @@ STATE_REVIEWED_METADATA: dict[str, tuple[str, str, str]] = {
 # Exact source URL -> full extracted-body SHA-256 and body-derived keywords.
 # Website taxonomy/program/format tags are not presumed article subjects.
 BROOKINGS_REVIEWED_KEYWORDS: dict[str, tuple[str, str]] = {
+    "https://www.brookings.edu/articles/the-united-states-and-china-a-new-framework/": (
+        "45b334cd9c71b9c49b1041eb1fc86568906da40089be05781a3b308a544a37ac",
+        "U.S.-China relations; Clinton-Jiang summit; WTO accession; economic sanctions; Asia-Pacific policy",
+    ),
+    "https://www.brookings.edu/articles/a-momentous-shift-in-us-public-attitudes-toward-china/": (
+        "6694e21594c93f0efa6d5d4b7602c4cec0de6586db3543b0ede5523f4c58d554",
+        "U.S. public opinion; China threat perceptions; U.S. public attitudes; COVID-19; Taiwan",
+    ),
+    "https://www.brookings.edu/articles/comparing-global-views-of-the-united-states-and-china-during-the-trump-and-biden-administrations/": (
+        "98db8a8d9bde1a983d36ad89257b49fa4d3d808a67f3ee3355ef3f61834790d7",
+        "global public opinion; U.S. leadership; China favorability; soft power; U.S.-China competition",
+    ),
     'https://www.brookings.edu/articles/chinas-emergence-and-its-implications-for-the-united-states/': (
         'ec3ae3755c65c513da1c268f42dccc3cff5ce16b7360cf6bff87f19ae9652f0b',
         'U.S. perceptions of China; China image; U.S.-China relations; soft power; Asia-Pacific',
@@ -190,6 +202,13 @@ BROOKINGS_REVIEWED_KEYWORDS: dict[str, tuple[str, str]] = {
     'https://www.brookings.edu/wp-content/uploads/2019/02/us_china_economic_relationship.pdf': (
         'f35f6c307393652d9d7b2042ba0b3c64fd755b49d847b815c115fc0ca2ea2c63',
         'WTO; state-owned enterprises; digital trade; national security; export controls',
+    ),
+}
+
+BROOKINGS_REVIEWED_ABSTRACTS: dict[str, tuple[str, str]] = {
+    "https://www.brookings.edu/articles/the-united-states-and-china-a-new-framework/": (
+        "45b334cd9c71b9c49b1041eb1fc86568906da40089be05781a3b308a544a37ac",
+        "据正文整理：文章讨论克林顿与江泽民即将举行的会晤，主张建立管理分歧的中美关系框架，并讨论经济制裁、中国加入世贸组织及美国在亚太的作用。",
     ),
 }
 
@@ -1319,6 +1338,96 @@ PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-586": (
+        "9a6b81e40a788f95177c572749728408a1a7b61ce3465b7ae0f1f60989a53ffe",
+        "据正文整理：杜鲁门在记者会上宣读美国对台湾（福尔摩沙）政策说明，重申尊重中国领土完整，并表示美国无意军事介入中国内战或在台湾建立基地。",
+        "China policy; Formosa; territorial integrity; Chinese civil conflict; U.S. military policy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/special-message-the-congress-reporting-the-situation-korea": (
+        "a24640cfdac8c7c24ba40d29519fa6718b16f71d7cf77ceb287aa4369da87898",
+        "据正文整理：杜鲁门向国会报告朝鲜战争爆发后的联合国和美国行动，并提出应对局势的立法建议；文中还讨论台湾及中国局势与联合国军安全的关联。",
+        "Korean War; United Nations; China; Formosa; U.S. foreign policy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/letter-ambassador-warren-austin-restating-the-us-position-formosa": (
+        "75140f71aaf25e22befe96ad8cb367e7067bd07bcbf09d533a89f3e4b262b609",
+        "据正文整理：杜鲁门致信美国驻联合国大使，重申美国对台湾的立场，并说明台湾海峡局势、中国方面的声明与朝鲜战场安全之间的关联。",
+        "Formosa; China; Korean War; United Nations; U.S. policy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-598": (
+        "61a081bb93c7eac6b248d8c5e93c714e10d8f89c2e11e7837953791f6274ad48",
+        "据正文整理：杜鲁门在记者会上回应有关台湾、麦克阿瑟和朝鲜局势的提问，说明其与麦克阿瑟会谈的议题及美国对远东形势的判断。",
+        "Formosa; General MacArthur; Korean War; U.S. policy; East Asia",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-579": (
+        "1151d53c4ee583a0e32ef1955af9bcd0cdfc22f62c25a6587b6fb13ce5707471",
+        "据正文整理：杜鲁门宣读有关中国共产党军队进入朝鲜及联合国安理会应对措施的声明，并回应记者对战事、边境与联合国行动的提问。",
+        "Chinese intervention in Korea; Korean War; United Nations; China; U.S. policy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/address-mass-rally-taipei": (
+        "20865708eec4340289e813c3ad76c97b3f1d2f6f3a0caa7e2205ad2dc4b35c56",
+        "据正文整理：艾森豪威尔在台北群众集会上谈及美国对中国代表权的立场，赞扬台湾的经济发展，并阐述美国对台湾及地区安全的支持。",
+        "Taiwan; Republic of China; China representation; anti-communism; U.S.-Taiwan relations",
+    ),
+    "https://www.presidency.ucsb.edu/documents/joint-statement-following-discussions-with-president-chiang-kai-shek": (
+        "b5aa81f44a983e2e7ceed5ba696cfc83a25f6d64473f7dc713af356c5d980123",
+        "据正文整理：艾森豪威尔访台后与蒋介石发布联合声明，重申双方关系与共同防务安排，并讨论台湾经济建设、地区安全和合作。",
+        "Republic of China; Taiwan; Chiang Kai-shek; U.S.-Taiwan defense; regional security",
+    ),
+    "https://www.presidency.ucsb.edu/documents/remarks-the-sungshan-airport-taipei-upon-leaving-for-okinawa": (
+        "c8b6df62cb54a77ea85179c5425c62ea405971eebc509fc37c13ef889b3688bc",
+        "据正文整理：艾森豪威尔离开台北时感谢台湾方面的接待，回顾访问期间的交流，并谈到美国与中华民国之间的友好关系。",
+        "Taiwan; Republic of China; U.S.-Taiwan relations; presidential visit; public remarks",
+    ),
+    "https://www.presidency.ucsb.edu/documents/toasts-the-president-and-vice-premier-teng-hsiao-ping-the-peoples-republic-china-state": (
+        "237e5d61c4dffe3cecddf9d6c8d3398d49b84e2cce80a6bacaac26d5106cca74",
+        "据正文整理：尼克松与中国副总理邓小平在北京国宴上互致祝酒词，回顾两国交往并表达发展美中关系与合作的愿望。",
+        "U.S.-China relations; Nixon; Deng Xiaoping; diplomatic engagement; bilateral cooperation",
+    ),
+    "https://www.presidency.ucsb.edu/documents/new-years-message-from-the-president-premier-hua-guofeng-the-peoples-republic-china": (
+        "45d5cbf1775462bf44df17a8934ca09fd7a4cf63021e21d72991907a91ede5b3",
+        "据正文整理：卡特致信中国总理华国锋，祝贺美国与中华人民共和国建立正式外交关系，并表示此举有助于世界和平及两国人民交流。",
+        "U.S.-China normalization; diplomatic relations; Jimmy Carter; Hua Guofeng; public diplomacy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-974": (
+        "0488fdac1317e357117ea77b15285abeb3113812de352717c2dc695da80a68bd",
+        "据正文整理：卡特在记者会上说明美国与中华人民共和国建交后的对台政策，并回应关于台湾关系、美国承诺及中美外交安排的问题。",
+        "U.S.-China normalization; Taiwan; Taiwan Relations Act; diplomatic recognition; Carter administration",
+    ),
+    "https://www.presidency.ucsb.edu/documents/cultural-agreement-between-the-united-states-and-china": (
+        "dd28577a9a1c8e1d7fff08f3d6aae531fc4c8690dd2bce42ed8ee50f33ea65d7",
+        "据正文整理：美国与中华人民共和国签署文化协定，规定双方在教育、科学、文化及人员交流方面开展合作。",
+        "U.S.-China relations; cultural agreement; educational exchange; scientific exchange; diplomacy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/united-states-peoples-republic-china-agreements-remarks-the-signing-ceremony": (
+        "02de57ca36c534ceb161d233509f218914aba9327189a99045307c8d40bee858",
+        "据正文整理：卡特在美中签署四项协议的仪式上讲话，将协议与两国关系正常化相联系，并介绍双方在交通、领事及其他领域的合作。",
+        "U.S.-China normalization; bilateral agreements; diplomacy; cultural exchange; consular relations",
+    ),
+    "https://www.presidency.ucsb.edu/documents/interview-with-chinese-television-journalists-beijing": (
+        "1f013c980fc44880a2556bf9c089abeacafb23b96d8cd611354cfe70df4c32bc",
+        "据正文整理：布什接受中国电视记者采访，谈及中美关系、贸易和文化交流，并回答有关中国改革、双边合作及两国人民沟通的问题。",
+        "U.S.-China relations; China visit; trade; cultural exchange; television interview",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-press-secretary-fitzwater-united-states-sanctions-against-the-chinese-government": (
+        "d532b94f47fcc0b606bda936bd24c27b5c10baec9478364668caa83c6d6482af",
+        "据正文整理：白宫宣布暂停与中华人民共和国的高层官员交流及部分合作措施，并说明这些决定是在中国局势发生变化后采取的回应。",
+        "China; U.S. sanctions; diplomatic exchanges; Tiananmen; U.S.-China relations",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-before-foreign-correspondents": (
+        "72a6e1223949c674b989b3f700097096a68d2b88a6215a8bbe60d8eeec2ea3c0",
+        "据正文整理：克林顿在记者会上回答外国记者关于美国对华关系、台湾及亚洲政策的问题，并讨论贸易和地区安全议题。",
+        "China; Taiwan; U.S.-China relations; trade; East Asia policy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-with-president-jiang-zemin-china-beijing": (
+        "185e373532bf09562840258312a4ade71bc64844d04b46101ba549764cf95d33",
+        "据正文整理：克林顿与江泽民在北京举行联合记者会，介绍双方会谈及中美关系进展，并回应贸易、安全、台湾和人权等问题。",
+        "U.S.-China relations; Bill Clinton; Jiang Zemin; trade; Taiwan; human rights",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-with-premier-zhu-rongji-china": (
+        "c900afa6366ca0bde114a2033720efd2c4ecd99f28a2118fcc01fe3158174741",
+        "据正文整理：克林顿与朱镕基在华盛顿举行联合记者会，讨论双边经贸合作、中国加入世贸组织谈判及双方在人权和安全问题上的分歧。",
+        "U.S.-China relations; Zhu Rongji; WTO accession; trade; human rights; Taiwan",
+    ),
     "https://www.presidency.ucsb.edu/documents/address-foreign-policy-luncheon-the-american-society-newspaper-editors": (
         "8d68b7219c58ac538efc51080b0aca889d8c36251a0e84f0cd2806d6af2641db",
         "据正文整理：杜鲁门向美国报纸编辑协会阐述公众、自由新闻与外交政策之间的关系，并讨论美国面临的国际事务及对外政策。",
@@ -1537,6 +1646,11 @@ CLINTON_WHITEHOUSE_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
 }
 
 TRUMP_WHITEHOUSE_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.whitehouse.gov/fact-sheets/2025/11/fact-sheet-president-donald-j-trump-strikes-deal-on-economic-and-trade-relations-with-china/": (
+        "25474631cf77d53474e36f26003470f537854b14728a2ac35010afe67dad6e8f",
+        "据正文整理：白宫事实清单介绍特朗普政府与中国达成的贸易经济安排，列出双方关于芬太尼前体、稀土出口管制、半导体企业、农产品采购及关税的措施。",
+        "U.S.-China trade; tariffs; rare earth elements; semiconductors; fentanyl; agricultural exports",
+    ),
     "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-by-president-trump-and-president-xi-of-china-at-state-dinner-beijing-china/": (
         "cee2bd24c84a8a80a776af92e2c6f24f68d2b95bb1e3f5acb16ecb8cfe3e02e5",
         "据正文整理：特朗普与习近平在北京国宴致辞，回顾尼克松访华和两国交往，谈及双边贸易、朝鲜问题及两国合作。",
