@@ -424,6 +424,57 @@ VOA_REVIEWED_KEYWORDS: dict[str, str] = {
     ),
 }
 
+TRUMAN_LIBRARY_VISIBLE_PUBLICATION_DATE_URLS = {
+    "https://www.trumanlibrary.gov/library/public-papers/171/presidents-news-conference",
+    "https://www.trumanlibrary.gov/library/public-papers/3/presidents-news-conference",
+    "https://www.trumanlibrary.gov/library/public-papers/173/statement-president-situation-korea",
+    "https://www.trumanlibrary.gov/library/public-papers/193/special-message-congress-reporting-situation-korea",
+    "https://www.trumanlibrary.gov/library/public-papers/223/letter-ambassador-warren-austin-restating-us-position-formosa",
+    "https://www.trumanlibrary.gov/library/public-papers/287/presidents-news-conference",
+    "https://www.trumanlibrary.gov/library/public-papers/78/radio-report-american-people-korea-and-us-policy-far-east",
+}
+
+
+TRUMAN_LIBRARY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
+    "https://www.trumanlibrary.gov/library/public-papers/171/presidents-news-conference": (
+        "据正文整理：杜鲁门解释心理战委员会的职能，称其负责协调有助于赢得和平的工作，并表示该委员会隶属中央情报局。",
+        "Psychological Warfare Board; public opinion; Central Intelligence Agency; press conference; Cold War",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/3/presidents-news-conference": (
+        "据正文整理：杜鲁门宣读美国对中国与台湾问题的政策说明，回应有关中华人民共和国、台湾海峡与美国立场的记者提问。",
+        "China policy; Formosa; Taiwan Strait; U.S. foreign policy; press conference",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/173/statement-president-situation-korea": (
+        "据正文整理：声明说明朝鲜遭入侵后的美国军事行动，称台湾被占将威胁太平洋安全，并宣布第七舰队介入台湾海峡及要求台湾当局停止对大陆的空海行动。",
+        "Korean War; Formosa; Taiwan Strait; U.S. Seventh Fleet; U.S. policy",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/193/special-message-congress-reporting-situation-korea": (
+        "据正文整理：杜鲁门向国会报告朝鲜局势与美国应对，重申美国对台湾没有领土野心，并主张相关问题以和平方式解决。",
+        "Korean War; Formosa; U.S. Congress; Taiwan policy; United Nations",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/223/letter-ambassador-warren-austin-restating-us-position-formosa": (
+        "据正文整理：杜鲁门致函美国驻联合国大使，重申美国关于台湾的立场，并要求避免对美国意图产生误解。",
+        "Formosa; U.S. foreign policy; United Nations; Warren Austin; Taiwan Strait",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/287/presidents-news-conference": (
+        "据正文整理：杜鲁门在记者会上回应中国军队介入朝鲜战争的问题，并说明联合国安理会处理相关局势的决议与美国立场。",
+        "Chinese intervention in Korea; Korean War; United Nations; press conference; U.S. policy",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/78/radio-report-american-people-korea-and-us-policy-far-east": (
+        "据正文整理：杜鲁门向美国公众解释朝鲜战争和美国远东政策，论述冲突扩大的风险、联合国行动以及对中国军队介入和台湾问题的看法。",
+        "Korean War; China; Far East policy; U.S. public address; Taiwan Strait",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/354/address-national-war-college": (
+        "据正文整理：杜鲁门讨论美国的国家政策、国际信息传播与新闻分发，并将中国共产党在中国大陆取得胜利描述为对亚洲和平与进步的重大损失。",
+        "China; international information; news distribution; U.S. national policy; Cold War",
+    ),
+    "https://www.trumanlibrary.gov/library/public-papers/16/presidents-news-conference": (
+        "据正文整理：杜鲁门在记者会上回应中国共产党拒绝朝鲜停火提案的问题，表示美国将推动联合国把中国共产党政府列为侵略者，并谈及台湾方面对大陆采取行动的报道。",
+        "Chinese intervention in Korea; United Nations; Taiwan; press conference; U.S. policy",
+    ),
+}
+
+
 PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
     "https://www.presidency.ucsb.edu/documents/conversation-with-the-president-interview-with-dan-rather-the-columbia-broadcasting-system": (
         "据正文整理：尼克松在接受丹·拉瑟采访时讨论即将访华的时间安排，否认出于选举考量，并回顾其主张与中国领导人恢复沟通及避免对抗的理由。",
@@ -738,6 +789,22 @@ OBAMA_WHITEHOUSE_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 CLINTON_WHITEHOUSE_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
+    "https://clintonwhitehouse4.archives.gov/WH/Work/061198.html": (
+        "据正文整理：克林顿论述美中关系、其访华目标及双边合作议程，讨论贸易、人权、台湾、地区安全和沟通交流等议题。",
+        "U.S.-China relations; public diplomacy; trade; human rights; Taiwan; China visit",
+    ),
+    "https://clintonwhitehouse4.archives.gov/WH/New/China/19980629-6683.html": (
+        "据正文整理：克林顿在北京大学演讲，讨论教育、自由与中美交流，并回答有关双边关系和中国发展的问题。",
+        "China visit; Peking University; education; U.S.-China exchange; freedom; public diplomacy",
+    ),
+    "https://clintonwhitehouse4.archives.gov/textonly/WH/New/China/19980627-9474.html": (
+        "据正文整理：克林顿与江泽民在记者会上介绍会谈情况并回答记者提问，内容涉及中美关系、贸易、台湾及双方沟通。",
+        "U.S.-China relations; Jiang Zemin; press conference; trade; Taiwan; bilateral dialogue",
+    ),
+    "https://clintonwhitehouse4.archives.gov/textonly/WH/New/China/19980627-13450.html": (
+        "据正文整理：克林顿与江泽民在合影活动前致辞，表达对国事访问和两国领导人会谈的期待。",
+        "U.S.-China relations; Jiang Zemin; state visit; bilateral meeting; diplomacy",
+    ),
     "https://clintonwhitehouse4.archives.gov/WH/New/China/19980629-6877.html": (
         "据正文整理：克林顿在北京大学赠书活动上谈及通过教育与青年交流增进相互了解，表达美中合作建设和平繁荣未来的期待，并回答有关两国交流的问题。",
         "China visit; Peking University; U.S.-China exchange; international education; mutual understanding; youth diplomacy",
@@ -802,6 +869,21 @@ CLINTON_WHITEHOUSE_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
 }
 
 TRUMP_WHITEHOUSE_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-by-president-trump-and-president-xi-of-china-at-state-dinner-beijing-china/": (
+        "cee2bd24c84a8a80a776af92e2c6f24f68d2b95bb1e3f5acb16ecb8cfe3e02e5",
+        "据正文整理：特朗普与习近平在北京国宴致辞，回顾尼克松访华和两国交往，谈及双边贸易、朝鲜问题及两国合作。",
+        "U.S.-China relations; state visit; trade; North Korea; bilateral cooperation",
+    ),
+    "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-signing-presidential-memorandum-targeting-chinas-economic-aggression/": (
+        "4541f3a20616d846304147e4e79541d3cb4811968be1340fad68fdbac3b8c38d",
+        "据正文整理：特朗普在签署针对中国经济政策的总统备忘录时批评中国贸易和技术转移做法，说明拟采取的贸易措施并回答记者提问。",
+        "China trade policy; Section 301; technology transfer; intellectual property; U.S. tariffs",
+    ),
+    "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-actions-china/": (
+        "80cad74187dc803c9f63d3613a336034c4dfbf7a8926e5f5a6001efa8f2037a4",
+        "据正文整理：特朗普宣布美国对华采取一系列措施，讲话涉及双边关系、贸易、香港、南海及新冠疫情。",
+        "U.S.-China relations; trade; Hong Kong; South China Sea; COVID-19; U.S. policy",
+    ),
     "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-vice-president-pence-administrations-policy-toward-china/": (
         "d0539786addc10c2c2aee05b0701a7bac4335829f4b8d992037757b78696f3cc",
         "据正文整理：彭斯在哈德逊研究所阐述特朗普政府对华政策，回顾中美关系并批评中国在贸易、知识产权、政治影响、宗教和台湾等方面的做法，强调美国在印太地区的回应。",

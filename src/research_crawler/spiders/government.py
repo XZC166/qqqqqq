@@ -45,6 +45,8 @@ from research_crawler.reviewed_sources import (
     RESEARCH_REVIEWED_KEYWORDS,
     SHORENSTEIN_REVIEWED_PDFS,
     VOA_REVIEWED_KEYWORDS,
+    TRUMAN_LIBRARY_REVIEWED_METADATA,
+    TRUMAN_LIBRARY_VISIBLE_PUBLICATION_DATE_URLS,
 )
 
 
@@ -3733,28 +3735,34 @@ class TrumanLibraryPublicPaperAdapter:
                 or ""
             )
         publication_date = _publication_date("", publication_value)
+        if (
+            not publication_date
+            and body_blocks
+            and response.url in TRUMAN_LIBRARY_VISIBLE_PUBLICATION_DATE_URLS
+        ):
+            visible_date = body_blocks[0]
+            publication_date = _publication_date(visible_date, "")
+            if publication_date:
+                body_blocks = body_blocks[1:]
 
-        footer_text = [
-            text.strip()
-            for text in response.css("footer").xpath(".//text()").getall()
-            if text.strip()
-        ]
-        source = _normalized_text(response.css("footer h3").xpath(".//text()").getall())
-        if not source and footer_text:
-            source = footer_text[0]
-        if "Truman Library" not in source:
-            source = ""
+        footer_text = _normalized_text(response.css("footer").xpath(".//text()").getall())
+        source = (
+            "Harry S. Truman Library & Museum"
+            if "Harry S. Truman Library & Museum" in footer_text
+            else ""
+        )
         body = "\n\n".join(body_blocks)
         complete = bool(source and title and publication_date and body_containers and body)
         material = None
         if complete:
+            abstract, keywords = TRUMAN_LIBRARY_REVIEWED_METADATA.get(response.url, ("", ""))
             material = VerifiedMaterial(
                 source=source,
                 time=publication_date,
                 author="未注明",
                 title=title,
-                abstract="",
-                keywords="",
+                abstract=abstract,
+                keywords=keywords,
                 body=body,
                 source_url=response.url,
             )
@@ -3770,9 +3778,10 @@ class TrumanLibraryPublicPaperAdapter:
         result = {"decision": decision, "evidence": evidence, "material": material}
         if material is not None:
             result["field_sources"] = {
-                name: response.url for name in ("source", "time", "author", "title")
+                name: response.url
+                for name in ("source", "time", "author", "title", "abstract", "keywords")
             }
-            result["abstract_origin"] = "none"
+            result["abstract_origin"] = "derived" if material.abstract else "none"
         return result
 
 
