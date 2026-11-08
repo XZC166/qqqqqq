@@ -533,6 +533,41 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
         "time", "17464", "15ef392bb93d7d281a1593831ac6061f216104f8cb774d37f5f6d64d230834d3",
         "", "China; Tiananmen Square; Deng Xiaoping; martial law; 1989 protests", "31", "31",
     ),
+    "https://time.com/archive/6955373/collateral-damage-8/": (
+        "1992-2016", "TIME", "TIME Staff", "1999-05-24", "Collateral Damage (24 May 1999)",
+        "time", "9542", "25f65f1a4b25545e8cf7e1b425a06d7bc9b3f0f3d11b1d412276c89d60a3df38",
+        "", "China; United States; Belgrade embassy bombing; public opinion; Sino-American relations", "20", "20",
+    ),
+    "https://time.com/archive/6955258/the-embassy-bombing-small-steps-to-a-big-disaster-2/": (
+        "1992-2016", "TIME", "Mark Thompson", "1999-05-24", "The Embassy Bombing: Small Steps to a Big Disaster (24 May 1999)",
+        "time", "4723", "4912a39cc19e5af9edca0d0b749adf380b9e4cfe62c8e7f3a2681ea2e5f04278",
+        "", "China; United States; Belgrade embassy bombing; NATO; CIA; intelligence failure", "11", "11",
+    ),
+    "https://time.com/archive/6670779/crouching-tiger-hidden-message/": (
+        "1992-2016", "TIME", "TIME", "2001-03-12", "Crouching Tiger, Hidden Message",
+        "time", "4154", "3c20cfe0307b49642529894f7df20d6200f6c9c3a0c14392b2a17dc1f2cf8da4",
+        "", "China; United States; George W. Bush; strategic partnership; Taiwan; diplomacy", "8", "8",
+    ),
+    "https://time.com/archive/6672669/saving-face/": (
+        "1992-2016", "TIME", "TIME Staff", "2001-04-02", "Saving Face",
+        "time", "23106", "9f1bc5363dcced36baeef7a80972532b7095b7f5503524926ae5d6ab7aa218d8",
+        "", "EP-3 collision; China; United States; Hainan; military aircraft; diplomacy", "32", "32",
+    ),
+    "https://time.com/archive/6691358/hus-visit-finding-a-way-forward-on-u-s-china-relations/": (
+        "1992-2016", "TIME", "TIME", "2010-04-08", "Hu's Visit: Finding a Way Forward on U.S.-China Relations",
+        "time", "25473", "f11a22e04b66d5d953d51e610ec69c85413de6b43fd37e2f5291ac81b71b1b80",
+        "", "Hu Jintao; United States; China; public diplomacy; nationalism; bilateral relations", "36", "36",
+    ),
+    "https://time.com/2918689/how-to-hunt-a-chinese-hacker/": (
+        "1992-2016", "TIME", "Sam Frizell", "2014-07-03", "How to Hunt a Chinese Hacker",
+        "time", "11266", "0d811fe185f45cfb95851cd99b6e6296207413120cae37a63a3aa22bee8d4823",
+        "", "China; United States; cyberwar; PLA Unit 61486; CrowdStrike; hacking", "32", "32",
+    ),
+    "https://time.com/4004397/the-china-decade/": (
+        "1992-2016", "TIME", "Ian Bremmer", "2015-08-20", "The China Decade",
+        "time", "12036", "6f869c5cebd8b5931bf2358ccd801d1e521af39a3bd28a42284267e222f81169",
+        "", "China; United States; global influence; economic power; information control; international order", "28", "28",
+    ),
     "https://www.abc.net.au/news/2020-03-14/us-summons-chinese-envoy-over-beijing-coronavirus-comments/12056396": (
         "2017-2025", "ABC News", "Reuters", "2020-03-14",
         "US-China tensions intensify over comments American military might have brought coronavirus to Wuhan",
@@ -851,6 +886,10 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
+    "https://time.com/archive/6955373/collateral-damage-8/": "Collateral Damage",
+    "https://time.com/archive/6955258/the-embassy-bombing-small-steps-to-a-big-disaster-2/": "The Embassy Bombing: Small Steps to a Big Disaster",
+    "https://time.com/2918689/how-to-hunt-a-chinese-hacker/": "How to Hunt a Chinese Army Hacker",
+    "https://time.com/4004397/the-china-decade/": "The China Decade: How the Country Is Poised to Dominate",
     "https://www.abc.net.au/news/2020-03-14/us-summons-chinese-envoy-over-beijing-coronavirus-comments/12056396":
         "US summons Chinese envoy over Beijing's coronavirus tweets",
     "https://www.abc.net.au/news/2019-01-30/huawei-china-us-fight-technology-dominance-australia/10762746":
@@ -864,6 +903,20 @@ PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://time.com/archive/6955373/collateral-damage-8/":
+        "据正文整理：报道描述1999年中国驻南联盟使馆被炸后北京和华盛顿的外交紧张、公众抗议以及双方关系受到的影响。",
+    "https://time.com/archive/6955258/the-embassy-bombing-small-steps-to-a-big-disaster-2/":
+        "据正文整理：文章追踪误炸中国驻南联盟使馆的目标识别、情报和军事决策环节，并讨论事件对中美关系的冲击。",
+    "https://time.com/archive/6670779/crouching-tiger-hidden-message/":
+        "据正文整理：文章通过一名中国官员与美国官员的交往，讨论布什政府初期对华政策、战略伙伴关系和台湾议题。",
+    "https://time.com/archive/6672669/saving-face/":
+        "据正文整理：文章叙述2001年美国EP-3侦察机与中国军机相撞、机组迫降海南及中美双方围绕责任和道歉的交涉。",
+    "https://time.com/archive/6691358/hus-visit-finding-a-way-forward-on-u-s-china-relations/":
+        "据正文整理：文章以胡锦涛访美及中国国庆筹备为背景，讨论中国民族主义、美国利益和中美关系的调整方向。",
+    "https://time.com/2918689/how-to-hunt-a-chinese-hacker/":
+        "据正文整理：文章介绍安全研究人员追踪中国人民解放军相关网络攻击者的过程及其对美国企业和网络安全的影响。",
+    "https://time.com/4004397/the-china-decade/":
+        "据正文整理：文章分析中国经济增长、全球贸易地位、人口和信息控制，并讨论其对美国及国际秩序的含义。",
     "https://time.com/archive/6703890/china-advice-from-a-former-president/":
         "据正文整理：报道介绍理查德·尼克松访华后对中美关系、天安门事件及美国对华制裁的看法，并讨论两国恢复合作的理由与可能路径。",
     "https://time.com/archive/6702848/china-dengs-big-lie/":
