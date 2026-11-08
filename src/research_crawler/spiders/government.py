@@ -420,6 +420,8 @@ class GovernmentArticleAdapter:
             return PresidencyProjectDocumentAdapter().extract(response, candidate)
         if hostname == "clintonwhitehouse4.archives.gov":
             return ClintonWhiteHouseArchiveAdapter().extract(response, candidate)
+        if hostname == "clintonwhitehouse6.archives.gov":
+            return ClintonWhiteHouse6ArchiveAdapter().extract(response, candidate)
         if hostname == "pmc.ncbi.nlm.nih.gov" or hostname.endswith(".pmc.ncbi.nlm.nih.gov"):
             return PMCFulTextArticleAdapter().extract(response, candidate)
         if hostname == "history.state.gov" or hostname.endswith(".history.state.gov"):
@@ -5110,7 +5112,7 @@ class ClintonWhiteHouseArchiveAdapter:
         if decision is not AccessDecision.ALLOW:
             return {"decision": decision, "evidence": evidence, "material": None}
 
-        if "/textonly/WH/New/China/" in response.url:
+        if "/textonly/WH/New/" in response.url:
             return self._extract_textonly_document(response, decision, digest, fetched_at)
 
         transcripts = response.css("pre")
@@ -5325,7 +5327,12 @@ class ClintonWhiteHouseArchiveAdapter:
                 value,
                 re.I,
             )
-            match = press_availability or photo_opportunity
+            china_address = re.search(
+                r"(REMARKS BY THE PRESIDENT IN ADDRESS ON CHINA AND THE NATIONAL INTEREST)\b",
+                value,
+                re.I,
+            )
+            match = press_availability or photo_opportunity or china_address
             if match:
                 title_candidates.append(match.group(1))
         title = title_candidates[0] if len(title_candidates) == 1 else ""
@@ -5338,9 +5345,30 @@ class ClintonWhiteHouseArchiveAdapter:
         time_index = next((index for index, value in enumerate(paragraphs) if re.fullmatch(
             r"\d{1,2}:\d{2}\s+[AP]\.M\.\s*\(L\)", value, re.I
         )), None)
-        body_parts = paragraphs[time_index + 1:] if time_index is not None else []
+        is_1997_china_address = response.url == (
+            "https://clintonwhitehouse4.archives.gov/textonly/WH/New/html/19971024-3863.html"
+        )
+        body_parts = (
+            paragraphs[time_index + 1:]
+            if time_index is not None
+            else paragraphs if is_1997_china_address else []
+        )
         body = "\n\n".join(body_parts)
-        complete = bool(block is not None and office and publication_date and title and body and time_index is not None)
+        complete = bool(
+            block is not None
+            and office
+            and publication_date
+            and title
+            and body
+            and (
+                time_index is not None
+                or (
+                    is_1997_china_address
+                    and body.startswith("THE PRESIDENT:")
+                    and body.endswith("Thank you very much. (Applause.)")
+                )
+            )
+        )
         metadata = _reviewed_clinton_metadata(response.url, body) if complete else None
         material = VerifiedMaterial(
             source="The White House, Office of the Press Secretary",
@@ -5371,6 +5399,109 @@ class ClintonWhiteHouseArchiveAdapter:
                 result["abstract_origin"] = "derived"
             else:
                 result["abstract_origin"] = "none"
+        return result
+
+
+class ClintonWhiteHouse6ArchiveAdapter:
+    def extract(self, response: Response, candidate: MaterialCandidate) -> dict:
+        digest = sha256(response.body).hexdigest()
+        fetched_at = datetime.now(timezone.utc).isoformat()
+        decision = classify_response(response.url, response.status, response.text)
+        evidence = SourceEvidence(
+            source_url=response.url,
+            fetched_at=fetched_at,
+            status_code=response.status,
+            content_sha256=digest,
+        )
+        metadata_response = response.meta.get("metadata_response")
+        if decision is not AccessDecision.ALLOW or metadata_response is None:
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        metadata_text = _normalized_text(metadata_response.xpath("//body//text()").getall())
+        date_match = re.search(
+            r"\bDate:\s*\w{3},\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})\b",
+            metadata_text,
+            flags=re.IGNORECASE,
+        )
+        subject_match = re.search(r"\bSubject:\s*(.+?)(?=\s+Keywords:|\s+Message-Id:|$)", metadata_text, re.I)
+        publication_date = (
+            _publication_date(f"{date_match.group(2)} {date_match.group(1)}, {date_match.group(3)}", "")
+            if date_match else ""
+        )
+        title = subject_match.group(1).strip() if subject_match else ""
+        source_text = _normalized_text(response.xpath("//body//text()").getall())
+        source_verified = "THE WHITE HOUSE" in source_text and "Office of the Press Secretary" in source_text
+        metadata_verified = bool(
+            metadata_response.url == candidate.metadata_url
+            and metadata_response.status == 200
+            and "From: The White House" in metadata_text
+            and publication_date
+            and title
+        )
+        time_markers = [
+            index for index, node in enumerate(response.xpath("//body/p"))
+            if re.fullmatch(r"\d{1,2}:\d{2}\s+[AP]\.M\.\s+EDT", _normalized_text(node.xpath(".//text()").getall()), re.I)
+        ]
+        end_markers = [
+            index for index, node in enumerate(response.xpath("//body/p"))
+            if re.fullmatch(r"END\s*\d{1,2}:\d{2}\s+[AP]\.M\.\s+EDT", _normalized_text(node.xpath(".//text()").getall()), re.I)
+        ]
+        paragraphs = response.xpath("//body/p")
+        body_parts = []
+        body_complete = False
+        if len(time_markers) == 1 and len(end_markers) == 1 and end_markers[0] > time_markers[0]:
+            for node in paragraphs[time_markers[0] + 1:end_markers[0]]:
+                value = _normalized_text(node.xpath(".//text()").getall())
+                if value:
+                    body_parts.append(value)
+            body_complete = bool(body_parts and body_parts[0].startswith("MR. LAKE:"))
+        body = "\n\n".join(body_parts)
+        complete = bool(source_verified and metadata_verified and body_complete and title)
+        reviewed_metadata = _reviewed_clinton_metadata(response.url, body) if complete else None
+        material = VerifiedMaterial(
+            source="The White House, Office of the Press Secretary",
+            time=publication_date,
+            author="未注明",
+            title=title,
+            abstract=reviewed_metadata[0] if reviewed_metadata else "",
+            keywords=reviewed_metadata[1] if reviewed_metadata else "",
+            body=body,
+            source_url=response.url,
+        ) if complete else None
+        evidence = SourceEvidence(
+            source_url=response.url,
+            fetched_at=fetched_at,
+            status_code=response.status,
+            content_sha256=digest,
+            body_complete=complete,
+            metadata_verified=False,
+            body_format="source_text",
+        )
+        metadata_evidence = SourceEvidence(
+            source_url=metadata_response.url,
+            fetched_at=datetime.now(timezone.utc).isoformat(),
+            status_code=metadata_response.status,
+            content_sha256=sha256(metadata_response.body).hexdigest(),
+            metadata_verified=metadata_verified,
+            original_page_verified=metadata_verified,
+            body_format="source_text",
+        )
+        result = {"decision": decision, "evidence": evidence, "material": material}
+        if material is not None:
+            result["field_sources"] = {
+                "source": response.url,
+                "time": metadata_response.url,
+                "author": response.url,
+                "title": metadata_response.url,
+                "abstract": "body",
+                "keywords": "body",
+            }
+            result["abstract_origin"] = "derived" if reviewed_metadata else "none"
+            result["supporting_evidence"] = [{
+                "decision": decision,
+                "evidence": metadata_evidence,
+                "raw_response": metadata_response.body,
+            }]
         return result
 
 

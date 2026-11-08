@@ -707,6 +707,10 @@ OBAMA_WHITEHOUSE_REVIEWED_VIDEO_TRANSCRIPTS: dict[str, tuple[str, str, str, str,
 }
 
 OBAMA_WHITEHOUSE_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
+    "https://obamawhitehouse.archives.gov/the-press-office/2012/04/30/remarks-president-obama-and-prime-minister-noda-japan-joint-press-confer": (
+        "据正文整理：奥巴马与野田举行联合记者会，谈及美日同盟、亚太安全与经济合作；回应中国相关问题时讨论人权、和平发展、国际规则及地区协作，并称美方行动并非旨在遏制中国。",
+        "U.S.-Japan alliance; China; Asia-Pacific security; human rights; international rules and norms; regional cooperation",
+    ),
     "https://obamawhitehouse.archives.gov/the-press-office/us-china-joint-statement": (
         "据正文整理：联合声明阐述中美关系、战略互信、经济合作和全球挑战，涉及台湾、人权、人文交流、核不扩散及气候与能源合作。",
         "U.S.-China relations; strategic trust; Taiwan; human rights; people-to-people exchanges; climate change",
@@ -734,7 +738,19 @@ OBAMA_WHITEHOUSE_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 CLINTON_WHITEHOUSE_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
+    "https://clintonwhitehouse4.archives.gov/WH/New/China/19980629-6877.html": (
+        "据正文整理：克林顿在北京大学赠书活动上谈及通过教育与青年交流增进相互了解，表达美中合作建设和平繁荣未来的期待，并回答有关两国交流的问题。",
+        "China visit; Peking University; U.S.-China exchange; international education; mutual understanding; youth diplomacy",
+    ),
+    "https://clintonwhitehouse6.archives.gov/1994/05/1994-05-26-briefing-by-lake-et-al-on-mfn-status-for-china.html": (
+        "据正文整理：白宫官员解释克林顿政府将中国最惠国贸易待遇与人权政策脱钩的决定，并讨论通过接触、国际广播、美国之音和新设的自由亚洲电台继续推进人权对话。",
+        "China MFN status; U.S.-China relations; human rights; Voice of America; Radio Free Asia; international broadcasting",
+    ),
     "https://clintonwhitehouse4.archives.gov/WH/New/html/19971024-3863.html": (
+        "据正文整理：演讲讨论江泽民即将访美、中美关系，以及美国之音和美国新闻署推动全球思想自由流动的作用。",
+        "U.S.-China relations; public diplomacy; Voice of America; free flow of ideas; Jiang Zemin state visit",
+    ),
+    "https://clintonwhitehouse4.archives.gov/textonly/WH/New/html/19971024-3863.html": (
         "据正文整理：演讲讨论江泽民即将访美、中美关系，以及美国之音和美国新闻署推动全球思想自由流动的作用。",
         "U.S.-China relations; public diplomacy; Voice of America; free flow of ideas; Jiang Zemin state visit",
     ),

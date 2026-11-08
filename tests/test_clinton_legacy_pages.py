@@ -72,3 +72,57 @@ def test_clinton_textonly_photo_op_uses_visible_title_instead_of_browser_title()
         "PRESIDENT JIANG: I welcome you, Mr. President.\n\n"
         "PRESIDENT CLINTON: Thank you, Mr. President."
     )
+
+
+def test_clinton_1997_textonly_address_uses_release_date_and_complete_blockquote():
+    result = _extract(
+        "clinton_textonly_china_address_1997_synthetic.html",
+        "https://clintonwhitehouse4.archives.gov/textonly/WH/New/html/19971024-3863.html",
+    )
+
+    material = result["material"]
+    assert material is not None
+    assert material.time == "1997-10-24"
+    assert material.title == "REMARKS BY THE PRESIDENT IN ADDRESS ON CHINA AND THE NATIONAL INTEREST"
+    assert material.body.startswith("THE PRESIDENT: We will discuss the future of U.S.-China relations.")
+    assert material.body.endswith("Thank you very much. (Applause.)")
+    assert "Related White House pages" not in material.body
+
+
+def test_clintonwhitehouse6_briefing_uses_header_date_and_transcript_end_marker():
+    source_url = (
+        "https://clintonwhitehouse6.archives.gov/1994/05/"
+        "1994-05-26-briefing-by-lake-et-al-on-mfn-status-for-china.html"
+    )
+    metadata_url = (
+        "https://clintonwhitehouse6.archives.gov/1994/05/header/"
+        "1994-05-26-briefing-by-lake-et-al-on-mfn-status-for-china.header.html"
+    )
+    source = HtmlResponse(
+        url=source_url,
+        request=Request(source_url, meta={"metadata_response": HtmlResponse(
+            url=metadata_url,
+            request=Request(metadata_url),
+            body=(FIXTURES / "clinton_whitehouse6_header_1994_synthetic.html").read_bytes(),
+            encoding="utf-8",
+        )}),
+        body=(FIXTURES / "clinton_whitehouse6_briefing_1994_synthetic.html").read_bytes(),
+        encoding="utf-8",
+    )
+    candidate = MaterialCandidate(
+        source_url,
+        "1992-2016",
+        "government",
+        "clinton-whitehouse-china-broadcasting-1994",
+        metadata_url=metadata_url,
+    )
+
+    result = GovernmentArticleAdapter().extract(source, candidate)
+    material = result["material"]
+    assert material is not None
+    assert material.source == "The White House, Office of the Press Secretary"
+    assert material.time == "1994-05-26"
+    assert material.title == "1994-05-26 Briefing by Lake et al on MFN Status for China"
+    assert material.body == "MR. LAKE: China policy must serve our interests.\n\nQ What happens next?\n\nMR. LAKE: We will continue engagement."
+    assert len(result["supporting_evidence"]) == 1
+    assert result["supporting_evidence"][0]["evidence"].source_url == metadata_url
