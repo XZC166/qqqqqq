@@ -1811,6 +1811,26 @@ BLUESKY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
         "据正文整理：纽约时报意见账号转述台湾作者对台海安全的看法，主张台湾加强防卫以威慑攻击，并讨论台湾与中国和平解决关系的可能路径。",
         "New York Times Opinion; Taiwan; China; United States; cross-strait relations; deterrence",
     ),
+    "https://bsky.app/profile/nytopinion.nytimes.com/post/3loflwdo4yc2e": (
+        "b35776b81acb1fca34f5646816ce3a2623993c2b8060389cf0b19a1df0a3ac1d",
+        "据正文整理：纽约时报意见账号转述 Eric Schmidt 与 Selina Xu 对美国和中国科技竞争及全球领导地位的看法。",
+        "New York Times Opinion; China; United States; technology competition; global leadership",
+    ),
+    "https://bsky.app/profile/freedomhouse.bsky.social/post/3lmhy4bmbvc2g": (
+        "47b16b4ca1411d14e3af478faf0cd6e9bf7392fcd5488b803e899ffc87cbd62e",
+        "据正文整理：Freedom House 表示台湾在《自由世界》2025 年评估中获评自由，并称其在亚太地区得分较高，同时提及中共对台湾民主的影响。",
+        "Freedom House; Taiwan; Freedom in the World 2025; democracy; China",
+    ),
+    "https://bsky.app/profile/csis.org/post/3lrta7vqbrx26": (
+        "097d212b9b1c078377f1d35ac1811dce291b1ec896a09837cc0953227d96c3c4",
+        "据正文整理：CSIS 指出，台湾海峡发生隔离、封锁或入侵等情势可能严重扰乱该海峡贸易。",
+        "CSIS; Taiwan Strait; China; trade; blockade",
+    ),
+    "https://bsky.app/profile/poqjournal.bsky.social/post/3lik4kd3sgc2a": (
+        "986c466cce477f987c6ce09a4ca6cd2ec2509bbac8b78e9e5accf9be44c53125",
+        "据正文整理：Public Opinion Quarterly 账号介绍一项研究，讨论台湾民众对两岸现状的偏好、民族主义情绪变化及中国政策的影响。",
+        "Public Opinion Quarterly; Taiwan; public opinion; nationalism; cross-strait relations",
+    ),
 }
 
 BUSH41_REVIEWED_METADATA: dict[str, tuple[str, str]] = {

@@ -1,5 +1,6 @@
 import hashlib
 import html
+import json
 import re
 from dataclasses import replace
 from io import BytesIO
@@ -124,7 +125,11 @@ class VerificationPipeline:
                 metadata_evidence_urls=metadata_evidence_urls,
                 period=candidate.period,
             )
-            if not _body_matches_source(material.body, raw_response, evidence.body_format):
+            if not _body_matches_source(material.body, raw_response, evidence.body_format) and not (
+                _body_matches_verified_bluesky_response(
+                    material.body, item.get("supporting_evidence", []), candidate.metadata_url
+                )
+            ):
                 raise ValidationError("body does not correspond to source evidence")
             self.store.add_verified_material(
                 candidate_id,
@@ -205,6 +210,29 @@ def _body_matches_source(body: str, raw_response: bytes, body_format: str) -> bo
         _contains_token_sequence(raw_tokens, body_tokens[:window])
         and _contains_token_sequence(raw_tokens, body_tokens[-window:])
     )
+
+
+def _body_matches_verified_bluesky_response(body: str, supporting, expected_url: str | None) -> bool:
+    if not expected_url or "public.api.bsky.app/xrpc/app.bsky.feed.getPosts?" not in expected_url:
+        return False
+    for item in supporting:
+        evidence = item.get("evidence")
+        if (
+            evidence is None
+            or evidence.source_url != expected_url
+            or evidence.body_format != "json"
+            or not evidence.metadata_verified
+        ):
+            continue
+        try:
+            payload = json.loads(item.get("raw_response", b""))
+            posts = payload["posts"]
+            record = posts[0]["record"]
+        except (KeyError, TypeError, ValueError, IndexError):
+            continue
+        if len(posts) == 1 and record.get("$type") == "app.bsky.feed.post" and record.get("text") == body:
+            return True
+    return False
 
 
 def _contains_token_sequence(haystack: list[str], needle: list[str]) -> bool:

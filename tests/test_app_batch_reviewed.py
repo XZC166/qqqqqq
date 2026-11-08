@@ -2,7 +2,11 @@ from research_crawler.reviewed_sources import (
     BLUESKY_REVIEWED_HASHED_METADATA,
     PRESIDENCY_REVIEWED_HASHED_METADATA,
 )
-from research_crawler.spiders.government import _reviewed_bluesky_metadata
+from research_crawler.spiders.government import (
+    BlueskyPostAdapter,
+    _bluesky_post_text_matches,
+    _reviewed_bluesky_metadata,
+)
 
 
 REVIEWED = {
@@ -98,3 +102,47 @@ def test_reviewed_bluesky_post_metadata_is_bound_to_its_captured_body_hash():
     )
     assert _reviewed_bluesky_metadata(url, body) == expected[1:]
     assert _reviewed_bluesky_metadata(url, body + " ") == ("", "")
+
+
+def test_official_bluesky_accounts_have_hash_bound_metadata():
+    posts = {
+        "https://bsky.app/profile/nytopinion.nytimes.com/post/3loflwdo4yc2e": (
+            "b35776b81acb1fca34f5646816ce3a2623993c2b8060389cf0b19a1df0a3ac1d",
+            "据正文整理：纽约时报意见账号转述 Eric Schmidt 与 Selina Xu 对美国和中国科技竞争及全球领导地位的看法。",
+            "New York Times Opinion; China; United States; technology competition; global leadership",
+        ),
+        "https://bsky.app/profile/freedomhouse.bsky.social/post/3lmhy4bmbvc2g": (
+            "47b16b4ca1411d14e3af478faf0cd6e9bf7392fcd5488b803e899ffc87cbd62e",
+            "据正文整理：Freedom House 表示台湾在《自由世界》2025 年评估中获评自由，并称其在亚太地区得分较高，同时提及中共对台湾民主的影响。",
+            "Freedom House; Taiwan; Freedom in the World 2025; democracy; China",
+        ),
+        "https://bsky.app/profile/csis.org/post/3lrta7vqbrx26": (
+            "097d212b9b1c078377f1d35ac1811dce291b1ec896a09837cc0953227d96c3c4",
+            "据正文整理：CSIS 指出，台湾海峡发生隔离、封锁或入侵等情势可能严重扰乱该海峡贸易。",
+            "CSIS; Taiwan Strait; China; trade; blockade",
+        ),
+        "https://bsky.app/profile/poqjournal.bsky.social/post/3lik4kd3sgc2a": (
+            "986c466cce477f987c6ce09a4ca6cd2ec2509bbac8b78e9e5accf9be44c53125",
+            "据正文整理：Public Opinion Quarterly 账号介绍一项研究，讨论台湾民众对两岸现状的偏好、民族主义情绪变化及中国政策的影响。",
+            "Public Opinion Quarterly; Taiwan; public opinion; nationalism; cross-strait relations",
+        ),
+    }
+    for url, expected in posts.items():
+        assert BLUESKY_REVIEWED_HASHED_METADATA[url] == expected
+        assert _reviewed_bluesky_metadata(url, "reviewed body") == ("", "")
+    assert set(BlueskyPostAdapter.sources.values()) >= {
+        "The New York Times", "Freedom House", "CSIS", "Public Opinion Quarterly"
+    }
+
+
+def test_bluesky_post_text_match_allows_platform_expanded_link_only():
+    body = "Taiwan is rated Free. More details: freedomhouse.org/country/taiw..."
+    page = "Taiwan is rated Free. More details: https://freedomhouse.org/country/taiwan/freedom-world/2025"
+    record = {
+        "text": body,
+        "facets": [{"features": [{"$type": "app.bsky.richtext.facet#link", "uri":
+                                   "https://freedomhouse.org/country/taiwan/freedom-world/2025"}]}],
+    }
+    links = ["https://freedomhouse.org/country/taiwan/freedom-world/2025"]
+    assert _bluesky_post_text_matches(page, body, record, page_links=links)
+    assert not _bluesky_post_text_matches(page.replace("Taiwan", "China", 1), body, record, page_links=links)

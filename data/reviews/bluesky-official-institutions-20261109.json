@@ -1,0 +1,35 @@
+{
+  "batch": "bluesky-official-institutions-2025",
+  "period": "2017-2025",
+  "source_category": "new_media",
+  "candidate_urls": 4,
+  "unique_candidate_urls": 4,
+  "verified_full_texts": 4,
+  "duplicates": 0,
+  "pending": 0,
+  "restricted": 0,
+  "failed": 0,
+  "http_statuses": {
+    "200": 18
+  },
+  "sources": [
+    "The New York Times Opinion",
+    "Freedom House",
+    "CSIS",
+    "Public Opinion Quarterly"
+  ],
+  "body_policy": "Public written post text only; no video content or video summaries entered as full-text material.",
+  "verification": "Each post page was cross-checked against the public Bluesky getPosts API by canonical URL, post URI, DID, handle, display name, indexedAt, and createdAt. The exact API post text is retained as body. Freedom House's expanded link is validated against the original link facet and page text. Abstracts and keywords are derived from and bound to each exact body SHA-256.",
+  "period_totals_after_batch": {
+    "1949-1972": 98,
+    "1973-1991": 60,
+    "1992-2016": 707,
+    "2017-2025": 1764
+  },
+  "formal_total_after_batch": 2629,
+  "coverage_gaps": [
+    "Early-period (1949-1991) totals remain low and need continued government, archive, and media retrieval.",
+    "Coverage audit still has 2 applicable period/source-category cells without verified full text."
+  ],
+  "next_batch": "Continue legal public-text collection across early and post-1991 periods; skip videos and do not count video summaries as full texts."
+}

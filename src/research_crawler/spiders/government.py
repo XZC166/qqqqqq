@@ -169,6 +169,29 @@ def _reviewed_bluesky_metadata(source_url: str, body: str) -> tuple[str, str]:
     return "", ""
 
 
+def _bluesky_post_text_matches(
+    page_text: str, body: str, record: dict, external_url: str = "", page_links=()
+) -> bool:
+    if page_text == body or bool(external_url and page_text == body + "\n" + external_url):
+        return True
+    facets = record.get("facets", [])
+    linked_urls = {
+        feature.get("uri")
+        for facet in facets if isinstance(facet, dict)
+        for feature in facet.get("features", []) if isinstance(feature, dict)
+        if feature.get("$type") == "app.bsky.richtext.facet#link"
+    }
+    links_confirmed = linked_urls.issubset(set(page_links)) or all(
+        url in page_text for url in linked_urls
+    )
+    if not linked_urls or not links_confirmed:
+        return False
+    url_pattern = re.compile(r"https?://\S+|(?:[\w-]+\.)+[a-z]{2,}/\S*", re.I)
+    comparable_body = re.sub(r"\s+", " ", url_pattern.sub("", body)).strip()
+    comparable_page = re.sub(r"\s+", " ", url_pattern.sub("", page_text)).strip()
+    return comparable_body == comparable_page
+
+
 def _reviewed_truman_library_metadata(source_url: str, body: str):
     reviewed = TRUMAN_LIBRARY_REVIEWED_HASHED_METADATA.get(source_url)
     if reviewed and sha256(body.encode("utf-8")).hexdigest() == reviewed[0]:
@@ -2768,7 +2791,13 @@ class APNewsArticleAdapter:
 class BlueskyPostAdapter:
     """Public post HTML cross-checked against the documented public getPosts API."""
 
-    sources = {"apnews.com": "The Associated Press", "nytopinion.nytimes.com": "The New York Times"}
+    sources = {
+        "apnews.com": "The Associated Press",
+        "nytopinion.nytimes.com": "The New York Times",
+        "freedomhouse.bsky.social": "Freedom House",
+        "csis.org": "CSIS",
+        "poqjournal.bsky.social": "Public Opinion Quarterly",
+    }
 
     def extract(self, response: Response, candidate: MaterialCandidate, metadata_response: Response | None) -> dict:
         decision = classify_response(response.url, response.status, response.text)
@@ -2805,7 +2834,10 @@ class BlueskyPostAdapter:
         embed = record.get("embed", {})
         external = embed.get("external", {}) if isinstance(embed, dict) else {}
         external_url = external.get("uri", "") if isinstance(external, dict) else ""
-        page_matches = isinstance(body, str) and (page_text == body or bool(external_url and page_text == body + "\n" + external_url))
+        page_links = page_text_nodes.css("a::attr(href)").getall() if len(page_text_nodes) == 1 else []
+        page_matches = isinstance(body, str) and _bluesky_post_text_matches(
+            page_text, body, record, external_url, page_links
+        )
         title = response.css("head > title::text").get(default="")
         indexed_at = summary.css("#bsky_post_indexedat::text").get(default="")
         published_meta = response.css('meta[property="article:published_time"]::attr(content)').get(default="")
