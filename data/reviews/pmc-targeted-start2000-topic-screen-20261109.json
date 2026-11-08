@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-11-08T23:44:04.697552+00:00",
+  "input_materials": 5,
+  "retained": 4,
+  "withdrawn": 1,
+  "retained_records": [
+    {
+      "material_id": 4317,
+      "candidate_id": 5599,
+      "title": "Air Pollution Coverage, Anti-Chinese Sentiment, and Attitudes Towards Foreign Policy in South Korea",
+      "source": "Journal of Chinese Political Science",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10040909/"
+    },
+    {
+      "material_id": 4318,
+      "candidate_id": 5603,
+      "title": "Corpus-based analysis of shifts in China’s diplomatic stance across seven decades (1949–2018)",
+      "source": "Frontiers in Psychology",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9712192/"
+    },
+    {
+      "material_id": 4319,
+      "candidate_id": 5608,
+      "title": "Discursive construction of corporate identity through websites: An intercultural perspective on the commercial banks of the United States and China",
+      "source": "Frontiers in Psychology",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9469190/"
+    },
+    {
+      "material_id": 4320,
+      "candidate_id": 5609,
+      "title": "The Acceptability of Traditional Culture under the Background of Deep Learning",
+      "source": "Computational Intelligence and Neuroscience",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9427224/"
+    }
+  ],
+  "withdrawn_records": [
+    {
+      "material_id": 4316,
+      "candidate_id": 5597,
+      "title": "The rise of techno-geopolitical uncertainty: Implications of the United States CHIPS and Science Act",
+      "source": "Journal of International Business Studies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10066984/",
+      "reason": "topic-screen: general CHIPS/business policy article lacks a direct media, public-opinion, propaganda, or discourse-analysis focus"
+    }
+  ],
+  "backup": "data/research-pre-pmc-start2000-topic-screen-20261109.sqlite3"
+}
