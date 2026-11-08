@@ -2049,3 +2049,13 @@ Search evidence is saved under `research/firecrawl/early-media-tiananmen-1989-ga
 - [x] Reconcile final candidate statuses after this batch: 2,546 verified candidates (including duplicates), 569 pending, 99 restricted, 27 excluded, and 3 candidate. Refresh workbook, coverage audit and delivery ZIP before reporting these totals.
 - [x] Verify the regenerated workbook has 2,507 data rows and exactly the required nine columns; abstracts, keywords and bodies are nonempty for every row. SQLite integrity passes with zero foreign-key errors; all 7,846 ZIP entries pass CRC validation.
 - [ ] Continue early-period discovery and concurrent 1992-2025 source collection. The volume goal has been reached; quality, source balance and unresolved access gaps remain active.
+
+## Follow-up: 2026-11-08 expanded discourse search
+
+- [x] Re-crawl the expanded 1949-1960 GovInfo broadcasting candidate set. Three public PDFs returned HTTP 200, including a roughly 51 MB Congressional Record volume; no new unique complete single-material text passed verification. A second 1966 volume of roughly 55 MB remained in transfer for several minutes and was stopped; retain it as unresolved and retry only through a more granular lawful source representation.
+- [x] Screen an expanded 2017-2025 PMC search (176 candidates): 8 entered the full-text queue, 64 remain for manual review, and 104 were excluded by title/abstract metadata. Full-text rechecks added 2 unique verified records from this group.
+- [x] Screen a second 2017-2025 PMC search (13 candidates): 4 entered the full-text queue, 7 remain for manual review, and 2 were excluded. A full-text recheck added 1 unique verified record.
+- [x] Screen a 1992-2016 PMC discourse search (13 candidates): 11 remain for manual review because the U.S. connection is unclear or citation abstracts are missing; 2 were excluded by metadata and none entered full-text crawling. A 1973-1991 PMC search under these terms found 0 candidates.
+- [x] Refresh corpus and candidate totals: 2,510 unique materials; period counts are 40 (1949-1972), 25 (1973-1991), 694 (1992-2016), and 1,751 (2017-2025). Candidate statuses: 2,550 verified, 570 pending, 99 restricted, 27 excluded, and 2 candidate. Formal records still have no blank abstracts, keywords, or bodies.
+- [x] Rebuild and verify the 2,510-row nine-column workbook and delivery ZIP; SQLite integrity passes with zero foreign-key errors and all 7,855 ZIP entries pass CRC validation.
+- [ ] Continue source discovery across all periods; pursue granular early primary sources and keep 1991+ media, government, think-tank and research literature in parallel. Manual-review PMC candidates must be assessed for topical relevance before any full-text crawl.
