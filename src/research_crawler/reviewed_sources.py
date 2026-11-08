@@ -1426,6 +1426,36 @@ PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device": (
+        "d09bad6396b5c051506366522066434c098887f434db7b18da3d66b29de2c3cd",
+        "据正文整理：约翰逊就中国首次核试验发表声明，称美国已确认试验发生，并讨论其军事意义、美国在亚洲的防务承诺及核扩散影响。",
+        "Chinese nuclear test; U.S. public statement; Lyndon B. Johnson; Asian security; nuclear proliferation",
+    ),
+    "https://www.presidency.ucsb.edu/documents/remarks-permanent-normal-trade-relations-with-china-and-exchange-with-reporters": (
+        "0b894992c563e74cad4e5b49e21b2fc12e498f98cef84d2881273906eed455c1",
+        "据正文整理：克林顿阐述给予中国永久正常贸易关系待遇的理由，说明其对美国市场准入、WTO规则及美中人权和安全分歧的看法。",
+        "Permanent normal trade relations; China; World Trade Organization; U.S.-China trade; Bill Clinton",
+    ),
+    "https://www.presidency.ucsb.edu/documents/message-the-congress-transmitting-report-chinas-accession-the-world-trade-organization": (
+        "8cc68abf555b68ca238e4650138c1626cdc49ade8cf23d47de92eccd62311e58",
+        "据正文整理：布什向国会提交报告，说明中国加入世界贸易组织的条款和条件符合美国与中国此前达成的协议要求。",
+        "China; World Trade Organization accession; U.S. Congress; George W. Bush; trade agreement",
+    ),
+    "https://www.presidency.ucsb.edu/documents/memorandum-chinas-accession-the-world-trade-organization": (
+        "d852c15bbfb252d3e02a4f75bae93f35844fe6c304112c722df7b5789e29798b",
+        "据正文整理：布什就中国加入 WTO 所涉国有及国有投资企业贸易行为作出法定认定，并指示将备忘录刊载于《联邦公报》。",
+        "China; World Trade Organization; state trading enterprises; U.S. trade law; presidential memorandum",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-china-united-states-trade": (
+        "4fc649380dace64bd245af581a115fc2474c19354fa8cfaab161920a83cdb11e",
+        "据正文整理：特朗普宣布对部分中国商品加征关税，并将措施与知识产权和技术获取问题、贸易失衡及美国就业联系起来。",
+        "China-U.S. trade; tariffs; intellectual property; technology transfer; Donald Trump",
+    ),
+    "https://www.presidency.ucsb.edu/documents/remarks-signing-memorandum-actions-the-united-states-related-the-section-301-investigation": (
+        "1f67398e0a9d1cc0778841ae43cabca9981b01dd25d975fc3fe4ebbed2dd9ce8",
+        "据正文整理：特朗普在签署针对中国技术转让、知识产权和创新相关 Section 301 调查行动的备忘录时发表讲话并回答记者提问。",
+        "Section 301; China; technology transfer; intellectual property; trade policy; Donald Trump",
+    ),
     "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-542": (
         "681cd7fa340c62319c7251cc8ae8a7cb57ce038db0a759b3805664ba1ca86bdf",
         "据正文整理：杜鲁门在记者会上回应中国共产党拒绝朝鲜停火提议后的美国行动，并表示将推动联合国认定中国为侵略者。",
