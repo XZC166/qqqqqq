@@ -1473,6 +1473,21 @@ PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
         "据正文整理：里根与中国国务院总理赵紫阳在国宴上致祝酒词，谈及中美关系、两国合作以及民间交往。",
         "U.S.-China relations; normalization; Zhao Ziyang; public diplomacy; Ronald Reagan",
     ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-26": (
+        "5d2f7458f24b67985c39b9846eabda27eb3dfbe598954ed33d072fec0aef3036",
+        "据正文整理：布什宣布延长中国最惠国贸易待遇一年，解释其对中美贸易和美国利益的考虑，并回顾天安门事件后的制裁措施。",
+        "George H. W. Bush; China; most-favored-nation status; Tiananmen sanctions; U.S.-China trade",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-press-secretary-fitzwater-the-renewal-most-favored-nation-trade-status-for-china": (
+        "fc3b2767840d32eb7dafbabc839a5ca37d18fb8fe4fecfe5f9531ad298a3d3b1",
+        "据正文整理：新闻秘书声明说明布什延长中国最惠国待遇的决定，列举其对中国人权状况的关切及维持贸易待遇的理由。",
+        "China; most-favored-nation status; human rights; U.S.-China trade; White House statement",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-administration-policy-sj-res-153-resolution-disapproval-the-presidents-decision": (
+        "324f3aadf4b24152d891c633e66f0f4c1835df1a5cf3cd3f93bb256201712b5a",
+        "据正文整理：布什政府反对要求撤销对华最惠国待遇延期决定或附加续期条件的参议院议案，并说明继续贸易关系的政策理由。",
+        "China; most-favored-nation status; U.S. Congress; trade policy; U.S.-China relations",
+    ),
     "https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device": (
         "d09bad6396b5c051506366522066434c098887f434db7b18da3d66b29de2c3cd",
         "据正文整理：约翰逊就中国首次核试验发表声明，称美国已确认试验发生，并讨论其军事意义、美国在亚洲的防务承诺及核扩散影响。",
