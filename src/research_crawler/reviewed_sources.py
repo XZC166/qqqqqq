@@ -1433,6 +1433,41 @@ PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-329": (
+        "b0a2babdea2ed9487b29f6a7562c2c38e630a3d97b5699f05dd0d9577c409b32",
+        "据正文整理：艾森豪威尔在记者会上回应有关台湾海峡、金门和马祖防务、与中国共产党政权谈判及美国公开政策的问题。",
+        "Dwight D. Eisenhower; China; Taiwan Strait; Quemoy; Matsu; U.S. foreign policy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-the-president-united-nations-negotiations-with-communist-china-for-release": (
+        "6aaaf6b62207cfce8483d5cd60e6742bc886d2be460add1c0afd110e89a0fa50",
+        "据正文整理：艾森豪威尔就联合国秘书长访问北京及被拘留美国飞行员问题发表声明，呼吁克制，并支持继续通过联合国争取释放人员。",
+        "Dwight D. Eisenhower; China; United Nations; detained U.S. airmen; public opinion",
+    ),
+    "https://www.presidency.ucsb.edu/documents/remarks-welcome-the-white-house-vice-president-yen-the-republic-china": (
+        "a76e90d24aea29572c9cbc7dfe75b3f94696909d8f63d9582c4f35ce614e7c51",
+        "据正文整理：约翰逊欢迎中华民国副总统严家淦访白宫，谈及双方关系、东亚局势、台湾的经济发展及美国援助。",
+        "Lyndon B. Johnson; Yen Chia-kan; Republic of China; Taiwan; U.S. assistance; East Asia",
+    ),
+    "https://www.presidency.ucsb.edu/documents/remarks-signing-ceremony-for-four-united-states-china-agreements": (
+        "d6a6cce040f6065e05a8355c2d699306729c1393e912a752e9b12e784bdfe5d2",
+        "据正文整理：里根在北京出席四项美中协议签署仪式，介绍协议涉及贸易投资、人员与思想交流、核能合作及管理培训。",
+        "Ronald Reagan; U.S.-China agreements; trade; investment; exchanges; nuclear energy",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-the-chinese-governments-suppression-student-demonstrations": (
+        "54a815418a8c827f4cad6c7308103ed583d9506d6e409eb2290e65494a9f7a1b",
+        "据正文整理：布什谴责中国政府对和平示威者使用武力并造成伤亡，呼吁克制、对话及恢复政治和经济改革。",
+        "George H. W. Bush; China; student demonstrations; public statement; political reform; human rights",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-the-press-secretary-chinas-political-correctness": (
+        "a82af608ae38f95c81f4ac15f1221696ca4ac330de783b109fde8d9c422ea61d",
+        "据正文整理：白宫新闻秘书回应中国民航局要求外国航空公司调整台湾、香港和澳门标示的事件，称美国反对中国将相关政治要求施加于美国企业和公民。",
+        "Donald Trump; China; Taiwan; Hong Kong; Macau; airlines; political language",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-the-press-secretary-regarding-the-presidents-working-dinner-with-china": (
+        "c7ef8de26a161c19455994843ffbd50b99983c3d51c7c3567123e00cfa7e3ef8",
+        "据正文整理：白宫新闻秘书介绍特朗普与习近平在布宜诺斯艾利斯工作晚餐后的公开表述，涉及芬太尼管制、关税安排和中国采购美国农产品、能源及工业产品。",
+        "Donald Trump; Xi Jinping; trade negotiations; tariffs; fentanyl; U.S.-China relations",
+    ),
     "https://www.presidency.ucsb.edu/documents/statement-the-president-upon-signing-the-foreign-economic-assistance-act": (
         "f2454f49215c9fd521d008bad4aff3e136e4145fe3f98ec3d158a317b18dfd3e",
         "据正文整理：杜鲁门签署《1950年对外经济援助法》，说明该法授权延续欧洲复兴计划、援助韩国、东南亚及非共产主义中国，并开展技术援助。",
