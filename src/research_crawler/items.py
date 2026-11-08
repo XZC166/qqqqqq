@@ -22,6 +22,7 @@ class MaterialCandidate:
     source_category: str
     query_label: str
     platform_id: str | None = None
+    metadata_url: str | None = None
 
 
 @dataclass(frozen=True)

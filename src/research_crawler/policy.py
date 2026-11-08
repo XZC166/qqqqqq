@@ -12,12 +12,19 @@ class AccessDecision(Enum):
 _RETRYABLE_STATUSES = {408, 429, 500, 502, 503, 504}
 _RESTRICTED_STATUSES = {401, 402, 403}
 _RESTRICTION_MARKERS = (
+    "exception: forbidden",
     "subscribe to continue",
     "subscribe to read",
     "this content is for subscribers",
     "sign in to continue reading",
     "log in to continue reading",
     "purchase access to view",
+    "verifying connection",
+    "can't verify your browser",
+    "cannot verify your browser",
+    "verify your browser",
+    "cf-turnstile",
+    "captcha-form",
 )
 
 

@@ -53,14 +53,73 @@ def test_rejects_unknown_or_invalid_exact_publication_date(material, evidence):
         validate_material(replace(material, time="2020-02"), evidence, fields)
 
 
+def test_rejects_publication_date_outside_candidate_period(material, evidence):
+    fields = {
+        name: material.source_url
+        for name in ("source", "time", "author", "title", "abstract", "keywords")
+    }
+
+    with pytest.raises(ValidationError, match="outside research period"):
+        validate_material(
+            replace(material, time="1946-12-18"),
+            evidence,
+            fields,
+            period="1949-1972",
+        )
+
+
 def test_rejects_metadata_or_body_without_matching_source_url(material, evidence):
     fields = {
         name: material.source_url
         for name in ("source", "time", "author", "title", "abstract", "keywords")
     }
     fields["title"] = "https://other.example/story"
-    with pytest.raises(ValidationError, match="same source"):
+    with pytest.raises(ValidationError, match="verified source evidence"):
         validate_material(material, evidence, fields)
+
+
+def test_rejects_non_http_source_links(material, evidence):
+    fields = {
+        name: "file:///authorized-record"
+        for name in ("source", "time", "author", "title", "abstract", "keywords")
+    }
+    with pytest.raises(ValidationError, match=r"HTTP\(S\)"):
+        validate_material(
+            replace(material, source_url="file:///authorized-record"),
+            replace(evidence, source_url="file:///authorized-record"),
+            fields,
+        )
+
+
+def test_rejects_html_tags_in_body(material, evidence):
+    fields = {
+        name: material.source_url
+        for name in ("source", "time", "author", "title", "abstract", "keywords")
+    }
+    with pytest.raises(ValidationError, match="HTML"):
+        validate_material(
+            replace(material, body="First paragraph.</p><p>Second paragraph."),
+            evidence,
+            fields,
+        )
+
+
+def test_accepts_linked_metadata_source_when_its_evidence_is_declared(material, evidence):
+    metadata_url = "https://example.org/report-record"
+    fields = {
+        name: metadata_url for name in ("source", "time", "author", "title")
+    }
+    fields["abstract"] = metadata_url
+    fields["keywords"] = metadata_url
+    pdf_material = replace(material, source_url="https://example.org/report.pdf")
+    pdf_evidence = replace(evidence, source_url=pdf_material.source_url, metadata_verified=False)
+
+    assert validate_material(
+        pdf_material,
+        pdf_evidence,
+        fields,
+        metadata_evidence_urls={metadata_url},
+    ) == pdf_material
 
 
 def test_fills_missing_author_with_required_literal(material, evidence):
@@ -82,6 +141,32 @@ def test_requires_source_evidence_for_publisher_abstract(material, evidence):
     fields = {name: material.source_url for name in ("source", "time", "author", "title")}
     with pytest.raises(ValidationError, match="abstract metadata"):
         validate_material(material, evidence, fields)
+
+
+def test_accepts_keywords_derived_from_verified_full_body(material, evidence):
+    fields = {name: material.source_url for name in ("source", "time", "author", "title")}
+    fields["keywords"] = "body"
+    derived = replace(material, abstract="据正文整理：概括正文。")
+
+    assert validate_material(
+        derived,
+        evidence,
+        fields,
+        abstract_origin="derived",
+    ) == derived
+
+
+def test_rejects_body_derived_keywords_when_body_is_incomplete(material, evidence):
+    fields = {name: material.source_url for name in ("source", "time", "author", "title")}
+    fields["keywords"] = "body"
+
+    with pytest.raises(ValidationError, match="body must be confirmed complete"):
+        validate_material(
+            material,
+            replace(evidence, body_complete=False),
+            fields,
+            abstract_origin="derived",
+        )
 
 
 def test_rejects_incomplete_body_and_unverified_metadata(material, evidence):

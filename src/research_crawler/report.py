@@ -12,6 +12,7 @@ def render_batch_report(store: ResearchStore, batch_id: int) -> str:
         f"duplicate: {counts['duplicate']}",
         f"pending: {counts['pending']}",
         f"unprocessed: {counts['unprocessed']}",
+        f"excluded: {counts['excluded']}",
         "Uncovered or restricted candidates:",
     ]
     uncovered = store.batch_uncovered(batch_id)

@@ -5,3 +5,7 @@ __pycache__/
 src/*.egg-info/
 data/
 *.sqlite3
+materials.xlsx
+materials_bodies/
+research/
+tmp/

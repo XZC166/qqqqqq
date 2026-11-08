@@ -1,4 +1,6 @@
 import sqlite3
+import json
+import pytest
 
 from research_crawler.items import MaterialCandidate, SourceEvidence, VerifiedMaterial
 from research_crawler.store import ResearchStore
@@ -39,9 +41,150 @@ def test_batch_candidate_and_evidence_survive_reopening(tmp_path):
         "duplicate": 0,
         "pending": 0,
         "unprocessed": 1,
+        "excluded": 0,
     }
     assert evidence_id > 0
     reopened.close()
+
+
+def test_candidate_and_material_can_link_separate_metadata_evidence(tmp_path):
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    pdf_url = "https://example.org/report.pdf"
+    metadata_url = "https://example.org/report-record"
+    batch_id = store.create_batch("1992-2016", "think_tank", "paired-pdf")
+    candidate_id = store.add_candidate(
+        batch_id,
+        MaterialCandidate(
+            pdf_url, "1992-2016", "think_tank", "paired-pdf", metadata_url=metadata_url
+        ),
+    )
+    saved_candidate = store.connection.execute(
+        "SELECT metadata_url FROM candidates WHERE id = ?", (candidate_id,)
+    ).fetchone()
+    assert saved_candidate["metadata_url"] == metadata_url
+    body_evidence_id = store.add_evidence(
+        candidate_id,
+        SourceEvidence(
+            pdf_url, "2026-11-06T00:00:00Z", 200, "pdf-hash",
+            body_complete=True, metadata_verified=False, body_format="pdf_text",
+        ),
+        access_status="allow",
+    )
+    metadata_evidence_id = store.add_evidence(
+        candidate_id,
+        SourceEvidence(
+            metadata_url, "2026-11-06T00:00:00Z", 200, "page-hash",
+            body_complete=False, metadata_verified=True,
+        ),
+        access_status="allow",
+    )
+    material = VerifiedMaterial(
+        "Example Publisher", "2008-06-11", "A. Author", "Report title", "",
+        "", "Complete PDF text.", pdf_url,
+    )
+
+    store.add_verified_material(
+        candidate_id,
+        body_evidence_id,
+        material,
+        abstract_origin="none",
+        field_sources={name: metadata_url for name in ("source", "time", "author", "title")},
+        metadata_evidence_ids={metadata_evidence_id},
+    )
+
+    assert store.get_verified_materials() == [material]
+    saved_evidence = list(store.connection.execute("SELECT source_url, body_complete, metadata_verified FROM evidence ORDER BY id"))
+    assert [tuple(row) for row in saved_evidence] == [
+        (pdf_url, 1, 0),
+        (metadata_url, 0, 1),
+    ]
+    snapshot = store.connection.execute("SELECT * FROM material_verifications").fetchone()
+    assert snapshot["primary_evidence_id"] == body_evidence_id
+    assert snapshot["abstract_origin"] == "none"
+    assert json.loads(snapshot["field_sources"]) == {name: metadata_url for name in ("source", "time", "author", "title")}
+    assert [row[0] for row in store.connection.execute("SELECT evidence_id FROM material_metadata_evidence")] == [metadata_evidence_id]
+    replacement_id = store.add_evidence(candidate_id, SourceEvidence(
+        metadata_url, "2026-11-06T01:00:00Z", 200, "reviewed-new-page-hash", metadata_verified=True,
+    ), access_status="allow")
+    store.add_verified_material(candidate_id, body_evidence_id, material, abstract_origin="none",
+        field_sources={name: metadata_url for name in ("source", "time", "author", "title")},
+        metadata_evidence_ids={replacement_id})
+    store.close()
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    assert [row[0] for row in store.connection.execute("SELECT evidence_id FROM material_metadata_evidence")] == [replacement_id]
+    store.close()
+
+
+def test_migration_keeps_existing_materials_without_fabricating_historical_snapshots(tmp_path):
+    from test_export import add_verified
+    path = tmp_path / "legacy.sqlite3"
+    store = ResearchStore(path)
+    add_verified(store, "Previously reviewed source body.")
+    before = store.get_verified_materials()
+    store.connection.execute("DROP TABLE material_metadata_evidence")
+    store.connection.execute("DROP TABLE material_verifications")
+    store.connection.commit()
+    store.close()
+    store = ResearchStore(path)
+    assert store.get_verified_materials() == before
+    assert store.connection.execute("SELECT COUNT(*) FROM material_verifications").fetchone()[0] == 0
+    store.close()
+
+
+def test_promotion_update_rolls_back_if_verification_snapshot_cannot_be_written(tmp_path):
+    from dataclasses import replace
+    from test_export import add_verified
+    store = ResearchStore(tmp_path / "atomic.sqlite3")
+    add_verified(store, "Originally reviewed body.")
+    original = store.get_verified_materials()[0]
+    snapshot = tuple(store.connection.execute("SELECT * FROM material_verifications").fetchone())
+    store.connection.executescript("""CREATE TRIGGER reject_snapshot BEFORE UPDATE ON material_verifications
+        BEGIN SELECT RAISE(ABORT, 'test snapshot failure'); END;""")
+    with pytest.raises(sqlite3.IntegrityError, match="snapshot failure"):
+        store.add_verified_material(1, 1, replace(original, body="Newly reviewed body."),
+            field_sources={name: original.source_url for name in ("source", "time", "author", "title", "abstract", "keywords")})
+    assert store.get_verified_materials() == [original]
+    assert tuple(store.connection.execute("SELECT * FROM material_verifications").fetchone()) == snapshot
+    store.close()
+
+
+def test_store_rejects_metadata_evidence_not_declared_by_candidate(tmp_path):
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    pdf_url = "https://example.org/report.pdf"
+    declared_url = "https://example.org/report-record"
+    unrelated_url = "https://example.org/other-record"
+    batch_id = store.create_batch("1992-2016", "think_tank", "paired-pdf")
+    candidate_id = store.add_candidate(
+        batch_id,
+        MaterialCandidate(
+            pdf_url, "1992-2016", "think_tank", "paired-pdf", metadata_url=declared_url
+        ),
+    )
+    body_id = store.add_evidence(
+        candidate_id,
+        SourceEvidence(pdf_url, "2026-11-06T00:00:00Z", 200, "pdf", body_complete=True, body_format="pdf_text"),
+        access_status="allow",
+    )
+    unrelated_id = store.add_evidence(
+        candidate_id,
+        SourceEvidence(unrelated_url, "2026-11-06T00:00:00Z", 200, "meta", metadata_verified=True),
+        access_status="allow",
+    )
+    material = VerifiedMaterial(
+        "Publisher", "2008-06-11", "A. Author", "Report", "", "",
+        "Full text", pdf_url,
+    )
+
+    with pytest.raises(ValueError, match="declared metadata URL"):
+        store.add_verified_material(
+            candidate_id,
+            body_id,
+            material,
+            abstract_origin="none",
+            field_sources={name: unrelated_url for name in ("source", "time", "author", "title")},
+            metadata_evidence_ids={unrelated_id},
+        )
+    store.close()
 
 
 def test_existing_evidence_schema_is_migrated_with_retrieval_provenance(tmp_path):
@@ -175,6 +318,41 @@ def test_duplicate_discovery_is_counted_even_if_second_copy_is_not_verified(tmp_
     store.close()
 
 
+def test_url_duplicate_is_recognized_when_later_candidate_adds_platform_id(tmp_path):
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    url = "https://pmc.ncbi.nlm.nih.gov/articles/PMC1234567/"
+    material = VerifiedMaterial(
+        "Example Journal", "2023-01-02", "A. Author", "Title", "", "", "Full text", url
+    )
+    first_batch = store.create_batch("2017-2025", "research_literature", "first")
+    first_candidate = store.add_candidate(
+        first_batch,
+        MaterialCandidate(url, "2017-2025", "research_literature", "first"),
+    )
+    first_evidence = store.add_evidence(
+        first_candidate,
+        SourceEvidence(
+            url, "2026-11-06T00:00:00Z", 200, "body-one",
+            body_complete=True, metadata_verified=True,
+        ),
+        "allow",
+    )
+    store.add_verified_material(first_candidate, first_evidence, material)
+
+    second_batch = store.create_batch("2017-2025", "research_literature", "second")
+    second_candidate = store.add_candidate(
+        second_batch,
+        MaterialCandidate(
+            url, "2017-2025", "research_literature", "second", platform_id="PMC1234567"
+        ),
+    )
+
+    assert store.batch_summary(second_batch)["duplicate"] == 1
+    assert store.get_verified_materials()[0].duplicate_count == 1
+    assert store.connection.execute("SELECT COUNT(*) FROM materials").fetchone()[0] == 1
+    store.close()
+
+
 def test_tracking_query_parameters_do_not_prevent_url_deduplication(tmp_path):
     store = ResearchStore(tmp_path / "research.sqlite3")
     batch_id = store.create_batch("2017-2025", "media", "q1")
@@ -205,6 +383,45 @@ def test_resuming_batch_and_candidate_does_not_create_duplicate_discovery(tmp_pa
     assert first_id == resumed_id
     assert store.batch_summary(batch_id)["candidate"] == 1
     assert store.batch_summary(batch_id)["duplicate"] == 0
+    store.close()
+
+
+def test_x_and_twitter_aliases_share_post_identity_and_preserve_first_url(tmp_path):
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    first_url = "https://twitter.com/StateDept/status/1670748325098975232"
+    first_batch = store.create_batch("2017-2025", "new_media", "first")
+    first = store.add_candidate(first_batch, MaterialCandidate(
+        first_url, "2017-2025", "new_media", "first", platform_id="1670748325098975232"
+    ))
+    second_batch = store.create_batch("2017-2025", "new_media", "second")
+    second = store.add_candidate(second_batch, MaterialCandidate(
+        "https://x.com/StateDept/status/1670748325098975232", "2017-2025", "new_media",
+        "second", platform_id="1670748325098975232"
+    ))
+    rows = store.connection.execute("SELECT identity_key,source_url FROM candidates ORDER BY id").fetchall()
+    assert rows[0]["identity_key"] == rows[1]["identity_key"]
+    assert rows[0]["source_url"] == first_url
+    assert first != second
+    assert store.batch_summary(second_batch)["duplicate"] == 1
+    store.close()
+
+
+def test_x_alias_deduplication_recognizes_existing_legacy_domain_key(tmp_path):
+    store = ResearchStore(tmp_path / "research.sqlite3")
+    first_batch = store.create_batch("2017-2025", "new_media", "first")
+    first = store.add_candidate(first_batch, MaterialCandidate(
+        "https://mobile.twitter.com/StateDept/status/1670748325098975232",
+        "2017-2025", "new_media", "first", platform_id="1670748325098975232"
+    ))
+    store.connection.execute("UPDATE candidates SET identity_key=? WHERE id=?",
+                             ("platform:mobile.twitter.com:1670748325098975232", first))
+    store.connection.commit()
+    second_batch = store.create_batch("2017-2025", "new_media", "second")
+    store.add_candidate(second_batch, MaterialCandidate(
+        "https://www.x.com/StateDept/status/1670748325098975232", "2017-2025", "new_media",
+        "second", platform_id="1670748325098975232"
+    ))
+    assert store.batch_summary(second_batch)["duplicate"] == 1
     store.close()
 
 
