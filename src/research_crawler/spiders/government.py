@@ -334,7 +334,21 @@ class ReviewedPublicMediaAdapter:
         h1 = [_normalized_text(node.xpath(".//text()").getall()) for node in response.css("h1")]
         document_title = _normalized_text(response.xpath("string(//title)").getall())
 
-        if page_kind == "guardian":
+        if page_kind == "time":
+            containers = response.css("article")
+            source_matches = (
+                response.css('meta[property="og:site_name"]::attr(content)').getall()
+                == ["TIME"]
+            )
+            author_matches = response.css(
+                'meta[name="author"]::attr(content)'
+            ).getall() == [author]
+            date_values = response.css("time::attr(datetime)").getall()
+            schema_matches = len(date_values) == 2 and all(
+                value.startswith(published_on) for value in date_values
+            )
+            visible_title_matches = h1 == [title]
+        elif page_kind == "guardian":
             containers = response.css(".article-body-commercial-selector")
             source_matches = (
                 response.css('meta[property="og:site_name"]::attr(content)').getall()
@@ -414,10 +428,13 @@ class ReviewedPublicMediaAdapter:
             if (text := _normalized_text(node.xpath(".//text()").getall()))
         )
         body_hash = sha256(body.encode("utf-8")).hexdigest()
-        publication_matches = bool(
-            len(published_meta) == 1
-            and published_meta[0].startswith(published_on)
-        ) if page_kind != "abc_fourcorners" else True
+        if page_kind == "time":
+            publication_matches = schema_matches
+        else:
+            publication_matches = bool(
+                len(published_meta) == 1
+                and published_meta[0].startswith(published_on)
+            ) if page_kind != "abc_fourcorners" else True
         abstract = publisher_abstract or PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS.get(
             response.url, ""
         )

@@ -440,6 +440,66 @@ PBS_REVIEWED_PROGRAM_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str, 
 # Tuple fields: period, source, author, date, title, selector, body length, body SHA-256,
 # publisher abstract (empty when no relevant abstract is provided), body-derived keywords.
 PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
+    "https://time.com/archive/6785414/china-what-can-li-do/": (
+        "1949-1972", "TIME", "TIME", "1949-01-31", "CHINA: What Can Li Do?",
+        "time", "1759",
+        "e7f81783699e699e0e15151d711d83d0d912630db65538c2cecd892fb8b38dde",
+        "", "China; Li Zongren; Chinese Civil War; Nationalist government; U.S. policy", "5", "5",
+    ),
+    "https://time.com/archive/6602114/china-defeat/": (
+        "1949-1972", "TIME", "TIME", "1949-02-07", "CHINA: Defeat",
+        "time", "4265",
+        "cd2f1848c007052167071fa01479884fa1a68bd0b48cfd3704757ed89934b5d4",
+        "", "China; Chinese Civil War; Nationalist government; Communist victory; U.S. policy", "10", "10",
+    ),
+    "https://time.com/archive/6602803/foreign-news-window-dressing/": (
+        "1949-1972", "TIME", "TIME", "1949-06-27", "Foreign News: Window-Dressing",
+        "time", "559",
+        "a34b305baa0edbf3ca185c143adc850b3812deac032152f21c040a9f8ba06377",
+        "", "China; Chinese Communist Party; Soviet Union; diplomacy; international relations", "1", "1",
+    ),
+    "https://time.com/archive/6791264/the-nations-mao-settles-the-dust/": (
+        "1949-1972", "TIME", "TIME", "1949-07-11", "THE NATIONS: Mao Settles the Dust",
+        "time", "3047",
+        "7028b51a0817867652f0a81b651df994c87a74ab2f911dfea4680ff8c2469d03",
+        "", "Mao Zedong; Chinese Communist Party; China; Chinese Civil War; political consolidation", "8", "8",
+    ),
+    "https://time.com/archive/6603186/china-democratic-dictatorship/": (
+        "1949-1972", "TIME", "TIME", "1949-10-03", "CHINA: Democratic Dictatorship",
+        "time", "1550",
+        "58d2947261ac0c1840d1d93da76b8ec989163b403ea3d2c0390f7e07183a7338",
+        "", "China; Mao Zedong; political system; Communist Party; People's Republic of China", "5", "5",
+    ),
+    "https://time.com/archive/6603251/the-nations-teamwork/": (
+        "1949-1972", "TIME", "TIME", "1949-10-10", "THE NATIONS: Teamwork",
+        "time", "2575",
+        "9c36c85421ebbbf91c723d392f27d16707459831c7dade080ab6e047e2e81dec",
+        "", "China; Mao Zedong; Chinese Communist Party; government; political leadership", "7", "7",
+    ),
+    "https://time.com/archive/6797748/formosa-heroes-welcome/": (
+        "1949-1972", "TIME", "TIME", "1954-02-01", "FORMOSA: Heroes' Welcome",
+        "time", "5665",
+        "2e10dcc5968d366ee00d3f5469544b4814ff9d38ad53eb74e06b7a383c1890ee",
+        "", "Taiwan; Formosa; Republic of China; U.S.-Taiwan relations; military aid", "11", "11",
+    ),
+    "https://time.com/archive/6621832/formosa-uncle-chen/": (
+        "1949-1972", "TIME", "TIME", "1954-03-01", "FORMOSA: Uncle Chen",
+        "time", "2663",
+        "45ccb3656e672c7433b01b4e120f13352f5da1c36a929badc93eacc6c39d3761",
+        "", "Taiwan; Formosa; Chen Cheng; Republic of China; cross-Strait relations", "6", "6",
+    ),
+    "https://time.com/archive/6888300/foreign-news-quemoy-autumn-nightmare/": (
+        "1949-1972", "TIME", "TIME", "1958-10-06", "Foreign News: QUEMOY: AUTUMN NIGHTMARE",
+        "time", "5793",
+        "90d585da7cce8f2d4894a6848b65bc16ba84fd3ed6599e02859b7f5eb0b16356",
+        "", "Quemoy; Taiwan Strait Crisis; China; Taiwan; United States; artillery shelling", "13", "13",
+    ),
+    "https://time.com/archive/6839619/special-section-a-guide-to-nixons-china-journey/": (
+        "1949-1972", "TIME", "TIME", "1972-02-21", "SPECIAL SECTION: A Guide to Nixon's China Journey",
+        "time", "10669",
+        "ac50a31ee3edf18b0e288924fe82269224c17431c639e261d2f074dd8e76a885",
+        "", "Richard Nixon; China visit; U.S.-China relations; diplomacy; People's Republic of China", "23", "23",
+    ),
     "https://www.theguardian.com/world/1989/may/17/china.fromthearchive": (
         "1972-1991", "The Guardian", "Leader", "1989-05-17",
         "As the old order suddenly crumbles", "guardian", "5729",
@@ -544,6 +604,26 @@ PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://time.com/archive/6785414/china-what-can-li-do/":
+        "据正文整理：文章讨论李宗仁在国民党政权中的处境及其在中国内战局势下可能采取的政治行动。",
+    "https://time.com/archive/6602114/china-defeat/":
+        "据正文整理：文章回顾国民党在中国内战中的失败，并叙述共产党胜利前后的军事与政治局势。",
+    "https://time.com/archive/6602803/foreign-news-window-dressing/":
+        "据正文整理：文章评论中国共产党及苏联相关外交表述，并讨论其对外关系背景。",
+    "https://time.com/archive/6791264/the-nations-mao-settles-the-dust/":
+        "据正文整理：文章描述毛泽东及中共在内战胜利后巩固新政权的政治过程。",
+    "https://time.com/archive/6603186/china-democratic-dictatorship/":
+        "据正文整理：文章介绍中华人民共和国成立初期的政治制度表述及中共对国家治理的安排。",
+    "https://time.com/archive/6603251/the-nations-teamwork/":
+        "据正文整理：文章报道中共领导层及新政府的组织方式与合作安排。",
+    "https://time.com/archive/6797748/formosa-heroes-welcome/":
+        "据正文整理：文章报道台湾方面欢迎军事人员，并叙述台湾防务与美国支持的相关背景。",
+    "https://time.com/archive/6621832/formosa-uncle-chen/":
+        "据正文整理：文章介绍陈诚在台湾政治与行政体系中的角色及其公共形象。",
+    "https://time.com/archive/6888300/foreign-news-quemoy-autumn-nightmare/":
+        "据正文整理：文章报道金门遭炮击期间台湾海峡局势、岛上生活及美国相关行动。",
+    "https://time.com/archive/6839619/special-section-a-guide-to-nixons-china-journey/":
+        "据正文整理：专题介绍尼克松访华行程及其背景，涵盖中美关系、双边接触与中国相关议题。",
     "https://www.theguardian.com/world/1999/jun/01/china.johngittings1":
         "据正文整理：约翰·吉廷斯描述戒严期间北京街头的军队部署、民众生活、军方宣传与暴力事件。",
     "https://www.abc.net.au/news/2019-06-04/tremble-and-obey/11174758":
