@@ -1433,6 +1433,21 @@ PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.presidency.ucsb.edu/documents/white-house-statement-trade-with-romania-hungary-and-china": (
+        "446aad0c68b203cae44473d8a6d1526618733cfd6fe425eb7f0240cb4a39e652",
+        "据正文整理：白宫说明里根决定继续给予中国、罗马尼亚和匈牙利最惠国关税待遇，称该待遇对双边贸易及美国政治和经济利益具有作用。",
+        "China; most-favored-nation status; U.S.-China trade; Jackson-Vanik amendment; Ronald Reagan",
+    ),
+    "https://www.presidency.ucsb.edu/documents/letter-the-speaker-the-house-representatives-and-the-president-the-senate-trade-with-0": (
+        "4c3f3e23c9d0a83a9cedfb50900f11ade3a21e34123865eb43b528091178e90a",
+        "据正文整理：里根向国会提交继续对中国和匈牙利贸易法豁免的文件，说明延长豁免的理由，并介绍中国移民政策、对外开放和对美人员往来。",
+        "China; trade waiver; Jackson-Vanik amendment; emigration; human rights; U.S.-China relations",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-assistant-the-president-for-press-relations-fitzwater-the-presidents-meeting-2": (
+        "75a183b96d496ffc861f4f1cc0e310aabcfd61fabf3aaa46e5b64016e639db21",
+        "据正文整理：白宫新闻声明介绍里根会见中国驻美大使韩叙并向中国人民致意，纪念两国宣布建立外交关系十周年，回顾两国关系及联合公报。",
+        "U.S.-China normalization; tenth anniversary; Han Xu; White House statement; Ronald Reagan",
+    ),
     "https://www.presidency.ucsb.edu/documents/remarks-the-welcoming-ceremony-for-president-li-xiannian-china": (
         "04f12f874299b4f7ceb506b9161866755f043ebd4d7d3fa74d9c07dfb342c124",
         "据正文整理：里根在欢迎中国国家主席李先念访美的仪式上谈及两国贸易、科技合作、教育和文化交流，并表示双方将以相互尊重、互利原则处理共同利益与分歧。",

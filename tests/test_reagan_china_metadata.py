@@ -34,6 +34,27 @@ def test_reagan_china_materials_have_hash_bound_summaries_and_keywords():
             "据正文整理：里根在书面答复中总结近期访华及与中国领导人的会谈，谈及两国制度差异、共同利益、中国的不结盟立场与太平洋地区合作。",
             "Ronald Reagan; China visit; U.S.-China relations; nonalignment; Pacific Basin; Far Eastern Economic Review",
         ),
+        (
+            "https://www.presidency.ucsb.edu/documents/white-house-statement-trade-with-romania-hungary-and-china",
+            "presidency_reagan_mfn_china_1987.html",
+            "1987-06-02",
+            "据正文整理：白宫说明里根决定继续给予中国、罗马尼亚和匈牙利最惠国关税待遇，称该待遇对双边贸易及美国政治和经济利益具有作用。",
+            "China; most-favored-nation status; U.S.-China trade; Jackson-Vanik amendment; Ronald Reagan",
+        ),
+        (
+            "https://www.presidency.ucsb.edu/documents/letter-the-speaker-the-house-representatives-and-the-president-the-senate-trade-with-0",
+            "presidency_reagan_china_waiver_1988.html",
+            "1988-06-03",
+            "据正文整理：里根向国会提交继续对中国和匈牙利贸易法豁免的文件，说明延长豁免的理由，并介绍中国移民政策、对外开放和对美人员往来。",
+            "China; trade waiver; Jackson-Vanik amendment; emigration; human rights; U.S.-China relations",
+        ),
+        (
+            "https://www.presidency.ucsb.edu/documents/statement-assistant-the-president-for-press-relations-fitzwater-the-presidents-meeting-2",
+            "presidency_reagan_han_xu_1988.html",
+            "1988-12-14",
+            "据正文整理：白宫新闻声明介绍里根会见中国驻美大使韩叙并向中国人民致意，纪念两国宣布建立外交关系十周年，回顾两国关系及联合公报。",
+            "U.S.-China normalization; tenth anniversary; Han Xu; White House statement; Ronald Reagan",
+        ),
     )
 
     for url, fixture, published_on, abstract, keywords in cases:
