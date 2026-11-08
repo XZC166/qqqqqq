@@ -397,6 +397,14 @@ PBS_REVIEWED_ARTICLES: dict[str, tuple[str, str, str, str]] = {
 }
 
 PBS_REVIEWED_VIDEO_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str]] = {
+    'https://www.pbs.org/newshour/show/reevaluating-china-u-s-relations': (
+        '2001-03-22',
+        'Reevaluating China-U.S. Relations',
+        14979,
+        'e84752e3b526878bd6ea0175f129230bbb99f83d43a1a1a907978518b8fcad32',
+        'All right. Bates Gill, Susan Shirk, Michael Pillsbury; thank you all three.',
+        '未注明',
+    ),
     'https://www.pbs.org/newshour/show/what-are-the-ripple-effects-of-a-u-s-china-trade-war': (
         '2018-07-06',
         'What are the ripple effects of a U.S.-China trade war?',
@@ -421,6 +429,11 @@ PBS_REVIEWED_VIDEO_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str]] =
         'For the "PBS NewsHour," I\'m Nick Schifrin.',
         'Nick Schifrin; Dan Sagalyn',
     ),
+}
+
+PBS_REVIEWED_VIDEO_KEYWORDS: dict[str, str] = {
+    'https://www.pbs.org/newshour/show/reevaluating-china-u-s-relations':
+        'China; United States; Taiwan; strategic competition; Taiwan arms sales; U.S.-China relations',
 }
 
 PBS_REVIEWED_PROGRAM_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str, str]] = {
@@ -489,6 +502,36 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
         "1949-1972", "TIME", "TIME", "1972-02-28", "THE PRESIDENCY: Now, in Living Color from China",
         "time_clean", "9337", "0634a6cbaec47a2e4fd23c7b3717abcab235d16b821fbc4565712baaf2934fed",
         "", "Richard Nixon; China visit; Sino-American relations; diplomacy; presidential communication", "14", "14",
+    ),
+    "https://time.com/archive/6703890/china-advice-from-a-former-president/": (
+        "1972-1991", "TIME", "TIME", "1989-11-20", "China Advice from a Former President",
+        "time", "11729", "1c71b965dd57d55db7c7b491ceda882cdb9493a5ed08f635ee66cce8448396c1",
+        "", "China; Richard Nixon; Deng Xiaoping; Tiananmen; U.S.-China relations; sanctions", "29", "29",
+    ),
+    "https://time.com/archive/6702848/china-dengs-big-lie/": (
+        "1972-1991", "TIME", "Jill Smolowe", "1989-06-26", "China Deng's Big Lie",
+        "time", "10897", "960b003972614ca60d6d6f939d84c5b3233f0d0147230afd1719872ed8f7edaa",
+        "", "China; Tiananmen Square; June Fourth; government statements; foreign press", "20", "20",
+    ),
+    "https://time.com/archive/6702408/china-come-out-come-out/": (
+        "1972-1991", "TIME", "TIME", "1989-05-01", "China Come Out! Come Out!",
+        "time", "8010", "8b866f96ff31f489d90a1fef97786590e02683edb2bb552e69bee3d6eed843eb",
+        "", "China; Tiananmen Square; student demonstrations; Hu Yaobang; Deng Xiaoping", "12", "12",
+    ),
+    "https://time.com/archive/6846036/nation-waiting-for-deng-xiaoping/": (
+        "1972-1991", "TIME", "TIME", "1979-01-29", "Nation: Waiting for Deng Xiaoping",
+        "time", "4869", "58556fe109f5f9237f5a10ecbea655db58fa328e236675bb5f5069d4568532ce",
+        "", "Deng Xiaoping; United States; Carter administration; diplomatic normalization; China visit", "9", "9",
+    ),
+    "https://time.com/archive/6853967/china-tying-the-sino-american-knot/": (
+        "1972-1991", "TIME", "TIME", "1979-01-15", "CHINA: Tying the Sino-American Knot",
+        "time", "7734", "2f8802f24db9fb15fcff1755589725863e9de5f5cf23c093211dddea536284ec",
+        "", "China; United States; diplomatic normalization; Deng Xiaoping; Walter Mondale", "13", "13",
+    ),
+    "https://time.com/archive/6702803/the-wrath-of-deng/": (
+        "1972-1991", "TIME", "Howard Chua-Eoan", "1989-06-19", "The Wrath of Deng",
+        "time", "17464", "15ef392bb93d7d281a1593831ac6061f216104f8cb774d37f5f6d64d230834d3",
+        "", "China; Tiananmen Square; Deng Xiaoping; martial law; 1989 protests", "31", "31",
     ),
     "https://www.abc.net.au/news/2020-03-14/us-summons-chinese-envoy-over-beijing-coronavirus-comments/12056396": (
         "2017-2025", "ABC News", "Reuters", "2020-03-14",
@@ -821,6 +864,18 @@ PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://time.com/archive/6703890/china-advice-from-a-former-president/":
+        "据正文整理：报道介绍理查德·尼克松访华后对中美关系、天安门事件及美国对华制裁的看法，并讨论两国恢复合作的理由与可能路径。",
+    "https://time.com/archive/6702848/china-dengs-big-lie/":
+        "据正文整理：文章报道中国政府对1989年6月北京事件的公开说法、外国记者遭遇的限制，以及美国政府对相关外交和媒体争议的回应。",
+    "https://time.com/archive/6702408/china-come-out-come-out/":
+        "据正文整理：文章描述1989年春北京学生集会的规模与诉求，并回顾此前天安门抗议和邓小平时期的政治背景。",
+    "https://time.com/archive/6846036/nation-waiting-for-deng-xiaoping/":
+        "据正文整理：报道记录美国政府为邓小平1979年访美所作的准备，并介绍访问行程和当时中美关系背景。",
+    "https://time.com/archive/6853967/china-tying-the-sino-american-knot/":
+        "据正文整理：文章报道中美建交前后北京与华盛顿的庆祝活动、邓小平与美国官员及记者的会面，以及双方对关系正常化的公开表述。",
+    "https://time.com/archive/6702803/the-wrath-of-deng/":
+        "据正文整理：文章回顾天安门事件后的北京局势、中国领导层公开表态、军队行动和邓小平巩固权力的政治环境。",
     "https://time.com/archive/6871528/red-china-at-home-with-mao/":
         "据正文整理：报道毛泽东与法国议员代表团谈话，涉及苏联、核试验条约和台湾等议题。",
     "https://time.com/archive/6627307/asia-a-test-for-tigers/":

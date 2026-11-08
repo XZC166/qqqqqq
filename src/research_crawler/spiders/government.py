@@ -39,6 +39,7 @@ from research_crawler.reviewed_sources import (
     STATE_REVIEWED_METADATA,
     PBS_REVIEWED_ARTICLES,
     PBS_REVIEWED_VIDEO_TRANSCRIPTS,
+    PBS_REVIEWED_VIDEO_KEYWORDS,
     PBS_REVIEWED_PROGRAM_TRANSCRIPTS,
     PUBLIC_MEDIA_REVIEWED_ARTICLES,
     PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS,
@@ -2954,6 +2955,8 @@ class PBSVideoTranscriptAdapter:
                     _normalized_text(node.xpath(".//text()").getall())
                     for node in children
                 ]
+                if blocks and not blocks[-1]:
+                    blocks.pop()
                 supported = all(blocks)
         body = "\n\n".join(blocks)
         body_hash = sha256(body.encode("utf-8")).hexdigest()
@@ -2986,7 +2989,9 @@ class PBSVideoTranscriptAdapter:
             return {"decision": decision, "evidence": evidence, "material": None}
 
         abstract = abstract_values[0].strip() if len(abstract_values) == 1 else ""
-        keywords = keyword_values[0].strip() if len(keyword_values) == 1 else ""
+        keywords = PBS_REVIEWED_VIDEO_KEYWORDS.get(response.url) or (
+            keyword_values[0].strip() if len(keyword_values) == 1 else ""
+        )
         material = VerifiedMaterial(
             source=source[0],
             time=reviewed[0],
