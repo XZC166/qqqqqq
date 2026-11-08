@@ -1,0 +1,190 @@
+{
+  "batch": "bluesky-institutions-bulk-20261109",
+  "source": "Bluesky official institutional account public timelines",
+  "window": [
+    "2017-01-01",
+    "2025-12-31"
+  ],
+  "discovery": {
+    "source": "Bluesky public AppView API: getAuthorFeed and getProfile",
+    "window": [
+      "2017-01-01",
+      "2025-12-31"
+    ],
+    "accounts": {
+      "nytimes.com": {
+        "profile_verified": true,
+        "pages": 60,
+        "posts_scanned": 6000,
+        "video_posts_skipped": 387,
+        "candidates": 0,
+        "oldest_post": "2026-07-16T15:03:07.899Z",
+        "page_limit_reached": true,
+        "error": null
+      },
+      "nytopinion.nytimes.com": {
+        "profile_verified": true,
+        "pages": 60,
+        "posts_scanned": 5996,
+        "video_posts_skipped": 2,
+        "candidates": 138,
+        "oldest_post": "2025-01-14T17:28:10.295Z",
+        "page_limit_reached": true,
+        "error": null
+      },
+      "apnews.com": {
+        "profile_verified": true,
+        "pages": 60,
+        "posts_scanned": 6000,
+        "video_posts_skipped": 438,
+        "candidates": 0,
+        "oldest_post": "2026-05-19T20:35:44Z",
+        "page_limit_reached": true,
+        "error": null
+      },
+      "csis.org": {
+        "profile_verified": true,
+        "pages": 60,
+        "posts_scanned": 5997,
+        "video_posts_skipped": 34,
+        "candidates": 832,
+        "oldest_post": "2025-03-25T16:55:19.864Z",
+        "page_limit_reached": true,
+        "error": null
+      },
+      "pewresearch.org": {
+        "profile_verified": true,
+        "pages": 25,
+        "posts_scanned": 2428,
+        "video_posts_skipped": 8,
+        "candidates": 36,
+        "oldest_post": "2025-04-07T19:11:38.664Z",
+        "page_limit_reached": false,
+        "error": null
+      },
+      "brookings.edu": {
+        "profile_verified": true,
+        "pages": 8,
+        "posts_scanned": 786,
+        "video_posts_skipped": 8,
+        "candidates": 44,
+        "oldest_post": "2024-12-05T14:48:12.441Z",
+        "page_limit_reached": false,
+        "error": null
+      },
+      "cfr.org": {
+        "profile_verified": true,
+        "pages": 14,
+        "posts_scanned": 1364,
+        "video_posts_skipped": 3,
+        "candidates": 137,
+        "oldest_post": "2023-12-19T18:48:37.192Z",
+        "page_limit_reached": false,
+        "error": null
+      },
+      "rand.org": {
+        "profile_verified": true,
+        "pages": 13,
+        "posts_scanned": 1240,
+        "video_posts_skipped": 5,
+        "candidates": 102,
+        "oldest_post": "2023-09-19T22:05:47.224Z",
+        "page_limit_reached": false,
+        "error": null
+      }
+    },
+    "candidate_urls": 1289,
+    "candidate_csv": "data\\candidates-bluesky-institutions-bulk-20261109.csv",
+    "note": "Discovery metadata only. Candidate posts must pass original-page and getPosts body/date/author checks before formal export; video posts are skipped."
+  },
+  "batches": [
+    {
+      "query_label": "bsky-timeline-nytopinion-nytimes-com-2023-2025",
+      "period": "2017-2025",
+      "source_category": "new_media",
+      "candidate_count": 138,
+      "verified": 101,
+      "pending": 0,
+      "candidate": 37,
+      "restricted": 0,
+      "excluded": 0,
+      "unique_materials": 101
+    },
+    {
+      "query_label": "bsky-timeline-csis-org-2023-2025",
+      "period": "2017-2025",
+      "source_category": "new_media",
+      "candidate_count": 832,
+      "verified": 396,
+      "pending": 0,
+      "candidate": 436,
+      "restricted": 0,
+      "excluded": 0,
+      "unique_materials": 396
+    },
+    {
+      "query_label": "bsky-timeline-pewresearch-org-2023-2025",
+      "period": "2017-2025",
+      "source_category": "new_media",
+      "candidate_count": 36,
+      "verified": 0,
+      "pending": 0,
+      "candidate": 36,
+      "restricted": 0,
+      "excluded": 0,
+      "unique_materials": 0
+    },
+    {
+      "query_label": "bsky-timeline-brookings-edu-2023-2025",
+      "period": "2017-2025",
+      "source_category": "new_media",
+      "candidate_count": 44,
+      "verified": 0,
+      "pending": 0,
+      "candidate": 44,
+      "restricted": 0,
+      "excluded": 0,
+      "unique_materials": 0
+    },
+    {
+      "query_label": "bsky-timeline-cfr-org-2023-2025",
+      "period": "2017-2025",
+      "source_category": "new_media",
+      "candidate_count": 137,
+      "verified": 0,
+      "pending": 0,
+      "candidate": 137,
+      "restricted": 0,
+      "excluded": 0,
+      "unique_materials": 0
+    },
+    {
+      "query_label": "bsky-timeline-rand-org-2023-2025",
+      "period": "2017-2025",
+      "source_category": "new_media",
+      "candidate_count": 102,
+      "verified": 0,
+      "pending": 0,
+      "candidate": 102,
+      "restricted": 0,
+      "excluded": 0,
+      "unique_materials": 0
+    }
+  ],
+  "totals": {
+    "candidate_count": 1289,
+    "verified": 497,
+    "pending": 0,
+    "candidate": 792,
+    "restricted": 0,
+    "excluded": 0,
+    "unique_materials": 497
+  },
+  "note": "Discovery metadata only. 497 candidates passed source/API checks before scope review; 112 were subsequently withdrawn because the post body did not directly reference China/Taiwan/Hong Kong/Beijing/TikTok. Remaining formal posts have non-empty metadata fields. The crawl stopped after a long non-returning page; 792 candidates remain candidate and 13 are pending after HTTP 429.",
+  "scope_review": "data/reviews/bluesky-scope-review-20261109.json",
+  "post_scope_review": {
+    "withdrawn_for_scope": 112,
+    "formal_social_after": 418,
+    "evidence_preserved": true
+  }
+}

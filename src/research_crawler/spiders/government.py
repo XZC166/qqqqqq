@@ -184,13 +184,19 @@ def _derive_bluesky_metadata(body: str) -> tuple[str, str]:
         ("Taiwan", r"\bTaiwan(?:ese)?\b"),
         ("Hong Kong", r"\bHong Kong\b"),
         ("Xinjiang", r"\bXinjiang\b"),
+        ("Beijing", r"\bBeijing\b"),
         ("trade war", r"\btrade war\b"),
         ("tariffs", r"\btariffs?\b"),
         ("technology", r"\btechnolog(?:y|ical)\b"),
-        ("artificial intelligence", r"\b(?:A\.I\.|AI)\b"),
+        ("artificial intelligence", r"\b(?:artificial intelligence|A\.I\.|AI)\b"),
         ("military", r"\bmilitary\b"),
         ("democracy", r"\bdemocrac(?:y|ies)\b"),
         ("public opinion", r"\bpublic opinion\b"),
+        ("propaganda", r"\bpropaganda\b"),
+        ("information operations", r"\binformation operations\b"),
+        ("disinformation", r"\bdisinformation\b"),
+        ("misinformation", r"\bmisinformation\b"),
+        ("semiconductors", r"\bsemiconductor\w*\b"),
         ("TikTok", r"\bTikTok\b"),
     )
     keywords = [label for label, pattern in terms if re.search(pattern, body, re.I)]
@@ -2821,10 +2827,15 @@ class BlueskyPostAdapter:
 
     sources = {
         "apnews.com": "The Associated Press",
+        "nytimes.com": "The New York Times",
         "nytopinion.nytimes.com": "The New York Times",
         "freedomhouse.bsky.social": "Freedom House",
         "csis.org": "CSIS",
         "poqjournal.bsky.social": "Public Opinion Quarterly",
+        "pewresearch.org": "Pew Research Center",
+        "brookings.edu": "Brookings Institution",
+        "cfr.org": "Council on Foreign Relations",
+        "rand.org": "RAND",
     }
 
     def extract(self, response: Response, candidate: MaterialCandidate, metadata_response: Response | None) -> dict:

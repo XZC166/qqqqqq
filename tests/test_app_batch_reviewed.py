@@ -157,3 +157,17 @@ def test_bluesky_fallback_metadata_is_extractive_and_uses_only_body_terms():
     assert _derive_bluesky_metadata(
         "TikTok signs a deal for its U.S. business."
     )[1] == "United States; TikTok"
+
+
+def test_bluesky_fallback_keywords_cover_full_topic_phrases_in_post_body():
+    _, keywords = _derive_bluesky_metadata(
+        "Artificial intelligence and propaganda are shaping the China debate."
+    )
+    assert keywords == "China; artificial intelligence; propaganda"
+
+
+def test_bluesky_fallback_keywords_cover_named_geopolitical_terms():
+    _, keywords = _derive_bluesky_metadata(
+        "Beijing is escalating while information operations and semiconductor policy shape the debate."
+    )
+    assert keywords == "Beijing; information operations; semiconductors"
