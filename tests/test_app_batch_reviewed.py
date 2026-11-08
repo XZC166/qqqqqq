@@ -47,6 +47,21 @@ REVIEWED = {
         "据正文整理：里根在访华期间回答记者提问，谈及其对中国现代化的印象、中美制度差异、对华关系的延续、公开表达美国价值及双方在和平与地区事务上的共识。",
         "Ronald Reagan; China visit; press interview; U.S.-China relations; modernization; public diplomacy",
     ),
+    "https://www.presidency.ucsb.edu/documents/radio-and-television-address-opening-the-presidents-campaign-for-re-election": (
+        "b3df3caf138626f68678f9174d13f6ec17fb10d69340b7b5680fa06c34277ad6",
+        "据正文整理：艾森豪威尔在竞选连任期间向公众发表讲话，回顾其政府任期与国内议题，并讨论和平、外交政策及台湾海峡局势。",
+        "Dwight D. Eisenhower; 1956 presidential campaign; peace; foreign policy; Formosa; Taiwan Strait",
+    ),
+    "https://www.presidency.ucsb.edu/documents/second-annual-report-the-congress-united-states-foreign-policy": (
+        "7b2582a810e4ecf605a52fc94c4a6122a467985f3d0e2bf800d9fa488db8a18e",
+        "据正文整理：尼克松政府向国会提交年度外交政策报告，回顾 1970 年外交政策的目标与实施，并讨论国际局势、美国对外关系及对中华人民共和国的政策。",
+        "Richard Nixon; foreign policy report; Congress; 1970; People's Republic of China; U.S.-China relations",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-announcing-changes-trade-and-travel-restrictions-with-the-peoples-republic-china": (
+        "2b4294b51d1b5886b6b3176d4914ba3082acfd0f244d3f43fcf460e1a2fb3522",
+        "据正文整理：尼克松宣布调整美国对中华人民共和国的贸易与旅行限制，包括签证、货币使用、运输、贸易和出口等事项。",
+        "Richard Nixon; People's Republic of China; U.S.-China relations; trade restrictions; travel restrictions; 1971",
+    ),
 }
 
 

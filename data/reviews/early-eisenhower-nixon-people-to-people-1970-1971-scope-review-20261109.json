@@ -1,0 +1,52 @@
+{
+  "reviewed_on": "2026-11-09",
+  "period": "1949-1972",
+  "source_category": "government",
+  "query_label": "early-eisenhower-nixon-people-to-people-1970-1971",
+  "candidate_count": 5,
+  "crawl_results": {
+    "http_200_target_pages": 4,
+    "http_404_target_pages": 1,
+    "robots_txt_http_200": 1,
+    "scraped_items": 5
+  },
+  "formal_additions": [
+    {
+      "title": "Radio and Television Address Opening the President's Campaign for Re-Election",
+      "published_on": "1956-09-19",
+      "source_url": "https://www.presidency.ucsb.edu/documents/radio-and-television-address-opening-the-presidents-campaign-for-re-election",
+      "scope_basis": "The full text discusses Formosa, Asian security, and Communist policy."
+    },
+    {
+      "title": "Second Annual Report to the Congress on United States Foreign Policy.",
+      "published_on": "1971-02-25",
+      "source_url": "https://www.presidency.ucsb.edu/documents/second-annual-report-the-congress-united-states-foreign-policy",
+      "scope_basis": "The full text directly discusses Communist China and U.S. policy."
+    },
+    {
+      "title": "Statement Announcing Changes in Trade and Travel Restrictions With the People's Republic of China",
+      "published_on": "1971-04-14",
+      "source_url": "https://www.presidency.ucsb.edu/documents/statement-announcing-changes-trade-and-travel-restrictions-with-the-peoples-republic-china",
+      "scope_basis": "The full text directly announces changes to U.S. contacts, travel, trade, and exports involving the PRC."
+    }
+  ],
+  "excluded_materials": [
+    {
+      "material_id": 2813,
+      "candidate_id": 3818,
+      "title": "Remarks at the People-to-People Conference.",
+      "published_on": "1956-09-11",
+      "source_url": "https://www.presidency.ucsb.edu/documents/remarks-the-people-people-conference",
+      "body_sha256": "acc5e3ceb52b36bbfa3ce3d99bd5b2a4c4798cfafe9b76e54b44c77962b4b192",
+      "reason": "The complete speech concerns general people-to-people exchange and peace initiatives; it contains no direct discussion of China, the PRC, Taiwan/Formosa, or U.S.-China relations. The full text remains in source evidence, but the material is excluded from the formal thesis corpus."
+    }
+  ],
+  "pending": [
+    {
+      "title": "Remarks at the Start of the Vice President's Asian Trip",
+      "source_url": "https://www.presidency.ucsb.edu/documents/remarks-start-the-vice-presidents-asian-trip",
+      "reason": "Scrapy fetched the source page, but full-text or metadata verification did not pass."
+    }
+  ],
+  "duplicate_count": 0
+}

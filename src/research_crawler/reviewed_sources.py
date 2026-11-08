@@ -1788,6 +1788,21 @@ PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
         "据正文整理：2023年共和党总统初选辩论讨论中国、台湾、贸易、人工智能和国家安全等议题。",
         "China; Taiwan; trade; artificial intelligence; national security",
     ),
+    "https://www.presidency.ucsb.edu/documents/radio-and-television-address-opening-the-presidents-campaign-for-re-election": (
+        "b3df3caf138626f68678f9174d13f6ec17fb10d69340b7b5680fa06c34277ad6",
+        "据正文整理：艾森豪威尔在竞选连任期间向公众发表讲话，回顾其政府任期与国内议题，并讨论和平、外交政策及台湾海峡局势。",
+        "Dwight D. Eisenhower; 1956 presidential campaign; peace; foreign policy; Formosa; Taiwan Strait",
+    ),
+    "https://www.presidency.ucsb.edu/documents/second-annual-report-the-congress-united-states-foreign-policy": (
+        "7b2582a810e4ecf605a52fc94c4a6122a467985f3d0e2bf800d9fa488db8a18e",
+        "据正文整理：尼克松政府向国会提交年度外交政策报告，回顾 1970 年外交政策的目标与实施，并讨论国际局势、美国对外关系及对中华人民共和国的政策。",
+        "Richard Nixon; foreign policy report; Congress; 1970; People's Republic of China; U.S.-China relations",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-announcing-changes-trade-and-travel-restrictions-with-the-peoples-republic-china": (
+        "2b4294b51d1b5886b6b3176d4914ba3082acfd0f244d3f43fcf460e1a2fb3522",
+        "据正文整理：尼克松宣布调整美国对中华人民共和国的贸易与旅行限制，包括签证、货币使用、运输、贸易和出口等事项。",
+        "Richard Nixon; People's Republic of China; U.S.-China relations; trade restrictions; travel restrictions; 1971",
+    ),
 }
 
 BUSH41_REVIEWED_METADATA: dict[str, tuple[str, str]] = {

@@ -1,0 +1,54 @@
+{
+  "reviewed_on": "2026-11-09",
+  "period": "2017-2025",
+  "source_category": "research_literature",
+  "query_label": "pmc-us-public-opinion-image-2017-2025",
+  "candidate_count": 13,
+  "crawl_results": {
+    "http_200_target_pages": 7,
+    "robots_txt_http_200": 1,
+    "scraped_items": 7,
+    "already_verified_skipped": 6
+  },
+  "formal_additions": [
+    {
+      "title": "Sino-US Competition: Is Liberal Democracy an Asset or Liability?",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9716157/",
+      "scope_basis": "The full-text review essay directly discusses U.S.-China rivalry and U.S. foreign policy."
+    },
+    {
+      "title": "It’s not a cold war: competition and cooperation in US–China relations",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7304502/",
+      "scope_basis": "The full text directly analyzes U.S.-China competition and cooperation."
+    },
+    {
+      "title": "US–China Rivalry in the twenty-first century: Déjà vu and Cold War II",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7266422/",
+      "scope_basis": "The full text directly analyzes the U.S. debate over China as a rival and the framing of a new Cold War."
+    }
+  ],
+  "excluded_materials": [
+    {
+      "material_id": 2818,
+      "title": "COVID Crisis, Culture Wars and Australian Higher Education",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8922392/",
+      "reason": "The full text concerns COVID-19 and Australian higher education; it does not directly analyze U.S. communication or discourse about China."
+    },
+    {
+      "material_id": 2819,
+      "title": "Nigeria media framing of coronavirus pandemic and audience response",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7420160/",
+      "reason": "The full text studies Nigerian media coverage and audience response to COVID-19, not U.S. communication or discourse about China."
+    },
+    {
+      "material_id": 2822,
+      "title": "The China Image Set (CIS): A New Set of 551 Colored Photos With Chinese Norms for 12 Psycholinguistic Variables",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6905411/",
+      "reason": "The full text presents a psycholinguistic image-norm dataset and does not directly address U.S.-China public discourse or communication."
+    }
+  ],
+  "duplicate_count": 0,
+  "pending_count": 0,
+  "restricted_count": 0,
+  "failed_count": 0
+}
