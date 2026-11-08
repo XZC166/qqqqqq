@@ -469,6 +469,85 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
         "",
         "Tiananmen Square; 1989 protests; China; political memory; Four Corners",
     ),
+    "https://www.theguardian.com/theguardian/2014/may/31/tiananmen-square-liberty-goddess-archive": (
+        "1992-2016", "The Guardian", "John Gittings", "2014-05-31",
+        "From the archive, 31 May 1989: Liberty goddess riles leadership",
+        "guardian_byline", "2477",
+        "f1be662e208d8d67ad6fc7e2305664f46efd2c0850fce31803ffac8ea7354164",
+        "Originally published in the Guardian on 31 May 1989: Chinese art students have erected a 7m high act of defiance called the Goddess of Freedom in Tiananmen Square",
+        "China; Tiananmen Square; Goddess of Freedom; student protests; Communist Party",
+        "5", "6",
+    ),
+    "https://www.theguardian.com/world/1999/jun/01/china.johngittings": (
+        "1992-2016", "The Guardian", "John Gittings", "1999-06-01",
+        "How the Guardian covered the brutal crackdown on the Tiananmen Square protests in 1989",
+        "guardian_byline", "7914",
+        "9edbe89328c2f72a0d34f364720ac12723271c3fb1151b9d9b4b96bead91ce59",
+        "A two-pronged attack from east and west shattered all illusions in Beijing on the night of June 3-4. Dozens of citizens and students who only hours before had repeated their pledge to risk death for democracy, had it brutally confirmed.",
+        "China; Tiananmen Square; June 1989; Beijing protests; Guardian reporting",
+        "24", "24",
+    ),
+    "https://www.theguardian.com/world/1999/jun/01/china.johngittings1": (
+        "1992-2016", "The Guardian", "John Gittings", "1999-06-01",
+        "Beijing under occupation, June 5-8", "guardian_byline", "11285",
+        "294113460905627e0c6ceb7596d4f8f9a2e8a97baba80c5098029acb35fb1bbe",
+        "",
+        "China; Beijing; martial law; Tiananmen Square; 1989 protests; propaganda",
+        "25", "26",
+    ),
+    "https://www.theguardian.com/world/1999/jun/01/china.johngittings2": (
+        "1992-2016", "The Guardian", "John Gittings", "1999-06-01",
+        "Postmortem on the crushing of the students", "guardian_byline", "9722",
+        "66f45634a0caa2bdd2d5a8552ae0a10e39dfc0c7e68fdcbd8f4c7750bc6a00fa",
+        "When the true history of the June 3rd-4th weekend in Beijing is written, the road junction at Liubukou, half a mile west of Tiananmen Square, will have a chapter to itself. A week after the massacre the tanks and armoured personnel carriers are still there: some on the north-west corner with bivouac tents behind, others tucked sinisterly into an alley on the south-east which no one may enter. Cyclists flow by with sidelong glances, two pickets of soldiers with semi-automatic weapons guard the pavement. Nowhere else in Beijing still receives such heavy treatment.",
+        "China; Tiananmen Square; 1989 protests; Communist Party; political reform",
+        "17", "18",
+    ),
+    "https://www.theguardian.com/world/2001/jan/09/worlddispatch.china": (
+        "1992-2016", "The Guardian", "Guardian Staff", "2001-01-09",
+        "Tiananmen revelations raise new questions about massacre", "guardian_byline", "6353",
+        "dd04547deca343ba950ccb3bce7ecf525770eeeab9fdbe76c84eae9c73059a86",
+        "Beijing's official reaction to the \"Tiananmen Papers\" emerged with unusual speed today - only three days after the contents of the dossier were revealed in the US.",
+        "Tiananmen Papers; China; 1989 protests; Communist Party; political reform",
+        "31", "35",
+    ),
+    "https://www.theguardian.com/world/2005/jun/04/china.comment": (
+        "1992-2016", "The Guardian", "Isabel Hilton", "2005-06-03",
+        "Reaching beyond the myth of Mao", "guardian_byline", "6702",
+        "2b0cf6e541fe4b3f8be3e894c36babe80ec8a669c4d6ac2d56746289d68a35de",
+        "Isabel Hilton: Communist party leaders must tell the truth about Tiananmen.",
+        "China; Tiananmen Square; Mao Zedong; Chinese Communist Party; public discourse",
+        "14", "16",
+    ),
+    "https://www.theguardian.com/world/2019/jun/02/chinas-other-tiananmens-30th-anniversary-1989-protests": (
+        "2017-2025", "The Guardian", "Lily Kuo", "2019-06-02",
+        "China’s other Tiananmens: 30 years on", "guardian_byline", "13764",
+        "9e714208fe914c51b33776c102c58617cbd4a173a782ef811eccd31d7ee10d9d",
+        "Hundreds of other Chinese cities were also suppressed and are now forgotten after a media clampdown",
+        "China; Tiananmen Square protests; 1989; Chengdu; media clampdown",
+        "48", "49",
+    ),
+    "https://www.theguardian.com/world/2019/jun/02/tiananmen-square-30-years-on-china-brutal-events-jonathan-mirsky": (
+        "2017-2025", "The Guardian (The Observer)", "Jonathan Mirsky", "2019-06-02",
+        "Tiananmen Square 30 years on: ‘At 3am, I feared I might be killed’",
+        "guardian_byline", "4263",
+        "c4f81fa2932173efd86d7bdf81d69afd11754fb3b217e3a6317552dacbc63881",
+        "The Observer’s China correspondent remembers the brutal events that people in the country are still afraid to talk openly about",
+        "Tiananmen Square; 1989; Observer correspondent; protest coverage; political memory",
+        "13", "13",
+    ),
+}
+
+PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
+    "https://www.theguardian.com/world/2005/jun/04/china.comment":
+        "Isabel Hilton: Reaching beyond the myth of Mao",
+}
+
+PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://www.theguardian.com/world/1999/jun/01/china.johngittings1":
+        "据正文整理：约翰·吉廷斯描述戒严期间北京街头的军队部署、民众生活、军方宣传与暴力事件。",
+    "https://www.abc.net.au/news/2019-06-04/tremble-and-obey/11174758":
+        "据正文整理：节目回顾1989年天安门事件及其后续影响，包含参与者回忆、事件经过和中国政府对相关历史的处理。",
 }
 
 VOA_REVIEWED_KEYWORDS: dict[str, str] = {

@@ -41,6 +41,8 @@ from research_crawler.reviewed_sources import (
     PBS_REVIEWED_VIDEO_TRANSCRIPTS,
     PBS_REVIEWED_PROGRAM_TRANSCRIPTS,
     PUBLIC_MEDIA_REVIEWED_ARTICLES,
+    PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS,
+    PUBLIC_MEDIA_REVIEWED_META_TITLES,
     PRESIDENCY_REVIEWED_METADATA,
     PRESIDENCY_REVIEWED_HASHED_METADATA,
     PRCLEADER_REVIEWED_ARTICLES,
@@ -318,8 +320,10 @@ class ReviewedPublicMediaAdapter:
 
         (
             period, source, author, published_on, title, page_kind, expected_length,
-            expected_hash, publisher_abstract, keywords,
+            expected_hash, publisher_abstract, keywords, *body_shape,
         ) = reviewed
+        expected_body_paragraphs = int(body_shape[0]) if body_shape else None
+        expected_total_paragraphs = int(body_shape[1]) if len(body_shape) > 1 else None
         if candidate.period != period or candidate.source_category != "media":
             return {"decision": decision, "evidence": evidence, "material": None}
 
@@ -339,6 +343,25 @@ class ReviewedPublicMediaAdapter:
             author_matches = response.css(
                 'meta[property="article:author"]::attr(content)'
             ).getall() == [author]
+            schema_matches = True
+            visible_title_matches = h1 == [title]
+        elif page_kind == "guardian_byline":
+            containers = response.css(".article-body-commercial-selector")
+            source_matches = (
+                response.css('meta[property="og:site_name"]::attr(content)').getall()
+                == ["the Guardian"]
+            )
+            author_meta = response.css(
+                'meta[property="article:author"]::attr(content)'
+            ).getall()
+            visible_authors = [
+                _normalized_text(node.xpath(".//text()").getall())
+                for node in response.css('a[rel="author"]')
+            ]
+            author_matches = (
+                author_meta == [author]
+                or bool(visible_authors and all(name == author for name in visible_authors))
+            )
             schema_matches = True
             visible_title_matches = h1 == [title]
         elif page_kind == "abc_worldtoday":
@@ -377,8 +400,17 @@ class ReviewedPublicMediaAdapter:
             visible_title_matches = h1 == ["VIDEO: " + title]
 
         paragraphs = containers[0].css("p") if len(containers) == 1 else []
+        paragraph_count_matches = (
+            expected_total_paragraphs is None
+            or len(paragraphs) == expected_total_paragraphs
+        )
+        body_paragraphs = (
+            paragraphs[:expected_body_paragraphs]
+            if expected_body_paragraphs is not None
+            else paragraphs
+        )
         body = "\n\n".join(
-            text for node in paragraphs
+            text for node in body_paragraphs
             if (text := _normalized_text(node.xpath(".//text()").getall()))
         )
         body_hash = sha256(body.encode("utf-8")).hexdigest()
@@ -386,12 +418,13 @@ class ReviewedPublicMediaAdapter:
             len(published_meta) == 1
             and published_meta[0].startswith(published_on)
         ) if page_kind != "abc_fourcorners" else True
-        abstract = publisher_abstract or (
-            "据正文整理：节目回顾1989年天安门事件及其后续影响，包含参与者回忆、事件经过和中国政府对相关历史的处理。"
+        abstract = publisher_abstract or PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS.get(
+            response.url, ""
         )
+        expected_meta_title = PUBLIC_MEDIA_REVIEWED_META_TITLES.get(response.url, title)
         complete = bool(
             len(meta_title) == 1
-            and meta_title[0] == title
+            and meta_title[0] == expected_meta_title
             and visible_title_matches
             and document_title
             and source_matches
@@ -399,6 +432,8 @@ class ReviewedPublicMediaAdapter:
             and schema_matches
             and publication_matches
             and len(containers) == 1
+            and paragraph_count_matches
+            and len(body_paragraphs) == (expected_body_paragraphs or len(paragraphs))
             and paragraphs
             and body
             and len(body) == int(expected_length)
