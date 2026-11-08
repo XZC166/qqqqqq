@@ -2032,3 +2032,12 @@ Search evidence is saved under `research/firecrawl/early-media-tiananmen-1989-ga
 - [x] Run a lawful follow-up for the five remaining early coverage cells: add the public Columbia/CIAO, U.S. Naval Institute, and JSTOR candidates, preserve exact pending/restricted outcomes, and write batch reports 242-244 without promoting unverified text.
 - [x] Refresh delivery after batches 242-244: 248 verified materials, 257 tests passed, 75 long-body sidecars, 278 evidence files, 175 review files, 775 ZIP files, and valid ZIP CRC; five early verification gaps remain.
 - [ ] Continue searching for lawful full texts with source-displayed YYYY-MM-DD publication dates in the five early cells; current formal corpus remains incomplete.
+
+## Follow-up: 2026-11-08 early retry and balanced open-literature batches
+
+- [x] Re-fetch the 91 existing 1949-1991 pending candidates under Scrapy robots compliance and the fast profile. The crawl received 94 HTTP 200 page responses, 6 HTTP 404 responses, 2 HTTP 420 responses, and 1 connection with no response; none of the rechecked early materials passed the full-text promotion gate. Do not count accepted Scrapy items as verified materials.
+- [x] Recheck Daily Iowan historical PDF candidates and existing 1994-2012 White House / 2002-2020 VOA candidates. These runs produced no new unique formal records; retained pending and duplicate states.
+- [x] Crawl targeted open-research candidates across both post-1991 periods. Promote only after the source pages passed exact date, metadata, and complete-body checks: 3 new materials dated 1992-2016 and 4 dated 2017-2025.
+- [x] Refresh the formal-record count and field audit: 2,453 unique materials, with no blank abstracts, keywords, or bodies and no invalid publication dates. Counts by publication date: 1949-1972 40; 1973-1991 25; 1992-2016 694; 2017-2025 1,694. Current candidate status totals: 2,492 verified candidates (including duplicate discoveries), 560 pending, 99 restricted, 90 excluded, and 3 candidate.
+- [x] Re-export the workbook after detecting the prior 2,446-row workbook lagged the 2,453-row database, rebuild the delivery ZIP, and verify 2,453 workbook rows, exact nine-column headers, SQLite integrity and foreign keys, and ZIP CRC.
+- [ ] Continue early media / think-tank / research-literature discovery while maintaining parallel collection for 1992-2025 sources; do not claim exhaustive coverage.
