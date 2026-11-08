@@ -325,6 +325,10 @@ class GovernmentArticleAdapter:
                 return CcseJournalPDFDocumentAdapter().extract(response, candidate)
             if candidate.metadata_url and metadata_response is not None:
                 metadata_host = (urlsplit(candidate.metadata_url).hostname or "").lower()
+                if metadata_host == "www.jstage.jst.go.jp" or metadata_host.endswith(".jstage.jst.go.jp"):
+                    return JStagePDFDocumentAdapter().extract(
+                        response, candidate, metadata_response
+                    )
                 if metadata_host == "danratherjournalist.org":
                     return ReviewedScannedTranscriptPDFAdapter(
                         DAN_RATHER_REVIEWED_SCANNED_TRANSCRIPTS
@@ -1615,6 +1619,191 @@ class OjsJournalPDFDocumentAdapter:
             "material": material,
             "field_sources": field_sources,
             "abstract_origin": "publisher" if material and abstract else "none",
+            "supporting_evidence": [{
+                "evidence": metadata_evidence,
+                "raw_response": metadata_response.body,
+                "decision": metadata_decision,
+            }],
+        }
+
+
+class JStagePDFDocumentAdapter:
+    def extract(
+        self,
+        response: Response,
+        candidate: MaterialCandidate,
+        metadata_response: HtmlResponse,
+    ) -> dict:
+        fetched_at = datetime.now(timezone.utc).isoformat()
+        body_decision = classify_response(response.url, response.status)
+        metadata_decision = classify_response(
+            metadata_response.url, metadata_response.status, metadata_response.text
+        )
+        journal = metadata_response.css(
+            "meta[name='citation_journal_title']::attr(content)"
+        ).get(default="").strip()
+        publisher = metadata_response.css(
+            "meta[name='citation_publisher']::attr(content)"
+        ).get(default="").strip()
+        primary_title = _normalized_text(
+            metadata_response.css(".global-article-title").xpath(".//text()").getall()
+        )
+        subtitle = _normalized_text(
+            metadata_response.css(".global-article-inner-title").xpath(".//text()").getall()
+        )
+        title = metadata_response.css(
+            "meta[name='citation_title']::attr(content)"
+        ).get(default="").strip()
+        visible_title = " ".join(part for part in (primary_title, subtitle) if part)
+        authors = list(dict.fromkeys(
+            _normalized_text(node.xpath(".//text()").getall())
+            for node in metadata_response.css(".global-authors-name-tags > a span")
+            if _normalized_text(node.xpath(".//text()").getall())
+        ))
+        citation_authors = list(dict.fromkeys(
+            value.strip()
+            for value in metadata_response.css(
+                "meta[name='citation_author']::attr(content)"
+            ).getall()
+            if value.strip()
+        ))
+        citation_date = metadata_response.css(
+            "meta[name='citation_publication_date']::attr(content)"
+        ).get(default="").strip()
+        page_date = metadata_response.css(
+            "meta[name='publication_date']::attr(content)"
+        ).get(default="").strip()
+        try:
+            publication_date = datetime.strptime(citation_date, "%Y/%m/%d").date().isoformat()
+            visible_publication_date = datetime.strptime(page_date, "%Y/%m/%d").date().isoformat()
+        except ValueError:
+            publication_date = visible_publication_date = ""
+        doi = metadata_response.css(
+            "meta[name='citation_doi']::attr(content)"
+        ).get(default="").strip().removeprefix("https://doi.org/").removeprefix("http://doi.org/")
+        candidate_doi = (candidate.platform_id or "").strip().removeprefix(
+            "https://doi.org/"
+        ).removeprefix("http://doi.org/")
+        citation_pdf_url = metadata_response.css(
+            "meta[name='citation_pdf_url']::attr(content)"
+        ).get(default="").strip()
+        citation_pdf_url = urljoin(metadata_response.url, citation_pdf_url)
+        visible_pdf_urls = {
+            urljoin(metadata_response.url, href)
+            for href in metadata_response.css("a.thirdlevel-pdf-btn::attr(href)").getall()
+        }
+        abstract_nodes = metadata_response.css("#article-overiew-abstract-wrap .global-para-14")
+        abstract = _normalized_text(abstract_nodes.xpath(".//text()").getall()) if len(abstract_nodes) == 1 else ""
+
+        def pdf_key(value: str) -> tuple[str, str, str]:
+            parts = urlsplit(value)
+            path = parts.path.removesuffix("/-char/en").rstrip("/")
+            return parts.scheme.casefold(), parts.netloc.casefold(), path
+
+        expected_pdf = pdf_key(citation_pdf_url)
+        pdf_matches = bool(
+            expected_pdf[0] == "https"
+            and expected_pdf[1].endswith("jstage.jst.go.jp")
+            and expected_pdf[2].endswith("/_pdf")
+            and pdf_key(response.url) == expected_pdf
+            and pdf_key(candidate.source_url) == expected_pdf
+            and any(pdf_key(value) == expected_pdf for value in visible_pdf_urls)
+        )
+        metadata_matches = bool(
+            metadata_decision is AccessDecision.ALLOW
+            and metadata_response.url == candidate.metadata_url
+            and (urlsplit(metadata_response.url).hostname or "").casefold().endswith("jstage.jst.go.jp")
+            and journal
+            and publisher
+            and title
+            and visible_title == title
+            and authors
+            and authors == citation_authors
+            and publication_date
+            and publication_date == visible_publication_date
+            and doi
+            and candidate_doi == doi
+            and pdf_matches
+        )
+
+        try:
+            reader = PdfReader(BytesIO(response.body), strict=True)
+            page_texts = [page.extract_text() or "" for page in reader.pages]
+        except Exception:
+            page_texts = []
+        first_page = _normalized_text(page_texts[0].splitlines()) if page_texts else ""
+        first_page_key = _metadata_match_key(first_page)
+        complete = bool(
+            body_decision is AccessDecision.ALLOW
+            and page_texts
+            and all(text.strip() for text in page_texts)
+            and _metadata_match_key(title) in first_page_key
+            and all(_metadata_match_key(author) in first_page_key for author in authors)
+            and _metadata_match_key(journal) in first_page_key
+        )
+        body = "\n\n".join(text.strip() for text in page_texts if text.strip())
+        keyword_terms = (
+            "U.S.-China relations",
+            "China-U.S. relations",
+            "foreign policy",
+            "public opinion",
+            "normalization",
+            "Taiwan",
+        )
+        body_key = _metadata_match_key(body)
+        keywords = "; ".join(
+            term for term in keyword_terms if _metadata_match_key(term) in body_key
+        )
+        source = f"{journal} ({publisher})" if journal and publisher else ""
+        metadata_evidence = SourceEvidence(
+            source_url=metadata_response.url,
+            fetched_at=fetched_at,
+            status_code=metadata_response.status,
+            content_sha256=sha256(metadata_response.body).hexdigest(),
+            metadata_verified=metadata_matches,
+        )
+        body_evidence = SourceEvidence(
+            source_url=response.url,
+            fetched_at=fetched_at,
+            status_code=response.status,
+            content_sha256=sha256(response.body).hexdigest(),
+            body_complete=complete,
+            body_format="pdf_text",
+            original_page_verified=metadata_matches,
+        )
+        material = None
+        field_sources = {}
+        if metadata_matches and complete:
+            material = VerifiedMaterial(
+                source=source,
+                time=publication_date,
+                author="; ".join(authors),
+                title=title,
+                abstract=abstract,
+                keywords=keywords,
+                body=body,
+                source_url=metadata_response.url,
+            )
+            field_sources = {
+                name: metadata_response.url
+                for name in ("source", "time", "author", "title")
+            }
+            if abstract:
+                field_sources["abstract"] = metadata_response.url
+            if keywords:
+                field_sources["keywords"] = "body"
+        decision = (
+            body_decision
+            if body_decision is not AccessDecision.ALLOW
+            else metadata_decision
+        )
+        return {
+            "decision": decision,
+            "evidence": body_evidence,
+            "material": material,
+            "field_sources": field_sources,
+            "abstract_origin": "publisher" if material and abstract else "none",
+            "keywords_origin": "derived" if material and keywords else "none",
             "supporting_evidence": [{
                 "evidence": metadata_evidence,
                 "raw_response": metadata_response.body,
