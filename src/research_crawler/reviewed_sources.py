@@ -1433,6 +1433,31 @@ PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.presidency.ucsb.edu/documents/statement-the-president-upon-signing-the-foreign-economic-assistance-act": (
+        "f2454f49215c9fd521d008bad4aff3e136e4145fe3f98ec3d158a317b18dfd3e",
+        "据正文整理：杜鲁门签署《1950年对外经济援助法》，说明该法授权延续欧洲复兴计划、援助韩国、东南亚及非共产主义中国，并开展技术援助。",
+        "Harry S. Truman; Foreign Economic Assistance Act; China aid; Korea; Southeast Asia; Point Four Program",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-583": (
+        "f171af340297f6bac288e3135e3c61c983ac1e0daa26c2b7b834c198eaa30aa7",
+        "据正文整理：杜鲁门在记者会上就中国军队进入朝鲜半岛及联合国部队撤退发表声明，讨论美国对中国的意图、联合国应对和后续行动。",
+        "Harry S. Truman; Korean War; Chinese intervention; United Nations; U.S.-China relations",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-592": (
+        "7221739aba54174f7aecdfa9f787d16ea2e355a3647051ce17e3a8b889cab5cd",
+        "据正文整理：杜鲁门在记者会上回应有关麦克阿瑟、朝鲜战争及远东政策的问题，其中谈及台湾和中国议题不应成为处理朝鲜问题的附带条件。",
+        "Harry S. Truman; Korean War; Douglas MacArthur; Formosa; China policy; press conference",
+    ),
+    "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-with-president-xi-jinping-china": (
+        "0c23f2c6684fdbb6c1e9506bdd0e7a0f9766024248af7bb367f78e5fb090a005",
+        "据正文整理：奥巴马与习近平在白宫记者会上介绍双边会谈成果，涉及贸易、网络安全、气候变化、核安全及人权等议题。",
+        "Barack Obama; Xi Jinping; U.S.-China relations; cybersecurity; trade; human rights; White House",
+    ),
+    "https://www.presidency.ucsb.edu/documents/statement-the-press-secretary-the-visit-president-xi-jinping-the-peoples-republic-china": (
+        "ed68770b66b3fa66b7886db0b4975b79f0d6226a65ea760be6aec49299e1f2d0",
+        "据正文整理：白宫新闻秘书声明预告习近平对美国进行国事访问，并说明访问将为拓展美中合作和建设性处理分歧提供机会。",
+        "Xi Jinping; Barack Obama; state visit; U.S.-China cooperation; White House statement",
+    ),
     "https://www.presidency.ucsb.edu/documents/white-house-statement-trade-with-romania-hungary-and-china": (
         "446aad0c68b203cae44473d8a6d1526618733cfd6fe425eb7f0240cb4a39e652",
         "据正文整理：白宫说明里根决定继续给予中国、罗马尼亚和匈牙利最惠国关税待遇，称该待遇对双边贸易及美国政治和经济利益具有作用。",
