@@ -568,6 +568,41 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
         "time", "12036", "6f869c5cebd8b5931bf2358ccd801d1e521af39a3bd28a42284267e222f81169",
         "", "China; United States; global influence; economic power; information control; international order", "28", "28",
     ),
+    "https://time.com/4644775/donald-trump-china-trade-cold-war/": (
+        "2017-2025", "TIME", "Charlie Campbell", "2017-01-24", "Donald Trump Could Be Starting a New Cold War With China. But He Has Little Chance of Winning",
+        "time", "22931", "faab7ab7572223f24674ecedca81f949c4965912787139018140cb1172bb73ab",
+        "", "Donald Trump; China; Taiwan; trade; South China Sea; strategic competition", "65", "65",
+    ),
+    "https://time.com/5228991/president-trumps-tariff-tussle-with-china-is-just-the-beginning/": (
+        "2017-2025", "TIME", "Ian Bremmer", "2018-04-05", "Why President Trump’s Tariff Tussle With China Is Just the Beginning",
+        "time", "4227", "8095cab3a0c9fc0670025cb14fd0319653f9fb97f17caffb1d09742ff5909910",
+        "", "Donald Trump; China; tariffs; trade war; One China policy; U.S. politics", "14", "14",
+    ),
+    "https://time.com/5590699/u-s-china-trade-war-reveals-world-status/": (
+        "2017-2025", "TIME", "Peter Frankopan", "2019-05-17", "The U.S.-China Trade War Reveals America's New World Status",
+        "time_ads", "6199", "7c016be8c8ea29c75eac000a3b27551d5efb2c60137eb1f91309a03e870e230d",
+        "", "United States; China; trade war; global order; Belt and Road; international relations", "14", "20",
+    ),
+    "https://time.com/5759394/taiwan-election-2020/": (
+        "2017-2025", "TIME", "Charlie Campbell", "2020-01-06", "Here's What's at Stake in Taiwan's Presidential Election",
+        "time", "10070", "e33b39106122533eaa7741e0d6aeaeadaf34b3410342f1a7ca15837058629d70",
+        "", "Taiwan; China; United States; presidential election; One China; Taiwan Relations Act", "39", "39",
+    ),
+    "https://time.com/6201447/joe-biden-xi-jinping-taiwan-china/": (
+        "2017-2025", "TIME", "Charlie Campbell", "2022-07-28", "China’s Xi Jinping Warns President Joe Biden Against ‘Playing With Fire’ Over Taiwan",
+        "time", "7386", "1cda1f6597e2d84e08a3cf2e8612dd3d130ae519211aa7e366a5c54ac5645c69",
+        "", "Joe Biden; Xi Jinping; Taiwan; China; strategic ambiguity; cross-Strait tensions", "23", "23",
+    ),
+    "https://time.com/6272400/us-china-ai-competition/": (
+        "2017-2025", "TIME", "Paul Scharre", "2023-04-18", "To Stay Ahead of China in AI, the U.S. Needs to Work with China",
+        "time", "5332", "89107d00319bd576cee8f264d770e2e6ae81eeb578a68f7b720fcc83edfacbc6",
+        "", "United States; China; artificial intelligence; semiconductors; export controls; technology competition", "11", "11",
+    ),
+    "https://time.com/7204164/china-ai-advances-chips/": (
+        "2017-2025", "TIME", "Harry Booth", "2025-01-08", "How China Is Advancing in AI Despite U.S. Chip Restrictions",
+        "time_updated", "10937", "85341107fab53a66350fa2c4a7d2f7e086588304782be3c683771c33d299cb5e",
+        "", "China; United States; artificial intelligence; semiconductor chips; export controls; DeepSeek", "31", "31",
+    ),
     "https://www.abc.net.au/news/2020-03-14/us-summons-chinese-envoy-over-beijing-coronavirus-comments/12056396": (
         "2017-2025", "ABC News", "Reuters", "2020-03-14",
         "US-China tensions intensify over comments American military might have brought coronavirus to Wuhan",
@@ -886,6 +921,9 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
+    "https://time.com/4644775/donald-trump-china-trade-cold-war/": "Why a Cold War With China Will Be Risky for Trump",
+    "https://time.com/5228991/president-trumps-tariff-tussle-with-china-is-just-the-beginning/": "Why President Trump’s Tariff Tussle With China Is Just the Beginning",
+    "https://time.com/6201447/joe-biden-xi-jinping-taiwan-china/": "Presidents Biden and Xi Speak as Tensions Rise Over Taiwan",
     "https://time.com/archive/6955373/collateral-damage-8/": "Collateral Damage",
     "https://time.com/archive/6955258/the-embassy-bombing-small-steps-to-a-big-disaster-2/": "The Embassy Bombing: Small Steps to a Big Disaster",
     "https://time.com/2918689/how-to-hunt-a-chinese-hacker/": "How to Hunt a Chinese Army Hacker",
@@ -903,6 +941,20 @@ PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://time.com/4644775/donald-trump-china-trade-cold-war/":
+        "据正文整理：文章讨论特朗普政府初期对华贸易、台湾和南海政策，以及这些议题如何被置于美国对华竞争叙事中。",
+    "https://time.com/5228991/president-trumps-tariff-tussle-with-china-is-just-the-beginning/":
+        "据正文整理：文章分析特朗普政府对华钢铝关税和贸易压力的政治背景，并讨论其对中美关系与美国选举政治的影响。",
+    "https://time.com/5590699/u-s-china-trade-war-reveals-world-status/":
+        "据正文整理：文章将中美贸易战放在全球秩序变化、贸易联系和中国对外经济影响力扩大的背景下分析。",
+    "https://time.com/5759394/taiwan-election-2020/":
+        "据正文整理：文章介绍2020年台湾总统选举及其对台海、中美关系和美国对台政策的影响。",
+    "https://time.com/6201447/joe-biden-xi-jinping-taiwan-china/":
+        "据正文整理：文章报道拜登与习近平围绕台湾问题的通话及双方对主权、军事和战略风险的公开表述。",
+    "https://time.com/6272400/us-china-ai-competition/":
+        "据正文整理：文章讨论中美人工智能竞争、芯片出口管制及在竞争关系中保留合作空间的主张。",
+    "https://time.com/7204164/china-ai-advances-chips/":
+        "据正文整理：文章分析中国人工智能发展、美国芯片限制和DeepSeek等模型对中美技术竞争叙事的影响。",
     "https://time.com/archive/6955373/collateral-damage-8/":
         "据正文整理：报道描述1999年中国驻南联盟使馆被炸后北京和华盛顿的外交紧张、公众抗议以及双方关系受到的影响。",
     "https://time.com/archive/6955258/the-embassy-bombing-small-steps-to-a-big-disaster-2/":

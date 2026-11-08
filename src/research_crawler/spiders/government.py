@@ -335,7 +335,7 @@ class ReviewedPublicMediaAdapter:
         h1 = [_normalized_text(node.xpath(".//text()").getall()) for node in response.css("h1")]
         document_title = _normalized_text(response.xpath("string(//title)").getall())
 
-        if page_kind in {"time", "time_clean"}:
+        if page_kind in {"time", "time_clean", "time_ads", "time_updated"}:
             containers = response.css("article")
             source_matches = (
                 response.css('meta[property="og:site_name"]::attr(content)').getall()
@@ -345,8 +345,12 @@ class ReviewedPublicMediaAdapter:
                 'meta[name="author"]::attr(content)'
             ).getall() == [author]
             date_values = response.css("time::attr(datetime)").getall()
-            schema_matches = len(date_values) == 2 and all(
-                value.startswith(published_on) for value in date_values
+            schema_matches = (
+                len(date_values) >= 2 and (
+                    all(value.startswith(published_on) for value in date_values)
+                    if page_kind != "time_updated"
+                    else any(value.startswith(published_on) for value in date_values)
+                )
             )
             visible_title_matches = h1 == [title]
         elif page_kind == "abc_archive":
@@ -485,10 +489,14 @@ class ReviewedPublicMediaAdapter:
             expected_total_paragraphs is None
             or len(paragraphs) == expected_total_paragraphs
         )
-        if page_kind == "time_clean":
+        if page_kind in {"time_clean", "time_ads"}:
             paragraphs = [
                 node for node in paragraphs
                 if _normalized_text(node.xpath(".//text()").getall())
+                and not (
+                    page_kind == "time_ads"
+                    and _normalized_text(node.xpath(".//text()").getall()) == "Advertisement"
+                )
             ]
         body_paragraphs = (
             paragraphs[:expected_body_paragraphs]
@@ -500,8 +508,17 @@ class ReviewedPublicMediaAdapter:
             if (text := _normalized_text(node.xpath(".//text()").getall()))
         )
         body_hash = sha256(body.encode("utf-8")).hexdigest()
-        if page_kind in {"time", "time_clean"}:
+        if page_kind in {"time", "time_clean", "time_ads", "time_updated"}:
             publication_matches = schema_matches
+            if page_kind == "time_updated":
+                published_dates = response.xpath(
+                    '//span[starts-with(normalize-space(.), "Published:")]//time/@datetime'
+                ).getall()
+                publication_matches = bool(
+                    len(published_dates) == 2
+                    and all(value.startswith(published_on) for value in published_dates)
+                    and schema_matches
+                )
         elif page_kind == "abc_news_nested":
             publication_matches = bool(
                 len(published_meta) == 1
