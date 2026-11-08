@@ -39,6 +39,7 @@ from research_crawler.reviewed_sources import (
     STATE_REVIEWED_METADATA,
     PBS_REVIEWED_ARTICLES,
     PBS_REVIEWED_VIDEO_TRANSCRIPTS,
+    PBS_REVIEWED_PROGRAM_TRANSCRIPTS,
     PRESIDENCY_REVIEWED_METADATA,
     PRESIDENCY_REVIEWED_HASHED_METADATA,
     PRCLEADER_REVIEWED_ARTICLES,
@@ -398,6 +399,11 @@ class GovernmentArticleAdapter:
             return APNewsArticleAdapter().extract(response, candidate)
         if hostname == "rfa.org" or hostname.endswith(".rfa.org"):
             return RFAArticleAdapter().extract(response, candidate)
+        if (
+            hostname in {"pbs.org", "www.pbs.org"}
+            and response.url in PBS_REVIEWED_PROGRAM_TRANSCRIPTS
+        ):
+            return PBSProgramTranscriptAdapter().extract(response, candidate)
         if (
             hostname in {"pbs.org", "www.pbs.org"}
             and response.url in PBS_REVIEWED_VIDEO_TRANSCRIPTS
@@ -2743,6 +2749,106 @@ class PBSVideoTranscriptAdapter:
             "material": material,
             "field_sources": field_sources,
             "abstract_origin": "publisher" if abstract else "none",
+        }
+
+
+class PBSProgramTranscriptAdapter:
+    """Verify an individually reviewed PBS program page and its full transcript."""
+
+    def extract(self, response: Response, candidate: MaterialCandidate) -> dict:
+        decision = classify_response(response.url, response.status, response.text)
+        digest = sha256(response.body).hexdigest()
+        fetched_at = datetime.now(timezone.utc).isoformat()
+        evidence = SourceEvidence(response.url, fetched_at, response.status, digest)
+        if decision is not AccessDecision.ALLOW:
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        reviewed = PBS_REVIEWED_PROGRAM_TRANSCRIPTS.get(response.url)
+        if reviewed is None:
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        expected_date, expected_title, expected_length, expected_hash, final_marker, abstract, keywords = reviewed
+        title_values = response.css('meta[property="og:title"]::attr(content)').getall()
+        document_titles = response.css("title::text").getall()
+        structured_nodes = []
+        for raw in response.css('script[type="application/ld+json"]::text').getall():
+            try:
+                value = json.loads(raw)
+            except json.JSONDecodeError:
+                continue
+            if isinstance(value, dict) and value.get("@type") == "TVEpisode":
+                structured_nodes.append(value)
+        structured = structured_nodes[0] if len(structured_nodes) == 1 else {}
+        visible_dates = [
+            _normalized_text(node.xpath(".//text()").getall())
+            for node in response.css("h1")
+        ]
+        parsed_date = datetime.strptime(expected_date, "%Y-%m-%d").date()
+        expected_visible_date = f"{parsed_date.strftime('%B')} {parsed_date.day}, {parsed_date.year}"
+        transcript_nodes = response.css('div[class*="transcript_text"]')
+        blocks = []
+        supported = len(transcript_nodes) == 1
+        if supported:
+            children = transcript_nodes[0].xpath("./*")
+            supported = bool(children) and all(node.root.tag.lower() == "p" for node in children)
+            if supported:
+                blocks = [
+                    _normalized_text(node.xpath(".//text()").getall())
+                    for node in children
+                ]
+                supported = all(blocks)
+        body = "\n\n".join(blocks)
+        body_hash = sha256(body.encode("utf-8")).hexdigest()
+        complete = bool(
+            len(title_values) == 1
+            and title_values[0] == expected_title
+            and len(document_titles) == 1
+            and _normalized_text(document_titles) == f"{expected_title} | PBS"
+            and len(structured_nodes) == 1
+            and structured.get("url") == response.url
+            and structured.get("datePublished") == expected_date
+            and structured.get("name") == expected_visible_date
+            and visible_dates == [expected_visible_date, expected_visible_date]
+            and len(transcript_nodes) == 1
+            and supported
+            and len(body) == expected_length
+            and body_hash == expected_hash
+            and body.endswith(final_marker)
+            and "CHINA" in body.upper()
+            and "TAIWAN" in body.upper()
+        )
+        if not complete:
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        material = VerifiedMaterial(
+            source="PBS",
+            time=expected_date,
+            author="未注明",
+            title=expected_title,
+            abstract=abstract,
+            keywords=keywords,
+            body=body,
+            source_url=response.url,
+        )
+        evidence = SourceEvidence(
+            response.url,
+            fetched_at,
+            response.status,
+            digest,
+            body_complete=True,
+            metadata_verified=True,
+            body_format="source_text",
+        )
+        field_sources = {name: response.url for name in ("source", "time", "title")}
+        field_sources["abstract"] = response.url
+        field_sources["keywords"] = response.url
+        field_sources["author"] = response.url
+        return {
+            "decision": decision,
+            "evidence": evidence,
+            "material": material,
+            "field_sources": field_sources,
+            "abstract_origin": "derived",
         }
 
 

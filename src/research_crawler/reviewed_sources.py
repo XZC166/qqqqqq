@@ -423,6 +423,18 @@ PBS_REVIEWED_VIDEO_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str]] =
     ),
 }
 
+PBS_REVIEWED_PROGRAM_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str, str]] = {
+    'https://www.pbs.org/video/august-9-2024-unvdxv/': (
+        '2024-08-09',
+        'Amanpour and Company | August 9, 2024 | Season 2024',
+        41162,
+        '4c2923118e5f00b8b0d06d2adb19df3f938368958f2b4078cb748d6ec13e24d9',
+        '>> [MUSIC]',
+        '据正文整理：本集包含多段访谈，其中有关中国的讨论涉及美国国防创新、中国军民融合、台湾先进芯片供应对美国安全的影响，以及人工智能在未来武器体系中的应用。',
+        'China, Taiwan, advanced chips, defense innovation, artificial intelligence',
+    ),
+}
+
 VOA_REVIEWED_KEYWORDS: dict[str, str] = {
     'https://learningenglish.voanews.com/a/trade-dispute-between-us-china-rises/4440666.html': (
         'China; United States; tariffs; trade dispute'
