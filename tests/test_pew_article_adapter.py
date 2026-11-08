@@ -80,7 +80,7 @@ def test_reviewed_pew_pages_bind_exact_metadata_and_body_hashes():
         "f8f857cc6403f1f838775f8bf722911f4455683b83fb08f186c09c4324c9389b",
         "U.S.-China relations; China threat perceptions; China as an enemy; economic influence; U.S. public opinion",
     )
-    assert len(PEW_REVIEWED_ARTICLES) == 5
+    assert len(PEW_REVIEWED_ARTICLES) == 10
 
 
 def test_2023_pew_articles_extract_reviewed_prose_from_collapsible_and_quote_blocks():
@@ -125,3 +125,75 @@ def test_2023_pew_articles_extract_reviewed_prose_from_collapsible_and_quote_blo
         assert result["evidence"].body_complete is True
         reviewed = PEW_REVIEWED_ARTICLES[url]
         assert reviewed[3] == sha256(material.body.encode("utf-8")).hexdigest()
+
+
+def test_2023_pew_china_chapter_matches_its_stored_source_capture():
+    url = "https://www.pewresearch.org/global/2023/07/27/views-of-china/"
+    response = HtmlResponse(
+        url=url,
+        request=Request(url),
+        body=(Path(__file__).parent / "fixtures" / "pew_views_china_ch1_2023.html").read_bytes(),
+        encoding="utf-8",
+    )
+    candidate = MaterialCandidate(url, "2017-2025", "think_tank", "pew-global-views-china-2023")
+
+    result = PewResearchArticleAdapter().extract(response, candidate)
+
+    material = result["material"]
+    assert material is not None
+    assert material.time == "2023-07-27"
+    assert material.title == "1. Views of China"
+    assert material.author == "Laura Silver, Christine Huang, Laura Clancy"
+    assert material.body.startswith("Attitudes toward China are largely negative")
+    assert material.body.endswith("France, Mexico and Australia.1")
+    assert result["evidence"].body_complete is True
+    assert sha256(material.body.encode("utf-8")).hexdigest() == PEW_REVIEWED_ARTICLES[url][3]
+
+
+def test_remaining_2023_pew_chapters_match_their_stored_source_captures():
+    cases = (
+        (
+            "https://www.pewresearch.org/global/2023/07/27/chinas-international-behavior/",
+            "pew_china_international_behavior_2023.html",
+            "2. China’s international behavior",
+            "A median of 76% say China does not take into account the interests",
+        ),
+        (
+            "https://www.pewresearch.org/global/2023/07/27/which-country-is-the-worlds-top-economy/",
+            "pew_china_top_economy_2023.html",
+            "3. Which country is the world’s top economy?",
+            "Only around a third of the 24 countries surveyed see China as the world’s leading economic power.",
+        ),
+        (
+            "https://www.pewresearch.org/global/2023/07/27/chinese-soft-power/",
+            "pew_chinese_soft_power_2023.html",
+            "4. Chinese soft power",
+            "When asked to rate some elements of Chinese soft and hard power",
+        ),
+        (
+            "https://www.pewresearch.org/global/2023/07/27/5-confidence-in-chinese-president-xi-jinping/",
+            "pew_xi_confidence_2023.html",
+            "5. Confidence in Chinese President Xi Jinping",
+            "Confidence in Chinese President Xi Jinping to do the right thing regarding world affairs",
+        ),
+    )
+
+    for url, fixture, title, opening in cases:
+        response = HtmlResponse(
+            url=url,
+            request=Request(url),
+            body=(Path(__file__).parent / "fixtures" / fixture).read_bytes(),
+            encoding="utf-8",
+        )
+        candidate = MaterialCandidate(url, "2017-2025", "think_tank", "pew-2023-report-chapter")
+
+        result = PewResearchArticleAdapter().extract(response, candidate)
+
+        material = result["material"]
+        assert material is not None
+        assert material.time == "2023-07-27"
+        assert material.title == title
+        assert material.author == "Laura Silver, Christine Huang, Laura Clancy"
+        assert material.body.startswith(opening)
+        assert result["evidence"].body_complete is True
+        assert sha256(material.body.encode("utf-8")).hexdigest() == PEW_REVIEWED_ARTICLES[url][3]

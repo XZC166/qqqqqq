@@ -213,6 +213,41 @@ BROOKINGS_REVIEWED_ABSTRACTS: dict[str, tuple[str, str]] = {
 }
 
 PEW_REVIEWED_ARTICLES: dict[str, tuple[str, str, str, str, str]] = {
+    "https://www.pewresearch.org/global/2023/07/27/views-of-china/": (
+        "2023-07-27",
+        "1. Views of China",
+        "Laura Silver, Christine Huang, Laura Clancy",
+        "4c75f63d59dfe624cb060f333cafda8f6fe31fa6b1d8fd04900fe20524103e98",
+        "global public opinion; views of China; China image; China’s international role; China’s foreign policy",
+    ),
+    "https://www.pewresearch.org/global/2023/07/27/chinas-international-behavior/": (
+        "2023-07-27",
+        "2. China’s international behavior",
+        "Laura Silver, Christine Huang, Laura Clancy",
+        "e03a7a03467d978f2df067463b88671c2d2f1fd515a2011b05269e21853e85b3",
+        "global public opinion; China’s foreign policy; international behavior; national interests; global peace and stability",
+    ),
+    "https://www.pewresearch.org/global/2023/07/27/which-country-is-the-worlds-top-economy/": (
+        "2023-07-27",
+        "3. Which country is the world’s top economy?",
+        "Laura Silver, Christine Huang, Laura Clancy",
+        "3b429834b47220dda4051ab1692997620be77fceb0124fb996a66f519e825aef",
+        "global public opinion; leading economic power; China-U.S. economic competition; global economic influence",
+    ),
+    "https://www.pewresearch.org/global/2023/07/27/chinese-soft-power/": (
+        "2023-07-27",
+        "4. Chinese soft power",
+        "Laura Silver, Christine Huang, Laura Clancy",
+        "09b468d59acdc94889f543db4931798071ea9da190dff14917a6abba0c7b2242",
+        "Chinese soft power; technology; military; universities; popular culture; global public opinion",
+    ),
+    "https://www.pewresearch.org/global/2023/07/27/5-confidence-in-chinese-president-xi-jinping/": (
+        "2023-07-27",
+        "5. Confidence in Chinese President Xi Jinping",
+        "Laura Silver, Christine Huang, Laura Clancy",
+        "3d10d3a28eefb3fc1377f8c87645deeb9bc0338c6eaa8b16ddbc06ede92293e3",
+        "Xi Jinping; confidence in leadership; international affairs; global public opinion; China image",
+    ),
     "https://www.pewresearch.org/global/2023/04/12/americans-are-critical-of-chinas-global-role-as-well-as-its-relationship-with-russia/": (
         "2023-04-12",
         "Americans Are Critical of China’s Global Role – as Well as Its Relationship With Russia",
