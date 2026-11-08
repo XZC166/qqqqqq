@@ -40,6 +40,7 @@ from research_crawler.reviewed_sources import (
     PBS_REVIEWED_ARTICLES,
     PBS_REVIEWED_VIDEO_TRANSCRIPTS,
     PBS_REVIEWED_PROGRAM_TRANSCRIPTS,
+    PUBLIC_MEDIA_REVIEWED_ARTICLES,
     PRESIDENCY_REVIEWED_METADATA,
     PRESIDENCY_REVIEWED_HASHED_METADATA,
     PRCLEADER_REVIEWED_ARTICLES,
@@ -303,6 +304,141 @@ class CiaoConferenceAdapter:
         return result
 
 
+class ReviewedPublicMediaAdapter:
+    """Promote only exact public-media pages with reviewed metadata and body hashes."""
+
+    def extract(self, response: Response, candidate: MaterialCandidate) -> dict:
+        decision = classify_response(response.url, response.status, response.text)
+        fetched_at = datetime.now(timezone.utc).isoformat()
+        digest = sha256(response.body).hexdigest()
+        evidence = SourceEvidence(response.url, fetched_at, response.status, digest)
+        reviewed = PUBLIC_MEDIA_REVIEWED_ARTICLES.get(response.url)
+        if decision is not AccessDecision.ALLOW or reviewed is None:
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        (
+            period, source, author, published_on, title, page_kind, expected_length,
+            expected_hash, publisher_abstract, keywords,
+        ) = reviewed
+        if candidate.period != period or candidate.source_category != "media":
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        meta_title = response.css('meta[property="og:title"]::attr(content)').getall()
+        published_meta = response.css(
+            'meta[property="article:published_time"]::attr(content)'
+        ).getall()
+        h1 = [_normalized_text(node.xpath(".//text()").getall()) for node in response.css("h1")]
+        document_title = _normalized_text(response.xpath("string(//title)").getall())
+
+        if page_kind == "guardian":
+            containers = response.css(".article-body-commercial-selector")
+            source_matches = (
+                response.css('meta[property="og:site_name"]::attr(content)').getall()
+                == ["the Guardian"]
+            )
+            author_matches = response.css(
+                'meta[property="article:author"]::attr(content)'
+            ).getall() == [author]
+            schema_matches = True
+            visible_title_matches = h1 == [title]
+        elif page_kind == "abc_worldtoday":
+            containers = response.css(".article-body")
+            source_matches = response.css(
+                'meta[property="og:site_name"]::attr(content)'
+            ).getall() == ["The World Today"]
+            attribution = " ".join(response.xpath("//body//text()").getall())
+            author_matches = bool(
+                re.search(
+                    rf"{re.escape(author)} reported this story on Wednesday, June 4, 2014",
+                    _normalized_text([attribution]),
+                )
+            )
+            schema_matches = True
+            visible_title_matches = (
+                document_title == f"{title} - The World Today Archive - ABC listen"
+            )
+        else:
+            containers = response.css("#transcript")
+            source_matches = True
+            bylines = response.xpath(
+                '//*[contains(translate(@class, "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"), "byline")]'
+            )
+            author_matches = bylines and [
+                _normalized_text(node.xpath(".//text()").getall())
+                for node in bylines
+            ] == [author, author]
+            posted = [
+                _normalized_text(node.xpath(".//text()").getall())
+                for node in response.css("time")
+                if _normalized_text(node.xpath(".//text()").getall())
+                == "Tue 4 Jun 2019 at 6:31am"
+            ]
+            schema_matches = len(posted) == 3
+            visible_title_matches = h1 == ["VIDEO: " + title]
+
+        paragraphs = containers[0].css("p") if len(containers) == 1 else []
+        body = "\n\n".join(
+            text for node in paragraphs
+            if (text := _normalized_text(node.xpath(".//text()").getall()))
+        )
+        body_hash = sha256(body.encode("utf-8")).hexdigest()
+        publication_matches = bool(
+            len(published_meta) == 1
+            and published_meta[0].startswith(published_on)
+        ) if page_kind != "abc_fourcorners" else True
+        abstract = publisher_abstract or (
+            "据正文整理：节目回顾1989年天安门事件及其后续影响，包含参与者回忆、事件经过和中国政府对相关历史的处理。"
+        )
+        complete = bool(
+            len(meta_title) == 1
+            and meta_title[0] == title
+            and visible_title_matches
+            and document_title
+            and source_matches
+            and author_matches
+            and schema_matches
+            and publication_matches
+            and len(containers) == 1
+            and paragraphs
+            and body
+            and len(body) == int(expected_length)
+            and body_hash == expected_hash
+        )
+        if not complete:
+            return {"decision": decision, "evidence": evidence, "material": None}
+
+        material = VerifiedMaterial(
+            source=source,
+            time=published_on,
+            author=author,
+            title=title,
+            abstract=abstract,
+            keywords=keywords,
+            body=body,
+            source_url=response.url,
+        )
+        evidence = SourceEvidence(
+            response.url,
+            fetched_at,
+            response.status,
+            digest,
+            body_complete=True,
+            metadata_verified=True,
+            body_format="source_text",
+            original_page_verified=True,
+        )
+        return {
+            "decision": decision,
+            "evidence": evidence,
+            "material": material,
+            "field_sources": {name: response.url for name in (
+                "source", "time", "author", "title", "abstract", "keywords"
+            )},
+            "abstract_origin": "publisher" if publisher_abstract else "derived",
+            "keywords_origin": "derived",
+        }
+
+
 class GovernmentArticleAdapter:
     def extract(self, response: Response, candidate: MaterialCandidate) -> dict:
         content_type = response.headers.get(b"Content-Type", b"").decode("latin-1").casefold()
@@ -365,6 +501,8 @@ class GovernmentArticleAdapter:
                 )
             return PDFDocumentAdapter().extract(response, candidate)
         hostname = (urlsplit(response.url).hostname or "").lower()
+        if response.url in PUBLIC_MEDIA_REVIEWED_ARTICLES:
+            return ReviewedPublicMediaAdapter().extract(response, candidate)
         if hostname == "ciaotest.cc.columbia.edu":
             return CiaoConferenceAdapter().extract(response, candidate)
         if hostname == "bsky.app":

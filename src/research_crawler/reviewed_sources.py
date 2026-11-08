@@ -435,6 +435,42 @@ PBS_REVIEWED_PROGRAM_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str, 
     ),
 }
 
+
+# Exact public media pages whose original publication metadata and body were checked.
+# Tuple fields: period, source, author, date, title, selector, body length, body SHA-256,
+# publisher abstract (empty when no relevant abstract is provided), body-derived keywords.
+PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
+    "https://www.theguardian.com/world/1989/may/17/china.fromthearchive": (
+        "1972-1991", "The Guardian", "Leader", "1989-05-17",
+        "As the old order suddenly crumbles", "guardian", "5729",
+        "da12ba887e7649e862e1ae4438af024b6e5d6adeb43dc895d0aa42fad1c8c6c5",
+        "May 16 1989: On this day crowds gathered in Tiananmen Square during Mikhail Gorbachev's visit to Beijing. This is how the Guardian commented on events.",
+        "China; Tiananmen Square; glasnost; political reform; public opinion",
+    ),
+    "https://www.theguardian.com/world/1989/jun/05/china.fromthearchive": (
+        "1972-1991", "The Guardian", "Guardian Staff", "1989-06-05",
+        "They must not get away with it", "guardian", "4384",
+        "bcdc02f7a3bd3831f1fe8cd58f7ef0a6478438cda2a96b8805d491a97f9f9d55",
+        "June 4 1989: On this day the Chinese People's Army turned on its own people in Tiananmen Square. This comment piece appeared in the Guardian following the event.",
+        "China; Tiananmen Square; 1989 protests; political response; editorial",
+    ),
+    "https://www.abc.net.au/worldtoday/archive/articles/2014/06/04/s4018514.htm": (
+        "1992-2016", "ABC Radio (The World Today)", "Lindy Kerin", "2014-06-04",
+        "25 years since Tiananmen Square massacre, China not ready to confront its past",
+        "abc_worldtoday", "5061",
+        "db6049990fcb54327e08a6838359fda3cc42443e81c9f3dc8ec028d700486793",
+        "The Tiananmen Square massacre is still etched in the minds of many around the world, but the Chinese government has attempted to erase it from the memories of its people. In mainland China today, there will be no official commemoration of the events of 1989. One of the original protestors, Chai Ling",
+        "Tiananmen Square; China; memory; Chai Ling; anniversary reporting",
+    ),
+    "https://www.abc.net.au/news/2019-06-04/tremble-and-obey/11174758": (
+        "2017-2025", "ABC News (Four Corners)", "Lesley Robinson", "2019-06-04",
+        "Tremble and Obey", "abc_fourcorners", "34798",
+        "57d36a8e8f542dbc010739ccd38b1e9d9d6e7e4a5737165f5cd8188be6d1a4bc",
+        "",
+        "Tiananmen Square; 1989 protests; China; political memory; Four Corners",
+    ),
+}
+
 VOA_REVIEWED_KEYWORDS: dict[str, str] = {
     'https://learningenglish.voanews.com/a/trade-dispute-between-us-china-rises/4440666.html': (
         'China; United States; tariffs; trade dispute'
