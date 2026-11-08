@@ -3709,7 +3709,11 @@ class TrumanLibraryPublicPaperAdapter:
         ]
         titles = [value for value in titles if value]
         title = titles[0] if len(titles) == 1 else ""
-        body_containers = response.css(".node__content > .field--name-body")
+        body_containers = response.css(
+            "article.node--type-official-document .field--name-body"
+        )
+        if not body_containers:
+            body_containers = response.css(".node__content > .field--name-body")
         body_blocks = _br_separated_paragraphs(body_containers[0]) if len(body_containers) == 1 else []
         publication_fields = response.css(
             ".field--name-field-publication-date, time[itemprop='datePublished']"
@@ -3733,7 +3737,11 @@ class TrumanLibraryPublicPaperAdapter:
             for text in response.css("footer").xpath(".//text()").getall()
             if text.strip()
         ]
-        source = footer_text[0] if footer_text and "Truman Library" in footer_text[0] else ""
+        source = _normalized_text(response.css("footer h3").xpath(".//text()").getall())
+        if not source and footer_text:
+            source = footer_text[0]
+        if "Truman Library" not in source:
+            source = ""
         body = "\n\n".join(body_blocks)
         complete = bool(source and title and publication_date and body_containers and body)
         material = None
