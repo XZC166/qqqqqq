@@ -440,6 +440,80 @@ PBS_REVIEWED_PROGRAM_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str, 
 # Tuple fields: period, source, author, date, title, selector, body length, body SHA-256,
 # publisher abstract (empty when no relevant abstract is provided), body-derived keywords.
 PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
+    "https://time.com/archive/6871528/red-china-at-home-with-mao/": (
+        "1949-1972", "TIME", "TIME", "1964-03-06", "Red China: At Home with Mao",
+        "time_clean", "3514", "0f6b02a8192da7b20ecf4b77ae5540c28c7750887e0a09b4673aea16bdcc666c",
+        "", "Mao Zedong; China; France; Soviet Union; Formosa; international relations", "11", "12",
+    ),
+    "https://time.com/archive/6627307/asia-a-test-for-tigers/": (
+        "1949-1972", "TIME", "TIME", "1965-02-26", "Asia: A Test for Tigers",
+        "time_clean", "27358", "d1b6ab301765471ca2cced3473151a97bacd0dc0d2385215078540f8a8be5689",
+        "", "China; United States; Asia; Chen Yi; Vietnam War; foreign policy", "52", "52",
+    ),
+    "https://time.com/archive/6814031/red-china-start-of-the-chain/": (
+        "1949-1972", "TIME", "TIME", "1964-10-30", "Red China: Start of the Chain",
+        "time_clean", "4272", "6c68a7cea316ae2bacf42f1dfa5c0fdf0f77e641c924ac58d90c6081d68c026f",
+        "", "China; nuclear weapons; nuclear test; United States; United Nations; diplomacy", "8", "9",
+    ),
+    "https://time.com/archive/6630140/red-china-back-to-the-cave/": (
+        "1949-1972", "TIME", "TIME", "1966-09-09", "Red China: Back to the Cave!",
+        "time_clean", "25354", "0ced6f6b47775074f5fab490b19a430544f404da01a4cc93ac1c8e07c9548716",
+        "", "China; Mao Zedong; Cultural Revolution; Red Guards; U.S. perceptions", "46", "46",
+    ),
+    "https://time.com/archive/6630281/red-china-appalling-alone/": (
+        "1949-1972", "TIME", "TIME", "1966-09-30", "Red China: Appalling & Alone",
+        "time_clean", "4332", "91fbce4b137a9e56540e9e8e9f01088ffb78c6571826a56057de7537ccc9aa48",
+        "", "China; Cultural Revolution; Red Guards; international isolation; Communist states", "10", "10",
+    ),
+    "https://time.com/archive/6636820/world-chinas-search-for-stability/": (
+        "1949-1972", "TIME", "TIME", "1969-04-11", "World: CHINA'S SEARCH FOR STABILITY",
+        "time_clean", "6493", "da529dc4b057348ed1a1966ff34680e727bada6fec4c9a026c80db51c253bc58",
+        "", "China; Cultural Revolution; Chinese Communist Party; Mao Zedong; Ninth Party Congress", "11", "11",
+    ),
+    "https://time.com/archive/6815015/the-world-the-china-debate-finally-begins/": (
+        "1949-1972", "TIME", "TIME", "1971-10-25", "The World: The China Debate Finally Begins",
+        "time_clean", "5883", "9bd984c41d487133e3f274a600b84d1e12f4e2bb4e69567847ff6741bf9fbd06",
+        "", "China; United Nations; Taiwan; U.S. policy; representation; Nixon administration", "11", "12",
+    ),
+    "https://time.com/archive/6814714/the-nation-nixons-coup-to-peking-for-peace/": (
+        "1949-1972", "TIME", "TIME", "1971-07-26", "The Nation: Nixon's Coup: To Peking for Peace",
+        "time_clean", "27149", "69a13b0464acfbe19666e673f7087272f8735ab9cfe7bb3b1b70606f290cf3bd",
+        "", "Richard Nixon; China; Henry Kissinger; diplomacy; U.S.-China relations", "47", "47",
+    ),
+    "https://time.com/archive/6843822/diplomacy-a-new-stripe-at-the-u-n/": (
+        "1949-1972", "TIME", "TIME", "1971-09-20", "DIPLOMACY: A New Stripe at the U.N.",
+        "time_clean", "5720", "667837214253daed3b01d0dd892eeff0a5b77bf29c580d0069817666bfe3bc8f",
+        "", "China; United Nations; George H. W. Bush; Taiwan; diplomatic recognition", "9", "9",
+    ),
+    "https://time.com/archive/6839664/the-presidency-now-in-living-color-from-china/": (
+        "1949-1972", "TIME", "TIME", "1972-02-28", "THE PRESIDENCY: Now, in Living Color from China",
+        "time_clean", "9337", "0634a6cbaec47a2e4fd23c7b3717abcab235d16b821fbc4565712baaf2934fed",
+        "", "Richard Nixon; China visit; Sino-American relations; diplomacy; presidential communication", "14", "14",
+    ),
+    "https://www.abc.net.au/news/2020-03-14/us-summons-chinese-envoy-over-beijing-coronavirus-comments/12056396": (
+        "2017-2025", "ABC News", "Reuters", "2020-03-14",
+        "US-China tensions intensify over comments American military might have brought coronavirus to Wuhan",
+        "abc_news_nested", "3176", "d4def3070679c80e4e9a3418f0e8aa061cb8c74e2288d114ed71c21dbbad8687",
+        "", "China; United States; COVID-19; coronavirus origins; Zhao Lijian; public statements", "19", "21",
+    ),
+    "https://www.abc.net.au/news/2019-01-30/huawei-china-us-fight-technology-dominance-australia/10762746": (
+        "2017-2025", "ABC News", "Adam Ni", "2019-01-30",
+        "Australia a potential target in US-China fight over Huawei",
+        "abc_news_nested", "3916", "c2ade4b5fb15310b5cdfa08304dda641294370163f4cb51630392f5a9f458db4",
+        "", "Huawei; China; United States; 5G; technology competition; Australia", "25", "27",
+    ),
+    "https://www.abc.net.au/news/2018-04-04/us-hits-china-with-increased-tariffs-on-huge-list-of-imports/9617474": (
+        "2017-2025", "ABC News", "AP/Reuters", "2018-04-04",
+        "US hits back at China with plans to increase tariffs on 1,300 imports",
+        "abc_news_nested", "5504", "9f4b664b3a1bd51cda86efd8d55af40080b587604951c7b7ffdeb11644c9093e",
+        "", "China; United States; tariffs; trade war; USTR; intellectual property", "33", "35",
+    ),
+    "https://www.abc.net.au/news/2023-06-02/us-and-taiwan-sign-trade-deal-as-china-issues-warning/102425100": (
+        "2017-2025", "ABC News", "AFP/AP", "2023-06-02",
+        "US and Taiwan sign trade deal as China issues warning on 'wrong signals' to independence forces",
+        "abc_news_nested", "4127", "82c2baed35f0bbb1852e72b30d064ca4a533da5c73bc2ea3fd0b89f6bc5440e6",
+        "", "United States; Taiwan; China; trade agreement; Taiwan Strait; diplomatic relations", "23", "25",
+    ),
     "https://www.abc.net.au/news/2016-06-04/us-flexes-muscles-as-asia-worries-about-south-china-sea-row/7478136": (
         "1992-2016", "ABC News", "Reuters", "2016-06-04",
         "US flexes muscles as Asia worries about South China Sea row",
@@ -734,11 +808,47 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
+    "https://www.abc.net.au/news/2020-03-14/us-summons-chinese-envoy-over-beijing-coronavirus-comments/12056396":
+        "US summons Chinese envoy over Beijing's coronavirus tweets",
+    "https://www.abc.net.au/news/2019-01-30/huawei-china-us-fight-technology-dominance-australia/10762746":
+        "Australia is a potential target in the US-China fight over Huawei",
+    "https://www.abc.net.au/news/2018-04-04/us-hits-china-with-increased-tariffs-on-huge-list-of-imports/9617474":
+        "US hits China with increased tariffs on 1,300 imports",
+    "https://www.abc.net.au/news/2023-06-02/us-and-taiwan-sign-trade-deal-as-china-issues-warning/102425100":
+        "US and Taiwan ink trade deal as China issues warning on 'wrong signals' to independence forces",
     "https://www.theguardian.com/world/2005/jun/04/china.comment":
         "Isabel Hilton: Reaching beyond the myth of Mao",
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://time.com/archive/6871528/red-china-at-home-with-mao/":
+        "据正文整理：报道毛泽东与法国议员代表团谈话，涉及苏联、核试验条约和台湾等议题。",
+    "https://time.com/archive/6627307/asia-a-test-for-tigers/":
+        "据正文整理：文章报道陈毅在亚洲多国外交活动中的表态，并讨论中国、美国与越南问题。",
+    "https://time.com/archive/6814031/red-china-start-of-the-chain/":
+        "据正文整理：文章分析中国首次核试验后美国的政策选择、对华外交和联合国席位问题。",
+    "https://time.com/archive/6630140/red-china-back-to-the-cave/":
+        "据正文整理：文章报道文化大革命初期红卫兵运动、毛泽东领导和中国社会政治变化。",
+    "https://time.com/archive/6630281/red-china-appalling-alone/":
+        "据正文整理：文章描述文化大革命期间中国与其他共产主义国家关系及红卫兵运动的影响。",
+    "https://time.com/archive/6636820/world-chinas-search-for-stability/":
+        "据正文整理：文章讨论中共九大召开前后毛泽东试图控制文化大革命局势并重建党的组织。",
+    "https://time.com/archive/6815015/the-world-the-china-debate-finally-begins/":
+        "据正文整理：文章报道联合国讨论中华人民共和国代表权，以及美国双重代表权政策和台湾席位问题。",
+    "https://time.com/archive/6814714/the-nation-nixons-coup-to-peking-for-peace/":
+        "据正文整理：文章分析尼克松宣布访华及与中国领导人会晤对美国外交和双边关系的影响。",
+    "https://time.com/archive/6843822/diplomacy-a-new-stripe-at-the-u-n/":
+        "据正文整理：文章介绍乔治·布什在联合国推动中国代表权安排及美国双重代表权政策。",
+    "https://time.com/archive/6839664/the-presidency-now-in-living-color-from-china/":
+        "据正文整理：文章报道尼克松启程访华前的公开活动和对中美关系、此次访问及外交前景的评论。",
+    "https://www.abc.net.au/news/2020-03-14/us-summons-chinese-envoy-over-beijing-coronavirus-comments/12056396":
+        "据正文整理：报道美国因中国外交官关于新冠病毒来源的言论召见中国大使，以及特朗普政府和中国方面的公开回应。",
+    "https://www.abc.net.au/news/2019-01-30/huawei-china-us-fight-technology-dominance-australia/10762746":
+        "据正文整理：Adam Ni 分析华为相关美国指控、5G 安全争议及美国与中国科技竞争对澳大利亚的影响。",
+    "https://www.abc.net.au/news/2018-04-04/us-hits-china-with-increased-tariffs-on-huge-list-of-imports/9617474":
+        "据正文整理：报道美国提出对中国约 1,300 种进口产品加征关税及中国的回应，并介绍企业和农业团体的反应。",
+    "https://www.abc.net.au/news/2023-06-02/us-and-taiwan-sign-trade-deal-as-china-issues-warning/102425100":
+        "据正文整理：报道美国与台湾签署贸易协议及中国外交部对此提出的警告，并介绍台海贸易与外交背景。",
     "https://www.abc.net.au/news/2016-06-04/us-flexes-muscles-as-asia-worries-about-south-china-sea-row/7478136":
         "据正文整理：报道美国国防部长阿什·卡特在香格里拉对话上的发言，以及南海争端、美国亚太参与和地区安全立场。",
     "https://www.abc.net.au/pm/archive/articles/2010/09/09/s3007510.htm":

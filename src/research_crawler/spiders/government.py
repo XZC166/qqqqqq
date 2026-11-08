@@ -334,7 +334,7 @@ class ReviewedPublicMediaAdapter:
         h1 = [_normalized_text(node.xpath(".//text()").getall()) for node in response.css("h1")]
         document_title = _normalized_text(response.xpath("string(//title)").getall())
 
-        if page_kind == "time":
+        if page_kind in {"time", "time_clean"}:
             containers = response.css("article")
             source_matches = (
                 response.css('meta[property="og:site_name"]::attr(content)').getall()
@@ -383,15 +383,35 @@ class ReviewedPublicMediaAdapter:
                 _normalized_text(node.xpath(".//text()").getall())
                 for node in paragraphs_in_article
             ]
-            author_matches = (
-                len(paragraph_texts) == 20
-                and paragraph_texts[18] == author
-                and paragraph_texts[19] == "See more ABC coverage in your search results"
-            )
+            expected_footer = "See more ABC coverage in your search results"
+            visible_bylines = [
+                _normalized_text(node.xpath(".//text()").getall())
+                for node in response.css('[class*="Byline_byline"]')
+            ]
+            if page_kind == "abc_news_nested":
+                author_matches = (
+                    len(paragraph_texts) == expected_total_paragraphs
+                    and paragraph_texts[-1] == expected_footer
+                    and all(value == f"By {author}" for value in visible_bylines)
+                    and (
+                        paragraph_texts[expected_body_paragraphs] == author
+                        or (
+                            paragraph_texts[expected_body_paragraphs].startswith(f"{author} is ")
+                            and bool(visible_bylines)
+                        )
+                    )
+                )
             article_times = response.css("time::attr(datetime)").getall()
+            visible_time_texts = [
+                _normalized_text(node.xpath(".//text()").getall())
+                for node in response.css("time")[:3]
+            ]
+            parsed_date = datetime.strptime(published_on, "%Y-%m-%d")
+            visible_date = f"{parsed_date.day} {parsed_date:%b %Y}"
             schema_matches = (
-                len(article_times) == 15
-                and all(value.startswith(published_on) for value in article_times[:3])
+                len(article_times) >= 3
+                and len(set(article_times[:3])) == 1
+                and all(visible_date in value for value in visible_time_texts)
             )
             visible_title_matches = h1 == [title]
         elif page_kind == "guardian":
@@ -464,6 +484,11 @@ class ReviewedPublicMediaAdapter:
             expected_total_paragraphs is None
             or len(paragraphs) == expected_total_paragraphs
         )
+        if page_kind == "time_clean":
+            paragraphs = [
+                node for node in paragraphs
+                if _normalized_text(node.xpath(".//text()").getall())
+            ]
         body_paragraphs = (
             paragraphs[:expected_body_paragraphs]
             if expected_body_paragraphs is not None
@@ -474,8 +499,15 @@ class ReviewedPublicMediaAdapter:
             if (text := _normalized_text(node.xpath(".//text()").getall()))
         )
         body_hash = sha256(body.encode("utf-8")).hexdigest()
-        if page_kind == "time":
+        if page_kind in {"time", "time_clean"}:
             publication_matches = schema_matches
+        elif page_kind == "abc_news_nested":
+            publication_matches = bool(
+                len(published_meta) == 1
+                and len(article_times) >= 3
+                and len(set(article_times[:3])) == 1
+                and published_meta[0].startswith(article_times[0][:10])
+            )
         else:
             publication_matches = bool(
                 len(published_meta) == 1
