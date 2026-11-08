@@ -5110,6 +5110,9 @@ class ClintonWhiteHouseArchiveAdapter:
         if decision is not AccessDecision.ALLOW:
             return {"decision": decision, "evidence": evidence, "material": None}
 
+        if "/textonly/WH/New/China/" in response.url:
+            return self._extract_textonly_document(response, decision, digest, fetched_at)
+
         transcripts = response.css("pre")
         if not transcripts:
             return self._extract_briefing_page(response, decision, digest, fetched_at)
@@ -5184,6 +5187,14 @@ class ClintonWhiteHouseArchiveAdapter:
                 if value:
                     headline_candidates.append(value)
         headline = headline_candidates[0] if len(headline_candidates) == 1 else ""
+        is_work_page = "/WH/Work/" in response.url
+        if is_work_page and content is not None:
+            work_headlines = [
+                _normalized_text(node.xpath(".//text()").getall())
+                for node in content.xpath(".//font[@size='4']//b")
+            ]
+            work_headlines = [value for value in work_headlines if value]
+            headline = work_headlines[0] if len(work_headlines) == 1 else ""
         if response.url == "https://clintonwhitehouse4.archives.gov/WH/New/html/20000308_2.html":
             headline = "The U.S.-China WTO Agreement Will Help Promote Reform, Accountability, and Openness in China"
         if not headline and page_title and content is not None:
@@ -5212,6 +5223,15 @@ class ClintonWhiteHouseArchiveAdapter:
                     break
         publication_date = _publication_date(release_date, "")
 
+        if is_work_page:
+            masthead = _normalized_text(response.xpath("//body/table[1]//text()").getall())
+            visible_dates = list(dict.fromkeys(re.findall(
+                r"\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\b",
+                masthead,
+                flags=re.IGNORECASE,
+            )))
+            publication_date = _publication_date(visible_dates[0], "") if len(visible_dates) == 1 else ""
+
         body_parts = []
         footer_seen = False
         if content is not None:
@@ -5221,17 +5241,23 @@ class ClintonWhiteHouseArchiveAdapter:
                 value = _normalized_text(node.xpath(".//text()").getall())
                 if not value:
                     continue
+                if is_work_page and node.xpath(".//font[@size='4']"):
+                    continue
                 if value.startswith(("President and First Lady", "Privacy Statement")):
                     footer_seen = True
                     break
                 body_parts.append(value)
         body = "\n\n".join(body_parts)
-        source = "The White House, Office of the Press Secretary"
+        source = "The White House" if is_work_page else "The White House, Office of the Press Secretary"
+        source_valid = (
+            "THE WHITE HOUSE" in _normalized_text(response.xpath("//body//text()").getall()).upper()
+            if is_work_page
+            else "Office of the Press Secretary" in source_header
+        )
         complete = bool(
             content is not None
             and headline
-            and "THE WHITE HOUSE" in source_header
-            and "Office of the Press Secretary" in source_header
+            and source_valid
             and publication_date
             and body
             and footer_seen
@@ -5267,6 +5293,81 @@ class ClintonWhiteHouseArchiveAdapter:
                 result["field_sources"].update(
                     {name: response.url for name in ("abstract", "keywords")}
                 )
+                result["abstract_origin"] = "derived"
+            else:
+                result["abstract_origin"] = "none"
+        return result
+
+    def _extract_textonly_document(self, response, decision, digest, fetched_at) -> dict:
+        blocks = response.xpath("//blockquote")
+        block = blocks[0] if len(blocks) == 1 else None
+        block_text = _normalized_text(block.xpath(".//text()").getall()) if block is not None else ""
+        office = "Office of the Press Secretary" in block_text
+        release_match = re.search(
+            r"For\s+Immediate\s+Release\s+([A-Z][a-z]+\s+\d{1,2},\s+\d{4})",
+            block_text,
+            flags=re.IGNORECASE,
+        )
+        publication_date = _publication_date(release_match.group(1), "") if release_match else ""
+        center_texts = [
+            _normalized_text(node.xpath(".//text()").getall())
+            for node in (block.xpath(".//center") if block is not None else [])
+        ]
+        title_candidates = []
+        for value in center_texts:
+            press_availability = re.search(
+                r"(PRESS AVAILABILITY BY PRESIDENT CLINTON AND PRESIDENT JIANG)\b",
+                value,
+                re.I,
+            )
+            photo_opportunity = re.search(
+                r"(REMARKS BY PRESIDENT CLINTON AND PRESIDENT JIANG ZEMIN IN PHOTO OPPORTUNITY)\b",
+                value,
+                re.I,
+            )
+            match = press_availability or photo_opportunity
+            if match:
+                title_candidates.append(match.group(1))
+        title = title_candidates[0] if len(title_candidates) == 1 else ""
+
+        paragraphs = [
+            _normalized_text(node.xpath(".//text()").getall())
+            for node in (block.xpath(".//p") if block is not None else [])
+        ]
+        paragraphs = [value for value in paragraphs if value]
+        time_index = next((index for index, value in enumerate(paragraphs) if re.fullmatch(
+            r"\d{1,2}:\d{2}\s+[AP]\.M\.\s*\(L\)", value, re.I
+        )), None)
+        body_parts = paragraphs[time_index + 1:] if time_index is not None else []
+        body = "\n\n".join(body_parts)
+        complete = bool(block is not None and office and publication_date and title and body and time_index is not None)
+        metadata = _reviewed_clinton_metadata(response.url, body) if complete else None
+        material = VerifiedMaterial(
+            source="The White House, Office of the Press Secretary",
+            time=publication_date,
+            author="未注明",
+            title=title,
+            abstract=metadata[0] if metadata else "",
+            keywords=metadata[1] if metadata else "",
+            body=body,
+            source_url=response.url,
+        ) if complete else None
+        evidence = SourceEvidence(
+            source_url=response.url,
+            fetched_at=fetched_at,
+            status_code=response.status,
+            content_sha256=digest,
+            body_complete=complete,
+            metadata_verified=complete,
+            body_format="source_text",
+        )
+        result = {"decision": decision, "evidence": evidence, "material": material}
+        if material is not None:
+            result["field_sources"] = {
+                name: response.url for name in ("source", "time", "author", "title")
+            }
+            if metadata:
+                result["field_sources"].update({name: response.url for name in ("abstract", "keywords")})
                 result["abstract_origin"] = "derived"
             else:
                 result["abstract_origin"] = "none"

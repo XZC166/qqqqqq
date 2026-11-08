@@ -2,13 +2,13 @@
 
 本项目为学位论文“美国对华舆论传播与话语竞争的历史演变（1949—2025）”生成检索计划、采集允许公开访问的原始页面、保存来源证据、核验全文并导出资料表。
 
-## 当前复核结论（2026-11-08，PMC 批次提速复抓）
+## 当前复核结论（2026-11-08，Clinton 白宫档案离线复核）
 
-截至 2026-11-08，数据库与重新导出的 `data/materials.xlsx` 有 2,426 条唯一正式全文记录，工作簿仅含规定的九列；CIAO 报告通过原始 HTML 离线复核，批次 242 现为 1 条 verified。按来源发布日期统计：1949—1972 年 31 条、1972—1991 年 25 条、1992—2016 年 683 条、2017—2025 年 1,687 条；1972 年计入前两个区间，因此分项不直接相加。候选状态为 2,462 条 verified（含重复候选）、554 条 pending、96 条 restricted、94 条 excluded、2 条 candidate。覆盖矩阵中仍有 2 个适用时期/来源单元没有 verified 全文：1949—1972 think tank、1972—1991 research literature；2006 年前的新媒体单元不适用。该库已超过约 2,000 条规模目标，但时期与来源分布不均，且不代表穷尽。最新覆盖明细见 `data/coverage-audit.json`；本次早期来源缺口审查记录见 `data/reviews/early-source-gap-search-20261108.json`；第二轮早期缺口检索与未采纳理由见 `data/reviews/early-gap-second-pass-20261108.json`；复查 Gallup 1964 年中国公众意见报告与 PDX Scholar 1989 年新闻媒体学位论文后，前者仍因 robots.txt 禁止、后者仍因 HTTP 403 标记为 restricted，未增加正式全文，详情见随包批次 299—300；RAND 1950 年研究备忘录 RM-365 也因 robots.txt、产品页和 PDF 均返回 HTTP 403 标记为 restricted，且页面发布日期仅精确到年份，未进入正式表，详情见 `data/reviews/rand-rm365-psychological-warfare-1950-20261108.json` 和批次报告 305；CIAO 原始报告解析与待核候选复核见 `data/reviews/offline-pending-revalidation-20261108-ciao-china-factor.json`；PMC 页面标题脚注修复和单条离线重核记录见 `data/reviews/pmc-visible-footnote-title-fix-20261108.json`；Brookings 2006—2020 年相关全文补充及核验记录见批次报告 278—280 和 `data/reviews/offline-pending-revalidation-20261108-brookings-batch280.json`；本轮 PMC 离线重核新增 15 条，其中 2 条直接相关研究保留、13 条一般健康传播论文排除，完整核对清单见 `data/reviews/pmc-pending-revalidation-topic-screen-20261108.json`；批次 314 从 2017—2025 年 PMC 开放全文索引预筛 357 条后抓取并核验 7 篇数字公共外交、China threat 叙事、疫苗外交及官方话语研究，抓取耗时约 9.7 秒，未将索引摘要当作正文；本轮 777 条待处理候选中抓取 603 个唯一 URL，页面筛查后保留 4 条直接相关研究、排除 38 条偏题研究，审计见 `data/reviews/pmc-bulk-topic-screen-20261108.json`；118 条 PMC 候选经题名/摘要预筛后，34 条进入全文队列、10 条列人工复核、74 条排除，随后抓取 14 个页面项、跳过 20 条已有正式全文；9 条自动晋级记录逐篇筛查后保留 3 条、撤下 6 条，详见 `data/reviews/pmc-metadata-screen-crawl-review-20261108.json`。
+截至 2026-11-08，数据库与 `data/materials.xlsx` 有 2,430 条唯一正式全文记录，工作簿仅含规定的九列。按来源发布日期统计：1949—1972 年 31 条、1972—1991 年 31 条、1992—2016 年 687 条、2017—2025 年 1,687 条；1972 年计入前两个区间，因此分项不直接相加。候选状态为 2,466 条 verified（含重复候选）、558 条 pending、98 条 restricted、94 条 excluded、2 条 candidate。覆盖矩阵仍有 2 个适用时期/来源单元没有 verified 全文：1949—1972 think tank、1972—1991 research literature；2006 年前的新媒体单元不适用。该库已超过约 2,000 条规模目标，但时期与来源分布不均，且不代表穷尽。最新覆盖明细见 `data/coverage-audit.json`；本次 Clinton 白宫档案离线重核依据已保存的三个原始 HTML 证据，将 1998-06-11、1998-06-27 两份演讲/记者会记录和一份中美领导人会谈记录转为正式全文，未重新请求来源网站，详情见 `data/reviews/offline-pending-revalidation-20261108-clinton-legacy-targeted.json`。早期来源缺口审查见 `data/reviews/early-source-gap-search-20261108.json` 和 `data/reviews/early-gap-second-pass-20261108.json`；Gallup 1964 年报告和 PDX Scholar 1989 年学位论文受 robots/403 限制，RAND RM-365 也未能取得可核验的完整原文，均未计入正式全文。CIAO、Brookings 与 PMC 的前序复核记录及受限原因仍按各自批次报告保存。
 
 ### PMC 两阶段提速
 
-提交后的批次 315—319 继续兼顾早期与近现代资料。对 1949—1991 年 91 条 pending 原始链接复抓，共收到 103 个 HTTP 响应（200: 93、302: 3、404: 5、420: 2），另有 26 次连接异常；91 条候选均仍未核实为完整单篇正文，正式全文净增 0。Truman Library 的三个 1950 年原始页中，1 页 HTTP 200、2 页 HTTP 503；HTTP 200 页正文首行日期是发布会发生日，页面没有可核实的发布日期，因此不转正。2021 年 Nature 与 2025 年 SAGE 开放研究候选各 1 条，来源页受限/未核实，正式全文净增 0。复抓详情见 `data/reviews/early-pending-refresh-20261108.json`；新候选批次 315—319 已进入数据库与交付包。正式库仍为 2,426 条。
+提交后的批次 315—319 继续兼顾早期与近现代资料。对 1949—1991 年 91 条 pending 原始链接复抓，共收到 103 个 HTTP 响应（200: 93、302: 3、404: 5、420: 2），另有 26 次连接异常；91 条候选均仍未核实为完整单篇正文，正式全文净增 0。Truman Library 的三个 1950 年原始页中，1 页 HTTP 200、2 页 HTTP 503；HTTP 200 页正文首行日期是发布会发生日，页面没有可核实的发布日期，因此不转正。2021 年 Nature 与 2025 年 SAGE 开放研究候选各 1 条，来源页受限/未核实，正式全文净增 0。复抓详情见 `data/reviews/early-pending-refresh-20261108.json`；新候选批次 315—319 已进入数据库与交付包。随后 1998 年 Clinton 白宫旧模板页面离线重核新增 3 条正式全文，数据库总数更新至 2,430。
 
 PMC 批量队列先用公开书目信息预筛题名，再让 Scrapy 请求留下的来源页；无书目信息的项目会保留待人工复核。预筛不形成正式资料，也不替代原文核验。示例：
 
@@ -166,7 +166,7 @@ PMC 批次 271、307 本轮从开放全文索引发现 134 条候选，跳过 26
 
 当前正式表有 251 条唯一全文；468 条候选（256 verified、134 pending、77 restricted、1 candidate）。
 
-按完整 4 时期 × 5 来源类型矩阵审计，当前没有适用格子缺候选 URL；1949—1991 两个新媒体格子按规范（2006 年以后）标记为不适用。3 个适用格子仍无已核实全文：1949—1972 think_tank（1 restricted）；1972—1991 think_tank（3 pending、2 restricted）、research_literature（3 pending）。1949—1972 media 已新增 1 条可核验全文，但 NYT/AAPB 等其他候选仍受限或待核验。矩阵区分候选数与唯一 verified 材料数；审计见 `data/coverage-audit.json`，ZIP 的 `reports/coverage.json` 收录完整矩阵。
+按完整 4 时期 × 5 来源类型矩阵审计，当前没有适用格子缺候选 URL；1949—1991 两个新媒体格子按规范（2006 年以后）标记为不适用。2 个适用格子仍无已核实全文：1949—1972 think_tank（3 restricted）；1972—1991 research_literature（3 pending、1 restricted）。矩阵区分候选数与唯一 verified 材料数；审计见 `data/coverage-audit.json`，ZIP 的 `reports/coverage.json` 收录完整矩阵。
 
 字段质量审计发现既有正式记录仍有 27 条摘要为空、43 条关键词为空；这些字段不能用占位文本掩盖，待依据各自正文和来源逐批补齐。逐条清单见 `data/reviews/field-completeness-20261107.json`。新入库材料的摘要/关键词按正文整理并登记来源。
 
