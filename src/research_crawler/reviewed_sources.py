@@ -1433,6 +1433,21 @@ PRESIDENCY_REVIEWED_METADATA: dict[str, tuple[str, str]] = {
 }
 
 PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
+    "https://www.presidency.ucsb.edu/documents/remarks-the-welcoming-ceremony-for-president-li-xiannian-china": (
+        "04f12f874299b4f7ceb506b9161866755f043ebd4d7d3fa74d9c07dfb342c124",
+        "据正文整理：里根在欢迎中国国家主席李先念访美的仪式上谈及两国贸易、科技合作、教育和文化交流，并表示双方将以相互尊重、互利原则处理共同利益与分歧。",
+        "Ronald Reagan; Li Xiannian; U.S.-China relations; trade; scientific cooperation; cultural exchange",
+    ),
+    "https://www.presidency.ucsb.edu/documents/toast-the-state-dinner-for-president-li-xiannian-china": (
+        "310c317d25901a06c88acdfc030c2a698cbff14083ae8cdf61bfabf4d7badb6b",
+        "据正文整理：里根在李先念访美国宴祝酒词中回顾此前访华和双方交往，表达对中美友好关系、合作及中国人民发展的期望。",
+        "Ronald Reagan; Li Xiannian; U.S.-China friendship; public diplomacy; bilateral cooperation",
+    ),
+    "https://www.presidency.ucsb.edu/documents/written-responses-questions-submitted-the-far-eastern-economic-review": (
+        "f92895c1097e4278efe701f928b6669535e557fb631c54068d4b778e71cad735",
+        "据正文整理：里根在书面答复中总结近期访华及与中国领导人的会谈，谈及两国制度差异、共同利益、中国的不结盟立场与太平洋地区合作。",
+        "Ronald Reagan; China visit; U.S.-China relations; nonalignment; Pacific Basin; Far Eastern Economic Review",
+    ),
     "https://www.presidency.ucsb.edu/documents/executive-order-12143-maintaining-unofficial-relations-with-the-people-taiwan": (
         "fda7bff5db10129645f69583e744ea3ab57464c1e3d16d080941c3c851b1e643",
         "据正文整理：卡特依据《台湾关系法》发布行政命令，安排美国政府部门通过非官方机构维持与台湾民众的商业、文化及其他关系。",
