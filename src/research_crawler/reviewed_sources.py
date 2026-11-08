@@ -213,6 +213,20 @@ BROOKINGS_REVIEWED_ABSTRACTS: dict[str, tuple[str, str]] = {
 }
 
 PEW_REVIEWED_ARTICLES: dict[str, tuple[str, str, str, str, str]] = {
+    "https://www.pewresearch.org/global/2023/04/12/americans-are-critical-of-chinas-global-role-as-well-as-its-relationship-with-russia/": (
+        "2023-04-12",
+        "Americans Are Critical of China’s Global Role – as Well as Its Relationship With Russia",
+        "Laura Silver, Christine Huang, Laura Clancy, Moira Fagan",
+        "17b85b3209815393ce5d5217260f72e84a5276db44d2c137889e7993a8b34530",
+        "U.S. public opinion; China’s global role; China-Russia relations; U.S.-China cooperation; China’s international behavior",
+    ),
+    "https://www.pewresearch.org/global/2023/07/27/chinas-approach-to-foreign-policy-gets-largely-negative-reviews-in-24-country-survey/": (
+        "2023-07-27",
+        "China’s Approach to Foreign Policy Gets Largely Negative Reviews in 24-Country Survey",
+        "Laura Silver, Christine Huang, Laura Clancy",
+        "dde4afc931fa52e35b6fb0647aee61250a3dc97741519a3b3f80cee15c03a7f0",
+        "global public opinion; China’s foreign policy; China’s global influence; international relations; Xi Jinping",
+    ),
     "https://www.pewresearch.org/global/2024/05/01/chinas-relationship-with-the-u-s/": (
         "2024-05-01",
         "2. China’s relationship with the U.S.",

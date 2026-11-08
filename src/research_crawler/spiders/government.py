@@ -5259,6 +5259,85 @@ class JsonLdArticleAdapter:
         }
 
 
+def _pew_inline_text(node) -> str:
+    values = node.xpath(
+        ".//text()[not(ancestor::button) and not(ancestor::svg) and not(ancestor::*[@hidden])]"
+    ).getall()
+    return " ".join("".join(values).split())
+
+
+def _pew_body_text(content) -> tuple[str, bool]:
+    body_parts = []
+    supported_structure = True
+    for node in content.xpath("./*"):
+        tag = node.root.tag.lower()
+        if tag in {"p", "h2", "h3", "h4", "blockquote"}:
+            text = _pew_inline_text(node)
+            if text.startswith(("Related:", "For more on")) and node.xpath(".//a"):
+                continue
+            if text:
+                body_parts.append(text)
+        elif tag in {"ul", "ol"}:
+            items = [_pew_inline_text(item) for item in node.xpath("./li")]
+            if any(items):
+                body_parts.append("\n".join(item for item in items if item))
+        elif tag == "figure":
+            caption = _pew_inline_text(node.css("figcaption"))
+            if caption:
+                body_parts.append(caption)
+        elif tag == "details":
+            details_parts = [
+                _pew_inline_text(item)
+                for item in node.xpath("./summary | .//p | .//h2 | .//h3 | .//li")
+            ]
+            body_parts.extend(part for part in details_parts if part)
+        elif tag == "div":
+            classes = set(node.attrib.get("class", "").split())
+            if "wp-block-prc-block-collapsible" in classes:
+                title_nodes = node.xpath(
+                    "./div[contains(@class, 'wp-block-prc-block-collapsible__title')]/div[1]"
+                )
+                content_nodes = node.xpath(
+                    "./div[contains(@class, 'wp-block-prc-block-collapsible__content')]"
+                )
+                children = node.xpath("./*")
+                text_blocks = content_nodes[0].xpath("./*") if len(content_nodes) == 1 else []
+                if (
+                    len(children) != 2
+                    or len(title_nodes) != 1
+                    or len(content_nodes) != 1
+                    or not text_blocks
+                    or any(block.root.tag.lower() != "p" for block in text_blocks)
+                ):
+                    supported_structure = False
+                    continue
+                heading = _pew_inline_text(title_nodes[0])
+                paragraphs = [_pew_inline_text(block) for block in text_blocks]
+                body_parts.extend(part for part in [heading, *paragraphs] if part)
+            elif "wp-block-group" in classes:
+                blockquotes = node.xpath("./blockquote")
+                children = node.xpath("./*")
+                quote_blocks = blockquotes[0].xpath("./*") if len(blockquotes) == 1 else []
+                if (
+                    len(children) != 1
+                    or len(blockquotes) != 1
+                    or not quote_blocks
+                    or any(block.root.tag.lower() not in {"p", "cite"} for block in quote_blocks)
+                ):
+                    supported_structure = False
+                    continue
+                body_parts.extend(
+                    text for text in (_pew_inline_text(block) for block in quote_blocks) if text
+                )
+            else:
+                text = _pew_inline_text(node)
+                if not text.startswith(("Guide to this report", "Report Materials")):
+                    supported_structure = False
+        else:
+            supported_structure = False
+    return "\n\n".join(body_parts), supported_structure
+
+
 class PewResearchArticleAdapter:
     def extract(self, response: Response, candidate: MaterialCandidate) -> dict:
         decision = classify_response(response.url, response.status, response.text)
@@ -5301,41 +5380,9 @@ class PewResearchArticleAdapter:
             publisher = publisher[0] if publisher else {}
         structured_source = _jsonld_name(publisher) if isinstance(publisher, dict) else ""
         abstract = response.css("meta[name='description']::attr(content)").get(default="").strip()
-        body_parts = []
-        supported_structure = len(content) == 1
-        if supported_structure:
-            for node in content[0].xpath("./*"):
-                tag = node.root.tag.lower()
-                if tag in {"p", "h2", "h3", "h4", "blockquote"}:
-                    text = _normalized_text(node.xpath(".//text()").getall())
-                    if text.startswith(("Related:", "For more on")) and node.xpath(".//a"):
-                        continue
-                    if text:
-                        body_parts.append(text)
-                elif tag in {"ul", "ol"}:
-                    items = [
-                        _normalized_text(item.xpath(".//text()").getall())
-                        for item in node.xpath("./li")
-                    ]
-                    if any(items):
-                        body_parts.append("\n".join(item for item in items if item))
-                elif tag == "figure":
-                    caption = _normalized_text(node.css("figcaption").xpath(".//text()").getall())
-                    if caption:
-                        body_parts.append(caption)
-                elif tag == "details":
-                    details_parts = [
-                        _normalized_text(item.xpath(".//text()").getall())
-                        for item in node.xpath("./summary | .//p | .//h2 | .//h3 | .//li")
-                    ]
-                    body_parts.extend(part for part in details_parts if part)
-                elif tag == "div":
-                    text = _normalized_text(node.xpath(".//text()").getall())
-                    if not text.startswith(("Guide to this report", "Report Materials")):
-                        supported_structure = False
-                else:
-                    supported_structure = False
-        body = "\n\n".join(body_parts)
+        body, supported_structure = (
+            _pew_body_text(content[0]) if len(content) == 1 else ("", False)
+        )
         reviewed = PEW_REVIEWED_ARTICLES.get(response.url)
         body_hash = sha256(body.encode("utf-8")).hexdigest()
         metadata_match = bool(
