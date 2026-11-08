@@ -350,22 +350,50 @@ class ReviewedPublicMediaAdapter:
             visible_title_matches = h1 == [title]
         elif page_kind == "abc_archive":
             containers = response.css(".article-body")
-            program = "The World Today" if source.endswith("The World Today)") else "PM"
+            program = response.css(
+                'meta[property="og:site_name"]::attr(content)'
+            ).get()
             source_matches = response.css(
                 'meta[property="og:site_name"]::attr(content)'
-            ).getall() == [program]
+            ).getall() == [program] and program in {"The World Today", "PM", "Lateline"}
             intro = [
                 _normalized_text(node.xpath(".//text()").getall())
                 for node in response.css("article > p")
             ]
             author_matches = sum(
-                line.startswith("Broadcast ") and line.endswith(f"Reporter: {author}")
+                (
+                    line.startswith("Broadcast ")
+                    and line.endswith(f"Reporter: {author}")
+                )
+                or line.startswith(f"{author} reported this story on ")
                 for line in intro
             ) == 1
             schema_matches = len(intro) == 3
+            publisher_name = "ABC News" if program == "Lateline" else "ABC listen"
             visible_title_matches = (
-                document_title == f"{title} - {program} Archive - ABC listen"
+                document_title == f"{title} - {program} Archive - {publisher_name}"
             )
+        elif page_kind == "abc_news_nested":
+            containers = response.css(
+                '#content > article > div > div > div[class*="Article_main"]'
+            )
+            source_matches = document_title == f"{title} - ABC News"
+            paragraphs_in_article = containers[0].css("p") if len(containers) == 1 else []
+            paragraph_texts = [
+                _normalized_text(node.xpath(".//text()").getall())
+                for node in paragraphs_in_article
+            ]
+            author_matches = (
+                len(paragraph_texts) == 20
+                and paragraph_texts[18] == author
+                and paragraph_texts[19] == "See more ABC coverage in your search results"
+            )
+            article_times = response.css("time::attr(datetime)").getall()
+            schema_matches = (
+                len(article_times) == 15
+                and all(value.startswith(published_on) for value in article_times[:3])
+            )
+            visible_title_matches = h1 == [title]
         elif page_kind == "guardian":
             containers = response.css(".article-body-commercial-selector")
             source_matches = (

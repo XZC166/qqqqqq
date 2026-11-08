@@ -87,6 +87,20 @@ CASES = (
         "US patience wears as China withholds plane", "abc_archive", 31, 8023,
         "f26ce1fbdc3fdbf7e85708d53079ce86024127f2a8868288d4cc5623a185f1b0",
     ),
+    (
+        "abc_s3007510.html",
+        "https://www.abc.net.au/pm/archive/articles/2010/09/09/s3007510.htm",
+        "1992-2016", "ABC Radio (PM)", "Shane McLeod", "2010-09-09",
+        "China, US balance key to regional stability", "abc_archive", 21, 4804,
+        "de6c2f618e4f1326acfcee581b1aa39a9bcf84daa16a99392e1422419f38bfde",
+    ),
+    (
+        "abc_s4241125.html",
+        "https://www.abc.net.au/lateline/archive/articles/2015/05/22/s4241125.htm",
+        "1992-2016", "ABC News (Lateline)", "Emma Alberici", "2015-05-22",
+        "Interview: Bonnie Glaser", "abc_archive", 26, 7713,
+        "b8f53105b199bff01eeffdf946181881f54b110f8c143ca445ff2c6460a9a803",
+    ),
 )
 
 

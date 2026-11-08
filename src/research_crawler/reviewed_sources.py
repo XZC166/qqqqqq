@@ -440,6 +440,25 @@ PBS_REVIEWED_PROGRAM_TRANSCRIPTS: dict[str, tuple[str, str, int, str, str, str, 
 # Tuple fields: period, source, author, date, title, selector, body length, body SHA-256,
 # publisher abstract (empty when no relevant abstract is provided), body-derived keywords.
 PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
+    "https://www.abc.net.au/news/2016-06-04/us-flexes-muscles-as-asia-worries-about-south-china-sea-row/7478136": (
+        "1992-2016", "ABC News", "Reuters", "2016-06-04",
+        "US flexes muscles as Asia worries about South China Sea row",
+        "abc_news_nested", "3390",
+        "dcb1c7da1ed138abb4ec24eaf231b6fe54ce7c730fac4683483bf70ba9d74031",
+        "", "United States; China; South China Sea; Asia-Pacific; Defence Secretary Ash Carter; maritime disputes", "18", "20",
+    ),
+    "https://www.abc.net.au/pm/archive/articles/2010/09/09/s3007510.htm": (
+        "1992-2016", "ABC Radio (PM)", "Shane McLeod", "2010-09-09",
+        "China, US balance key to regional stability", "abc_archive", "4804",
+        "de6c2f618e4f1326acfcee581b1aa39a9bcf84daa16a99392e1422419f38bfde",
+        "", "China; United States; regional security; Asia-Pacific; South China Sea", "21", "21",
+    ),
+    "https://www.abc.net.au/lateline/archive/articles/2015/05/22/s4241125.htm": (
+        "1992-2016", "ABC News (Lateline)", "Emma Alberici", "2015-05-22",
+        "Interview: Bonnie Glaser", "abc_archive", "7713",
+        "b8f53105b199bff01eeffdf946181881f54b110f8c143ca445ff2c6460a9a803",
+        "", "China; United States; Bonnie Glaser; South China Sea; territorial disputes; strategic rivalry", "26", "27",
+    ),
     "https://time.com/archive/6615999/war-late-entry/": (
         "1949-1972", "TIME", "TIME", "1950-11-06", "War: Late Entry",
         "time", "1445", "bb038e0c6a4e7669c6d3b8aa4fb23b697f7e6ce9cea0b01767a5f013047725fe",
@@ -720,6 +739,12 @@ PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://www.abc.net.au/news/2016-06-04/us-flexes-muscles-as-asia-worries-about-south-china-sea-row/7478136":
+        "据正文整理：报道美国国防部长阿什·卡特在香格里拉对话上的发言，以及南海争端、美国亚太参与和地区安全立场。",
+    "https://www.abc.net.au/pm/archive/articles/2010/09/09/s3007510.htm":
+        "据正文整理：报道 Lowy Institute 对亚洲安全挑战的分析，并讨论中国崛起、美国军事优势、地区力量平衡及海上争端。",
+    "https://www.abc.net.au/lateline/archive/articles/2015/05/22/s4241125.htm":
+        "据正文整理：Emma Alberici 采访 Bonnie Glaser，讨论中美在南海的分歧、人工岛建设、海上主张及地区安全。",
     "https://time.com/archive/6615999/war-late-entry/":
         "据正文整理：文章报道有关中国军队进入朝鲜参战的情报与美方、韩国方面的战场判断。",
     "https://time.com/archive/6616371/battle-of-korea-after-the-breakthrough/":
