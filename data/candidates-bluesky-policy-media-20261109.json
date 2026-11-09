@@ -1,0 +1,112 @@
+{
+  "source": "Bluesky public AppView API: getAuthorFeed and getProfile",
+  "window": [
+    "2017-01-01",
+    "2025-12-31"
+  ],
+  "accounts": {
+    "lawfaremedia.org": {
+      "profile_verified": true,
+      "pages": 30,
+      "posts_scanned": 2996,
+      "video_posts_skipped": 534,
+      "candidates": 67,
+      "oldest_post": "2025-05-12T14:37:44.386Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "carnegieendowment.org": {
+      "profile_verified": true,
+      "pages": 11,
+      "posts_scanned": 1002,
+      "video_posts_skipped": 39,
+      "candidates": 78,
+      "oldest_post": "2024-11-15T20:18:02.359Z",
+      "page_limit_reached": false,
+      "error": null
+    },
+    "theconversation.com": {
+      "profile_verified": true,
+      "pages": 1,
+      "posts_scanned": 96,
+      "video_posts_skipped": 3,
+      "candidates": 0,
+      "oldest_post": "2024-11-18T21:26:16.634Z",
+      "page_limit_reached": false,
+      "error": null
+    },
+    "politico.com": {
+      "profile_verified": true,
+      "pages": 30,
+      "posts_scanned": 3000,
+      "video_posts_skipped": 5,
+      "candidates": 0,
+      "oldest_post": "2026-07-30T14:25:41Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "thediplomat.com": {
+      "profile_verified": true,
+      "pages": 30,
+      "posts_scanned": 3000,
+      "video_posts_skipped": 0,
+      "candidates": 0,
+      "oldest_post": "2026-06-27T00:32:00.732Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "scmp.com": {
+      "profile_verified": true,
+      "pages": 1,
+      "posts_scanned": 0,
+      "video_posts_skipped": 0,
+      "candidates": 0,
+      "oldest_post": null,
+      "page_limit_reached": false,
+      "error": null
+    },
+    "axios.com": {
+      "profile_verified": true,
+      "pages": 30,
+      "posts_scanned": 3000,
+      "video_posts_skipped": 2,
+      "candidates": 56,
+      "oldest_post": "2025-09-25T22:57:20.998Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "economist.com": {
+      "profile_verified": true,
+      "pages": 30,
+      "posts_scanned": 3000,
+      "video_posts_skipped": 1,
+      "candidates": 0,
+      "oldest_post": "2026-10-04T16:01:31.145Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "usip.org": {
+      "profile_verified": true,
+      "pages": 1,
+      "posts_scanned": 6,
+      "video_posts_skipped": 0,
+      "candidates": 2,
+      "oldest_post": "2025-06-13T19:26:09.909Z",
+      "page_limit_reached": false,
+      "error": null
+    },
+    "wilsoncenter.org": {
+      "profile_verified": true,
+      "pages": 1,
+      "posts_scanned": 83,
+      "video_posts_skipped": 3,
+      "candidates": 8,
+      "oldest_post": "2023-08-30T14:59:12.151Z",
+      "page_limit_reached": false,
+      "error": null
+    }
+  },
+  "candidate_urls": 211,
+  "candidate_csv": "data\\candidates-bluesky-policy-media-20261109.csv",
+  "note": "Discovery metadata only. Candidate posts must pass original-page and getPosts body/date/author checks before formal export; video posts are skipped."
+}

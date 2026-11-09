@@ -17,3 +17,21 @@ def test_bluesky_adapter_supports_additional_verified_media_handles():
     assert sources["foreignpolicy.com"] == "Foreign Policy"
     assert sources["theguardian.com"] == "The Guardian"
     assert sources["washingtonpost.com"] == "The Washington Post"
+
+
+def test_bluesky_adapter_supports_verified_policy_and_media_handles():
+    sources = BlueskyPostAdapter.sources
+    expected = {
+        "lawfaremedia.org": "Lawfare",
+        "carnegieendowment.org": "Carnegie Endowment",
+        "theconversation.com": "The Conversation",
+        "politico.com": "Politico",
+        "thediplomat.com": "The Diplomat",
+        "scmp.com": "South China Morning Post",
+        "axios.com": "Axios",
+        "economist.com": "The Economist",
+        "usip.org": "U.S. Institute of Peace",
+        "wilsoncenter.org": "The Wilson Center",
+    }
+    for handle, source in expected.items():
+        assert sources[handle] == source

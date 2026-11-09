@@ -67,3 +67,20 @@ def test_bluesky_discovery_includes_additional_verified_media_accounts():
     assert module.FEED_HANDLES["foreignpolicy.com"] == "Foreign Policy"
     assert module.FEED_HANDLES["theguardian.com"] == "The Guardian"
     assert module.FEED_HANDLES["washingtonpost.com"] == "The Washington Post"
+
+
+def test_bluesky_discovery_includes_verified_policy_and_media_accounts():
+    expected = {
+        "lawfaremedia.org": "Lawfare",
+        "carnegieendowment.org": "Carnegie Endowment",
+        "theconversation.com": "The Conversation",
+        "politico.com": "Politico",
+        "thediplomat.com": "The Diplomat",
+        "scmp.com": "South China Morning Post",
+        "axios.com": "Axios",
+        "economist.com": "The Economist",
+        "usip.org": "U.S. Institute of Peace",
+        "wilsoncenter.org": "The Wilson Center",
+    }
+    for handle, source in expected.items():
+        assert module.FEED_HANDLES[handle] == source

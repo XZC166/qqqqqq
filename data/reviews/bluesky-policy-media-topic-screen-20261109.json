@@ -1,0 +1,1780 @@
+{
+  "generated_at": "2026-11-09T01:20:43.302011+00:00",
+  "input_verified_bsky": 210,
+  "retained": 122,
+  "withdrawn": 88,
+  "retained_records": [
+    {
+      "candidate_id": 6760,
+      "source": "Lawfare",
+      "published_on": "2025-12-12",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m7sivdfdo225",
+      "material_id": 5150
+    },
+    {
+      "candidate_id": 6759,
+      "source": "Lawfare",
+      "published_on": "2025-12-22",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3maltuil4jc2w",
+      "material_id": 5151
+    },
+    {
+      "candidate_id": 6763,
+      "source": "Lawfare",
+      "published_on": "2025-12-05",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m7av3t5epk2t",
+      "material_id": 5154
+    },
+    {
+      "candidate_id": 6764,
+      "source": "Lawfare",
+      "published_on": "2025-12-03",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m74auf2ps22g",
+      "material_id": 5155
+    },
+    {
+      "candidate_id": 6766,
+      "source": "Lawfare",
+      "published_on": "2025-11-16",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m5qunlgy7e2w",
+      "material_id": 5157
+    },
+    {
+      "candidate_id": 6767,
+      "source": "Lawfare",
+      "published_on": "2025-11-14",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m5ly6z4rhc27",
+      "material_id": 5158
+    },
+    {
+      "candidate_id": 6771,
+      "source": "Lawfare",
+      "published_on": "2025-10-31",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m4im5g6yzi2o",
+      "material_id": 5162
+    },
+    {
+      "candidate_id": 6774,
+      "source": "Lawfare",
+      "published_on": "2025-10-23",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m3uwo7gqcd2q",
+      "material_id": 5165
+    },
+    {
+      "candidate_id": 6775,
+      "source": "Lawfare",
+      "published_on": "2025-10-22",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m3sgmqs3zn2u",
+      "material_id": 5166
+    },
+    {
+      "candidate_id": 6777,
+      "source": "Lawfare",
+      "published_on": "2025-10-17",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m3fjccxyg42z",
+      "material_id": 5168
+    },
+    {
+      "candidate_id": 6778,
+      "source": "Lawfare",
+      "published_on": "2025-10-13",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m33bowzwy32q",
+      "material_id": 5169
+    },
+    {
+      "candidate_id": 6780,
+      "source": "Lawfare",
+      "published_on": "2025-10-05",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m2h7fb4sfq2h",
+      "material_id": 5171
+    },
+    {
+      "candidate_id": 6782,
+      "source": "Lawfare",
+      "published_on": "2025-09-26",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lzqsjlll4z2i",
+      "material_id": 5173
+    },
+    {
+      "candidate_id": 6784,
+      "source": "Lawfare",
+      "published_on": "2025-09-19",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lz7fkqxjzn26",
+      "material_id": 5175
+    },
+    {
+      "candidate_id": 6785,
+      "source": "Lawfare",
+      "published_on": "2025-09-19",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lz6yiqc63u2h",
+      "material_id": 5176
+    },
+    {
+      "candidate_id": 6787,
+      "source": "Lawfare",
+      "published_on": "2025-09-08",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lydrsq2kja2s",
+      "material_id": 5178
+    },
+    {
+      "candidate_id": 6788,
+      "source": "Lawfare",
+      "published_on": "2025-09-08",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lydexfaxd42r",
+      "material_id": 5179
+    },
+    {
+      "candidate_id": 6789,
+      "source": "Lawfare",
+      "published_on": "2025-09-07",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lyaufrlwoq22",
+      "material_id": 5180
+    },
+    {
+      "candidate_id": 6793,
+      "source": "Lawfare",
+      "published_on": "2025-08-29",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lxkflvtsev22",
+      "material_id": 5184
+    },
+    {
+      "candidate_id": 6794,
+      "source": "Lawfare",
+      "published_on": "2025-08-28",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lxi4ptmwkk2c",
+      "material_id": 5185
+    },
+    {
+      "candidate_id": 6795,
+      "source": "Lawfare",
+      "published_on": "2025-08-21",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lwwk2l7ts52o",
+      "material_id": 5186
+    },
+    {
+      "candidate_id": 6797,
+      "source": "Lawfare",
+      "published_on": "2025-08-19",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lwrgsja5nv2t",
+      "material_id": 5188
+    },
+    {
+      "candidate_id": 6798,
+      "source": "Lawfare",
+      "published_on": "2025-08-10",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lw2dmtpnqu2w",
+      "material_id": 5189
+    },
+    {
+      "candidate_id": 6802,
+      "source": "Lawfare",
+      "published_on": "2025-08-07",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lvt2dcm2iv2s",
+      "material_id": 5193
+    },
+    {
+      "candidate_id": 6803,
+      "source": "Lawfare",
+      "published_on": "2025-08-01",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lvdxcjh7ma2s",
+      "material_id": 5194
+    },
+    {
+      "candidate_id": 6805,
+      "source": "Lawfare",
+      "published_on": "2025-07-23",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lunrcmmfac2d",
+      "material_id": 5197
+    },
+    {
+      "candidate_id": 6808,
+      "source": "Lawfare",
+      "published_on": "2025-07-11",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3ltp47o5y3l2g",
+      "material_id": 5198
+    },
+    {
+      "candidate_id": 6809,
+      "source": "Lawfare",
+      "published_on": "2025-06-30",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lstfhrkro22s",
+      "material_id": 5199
+    },
+    {
+      "candidate_id": 6810,
+      "source": "Lawfare",
+      "published_on": "2025-06-27",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lslrazhkmc2k",
+      "material_id": 5200
+    },
+    {
+      "candidate_id": 6812,
+      "source": "Lawfare",
+      "published_on": "2025-06-25",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lsh3yf5xhi2y",
+      "material_id": 5202
+    },
+    {
+      "candidate_id": 6813,
+      "source": "Lawfare",
+      "published_on": "2025-06-22",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3ls74syevva2u",
+      "material_id": 5203
+    },
+    {
+      "candidate_id": 6822,
+      "source": "Lawfare",
+      "published_on": "2025-05-18",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lph4in3xjk2y",
+      "material_id": 5211
+    },
+    {
+      "candidate_id": 6823,
+      "source": "Lawfare",
+      "published_on": "2025-05-16",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lpc74llyxm2v",
+      "material_id": 5212
+    },
+    {
+      "candidate_id": 6826,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-12-16",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3ma4kivdlwc27",
+      "material_id": 5214
+    },
+    {
+      "candidate_id": 6827,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-12-12",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m7scguh6us2p",
+      "material_id": 5215
+    },
+    {
+      "candidate_id": 6828,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-12-09",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m7l736e3q22y",
+      "material_id": 5216
+    },
+    {
+      "candidate_id": 6829,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-12-03",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m74ewsqyzk24",
+      "material_id": 5217
+    },
+    {
+      "candidate_id": 6830,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-12-01",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m6x27grz6k26",
+      "material_id": 5218
+    },
+    {
+      "candidate_id": 6831,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-25",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m6hv4yiznk2x",
+      "material_id": 5219
+    },
+    {
+      "candidate_id": 6832,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-20",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m63nbgoxcs2n",
+      "material_id": 5220
+    },
+    {
+      "candidate_id": 6833,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-19",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m5z62ehu222l",
+      "material_id": 5221
+    },
+    {
+      "candidate_id": 6834,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-19",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m5z62cxebs2l",
+      "material_id": 5222
+    },
+    {
+      "candidate_id": 6835,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-13",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m5jl6k3emk2b",
+      "material_id": 5223
+    },
+    {
+      "candidate_id": 6836,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-13",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m5jl6haw3k2b",
+      "material_id": 5224
+    },
+    {
+      "candidate_id": 6837,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-10",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m5bvzktbck2f",
+      "material_id": 5225
+    },
+    {
+      "candidate_id": 6840,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-10-31",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m4jclqa7z22d",
+      "material_id": 5227
+    },
+    {
+      "candidate_id": 6841,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-10-17",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m3ff5ko6l22q",
+      "material_id": 5228
+    },
+    {
+      "candidate_id": 6842,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-09-30",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m23cyx32zk2q",
+      "material_id": 5229
+    },
+    {
+      "candidate_id": 6843,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-09-30",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m23cyvbo4c2q",
+      "material_id": 5230
+    },
+    {
+      "candidate_id": 6844,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-09-22",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lzgkrrudak2d",
+      "material_id": 5231
+    },
+    {
+      "candidate_id": 6845,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-09-22",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lzgkrpyo2s2d",
+      "material_id": 5232
+    },
+    {
+      "candidate_id": 6846,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-09-15",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lyvjmmhtx22r",
+      "material_id": 5233
+    },
+    {
+      "candidate_id": 6847,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-09-03",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lxxkjahxc22a",
+      "material_id": 5234
+    },
+    {
+      "candidate_id": 6848,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-09-03",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lxwz7pj53226",
+      "material_id": 5235
+    },
+    {
+      "candidate_id": 6849,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-08-26",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lxdcf5hd6k22",
+      "material_id": 5236
+    },
+    {
+      "candidate_id": 6850,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-08-13",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lwc6bgcppc2a",
+      "material_id": 5237
+    },
+    {
+      "candidate_id": 6851,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-08-12",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lw7pxkebs222",
+      "material_id": 5238
+    },
+    {
+      "candidate_id": 6852,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-08-06",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lvqz6f7qak2u",
+      "material_id": 5239
+    },
+    {
+      "candidate_id": 6853,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-08-06",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lvqkse7mms2u",
+      "material_id": 5240
+    },
+    {
+      "candidate_id": 6855,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-30",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lv7kppjyuk2b",
+      "material_id": 5242
+    },
+    {
+      "candidate_id": 6856,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-23",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3luni534pnc2y",
+      "material_id": 5243
+    },
+    {
+      "candidate_id": 6857,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-23",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lun6alttmc2z",
+      "material_id": 5244
+    },
+    {
+      "candidate_id": 6858,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-17",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lu6swwb6v32e",
+      "material_id": 5245
+    },
+    {
+      "candidate_id": 6859,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-17",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lu6qeebknc23",
+      "material_id": 5246
+    },
+    {
+      "candidate_id": 6860,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-17",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lu5zziftwc27",
+      "material_id": 5247
+    },
+    {
+      "candidate_id": 6861,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-17",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lu5zzhr6s227",
+      "material_id": 5248
+    },
+    {
+      "candidate_id": 6865,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-06-23",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lsbqivfkis2d",
+      "material_id": 5252
+    },
+    {
+      "candidate_id": 6866,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-06-17",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lrsl3mvtgs24",
+      "material_id": 5253
+    },
+    {
+      "candidate_id": 6867,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-06-12",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lrgl22qtik2h",
+      "material_id": 5254
+    },
+    {
+      "candidate_id": 6868,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-06-10",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lrbc6jcgh22z",
+      "material_id": 5255
+    },
+    {
+      "candidate_id": 6870,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-06-05",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lquwdoypls2h",
+      "material_id": 5257
+    },
+    {
+      "candidate_id": 6871,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-05-30",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lqfjqr76r62i",
+      "material_id": 5258
+    },
+    {
+      "candidate_id": 6872,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-05-28",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lqacm5eb2c2g",
+      "material_id": 5259
+    },
+    {
+      "candidate_id": 6838,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-10",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m5bvzin5622f",
+      "material_id": 5260
+    },
+    {
+      "candidate_id": 6873,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-05-27",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lq6h5mmo2c2c",
+      "material_id": 5261
+    },
+    {
+      "candidate_id": 6825,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-12-22",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3malrxlsqc227",
+      "material_id": 5262
+    },
+    {
+      "candidate_id": 6874,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-05-15",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lpa46ib6cu27",
+      "material_id": 5264
+    },
+    {
+      "candidate_id": 6875,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-05-05",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3loh7ttlu5b2u",
+      "material_id": 5265
+    },
+    {
+      "candidate_id": 6807,
+      "source": "Lawfare",
+      "published_on": "2025-07-13",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lttpuuaa4r2j",
+      "material_id": 5266
+    },
+    {
+      "candidate_id": 6876,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-05-01",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lo4hhsz6ws2t",
+      "material_id": 5267
+    },
+    {
+      "candidate_id": 6878,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-04-28",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lnvkf354os25",
+      "material_id": 5269
+    },
+    {
+      "candidate_id": 6879,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-04-17",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lmzyj2ua5q2r",
+      "material_id": 5270
+    },
+    {
+      "candidate_id": 6880,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-04-17",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lmzbwlwyn42f",
+      "material_id": 5271
+    },
+    {
+      "candidate_id": 6881,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-04-16",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lmwwbk4xhu24",
+      "material_id": 5272
+    },
+    {
+      "candidate_id": 6883,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-03-31",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3llpal6j27s23",
+      "material_id": 5274
+    },
+    {
+      "candidate_id": 6884,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-03-21",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lkvfjgtkuc2z",
+      "material_id": 5275
+    },
+    {
+      "candidate_id": 6885,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-03-21",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lkvfjfpdok2z",
+      "material_id": 5276
+    },
+    {
+      "candidate_id": 6886,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-03-21",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lkvfjf5xzc2z",
+      "material_id": 5277
+    },
+    {
+      "candidate_id": 6888,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-02-27",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lj6qlqsukb2p",
+      "material_id": 5279
+    },
+    {
+      "candidate_id": 6890,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-01-31",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lh2hnplusv23",
+      "material_id": 5281
+    },
+    {
+      "candidate_id": 6891,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-01-24",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lgive4ddid2u",
+      "material_id": 5282
+    },
+    {
+      "candidate_id": 6893,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-01-08",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lfb2triwx62s",
+      "material_id": 5284
+    },
+    {
+      "candidate_id": 6895,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-01-06",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lf3yhgqpfg24",
+      "material_id": 5286
+    },
+    {
+      "candidate_id": 6896,
+      "source": "Carnegie Endowment",
+      "published_on": "2024-12-27",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3led3hsvp7r2k",
+      "material_id": 5287
+    },
+    {
+      "candidate_id": 6897,
+      "source": "Carnegie Endowment",
+      "published_on": "2024-12-27",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3led3hbg7ql2i",
+      "material_id": 5288
+    },
+    {
+      "candidate_id": 6898,
+      "source": "Carnegie Endowment",
+      "published_on": "2024-12-23",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3ldz3eco4pc2y",
+      "material_id": 5289
+    },
+    {
+      "candidate_id": 6899,
+      "source": "Carnegie Endowment",
+      "published_on": "2024-12-09",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lcvjbw77qc22",
+      "material_id": 5290
+    },
+    {
+      "candidate_id": 6900,
+      "source": "Carnegie Endowment",
+      "published_on": "2024-11-26",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lbun4u3p6d2e",
+      "material_id": 5291
+    },
+    {
+      "candidate_id": 6901,
+      "source": "Carnegie Endowment",
+      "published_on": "2024-11-26",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lbugkm36ac2u",
+      "material_id": 5292
+    },
+    {
+      "candidate_id": 6903,
+      "source": "Axios",
+      "published_on": "2025-12-30",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3mb6k5wgjds27",
+      "material_id": 5294
+    },
+    {
+      "candidate_id": 6904,
+      "source": "Axios",
+      "published_on": "2025-12-29",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3mb47nvf3vk2l",
+      "material_id": 5295
+    },
+    {
+      "candidate_id": 6906,
+      "source": "Axios",
+      "published_on": "2025-12-12",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m7s4haxld22b",
+      "material_id": 5297
+    },
+    {
+      "candidate_id": 6907,
+      "source": "Axios",
+      "published_on": "2025-12-10",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m7nrz75knc2d",
+      "material_id": 5298
+    },
+    {
+      "candidate_id": 6909,
+      "source": "Axios",
+      "published_on": "2025-12-08",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m7izymnhmk24",
+      "material_id": 5300
+    },
+    {
+      "candidate_id": 6912,
+      "source": "Axios",
+      "published_on": "2025-11-26",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m6kceaohfk2j",
+      "material_id": 5303
+    },
+    {
+      "candidate_id": 6913,
+      "source": "Axios",
+      "published_on": "2025-11-26",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m6jbaoa3cc27",
+      "material_id": 5304
+    },
+    {
+      "candidate_id": 6914,
+      "source": "Axios",
+      "published_on": "2025-11-24",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m6ffs2lv5k2l",
+      "material_id": 5305
+    },
+    {
+      "candidate_id": 6928,
+      "source": "Axios",
+      "published_on": "2025-11-08",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m54wvjgy2s26",
+      "material_id": 5319
+    },
+    {
+      "candidate_id": 6932,
+      "source": "Axios",
+      "published_on": "2025-10-30",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m4gqx7j4ec26",
+      "material_id": 5323
+    },
+    {
+      "candidate_id": 6933,
+      "source": "Axios",
+      "published_on": "2025-10-30",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m4ga6aeywc2e",
+      "material_id": 5324
+    },
+    {
+      "candidate_id": 6934,
+      "source": "Axios",
+      "published_on": "2025-10-30",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m4fuctyzr22b",
+      "material_id": 5325
+    },
+    {
+      "candidate_id": 6941,
+      "source": "Axios",
+      "published_on": "2025-10-17",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3fphto7sc24",
+      "material_id": 5332
+    },
+    {
+      "candidate_id": 6945,
+      "source": "Axios",
+      "published_on": "2025-10-15",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3airiouw22e",
+      "material_id": 5336
+    },
+    {
+      "candidate_id": 6947,
+      "source": "Axios",
+      "published_on": "2025-10-15",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3age3pha22x",
+      "material_id": 5338
+    },
+    {
+      "candidate_id": 6948,
+      "source": "Axios",
+      "published_on": "2025-10-14",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m36kvzs3z22h",
+      "material_id": 5339
+    },
+    {
+      "candidate_id": 6950,
+      "source": "Axios",
+      "published_on": "2025-10-10",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m2tynqu2ns2p",
+      "material_id": 5341
+    },
+    {
+      "candidate_id": 6951,
+      "source": "Axios",
+      "published_on": "2025-10-09",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m2rjo2vsnk2g",
+      "material_id": 5342
+    },
+    {
+      "candidate_id": 6959,
+      "source": "U.S. Institute of Peace",
+      "published_on": "2025-06-23",
+      "title": "@usip.org on Bluesky",
+      "source_url": "https://bsky.app/profile/usip.org/post/3lsciitcvvs2f",
+      "material_id": 5350
+    },
+    {
+      "candidate_id": 6960,
+      "source": "U.S. Institute of Peace",
+      "published_on": "2025-06-20",
+      "title": "@usip.org on Bluesky",
+      "source_url": "https://bsky.app/profile/usip.org/post/3ls2v4n3gjk2k",
+      "material_id": 5351
+    },
+    {
+      "candidate_id": 6961,
+      "source": "The Wilson Center",
+      "published_on": "2025-03-11",
+      "title": "@wilsoncenter.org on Bluesky",
+      "source_url": "https://bsky.app/profile/wilsoncenter.org/post/3lk4gs6hp2r2w",
+      "material_id": 5352
+    },
+    {
+      "candidate_id": 6963,
+      "source": "The Wilson Center",
+      "published_on": "2025-03-03",
+      "title": "@wilsoncenter.org on Bluesky",
+      "source_url": "https://bsky.app/profile/wilsoncenter.org/post/3ljieovy4ws2t",
+      "material_id": 5354
+    },
+    {
+      "candidate_id": 6965,
+      "source": "The Wilson Center",
+      "published_on": "2025-02-14",
+      "title": "@wilsoncenter.org on Bluesky",
+      "source_url": "https://bsky.app/profile/wilsoncenter.org/post/3li5m7nokmc2h",
+      "material_id": 5356
+    }
+  ],
+  "withdrawn_records": [
+    {
+      "candidate_id": 6758,
+      "source": "Lawfare",
+      "published_on": "2025-12-25",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3matax7mr6v2t",
+      "material_id": 5149,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6761,
+      "source": "Lawfare",
+      "published_on": "2025-12-09",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m7l5o66rb22r",
+      "material_id": 5152,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6762,
+      "source": "Lawfare",
+      "published_on": "2025-12-09",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m7kt2pqaw22u",
+      "material_id": 5153,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6765,
+      "source": "Lawfare",
+      "published_on": "2025-12-01",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m6x6n56src25",
+      "material_id": 5156,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6768,
+      "source": "Lawfare",
+      "published_on": "2025-11-10",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m5cjjbouck23",
+      "material_id": 5159,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6769,
+      "source": "Lawfare",
+      "published_on": "2025-11-05",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m4vgg6iqc22l",
+      "material_id": 5160,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6770,
+      "source": "Lawfare",
+      "published_on": "2025-11-04",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m4t5436o7s2j",
+      "material_id": 5161,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6772,
+      "source": "Lawfare",
+      "published_on": "2025-10-30",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m4gkx45mon2c",
+      "material_id": 5163,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6773,
+      "source": "Lawfare",
+      "published_on": "2025-10-30",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m4gb36fon62t",
+      "material_id": 5164,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6776,
+      "source": "Lawfare",
+      "published_on": "2025-10-17",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m3fzbkpqsb2u",
+      "material_id": 5167,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6779,
+      "source": "Lawfare",
+      "published_on": "2025-10-10",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m2ttvt6nzk26",
+      "material_id": 5170,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6781,
+      "source": "Lawfare",
+      "published_on": "2025-09-30",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3m236vfvws72k",
+      "material_id": 5172,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6783,
+      "source": "Lawfare",
+      "published_on": "2025-09-24",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lzlobnncr627",
+      "material_id": 5174,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6786,
+      "source": "Lawfare",
+      "published_on": "2025-09-17",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lz23gftw6f2i",
+      "material_id": 5177,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6790,
+      "source": "Lawfare",
+      "published_on": "2025-09-03",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lxwxdi2yus2b",
+      "material_id": 5181,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6791,
+      "source": "Lawfare",
+      "published_on": "2025-08-30",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lxmwytn5dy2g",
+      "material_id": 5182,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6792,
+      "source": "Lawfare",
+      "published_on": "2025-08-29",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lxkzm5po7s24",
+      "material_id": 5183,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6796,
+      "source": "Lawfare",
+      "published_on": "2025-08-20",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lwtzncbamz2r",
+      "material_id": 5187,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6799,
+      "source": "Lawfare",
+      "published_on": "2025-08-09",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lvy57p4mtd2t",
+      "material_id": 5190,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6800,
+      "source": "Lawfare",
+      "published_on": "2025-08-08",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lvvwrn7vwc26",
+      "material_id": 5191,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6801,
+      "source": "Lawfare",
+      "published_on": "2025-08-07",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lvtikbtnxk2m",
+      "material_id": 5192,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6804,
+      "source": "Lawfare",
+      "published_on": "2025-07-24",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3luqbsllau22e",
+      "material_id": 5195,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6806,
+      "source": "Lawfare",
+      "published_on": "2025-07-23",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lunckxvryz2j",
+      "material_id": 5196,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6811,
+      "source": "Lawfare",
+      "published_on": "2025-06-26",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lsjj3f3pde2e",
+      "material_id": 5201,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6814,
+      "source": "Lawfare",
+      "published_on": "2025-06-20",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3ls2i7gec622b",
+      "material_id": 5204,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6815,
+      "source": "Lawfare",
+      "published_on": "2025-06-10",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lrazlntcxs2e",
+      "material_id": 5205,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6816,
+      "source": "Lawfare",
+      "published_on": "2025-06-02",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lqnogplrsy2l",
+      "material_id": 5206,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6818,
+      "source": "Lawfare",
+      "published_on": "2025-05-31",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lqhvvt7haw2y",
+      "material_id": 5207,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6819,
+      "source": "Lawfare",
+      "published_on": "2025-05-30",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lqfw5sl3uc2r",
+      "material_id": 5208,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6820,
+      "source": "Lawfare",
+      "published_on": "2025-05-29",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lqd4gj2c7s2w",
+      "material_id": 5209,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6821,
+      "source": "Lawfare",
+      "published_on": "2025-05-20",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lpmegngbm52s",
+      "material_id": 5210,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6824,
+      "source": "Lawfare",
+      "published_on": "2025-05-14",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lp54jd6svn24",
+      "material_id": 5213,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6839,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-11-05",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3m4vjvlp4ws2f",
+      "material_id": 5226,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6854,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-08-01",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lvdrz6fwdu2o",
+      "material_id": 5241,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6862,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-10",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3ltn7gxhy6223",
+      "material_id": 5249,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6863,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-09",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3ltjv6mmitc23",
+      "material_id": 5250,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6864,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-07-07",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3ltfnukdkg22z",
+      "material_id": 5251,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6869,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-06-05",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lqv3y2bmns2h",
+      "material_id": 5256,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6817,
+      "source": "Lawfare",
+      "published_on": "2025-05-31",
+      "title": "@lawfaremedia.org on Bluesky",
+      "source_url": "https://bsky.app/profile/lawfaremedia.org/post/3lqidcg2kzc2p",
+      "material_id": 5263,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6877,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-04-29",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lny5um4rj62z",
+      "material_id": 5268,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6882,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-04-10",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lmig3lvwmk2l",
+      "material_id": 5273,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6887,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-03-03",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3ljiwgab5cs2q",
+      "material_id": 5278,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6889,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-02-10",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lhtmlwee4r2h",
+      "material_id": 5280,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6892,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-01-10",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lffkvmjl4e2z",
+      "material_id": 5283,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6894,
+      "source": "Carnegie Endowment",
+      "published_on": "2025-01-07",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lf6lf2lgc422",
+      "material_id": 5285,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6902,
+      "source": "Carnegie Endowment",
+      "published_on": "2024-11-26",
+      "title": "@carnegieendowment.org on Bluesky",
+      "source_url": "https://bsky.app/profile/carnegieendowment.org/post/3lbugkkh2bc2u",
+      "material_id": 5293,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6905,
+      "source": "Axios",
+      "published_on": "2025-12-18",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3maa6s6pj4k2w",
+      "material_id": 5296,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6908,
+      "source": "Axios",
+      "published_on": "2025-12-09",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m7kua44udk2h",
+      "material_id": 5299,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6910,
+      "source": "Axios",
+      "published_on": "2025-12-08",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m7itshbvvs2o",
+      "material_id": 5301,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6911,
+      "source": "Axios",
+      "published_on": "2025-12-03",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m73x5nqpnc27",
+      "material_id": 5302,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6915,
+      "source": "Axios",
+      "published_on": "2025-11-20",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m63xcj53n22b",
+      "material_id": 5306,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6916,
+      "source": "Axios",
+      "published_on": "2025-11-19",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5z46e3cls2a",
+      "material_id": 5307,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6917,
+      "source": "Axios",
+      "published_on": "2025-11-19",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5ykjq4a2k2l",
+      "material_id": 5308,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6918,
+      "source": "Axios",
+      "published_on": "2025-11-18",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5waz4xric2m",
+      "material_id": 5309,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6919,
+      "source": "Axios",
+      "published_on": "2025-11-18",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5w4mnvcis26",
+      "material_id": 5310,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6920,
+      "source": "Axios",
+      "published_on": "2025-11-17",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5u3fud3zs2o",
+      "material_id": 5311,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6921,
+      "source": "Axios",
+      "published_on": "2025-11-15",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5odg2bhhc22",
+      "material_id": 5312,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6922,
+      "source": "Axios",
+      "published_on": "2025-11-14",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5moweie5s27",
+      "material_id": 5313,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6923,
+      "source": "Axios",
+      "published_on": "2025-11-14",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5m6eirnoc2i",
+      "material_id": 5314,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6924,
+      "source": "Axios",
+      "published_on": "2025-11-14",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5m2dspn6s25",
+      "material_id": 5315,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6925,
+      "source": "Axios",
+      "published_on": "2025-11-14",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5lyiaulas2d",
+      "material_id": 5316,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6926,
+      "source": "Axios",
+      "published_on": "2025-11-13",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5k5qcoa5226",
+      "material_id": 5317,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6927,
+      "source": "Axios",
+      "published_on": "2025-11-12",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m5go4soqms2m",
+      "material_id": 5318,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6929,
+      "source": "Axios",
+      "published_on": "2025-11-06",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m4xwmeiap22b",
+      "material_id": 5320,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6930,
+      "source": "Axios",
+      "published_on": "2025-11-05",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m4vm25it222r",
+      "material_id": 5321,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6931,
+      "source": "Axios",
+      "published_on": "2025-11-04",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m4tntv63l22s",
+      "material_id": 5322,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6935,
+      "source": "Axios",
+      "published_on": "2025-10-28",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m4c25i7ldc2p",
+      "material_id": 5326,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6936,
+      "source": "Axios",
+      "published_on": "2025-10-27",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m47l6hsjz22q",
+      "material_id": 5327,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6937,
+      "source": "Axios",
+      "published_on": "2025-10-24",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3vztzxeyk2s",
+      "material_id": 5328,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6938,
+      "source": "Axios",
+      "published_on": "2025-10-24",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3vvpqgzr22j",
+      "material_id": 5329,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6939,
+      "source": "Axios",
+      "published_on": "2025-10-21",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3piacjdhc2c",
+      "material_id": 5330,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6940,
+      "source": "Axios",
+      "published_on": "2025-10-17",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3fvmgffx22p",
+      "material_id": 5331,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6942,
+      "source": "Axios",
+      "published_on": "2025-10-17",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3e4iyqmo226",
+      "material_id": 5333,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6943,
+      "source": "Axios",
+      "published_on": "2025-10-16",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3doz4zrx222",
+      "material_id": 5334,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6944,
+      "source": "Axios",
+      "published_on": "2025-10-15",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3b3brj2hk2x",
+      "material_id": 5335,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6946,
+      "source": "Axios",
+      "published_on": "2025-10-15",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m3ah7iklsk2s",
+      "material_id": 5337,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6949,
+      "source": "Axios",
+      "published_on": "2025-10-14",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m36gegwn4c2k",
+      "material_id": 5340,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6952,
+      "source": "Axios",
+      "published_on": "2025-10-06",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m2kb7ag6tk26",
+      "material_id": 5343,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6953,
+      "source": "Axios",
+      "published_on": "2025-10-03",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m2d2sx43ic25",
+      "material_id": 5344,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6954,
+      "source": "Axios",
+      "published_on": "2025-10-02",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m27wglzyys2a",
+      "material_id": 5345,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6955,
+      "source": "Axios",
+      "published_on": "2025-10-02",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m27pdjk4gc2u",
+      "material_id": 5346,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6956,
+      "source": "Axios",
+      "published_on": "2025-09-30",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3m232t67nns2j",
+      "material_id": 5347,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6957,
+      "source": "Axios",
+      "published_on": "2025-09-29",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3lzy3wfprac2z",
+      "material_id": 5348,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6958,
+      "source": "Axios",
+      "published_on": "2025-09-26",
+      "title": "@axios.com on Bluesky",
+      "source_url": "https://bsky.app/profile/axios.com/post/3lzqiqghkrs2t",
+      "material_id": 5349,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6962,
+      "source": "The Wilson Center",
+      "published_on": "2025-03-04",
+      "title": "@wilsoncenter.org on Bluesky",
+      "source_url": "https://bsky.app/profile/wilsoncenter.org/post/3ljkyhzdn7a2b",
+      "material_id": 5353,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6964,
+      "source": "The Wilson Center",
+      "published_on": "2025-02-24",
+      "title": "@wilsoncenter.org on Bluesky",
+      "source_url": "https://bsky.app/profile/wilsoncenter.org/post/3liwt4u4p5w2z",
+      "material_id": 5355,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6967,
+      "source": "The Wilson Center",
+      "published_on": "2025-01-27",
+      "title": "@wilsoncenter.org on Bluesky",
+      "source_url": "https://bsky.app/profile/wilsoncenter.org/post/3lgqkggtyyj2i",
+      "material_id": 5357,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6968,
+      "source": "The Wilson Center",
+      "published_on": "2024-12-10",
+      "title": "@wilsoncenter.org on Bluesky",
+      "source_url": "https://bsky.app/profile/wilsoncenter.org/post/3lcxu2ae7xy2f",
+      "material_id": 5358,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    }
+  ],
+  "backup": "data/research-pre-bluesky-policy-media-20261109.sqlite3",
+  "rule": "Keep only posts whose body directly mentions China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US or TikTok; video posts remain excluded at discovery."
+}

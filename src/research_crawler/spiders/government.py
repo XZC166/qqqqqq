@@ -2845,6 +2845,16 @@ class BlueskyPostAdapter:
         "foreignpolicy.com": "Foreign Policy",
         "theguardian.com": "The Guardian",
         "washingtonpost.com": "The Washington Post",
+        "lawfaremedia.org": "Lawfare",
+        "carnegieendowment.org": "Carnegie Endowment",
+        "theconversation.com": "The Conversation",
+        "politico.com": "Politico",
+        "thediplomat.com": "The Diplomat",
+        "scmp.com": "South China Morning Post",
+        "axios.com": "Axios",
+        "economist.com": "The Economist",
+        "usip.org": "U.S. Institute of Peace",
+        "wilsoncenter.org": "The Wilson Center",
     }
 
     def extract(self, response: Response, candidate: MaterialCandidate, metadata_response: Response | None) -> dict:
