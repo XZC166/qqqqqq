@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-11-09T02:30:44.216086+00:00",
+  "batch": "APP statements pages 850-1150 topic and crawl-delay audit",
+  "formal_materials_removed": 8,
+  "returned_pending": 2,
+  "excluded_by_topic_review": 6,
+  "reason": "The APP robots.txt Crawl-delay is 10 seconds. The crawl profile issued several page requests substantially faster; affected rows have been removed from the formal corpus. Full-text topical review also excluded six weakly related items.",
+  "records": [
+    {
+      "material_id": 5523,
+      "candidate_id": 7274,
+      "source": "The American Presidency Project",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-asian-development-bank",
+      "new_status": "pending",
+      "reason": "topic-review: Taiwan economic passage may inform regional representation of China; keep pending. Prior fetch batch exceeded APP robots.txt Crawl-delay: 10; compliant refetch required before formal inclusion."
+    },
+    {
+      "material_id": 5524,
+      "candidate_id": 7272,
+      "source": "The American Presidency Project",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-about-united-states-prisoners-war-and-missing-action-southeast-asia",
+      "new_status": "excluded",
+      "reason": "topic-review: general Southeast Asia prisoners-of-war statement; full text does not establish direct China/Taiwan discourse. Excluded from formal topic corpus."
+    },
+    {
+      "material_id": 5525,
+      "candidate_id": 7281,
+      "source": "The American Presidency Project",
+      "url": "https://www.presidency.ucsb.edu/documents/joint-statement-following-discussions-with-chairman-chung-hee-park-korea",
+      "new_status": "pending",
+      "reason": "topic-review: Korea/Far East security and anti-communist framing may inform regional discourse; keep pending. Prior fetch batch exceeded APP robots.txt Crawl-delay: 10; compliant refetch required before formal inclusion."
+    },
+    {
+      "material_id": 5526,
+      "candidate_id": 7301,
+      "source": "The American Presidency Project",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-upon-signing-bill-modifying-the-anti-communist-oath-requirement",
+      "new_status": "excluded",
+      "reason": "topic-review: domestic student-loan oath policy; full text has no direct China, Taiwan, Korea, or international communication discussion."
+    },
+    {
+      "material_id": 5527,
+      "candidate_id": 7302,
+      "source": "The American Presidency Project",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-upon-signing-the-communist-control-act-1954",
+      "new_status": "excluded",
+      "reason": "topic-review: domestic Communist Party control legislation; full text has no direct China, Taiwan, Korea, or international communication discussion."
+    },
+    {
+      "material_id": 5528,
+      "candidate_id": 7297,
+      "source": "The American Presidency Project",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-the-signing-the-charter-the-asian-development-bank",
+      "new_status": "excluded",
+      "reason": "topic-review: Asian Development Bank charter statement; full text contains no China, Taiwan, Korea, or relevant communication discussion."
+    },
+    {
+      "material_id": 5529,
+      "candidate_id": 7294,
+      "source": "The American Presidency Project",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-the-passage-the-joint-resolution-southeast-asia",
+      "new_status": "excluded",
+      "reason": "topic-review: Southeast Asia resolution statement; full text contains no direct China, Taiwan, or China-related communication discussion."
+    },
+    {
+      "material_id": 5530,
+      "candidate_id": 7303,
+      "source": "The American Presidency Project",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-us-participation-the-founding-the-asian-development-bank",
+      "new_status": "excluded",
+      "reason": "topic-review: Asian Development Bank founding statement; full text contains no China, Taiwan, Korea, or relevant communication discussion."
+    }
+  ],
+  "backup": "data\\research-pre-app-crawl-delay-audit-20261109.sqlite3",
+  "backup_sha256": "1f7d550090012731427f52155f3ed5dd41d2200303aad5e9643ea9a60a0f0b40"
+}

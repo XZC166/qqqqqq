@@ -4,7 +4,7 @@
 
 ## 当前复核结论（2026-11-09，范围审计与交付复核）
 
-截至 2026-11-09，本地材料表有 4,458 条唯一的正文与字段核验记录，摘要、关键词、正文和作者字段均非空。按发布日期统计：1949—1972 年 126 条、1973—1991 年 177 条、1992—2016 年 707 条、2017—2025 年 3,448 条。区间统计将 1972 年归入 1949—1972 段，后一段从 1973 年起。此数仍是主题审计中的工作池，不代表 4,458 条都已最终确认与论文直接相关；候选状态为 4,793 条 verified（含重复候选）、1,304 条 pending、116 条 restricted、1,028 条 excluded、21 条 candidate。覆盖矩阵及逐年数量见本地 `data/coverage-audit-20261109.json`；正式数量只按来源、日期、字段、全文和主题核验共同通过的唯一材料计算。
+截至 2026-11-09，本地材料表有 4,458 条唯一的正文与字段核验记录，摘要、关键词、正文和作者字段均非空。按发布日期统计：1949—1972 年 126 条、1973—1991 年 177 条、1992—2016 年 707 条、2017—2025 年 3,448 条。区间统计将 1972 年归入 1949—1972 段，后一段从 1973 年起。此数仍是主题审计中的工作池，不代表 4,458 条都已最终确认与论文直接相关；候选状态为 4,806 条 verified（含重复候选）、1,310 条 pending、116 条 restricted、1,034 条 excluded、51 条 candidate。覆盖矩阵及逐年数量见本地 `data/coverage-audit-20261109.json`；正式数量只按来源、日期、字段、全文和主题核验共同通过的唯一材料计算。
 
 扩展目标调整为尽可能接近或超过 10,000 条正式核验全文；相对当前工作池的名义差额为 6,030 条，但在未完成主题审计前不把这个差额当作有效资料缺口。本次离线重验从本地证据中晋级 199 条 pending 候选；随后逐条做题名、来源和正文主题筛查，仅保留 26 条直接涉及媒体、舆论、宣传、信息操作、公共外交、中国形象、台港议题或已核验机构社交帖的记录，173 条明显偏离论文主题或已撤稿的记录退回 `excluded`，审计见 `data/reviews/revalidation-topic-screen-20261109.json`，数据库备份见 `data/research-pre-revalidation-topic-screen-20261109.sqlite3`。随后批量抓取 792 条 Bluesky 机构文字候选，2,166 个请求得到 1,296 个 HTTP 200 和 870 个 HTTP 429；502 条进入正式材料，111 条无直接中国/台港/北京等主题指向的帖子退回 `excluded`，776 条保留，审计见 `data/reviews/bluesky-post-topic-screen-20261109.json`，限流条目保留 pending。最新一批扩展到 Foreign Affairs 与 Chatham House，685 条候选经 1,190 个 HTTP 200 与 546 个 HTTP 429 处理，503 条通过技术核验，按正文主题筛选后保留 428 条、撤回 75 条，182 条仍 pending，审计见 `data/reviews/bluesky-new-institutions-topic-screen-20261109.json`；Reuters 与 CNN 公开时间线本批未追溯到 2025 年，未产生正式记录。PMC 扩展检索继续覆盖 2017—2025 年更早结果页：2,000 条候选批次保留 4 条、排除 1 条，1,476 条候选后续批次的 16 条全文队列又保留 4 条，审计见 `data/reviews/pmc-targeted-start2000-topic-screen-20261109.json` 和 `data/reviews/pmc-targeted-start4000-topic-screen-20261109.json`；前一页批次保留 2 条，审计见 `data/reviews/pmc-targeted-topic-screen-20261109.json`。当前正式材料按来源类别为 research_literature 2,180、government 388、new_media 1,240、media 120、think_tank 42。视频帖在发现阶段跳过，不抓视频内容，也不把视频摘要当作全文；数量目标不改变合法访问、来源对应、全文完整或主题相关要求。
 
@@ -19,6 +19,8 @@
 本轮扫描 American Presidency Project 早期索引 0—849 页，发现 105 条 1972—1991 候选；其中 79 条为已有链接，26 条进入抓取，18 条技术核验为新正文。逐篇主题筛选保留 17 条、撤回 1 条，新增记录均为 1972—1991 年总统/政府公开文本，审计见 `data/reviews/app-early-fast3-topic-screen-20261109.json`。该批没有发现新的 1949—1972 正式记录。
 
 随后扫描 American Presidency Project 索引 1151—1512 页，发现 41 条 1949 年以前的历史页面；其中 40 条经来源页日期核验超出本研究范围，已标记 `excluded`，1 条为既有正式链接重复发现，未新增正式全文。审计见 `data/reviews/app-early-fast4-scope-screen-20261109.json`。该批没有把范围外材料计入早期正式数量。
+
+本轮对 American Presidency Project `statements` 分类页 850—1150 的 40 个早期候选做了合规性和主题抽审。站点 `robots.txt` 规定 `Crawl-delay: 10`，此前抓取频率没有满足该要求；因此将 8 条已抓取材料全部撤出正式表，其中 2 条保留 pending 等待合规复抓，6 条因全文主题关联不足排除。正式数量没有净增。逐条审计和数据库备份见 `data/reviews/app-statements-crawl-delay-topic-audit-20261109.json`、`data/research-pre-app-crawl-delay-audit-20261109.sqlite3`。后续不继续高速请求该站分类页。
 
 交付复核还修复了 1 条 Foreign Policy 帖子的空关键词：正文明确出现 Tibet，已补入 `Tibet`，并重新生成工作簿与 ZIP。
 
