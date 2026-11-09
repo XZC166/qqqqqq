@@ -744,6 +744,11 @@ class GovernmentArticleAdapter:
         if hostname == "nature.com" or hostname.endswith(".nature.com"):
             return NatureResearchArticleAdapter().extract(response, candidate)
         if hostname == "www.govinfo.gov" and candidate.metadata_url:
+            if "/content/pkg/CREC-" in response.url:
+                from research_crawler.govinfo_compilation import GovInfoCongressionalRecordAdapter
+                return GovInfoCongressionalRecordAdapter().extract(
+                    response, candidate, response.meta.get("metadata_response")
+                )
             if "/content/pkg/WCPD-" in response.url:
                 from research_crawler.govinfo_compilation import GovInfoWeeklyCompilationAdapter
                 return GovInfoWeeklyCompilationAdapter().extract(

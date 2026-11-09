@@ -1,5 +1,6 @@
 """Conservative complete granules from a dated public weekly publication."""
 from datetime import datetime, timezone
+import json
 from hashlib import sha256
 import re
 from urllib.parse import unquote, urlsplit
@@ -75,5 +76,76 @@ class GovInfoWeeklyCompilationAdapter:
         if complete:
             result['material'] = VerifiedMaterial(self.publisher, issue_date, '; '.join(v.strip() for v in values('dc.creator') if v.strip()) or '未注明', title, '', '', body, response.url)
             result['field_sources'] = {name: md.url for name in ('source', 'time', 'author', 'title')}
+            result.update(abstract_origin='none', keywords_origin='none')
+        return result
+
+
+class GovInfoCongressionalRecordAdapter:
+    """Issue text plus an already saved, publisher-authorized API metadata page.
+
+    API search metadata establishes identity only. All exported prose must come
+    from the public original granule and its independently checked issue header.
+    """
+
+    def extract(self, response, candidate, metadata_response):
+        now = datetime.now(timezone.utc).isoformat()
+        decision = classify_response(response.url, response.status, response.text)
+        evidence = SourceEvidence(response.url, now, response.status, sha256(response.body).hexdigest())
+        result = dict(decision=decision, evidence=evidence, material=None)
+        md = metadata_response
+        if md is None:
+            return result
+        match = re.fullmatch(r'/content/pkg/(CREC-\d{4}-\d{2}-\d{2})/html/(CREC-[^/]+)\.htm', urlsplit(response.url).path)
+        try:
+            records = json.loads(md.text)['results']
+            selected = [r for r in records if match and r.get('packageId') == match[1] and r.get('granuleId') == match[2]]
+        except (ValueError, TypeError, KeyError):
+            return result
+        if len(selected) != 1:
+            return result
+        record = selected[0]
+        pre = response.css('body > pre')
+        text = pre[0].xpath('string(.)').get(default='').strip() if len(pre) == 1 else ''
+        lines = text.splitlines()
+        header = re.fullmatch(r'\[Congressional Record Volume \d+, Number \d+ \([A-Za-z]+, ([A-Za-z]+ \d{1,2}, \d{4})\)\]', lines[0]) if lines else None
+        try:
+            issued = datetime.strptime(header[1], '%B %d, %Y').date().isoformat() if header else ''
+        except ValueError:
+            issued = ''
+        marker = next((i for i, line in enumerate(lines) if re.fullmatch(r'From the Congressional Record Online through the Government (?:Publishing|Printing) Office \[www\.gpo\.gov\]', line)), None)
+        publisher = 'U.S. Government Publishing Office' if marker is not None and 'Publishing' in lines[marker] else 'U.S. Government Printing Office'
+        content = '\n'.join(lines[marker+1:]).strip() if marker is not None else ''
+        # Some older granules repeat their issue citation before the heading.
+        content = re.sub(r'^\[Congressional Record: [^\n]+\]\s*\nFrom the Congressional Record Online via GPO Access \[wais\.access\.gpo\.gov\]\s*', '', content)
+        parts = re.split(r'\n\s*\n', content, maxsplit=1)
+        title = _flat(parts[0]) if len(parts) == 2 else ''
+        pages = next((re.fullmatch(r'\[Pages? ([SHE])?(\d+)(?:-([SHE])?(\d+))?\]', line) for line in lines[:4] if line.startswith('[Page')), None)
+        page_complete = False
+        if pages:
+            prefix, start, end_prefix, end = pages.groups()
+            prefix, start, end = prefix or '', int(start), int(end or start)
+            actual = re.findall(r'^\s*\[\[Page ([SHE]?\d+)\]\]\s*$', text, re.M)
+            expected = [prefix+str(i) for i in range(start+1,end+1)]
+            page_complete = end >= start and (not end_prefix or end_prefix == prefix) and actual in (expected, [prefix+str(start)]+expected)
+        metadata_ok = bool(
+            decision is AccessDecision.ALLOW and md.status == 200
+            and response.url == candidate.source_url and urlsplit(response.url).hostname == 'www.govinfo.gov'
+            and md.url == candidate.metadata_url and urlsplit(md.url).hostname == 'api.govinfo.gov'
+            and urlsplit(md.url).path == '/search'
+            and record.get('collectionCode') == 'CREC' and record.get('governmentAuthor') == ['Congress']
+            and issued and issued == record.get('dateIssued') == match[1][5:]
+            and title and title == _flat(record.get('title', ''))
+        )
+        complete = bool(metadata_ok and page_complete and len(parts) == 2 and len(parts[1]) > 80
+            and re.search(r'\n\s*_{10,}\s*$', content)
+            and re.search(r'</pre>\s*</body>\s*</html>\s*$', response.text, re.I)
+            and not re.search(r'could not be verified|tape was incomplete|text (?:is )?(?:missing|omitted)', text, re.I))
+        body = re.sub(r'^\s*\[\[Page [SHE]?\d+\]\]\s*$', '', content, flags=re.M)
+        body = re.sub(r'\n\s*_{10,}\s*$', '', body).strip()
+        result['evidence'] = SourceEvidence(response.url, now, response.status, sha256(response.body).hexdigest(), body_complete=complete)
+        result['supporting_evidence'] = [dict(evidence=SourceEvidence(md.url, now, md.status, sha256(md.body).hexdigest(), metadata_verified=metadata_ok),raw_response=md.body,decision=AccessDecision.ALLOW)]
+        if complete:
+            result['material'] = VerifiedMaterial(publisher, issued, 'Congress', title, '', '', body, response.url)
+            result['field_sources'] = dict(source=response.url, time=response.url, author=md.url, title=response.url)
             result.update(abstract_origin='none', keywords_origin='none')
         return result
