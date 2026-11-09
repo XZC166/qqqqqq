@@ -38,7 +38,7 @@ TERMS = ('United States','China','Chinese','Taiwan','Formosa','Beijing','Peking'
 
 def assess_topic(row, previous_reason=''):
     body = row['body']
-    result = {'approved': False, 'method': 'automated-paragraph-policy-link-v3',
+    result = {'approved': False, 'method': 'automated-paragraph-policy-link-v4',
               'body_sha256': hashlib.sha256(body.encode()).hexdigest(),
               'supporting_passages': [], 'reason': ''}
     def hold(reason):
@@ -72,7 +72,19 @@ def assess_topic(row, previous_reason=''):
     # Never use bibliographic references or article-end cited titles as evidence.
     stop = re.search(r'(?:^|\n)\s*(?:References|Bibliography|REFERENCES|参考文献)\s*(?:\n|$)', body)
     substantive = body[:stop.start()] if stop else body
-    institutional_us = row['source'] in {
+    address = urlsplit(row['source_url'])
+    verified_publisher_context = category == 'government' and (
+        (address.hostname == 'obamawhitehouse.archives.gov'
+         and address.path.startswith('/the-press-office/')
+         and row['source'] in {'The White House, Office of the Press Secretary',
+                               'The White House, Office of the Vice President'})
+        or (address.hostname == 'www.govinfo.gov'
+            and ((address.path.startswith('/content/pkg/WCPD-')
+                  and row['source'] == 'Office of the Federal Register, National Archives and Records Administration')
+                 or (address.path.startswith('/content/pkg/CREC-')
+                     and row['source'] in {'U.S. Government Publishing Office', 'U.S. Government Printing Office'})))
+    )
+    institutional_us = verified_publisher_context or row['source'] in {
         'The American Presidency Project', 'Harry S. Truman Library & Museum',
         'U.S. Department of State', 'The White House', 'U.S. Department of Defense'}
     paragraphs = list(re.finditer(r'[^\n]+(?:\n(?!\n)[^\n]+)*', substantive))
