@@ -11,6 +11,8 @@ import re
 from dataclasses import replace
 from datetime import datetime, timezone
 from pathlib import Path
+from functools import lru_cache
+from urllib.parse import urlsplit
 
 from research_crawler.items import SourceEvidence, VerifiedMaterial
 from research_crawler.policy import AccessDecision
@@ -56,6 +58,29 @@ def material_fingerprint(row) -> str:
     return hashlib.sha256(json.dumps([row[k] for k in FIELDS],ensure_ascii=False,separators=(",", ":")).encode()).hexdigest()
 
 
+def _has_video_embed(payload):
+    """A short post linking a video is not evidence of that video's transcript."""
+    def contains(value):
+        if isinstance(value, list):
+            return any(contains(item) for item in value)
+        if not isinstance(value, dict):
+            return False
+        if 'embed.video' in str(value.get('$type', '')):
+            return True
+        for key in ('uri', 'url'):
+            address = value.get(key)
+            if isinstance(address, str) and address.startswith(('http://', 'https://')):
+                parts = urlsplit(address)
+                host = (parts.hostname or '').removeprefix('www.')
+                if (host in {'youtube.com', 'youtu.be', 'vimeo.com', 'podcasts.apple.com'}
+                        or re.search(r'/videos?/', parts.path)
+                        or (host == 'open.spotify.com' and '/episode/' in parts.path)):
+                    return True
+        return any(contains(item) for item in value.values() if isinstance(item, (list, dict)))
+    return any(contains(post.get('record', {})) or contains(post.get('embed'))
+               for post in payload.get('posts', []) if isinstance(post, dict))
+
+
 def ensure_review_schema(store):
     store.connection.execute("""CREATE TABLE IF NOT EXISTS quality_reviews(
         material_id INTEGER PRIMARY KEY, identity_key TEXT NOT NULL,
@@ -77,6 +102,40 @@ def _source_row(store, material_id):
         c.period,c.source_category,c.query_label,c.platform_id,c.metadata_url
         FROM materials m LEFT JOIN evidence e ON e.id=m.evidence_id
         LEFT JOIN candidates c ON c.id=e.candidate_id WHERE m.id=?""",(material_id,)).fetchone()
+
+
+@lru_cache(maxsize=8)
+def _revision_for_files(signature):
+    digest = hashlib.sha256()
+    for name, _, _ in signature:
+        digest.update(name.encode())
+        digest.update(Path(name).read_bytes())
+    return digest.hexdigest()
+
+
+def _adapter_revision():
+    # Any source-validation implementation change invalidates parsing reuse. File
+    # hashes are memoized only while their size/mtime signature stays unchanged.
+    root = Path(__file__).parent
+    files = sorted(root / name for name in (
+        'quality_audit.py', 'revalidation.py', 'validation.py', 'policy.py',
+        'items.py', 'adapters.py', 'reviewed_sources.py', 'spiders/government.py'))
+    return _revision_for_files(tuple((str(p), p.stat().st_size, p.stat().st_mtime_ns) for p in files))
+
+
+def _source_signature(store, row, checked_support, latest):
+    snapshot = store.connection.execute(
+        "SELECT * FROM material_verifications WHERE material_id=?", (row["id"],)
+    ).fetchone()
+    # Include all material, acquisition, access, candidate and provenance fields.
+    # Raw bytes and each supporting file were independently hashed before this
+    # signature can be reused. Discovery counters are checked separately.
+    state = {"row": dict(row), "support": checked_support,
+             "latest_metadata": dict(latest) if latest is not None else None,
+             "provenance": dict(snapshot) if snapshot is not None else None,
+             "implementation": _adapter_revision()}
+    state["row"].pop("duplicate_count", None)
+    return hashlib.sha256(json.dumps(state, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 
 
 def audit_material(store, material_id: int, topic_decision: dict | None = None) -> dict:
@@ -102,11 +161,6 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
             raise ValueError("Raw source evidence SHA-256 hash mismatch")
         checks["primary_raw_sha256"] = row["content_sha256"]
         checks["primary_evidence_path"] = row["evidence_path"]
-        if row["source"] == "The American Presidency Project":
-            editorial_risks = _app_editorial_risks(raw, row["body"], row["published_on"])
-            checks["app_editorial_risks"] = editorial_risks
-            if editorial_risks:
-                raise ValueError("; ".join(editorial_risks))
         if row["access_status"] != "allow" or not 200 <= row["status_code"] < 300:
             raise ValueError("Source evidence is not an allowed successful response")
         duplicate_rows = store.connection.execute("SELECT count(*) FROM materials WHERE identity_key=?",(row["identity_key"],)).fetchone()[0]
@@ -132,6 +186,7 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
         checks["supporting_evidence"] = checked_support
         # _extract_existing selects the most recent declared metadata capture;
         # verify that capture too, even if an older snapshot linked another ID.
+        latest = None
         if row["metadata_url"]:
             latest=store.connection.execute("""SELECT * FROM evidence WHERE candidate_id=?
                 AND source_url=? AND metadata_verified=1 ORDER BY id DESC LIMIT 1""",
@@ -140,35 +195,62 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
                 raise ValueError("Declared metadata capture missing or restricted")
             if hashlib.sha256(Path(latest["evidence_path"]).read_bytes()).hexdigest()!=latest["content_sha256"]:
                 raise ValueError("Latest declared metadata evidence hash mismatch")
-        extracted, metadata_ids = _extract_existing(store,row,GovernmentArticleAdapter())
-        parsed = extracted.get("material")
-        parsed_evidence = extracted.get("evidence")
-        if extracted.get("decision") is not AccessDecision.ALLOW or parsed is None:
-            raise ValueError("Current source adapter cannot verify a complete same-article body and metadata")
-        if not parsed_evidence.body_complete:
-            raise ValueError("Current source adapter cannot confirm completeness")
-        mismatches = [name for name,field in (("source","source"),("time","published_on"),("author","author"),("title","title"),("body","body"),("source_url","source_url")) if getattr(parsed,name)!=row[field]]
-        if mismatches:
-            raise ValueError("Source re-extraction differs in: "+", ".join(mismatches))
-        snapshot=store.connection.execute("SELECT * FROM material_verifications WHERE material_id=?",(material_id,)).fetchone()
-        if snapshot is None or snapshot["primary_evidence_id"]!=row["evidence_id"]:
-            raise ValueError("Missing or mismatched field-provenance snapshot")
-        if not row["abstract"].strip() or not row["keywords"].strip():
-            raise ValueError("Abstract or keywords missing")
-        if snapshot["abstract_origin"]=="publisher" and row["abstract"]!=parsed.abstract:
-            raise ValueError("Publisher abstract differs from source re-extraction")
-        checks["abstract_origin"] = snapshot["abstract_origin"]
-        checks["field_sources"] = json.loads(snapshot["field_sources"])
-        checks["reextracted_body_sha256"] = hashlib.sha256(parsed.body.encode()).hexdigest()
-        stored = replace(parsed,abstract=row["abstract"],keywords=row["keywords"],duplicate_count=row["duplicate_count"])
-        metadata_urls = {s["url"] for s in checked_support}
-        if metadata_ids - {s["id"] for s in checked_support}:
-            raise ValueError("Re-extraction uses metadata evidence not in checked provenance snapshot")
-        validate_material(stored,replace(parsed_evidence,evidence_path=Path(row["evidence_path"])),
-            checks["field_sources"],abstract_origin=snapshot["abstract_origin"],
-            metadata_evidence_urls=metadata_urls,period=row["period"])
+        source_signature = _source_signature(store, row, checked_support, latest)
+        previous = store.connection.execute(
+            "SELECT source_pass,input_fingerprint,checks_json FROM quality_reviews WHERE material_id=?",
+            (material_id,),
+        ).fetchone()
+        previous_checks = json.loads(previous["checks_json"]) if previous is not None else {}
+        reuse = (previous is not None and previous["source_pass"]
+                 and previous["input_fingerprint"] == fingerprint
+                 and previous_checks.get("source_signature") == source_signature)
+        if reuse:
+            # Keep previously established field/body provenance while retaining
+            # the current decision, hashes, ownership and duplicate checks.
+            checks = {**previous_checks, **checks}
+        else:
+            if row["source"] == "The American Presidency Project":
+                editorial_risks = _app_editorial_risks(raw, row["body"], row["published_on"])
+                checks["app_editorial_risks"] = editorial_risks
+                if editorial_risks:
+                    raise ValueError("; ".join(editorial_risks))
+            extracted, metadata_ids = _extract_existing(store,row,GovernmentArticleAdapter())
+            parsed = extracted.get("material")
+            parsed_evidence = extracted.get("evidence")
+            if extracted.get("decision") is not AccessDecision.ALLOW or parsed is None:
+                raise ValueError("Current source adapter cannot verify a complete same-article body and metadata")
+            if not parsed_evidence.body_complete:
+                raise ValueError("Current source adapter cannot confirm completeness")
+            mismatches = [name for name,field in (("source","source"),("time","published_on"),("author","author"),("title","title"),("body","body"),("source_url","source_url")) if getattr(parsed,name)!=row[field]]
+            if mismatches:
+                raise ValueError("Source re-extraction differs in: "+", ".join(mismatches))
+            snapshot=store.connection.execute("SELECT * FROM material_verifications WHERE material_id=?",(material_id,)).fetchone()
+            if snapshot is None or snapshot["primary_evidence_id"]!=row["evidence_id"]:
+                raise ValueError("Missing or mismatched field-provenance snapshot")
+            if not row["abstract"].strip() or not row["keywords"].strip():
+                raise ValueError("Abstract or keywords missing")
+            if snapshot["abstract_origin"]=="publisher" and row["abstract"]!=parsed.abstract:
+                raise ValueError("Publisher abstract differs from source re-extraction")
+            checks["abstract_origin"] = snapshot["abstract_origin"]
+            checks["field_sources"] = json.loads(snapshot["field_sources"])
+            checks["reextracted_body_sha256"] = hashlib.sha256(parsed.body.encode()).hexdigest()
+            stored = replace(parsed,abstract=row["abstract"],keywords=row["keywords"],duplicate_count=row["duplicate_count"])
+            metadata_urls = {s["url"] for s in checked_support}
+            if metadata_ids - {s["id"] for s in checked_support}:
+                raise ValueError("Re-extraction uses metadata evidence not in checked provenance snapshot")
+            validate_material(stored,replace(parsed_evidence,evidence_path=Path(row["evidence_path"])),
+                checks["field_sources"],abstract_origin=snapshot["abstract_origin"],
+                metadata_evidence_urls=metadata_urls,period=row["period"])
+        checks["source_signature"] = source_signature
+        checks["source_cache_reused"] = bool(reuse)
         source_pass = True
-        if _approved_topic_evidence(material_id,fingerprint,topic_decision):
+        media_summary = row['source_category'] == 'new_media' and any(
+            _has_video_embed(json.loads(Path(item['path']).read_bytes()))
+            for item in checked_support if '/app.bsky.feed.getPosts' in item['url'])
+        checks['audiovisual_target_without_transcript'] = bool(media_summary)
+        if media_summary:
+            reason = 'Original post links audiovisual content; no complete source transcript verified. Keep summary/post outside formal fulltext.'
+        elif _approved_topic_evidence(material_id,fingerprint,topic_decision):
             topic_pass = True
             status = "pass"
             reason = topic_decision["reason"]
@@ -181,7 +263,7 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
     result={"material_id":material_id,"identity_key":row["identity_key"],"input_fingerprint":fingerprint,
         "body_sha256":hashlib.sha256(row["body"].encode()).hexdigest(),"source_sha256":row["content_sha256"] or "",
         "status":status,"source_pass":source_pass,"topic_pass":topic_pass,"reason":reason,"checks":checks,
-        "reviewed_at":datetime.now(timezone.utc).isoformat(),"review_version":"2026-11-09-v1"}
+        "reviewed_at":datetime.now(timezone.utc).isoformat(),"review_version":"2026-11-09-batch-cache-v2"}
     with store.connection:
         store.connection.execute("""INSERT INTO quality_reviews VALUES(?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(material_id) DO UPDATE SET identity_key=excluded.identity_key,
@@ -194,6 +276,13 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
     return result
 
 
+@lru_cache(maxsize=16)
+def _positive_review_keys(raw):
+    """Parse identical batch manifests once; bytes are still hashed per check."""
+    return frozenset((r.get('material_id'), r.get('fingerprint'), r.get('reason'))
+                     for r in json.loads(raw)['records'] if r.get('approved') is True)
+
+
 def _approved_topic_evidence(material_id, fingerprint, decision):
     if (not decision or decision.get("approved") is not True
             or decision.get("material_id") != material_id
@@ -203,9 +292,7 @@ def _approved_topic_evidence(material_id, fingerprint, decision):
         raw = Path(decision["evidence_path"]).read_bytes()
         if hashlib.sha256(raw).hexdigest() != decision["evidence_sha256"]:
             return False
-        records = json.loads(raw)["records"]
-        return any(r.get("material_id")==material_id and r.get("approved") is True
-            and r.get("fingerprint")==fingerprint and r.get("reason")==decision["reason"] for r in records)
+        return (material_id, fingerprint, decision['reason']) in _positive_review_keys(raw)
     except (OSError, ValueError, KeyError, TypeError):
         return False
 

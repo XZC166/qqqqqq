@@ -1,0 +1,584 @@
+{
+  "generated_at": "2026-11-09T16:25:58.459190+00:00",
+  "quantity_goal": 10000,
+  "previous_export_formal": 1535,
+  "formal_net_increase": 722,
+  "new_formal_approvals": 729,
+  "formal_withdrawals": 7,
+  "database_material_rows": 7805,
+  "all_database_records_automatically_swept": 7805,
+  "formal_unique_fulltexts": 2257,
+  "pending_or_nonformal": 5548,
+  "batch_decision_unique_materials": 4350,
+  "batch_review_observations": 4360,
+  "not_a_manual_per_document_read_claim": true,
+  "batches": [
+    {
+      "batch": "automated-government1-20261109",
+      "reviewed": 359,
+      "passed": 138,
+      "pending_working": 221,
+      "pending_without_material": 0,
+      "withdrawn": 0,
+      "new_candidate_urls": 0,
+      "restricted": 0
+    },
+    {
+      "batch": "automated-social1-20261109",
+      "reviewed": 2961,
+      "passed": 361,
+      "pending_working": 2600,
+      "pending_without_material": 0,
+      "withdrawn": 0,
+      "new_candidate_urls": 0,
+      "restricted": 0
+    },
+    {
+      "batch": "automated-literature2-20261109",
+      "reviewed": 720,
+      "passed": 7,
+      "pending_working": 713,
+      "pending_without_material": 0,
+      "withdrawn": 0,
+      "new_candidate_urls": 0,
+      "restricted": 0
+    },
+    {
+      "batch": "automated-field-repairs1-20261109",
+      "reviewed": 200,
+      "passed": 130,
+      "pending_working": 70,
+      "pending_without_material": 0,
+      "withdrawn": 0,
+      "new_candidate_urls": 0,
+      "restricted": 0
+    },
+    {
+      "batch": "known-body-diff-repairs-20261110",
+      "reviewed": 25,
+      "passed": 18,
+      "pending_working": 7,
+      "pending_without_material": 0,
+      "withdrawn": 7,
+      "new_candidate_urls": 0,
+      "restricted": 0
+    },
+    {
+      "batch": "automated-thinktank1-20261110",
+      "reviewed": 2,
+      "passed": 2,
+      "pending_working": 0,
+      "pending_without_material": 0,
+      "withdrawn": 0,
+      "new_candidate_urls": 0,
+      "restricted": 0
+    },
+    {
+      "batch": "automated-media1-20261110",
+      "reviewed": 1,
+      "passed": 1,
+      "pending_working": 0,
+      "pending_without_material": 0,
+      "withdrawn": 0,
+      "new_candidate_urls": 0,
+      "restricted": 0
+    },
+    {
+      "batch": "new-related-source-batch-20261110",
+      "reviewed": 47,
+      "passed": 44,
+      "pending_working": 3,
+      "pending_without_material": 32,
+      "withdrawn": 0,
+      "new_candidate_urls": 80,
+      "restricted": 1
+    },
+    {
+      "batch": "new-related-source2-batch-20261110",
+      "reviewed": 25,
+      "passed": 23,
+      "pending_working": 2,
+      "pending_without_material": 36,
+      "withdrawn": 0,
+      "new_candidate_urls": 61,
+      "restricted": 0
+    },
+    {
+      "batch": "new-early12-batch-20261110",
+      "reviewed": 12,
+      "passed": 0,
+      "pending_working": 12,
+      "pending_without_material": 0,
+      "withdrawn": 0,
+      "new_candidate_urls": 0,
+      "restricted": 0
+    }
+  ],
+  "earlier_individual_eight": {
+    "reviewed": 8,
+    "passed": 5,
+    "pending": 3
+  },
+  "formal_by_period": {
+    "2017-2025": 914,
+    "1992-2016": 145,
+    "1949-1972": 637,
+    "1972-1991": 561
+  },
+  "formal_by_year": {
+    "1949": 22,
+    "1950": 38,
+    "1951": 33,
+    "1952": 19,
+    "1953": 12,
+    "1954": 20,
+    "1955": 27,
+    "1956": 12,
+    "1957": 12,
+    "1958": 25,
+    "1959": 14,
+    "1960": 111,
+    "1961": 23,
+    "1962": 19,
+    "1963": 19,
+    "1964": 42,
+    "1965": 13,
+    "1966": 29,
+    "1967": 14,
+    "1968": 4,
+    "1969": 16,
+    "1970": 8,
+    "1971": 46,
+    "1972": 59,
+    "1973": 36,
+    "1974": 33,
+    "1975": 23,
+    "1976": 44,
+    "1977": 30,
+    "1978": 25,
+    "1979": 57,
+    "1980": 61,
+    "1981": 11,
+    "1982": 10,
+    "1983": 17,
+    "1984": 46,
+    "1985": 16,
+    "1986": 16,
+    "1987": 15,
+    "1988": 24,
+    "1989": 61,
+    "1990": 22,
+    "1991": 14,
+    "1992": 2,
+    "1993": 3,
+    "1994": 3,
+    "1996": 2,
+    "1997": 3,
+    "1998": 7,
+    "1999": 15,
+    "2000": 13,
+    "2001": 14,
+    "2002": 1,
+    "2004": 1,
+    "2005": 3,
+    "2006": 5,
+    "2008": 7,
+    "2009": 7,
+    "2010": 4,
+    "2011": 7,
+    "2012": 8,
+    "2013": 3,
+    "2014": 12,
+    "2015": 16,
+    "2016": 9,
+    "2017": 14,
+    "2018": 37,
+    "2019": 45,
+    "2020": 48,
+    "2021": 42,
+    "2022": 24,
+    "2023": 45,
+    "2024": 56,
+    "2025": 603
+  },
+  "formal_by_source_type": {
+    "government": 1240,
+    "media": 112,
+    "think_tank": 292,
+    "research_literature": 24,
+    "new_media": 589
+  },
+  "formal_period_source_type": {
+    "2017-2025": {
+      "government": 42,
+      "media": 20,
+      "think_tank": 245,
+      "research_literature": 21,
+      "new_media": 586
+    },
+    "1992-2016": {
+      "government": 63,
+      "think_tank": 46,
+      "media": 31,
+      "research_literature": 2,
+      "new_media": 3
+    },
+    "1949-1972": {
+      "government": 588,
+      "media": 48,
+      "research_literature": 1
+    },
+    "1972-1991": {
+      "government": 547,
+      "media": 13,
+      "think_tank": 1
+    }
+  },
+  "formal_source_type_matrix": {
+    "United States Department of State": {
+      "government": 9
+    },
+    "AP News": {
+      "media": 1
+    },
+    "Voice of America (VOA News)": {
+      "government": 21,
+      "media": 4
+    },
+    "Office of the United States Trade Representative": {
+      "government": 2
+    },
+    "Brookings": {
+      "think_tank": 174
+    },
+    "Center for Strategic and International Studies (CSIS)": {
+      "think_tank": 111
+    },
+    "U.S. Department of State": {
+      "government": 6
+    },
+    "The American Presidency Project": {
+      "government": 1168
+    },
+    "Journal of Psycholinguistic Research": {
+      "research_literature": 1
+    },
+    "PLOS One": {
+      "research_literature": 1
+    },
+    "The White House, Office of the Press Secretary": {
+      "government": 10
+    },
+    "Editorials on Voice of America": {
+      "government": 1
+    },
+    "The White House": {
+      "government": 6,
+      "new_media": 3
+    },
+    "International Politics (Hague, Netherlands)": {
+      "research_literature": 1
+    },
+    "Orbis": {
+      "research_literature": 1
+    },
+    "U.S. Government Publishing Office": {
+      "government": 6
+    },
+    "PBS News": {
+      "media": 10
+    },
+    "The New York Times": {
+      "new_media": 52
+    },
+    "Voice of America Office of Public Relations": {
+      "government": 1
+    },
+    "វីអូអេ - VOA Khmer": {
+      "government": 1
+    },
+    "International Journal of Communication": {
+      "research_literature": 2
+    },
+    "Humanities and Social Sciences Communications": {
+      "research_literature": 1
+    },
+    "Radio Free Asia": {
+      "media": 2
+    },
+    "CBS News": {
+      "media": 5
+    },
+    "China Leadership Monitor": {
+      "research_literature": 1
+    },
+    "Carnegie Endowment for International Peace": {
+      "research_literature": 1
+    },
+    "East Asia (Piscataway, N.j.)": {
+      "research_literature": 1
+    },
+    "The Daily Iowan": {
+      "media": 4
+    },
+    "Frontiers in Psychology": {
+      "research_literature": 3
+    },
+    "Voice of America": {
+      "government": 1
+    },
+    "Friends Journal": {
+      "research_literature": 1
+    },
+    "American Assembly at Columbia University": {
+      "think_tank": 1
+    },
+    "Sexualities": {
+      "research_literature": 1
+    },
+    "Place Branding and Public Diplomacy": {
+      "research_literature": 4
+    },
+    "Harry S. Truman Library & Museum": {
+      "government": 8
+    },
+    "PBS": {
+      "media": 1
+    },
+    "The Guardian": {
+      "media": 9
+    },
+    "ABC Radio (The World Today)": {
+      "media": 4
+    },
+    "ABC News (Four Corners)": {
+      "media": 1
+    },
+    "The Guardian (The Observer)": {
+      "media": 1
+    },
+    "TIME": {
+      "media": 61
+    },
+    "ABC Radio (PM)": {
+      "media": 3
+    },
+    "ABC News (Lateline)": {
+      "media": 1
+    },
+    "ABC News": {
+      "media": 5
+    },
+    "Pew Research Center": {
+      "think_tank": 6,
+      "new_media": 8
+    },
+    "China International Strategy Review": {
+      "research_literature": 2
+    },
+    "Asia Europe Journal": {
+      "research_literature": 1
+    },
+    "CSIS": {
+      "new_media": 138
+    },
+    "The Associated Press": {
+      "new_media": 29
+    },
+    "Journal of Computational Social Science": {
+      "research_literature": 1
+    },
+    "Journal of Chinese Political Science": {
+      "research_literature": 1
+    },
+    "Foreign Affairs": {
+      "new_media": 30
+    },
+    "Chatham House": {
+      "new_media": 15
+    },
+    "Foreign Policy": {
+      "new_media": 47
+    },
+    "Lawfare": {
+      "new_media": 8
+    },
+    "Axios": {
+      "new_media": 29
+    },
+    "U.S. Institute of Peace": {
+      "new_media": 2
+    },
+    "Human Rights Watch": {
+      "new_media": 8
+    },
+    "Amnesty International": {
+      "new_media": 4
+    },
+    "Just Security": {
+      "new_media": 15
+    },
+    "Gallup": {
+      "new_media": 2
+    },
+    "CNN": {
+      "new_media": 61
+    },
+    "The Diplomat": {
+      "new_media": 60
+    },
+    "Politico": {
+      "new_media": 8
+    },
+    "NPR": {
+      "new_media": 14
+    },
+    "Council on Foreign Relations": {
+      "new_media": 26
+    },
+    "RAND": {
+      "new_media": 7
+    },
+    "European Council on Foreign Relations": {
+      "new_media": 20
+    },
+    "German Council on Foreign Relations": {
+      "new_media": 3
+    }
+  },
+  "period_boundary": "1972 counted only in first period; second period begins 1973.",
+  "event_cue_method": "Nonexclusive case-insensitive literal body references using listed terms only. Not completed event classification or political labeling; broad cues such as Korea do not prove a specific historical event.",
+  "event_cue_terms": {
+    "Korean War": [
+      "Korean War",
+      "Korea",
+      "Chinese Communist aggression"
+    ],
+    "Taiwan / Strait": [
+      "Taiwan",
+      "Formosa",
+      "Quemoy",
+      "Matsu"
+    ],
+    "Nixon visit / opening": [
+      "Peking",
+      "visit to China",
+      "opening to China"
+    ],
+    "Normalization": [
+      "normalization",
+      "normalize relations",
+      "normal relations with China"
+    ],
+    "1989 / Tiananmen": [
+      "Tiananmen",
+      "June 4",
+      "June 1989"
+    ],
+    "WTO": [
+      "WTO",
+      "World Trade Organization"
+    ],
+    "South China Sea": [
+      "South China Sea"
+    ],
+    "cybersecurity": [
+      "cybersecurity",
+      "cyber attack",
+      "cybersecurity"
+    ],
+    "trade conflict": [
+      "tariff",
+      "trade war",
+      "trade conflict"
+    ],
+    "Huawei / 5G": [
+      "Huawei",
+      "5G"
+    ],
+    "COVID-19": [
+      "COVID",
+      "coronavirus"
+    ],
+    "Xinjiang / Hong Kong": [
+      "Xinjiang",
+      "Hong Kong",
+      "Uyghur",
+      "Uighur"
+    ],
+    "chips / AI": [
+      "semiconductor",
+      "artificial intelligence",
+      "CHIPS"
+    ],
+    "broadcasting / public diplomacy": [
+      "Voice of America",
+      "public diplomacy",
+      "broadcasting",
+      "people-to-people"
+    ]
+  },
+  "event_literal_cues": {
+    "Korean War": 622,
+    "Taiwan / Strait": 615,
+    "Nixon visit / opening": 222,
+    "Normalization": 120,
+    "1989 / Tiananmen": 110,
+    "WTO": 114,
+    "South China Sea": 106,
+    "cybersecurity": 37,
+    "trade conflict": 433,
+    "Huawei / 5G": 54,
+    "COVID-19": 112,
+    "Xinjiang / Hong Kong": 192,
+    "chips / AI": 159,
+    "broadcasting / public diplomacy": 203
+  },
+  "all_working_raw_or_support_files_hashed": 11252,
+  "evidence_hash_failures": 0,
+  "technical_sweep_exceptions": 1,
+  "technical_exception_note": "One newly captured redirected page has mismatched source/candidate ownership; remains pending and never entered the formal workbook.",
+  "candidate_statuses": {
+    "candidate": 687,
+    "excluded": 2956,
+    "pending": 12789,
+    "restricted": 124,
+    "verified": 8185
+  },
+  "candidate_verified_is_not_formal": true,
+  "network_this_run": {
+    "http_200": 161,
+    "http_301": 3,
+    "robots_200": 6,
+    "robots_restricted": 1,
+    "failed_http": 0,
+    "explanation": "3 early +12 early +79 first new-source +61 second new-source successful content responses =155; six robots responses bring total HTTP200 to161. One candidate was denied by robots; three redirect responses were HTTP301.",
+    "content_http_200": 155,
+    "robots_http_200": 6,
+    "total_http_200": 161
+  },
+  "discovered_new_unique_urls": 141,
+  "known_url_repeat_observations": 15,
+  "workbook": {
+    "path": "data/materials.xlsx",
+    "rows": 2257,
+    "columns": 9,
+    "all_nine_fields_and_long_bodies_verified": true,
+    "long_body_files_referenced": 185,
+    "sha256": "90cb21930dad38675f9b00e551b9cb14da32e5cf0cb9e441efbabb0202565f4c"
+  },
+  "tests": {
+    "passed": 571,
+    "junit": "data/reviews/automated-batch-final-tests-20261110.xml"
+  },
+  "coverage_gaps": [
+    "FRUS records remain candidates: original document/event date must not substitute for verified publication day; fulltext/citation metadata alone has not resolved the strict date gate.",
+    "Historical VOA migration dates, early newspaper archives, presidential/press-office author conflicts, partial transcripts and attached reports require targeted resolution.",
+    "Formal NYT/CNN entries in this checkpoint are complete official platform posts, not proof of acquiring linked newspaper articles. Reuters has no current formal fulltext.",
+    "X/YouTube official transcripts and authorized CNKI/WoS/Scopus/JSTOR/library fulltexts remain within scope; summaries/video previews do not count as transcripts.",
+    "Sources remain concentrated in APP, Brookings, CSIS and public platform posts. Other prescribed media, five-eyes archives, legislatures, survey sources and Chinese comparison sources remain coverage gaps.",
+    "5,548 working records remain nonformal for topic, source/body, metadata or completeness reasons. A completed automated sweep does not resolve every exception."
+  ],
+  "plateau_established": false,
+  "privacy": "Fulltext, quotes, workbook, raw evidence and SQLite are local private research copies; Git contains only code, synthetic tests and aggregate reports. No blanket public redistribution license asserted."
+}
