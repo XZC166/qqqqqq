@@ -1,0 +1,505 @@
+{
+  "generated_at": "2026-11-09T12:32:52.049394+00:00",
+  "quantity_goal": 10000,
+  "previous_formal": 1381,
+  "formal_unique_fulltext": 1452,
+  "net_formal_increase": 71,
+  "reviewed_this_checkpoint": 228,
+  "new_formal_promotions": 86,
+  "withdrawn_formal": 15,
+  "review_pending_this_checkpoint": 134,
+  "newly_discovered_candidates": 188,
+  "working_material_rows": 7238,
+  "quality_review_counts": [
+    {
+      "status": "pass",
+      "source_pass": 1,
+      "count": 1452
+    },
+    {
+      "status": "pending",
+      "source_pass": 0,
+      "count": 1201
+    },
+    {
+      "status": "pending",
+      "source_pass": 1,
+      "count": 4585
+    }
+  ],
+  "formal_by_period": {
+    "2017-2025": 344,
+    "1992-2016": 131,
+    "1949-1972": 508,
+    "1972-1991": 469
+  },
+  "formal_by_category": {
+    "government": 1012,
+    "media": 111,
+    "think_tank": 85,
+    "research_literature": 14,
+    "new_media": 230
+  },
+  "formal_by_year": {
+    "1949": 22,
+    "1950": 31,
+    "1951": 26,
+    "1952": 15,
+    "1953": 10,
+    "1954": 18,
+    "1955": 23,
+    "1956": 9,
+    "1957": 11,
+    "1958": 21,
+    "1959": 11,
+    "1960": 71,
+    "1961": 21,
+    "1962": 18,
+    "1963": 18,
+    "1964": 18,
+    "1965": 10,
+    "1966": 23,
+    "1967": 11,
+    "1968": 3,
+    "1969": 14,
+    "1970": 7,
+    "1971": 45,
+    "1972": 52,
+    "1973": 34,
+    "1974": 38,
+    "1975": 19,
+    "1976": 41,
+    "1977": 26,
+    "1978": 24,
+    "1979": 40,
+    "1980": 56,
+    "1981": 7,
+    "1982": 5,
+    "1983": 11,
+    "1984": 33,
+    "1985": 9,
+    "1986": 7,
+    "1987": 10,
+    "1988": 19,
+    "1989": 57,
+    "1990": 18,
+    "1991": 15,
+    "1992": 2,
+    "1993": 3,
+    "1994": 3,
+    "1996": 2,
+    "1997": 2,
+    "1998": 3,
+    "1999": 16,
+    "2000": 12,
+    "2001": 13,
+    "2002": 1,
+    "2004": 1,
+    "2005": 3,
+    "2006": 4,
+    "2008": 7,
+    "2009": 7,
+    "2010": 3,
+    "2011": 5,
+    "2012": 7,
+    "2013": 3,
+    "2014": 12,
+    "2015": 13,
+    "2016": 9,
+    "2017": 7,
+    "2018": 17,
+    "2019": 24,
+    "2020": 14,
+    "2021": 9,
+    "2022": 3,
+    "2023": 17,
+    "2024": 17,
+    "2025": 236
+  },
+  "formal_by_source": {
+    "United States Department of State": 9,
+    "AP News": 1,
+    "Voice of America (VOA News)": 24,
+    "Office of the United States Trade Representative": 2,
+    "Brookings": 41,
+    "Center for Strategic and International Studies (CSIS)": 38,
+    "U.S. Department of State": 5,
+    "The American Presidency Project": 956,
+    "Journal of Psycholinguistic Research": 1,
+    "PLOS One": 1,
+    "The White House, Office of the Press Secretary": 7,
+    "Editorials on Voice of America": 1,
+    "The White House": 6,
+    "International Politics (Hague, Netherlands)": 1,
+    "Orbis": 1,
+    "U.S. Government Publishing Office": 5,
+    "PBS News": 10,
+    "The New York Times": 49,
+    "Voice of America Office of Public Relations": 1,
+    "វីអូអេ - VOA Khmer": 1,
+    "International Journal of Communication": 2,
+    "Humanities and Social Sciences Communications": 1,
+    "Radio Free Asia": 2,
+    "CBS News": 5,
+    "China Leadership Monitor": 1,
+    "Carnegie Endowment for International Peace": 1,
+    "East Asia (Piscataway, N.j.)": 1,
+    "The Daily Iowan": 4,
+    "Voice of America": 1,
+    "Friends Journal": 1,
+    "Harry S. Truman Library & Museum": 1,
+    "PBS": 1,
+    "The Guardian": 9,
+    "ABC Radio (The World Today)": 4,
+    "ABC News (Four Corners)": 1,
+    "The Guardian (The Observer)": 1,
+    "TIME": 60,
+    "ABC Radio (PM)": 3,
+    "ABC News (Lateline)": 1,
+    "ABC News": 5,
+    "Pew Research Center": 13,
+    "China International Strategy Review": 2,
+    "Asia Europe Journal": 1,
+    "CSIS": 43,
+    "The Associated Press": 29,
+    "Foreign Affairs": 8,
+    "Chatham House": 4,
+    "Foreign Policy": 6,
+    "Lawfare": 6,
+    "Axios": 8,
+    "U.S. Institute of Peace": 2,
+    "Human Rights Watch": 8,
+    "Amnesty International": 4,
+    "Just Security": 3,
+    "Gallup": 2,
+    "CNN": 5,
+    "The Diplomat": 8,
+    "Politico": 8,
+    "NPR": 7,
+    "Council on Foreign Relations": 8,
+    "RAND": 5,
+    "European Council on Foreign Relations": 4,
+    "German Council on Foreign Relations": 3
+  },
+  "formal_period_category": {
+    "2017-2025": {
+      "government": 38,
+      "media": 20,
+      "think_tank": 48,
+      "research_literature": 11,
+      "new_media": 227
+    },
+    "1992-2016": {
+      "government": 59,
+      "think_tank": 37,
+      "media": 30,
+      "research_literature": 2,
+      "new_media": 3
+    },
+    "1949-1972": {
+      "government": 459,
+      "media": 48,
+      "research_literature": 1
+    },
+    "1972-1991": {
+      "government": 456,
+      "media": 13
+    }
+  },
+  "candidate_status_note": "Legacy candidate verified means extraction completed, not individual formal acceptance; quality_reviews and bound decisions determine formal counts.",
+  "candidate_status_counts": {
+    "candidate": 227,
+    "excluded": 2956,
+    "pending": 6588,
+    "restricted": 117,
+    "verified": 7619
+  },
+  "period_boundary": "1972 belongs to first period; second begins 1973.",
+  "running_app360": {
+    "queued_existing_candidates": 360,
+    "newly_discovered_candidates": 0,
+    "unique_primary_page_responses": 360,
+    "working_materials": 348,
+    "individually_final_reviewed_working_records": 348,
+    "formal_fulltexts": 138,
+    "review_pending": 210,
+    "awaiting_final_review": 0,
+    "not_yet_fetched": 0,
+    "http_response_counts": {
+      "200": 360
+    },
+    "restricted": 0,
+    "http_failed": 0,
+    "duplicate_discoveries": 0,
+    "source_extraction_unverified_pages": 12,
+    "crawl_status": "Completed 360/360 target pages plus one robots request at HTTP 200; 348 working records individually reviewed. Single-host delay remained at least ten seconds."
+  },
+  "review_batches": [
+    {
+      "name": "app-next360-fourth50",
+      "reviewed_records": 50,
+      "new_candidates": 0,
+      "formal_fulltexts": 24,
+      "new_formal_promotions": 24,
+      "pending": 26,
+      "withdrawn_formal": 0,
+      "duplicate_discoveries": 0,
+      "restricted": 0,
+      "http_failed": 0
+    },
+    {
+      "name": "formal-research13-footnotes",
+      "reviewed_records": 13,
+      "new_candidates": 0,
+      "formal_fulltexts": 8,
+      "new_formal_promotions": 0,
+      "pending": 5,
+      "withdrawn_formal": 5,
+      "duplicate_discoveries": 0,
+      "restricted": 0,
+      "http_failed": 0
+    },
+    {
+      "name": "research-footnote-repair7",
+      "reviewed_records": 7,
+      "new_candidates": 0,
+      "formal_fulltexts": 7,
+      "new_formal_promotions": 7,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "duplicate_discoveries": 0,
+      "restricted": 0,
+      "http_failed": 0
+    },
+    {
+      "name": "app-next360-fifth50",
+      "reviewed_records": 50,
+      "new_candidates": 0,
+      "formal_fulltexts": 23,
+      "new_formal_promotions": 23,
+      "pending": 27,
+      "withdrawn_formal": 0,
+      "duplicate_discoveries": 0,
+      "restricted": 0,
+      "http_failed": 0
+    },
+    {
+      "name": "app-formal-author-conflicts7",
+      "reviewed_records": 7,
+      "new_candidates": 0,
+      "formal_fulltexts": 0,
+      "new_formal_promotions": 0,
+      "pending": 7,
+      "withdrawn_formal": 7,
+      "duplicate_discoveries": 0,
+      "restricted": 0,
+      "http_failed": 0
+    },
+    {
+      "name": "app-next360-sixth50",
+      "reviewed_records": 50,
+      "new_candidates": 0,
+      "formal_fulltexts": 20,
+      "new_formal_promotions": 20,
+      "pending": 30,
+      "withdrawn_formal": 0,
+      "duplicate_discoveries": 0,
+      "restricted": 0,
+      "http_failed": 0
+    },
+    {
+      "name": "app-formal-author-sap-author-conflicts3",
+      "reviewed_records": 3,
+      "new_candidates": 0,
+      "formal_fulltexts": 0,
+      "new_formal_promotions": 0,
+      "pending": 3,
+      "withdrawn_formal": 3,
+      "duplicate_discoveries": 0,
+      "restricted": 0,
+      "http_failed": 0
+    },
+    {
+      "name": "app-next360-tail",
+      "reviewed_records": 48,
+      "new_candidates": 0,
+      "formal_fulltexts": 12,
+      "new_formal_promotions": 12,
+      "pending": 36,
+      "withdrawn_formal": 0,
+      "duplicate_discoveries": 0,
+      "restricted": 0,
+      "http_failed": 0
+    }
+  ],
+  "workbook": {
+    "formal_records": 1452,
+    "columns": 9,
+    "all_fields_exact_roundtrip": true,
+    "long_body_files": 158,
+    "all_review_manifest_hashes_verified": true,
+    "xlsx_sha256": "862ba06c4bb1ac8824468c466ec5758b9e5ae270a7b38b5c7ad3bb35ae1199ad"
+  },
+  "remaining_gaps": [
+    "All remaining working materials need individual final review; source-pass alone is not formal.",
+    "FRUS, Congress/GovInfo, NARA, historical VOA, contemporary historical media and Five Eyes media remain incompletely covered.",
+    "Other failed archive index variants and unresolved pagination remain documented; success of one fulltext-search index does not resolve all previous failures.",
+    "NYT/AP/Reuters/CNN, Chinese comparison sources, official social accounts and open research remain in scope.",
+    "Video/podcast descriptions, official video summaries, directories, short search excerpts and biomedical false positives are not formal fulltexts.",
+    "Selected records have exact publication-day, byline, supplementary boilerplate, author-biography or multi-speech boundary issues.",
+    "Event cue counts below are not completed historical event coding; source availability and rights remain uneven.",
+    "No plateau or exhaustion has been established and the 10,000-formal-fulltext goal remains unmet."
+  ],
+  "event_cues_method": "Nonexclusive case-insensitive literal body references using listed terms only. Not completed event classification or political labeling; broad cues such as Korea do not prove a specific historical event.",
+  "event_cue_terms": {
+    "Korean War": [
+      "Korean War",
+      "Korea",
+      "Chinese Communist aggression"
+    ],
+    "Taiwan / Strait": [
+      "Taiwan",
+      "Formosa",
+      "Quemoy",
+      "Matsu"
+    ],
+    "Nixon visit / opening": [
+      "Peking",
+      "visit to China",
+      "opening to China"
+    ],
+    "Normalization": [
+      "normalization",
+      "normalize relations",
+      "normal relations with China"
+    ],
+    "1989 / Tiananmen": [
+      "Tiananmen",
+      "June 4",
+      "June 1989"
+    ],
+    "WTO": [
+      "WTO",
+      "World Trade Organization"
+    ],
+    "South China Sea": [
+      "South China Sea"
+    ],
+    "cybersecurity": [
+      "cybersecurity",
+      "cyber attack",
+      "cybersecurity"
+    ],
+    "trade conflict": [
+      "tariff",
+      "trade war",
+      "trade conflict"
+    ],
+    "Huawei / 5G": [
+      "Huawei",
+      "5G"
+    ],
+    "COVID-19": [
+      "COVID",
+      "coronavirus"
+    ],
+    "Xinjiang / Hong Kong": [
+      "Xinjiang",
+      "Hong Kong",
+      "Uyghur",
+      "Uighur"
+    ],
+    "chips / AI": [
+      "semiconductor",
+      "artificial intelligence",
+      "CHIPS"
+    ],
+    "broadcasting / public diplomacy": [
+      "Voice of America",
+      "public diplomacy",
+      "broadcasting",
+      "people-to-people"
+    ]
+  },
+  "event_literal_cues": {
+    "Korean War": 455,
+    "Taiwan / Strait": 364,
+    "Nixon visit / opening": 166,
+    "Normalization": 83,
+    "1989 / Tiananmen": 87,
+    "WTO": 79,
+    "South China Sea": 55,
+    "cybersecurity": 18,
+    "trade conflict": 167,
+    "Huawei / 5G": 21,
+    "COVID-19": 35,
+    "Xinjiang / Hong Kong": 115,
+    "chips / AI": 71,
+    "broadcasting / public diplomacy": 154
+  },
+  "unique_records_reviewed_this_checkpoint": 223,
+  "first_formal_acceptances_this_checkpoint": 81,
+  "restored_after_completeness_repair": 5,
+  "still_withdrawn_formal_after_repairs": 10,
+  "pending_unique_reviewed_records_at_checkpoint": 129,
+  "review_operation_note": "228 review operations on 223 unique records. Five completeness holds subsequently repaired and restored; 134 pending operations are not 134 currently pending records. 81 first acceptances less ten still withdrawn gives net +71.",
+  "pmc_substantive_footnote_repair": {
+    "whole_formal_research_category_checked": 13,
+    "incomplete_formal_articles_held": 5,
+    "restored_articles": 5,
+    "new_research_article_accepted": 1,
+    "source_notes_reconciled_across_six_articles": 241,
+    "unchanged_formal_articles": 8,
+    "main_bodies_byte_identical_before_note_restoration": true,
+    "all_original_substantive_note_text_reconciled": true,
+    "publisher_abstracts_retained": true,
+    "synthetic_regression_tests": 5,
+    "complete_test_suite_passes": 535,
+    "post_review_all_formal_research_body_comparisons": 14,
+    "post_review_all_formal_research_bodies_byte_identical": true,
+    "independent_code_review": "Two reproduced edge cases fixed: mixed-content note omission and nested quotation duplicate. Five focused regression tests passed; follow-up bounded review found no additional actionable issues."
+  },
+  "author_attribution_holds": {
+    "formal_records_withdrawn_pending": 10,
+    "presidential_collection_name_not_treated_as_confirmed_author_of_press_secretary_or_institutional_statement": true
+  },
+  "new_historical_keyword_discovery": {
+    "terms": [
+      "Peking",
+      "Peiping",
+      "Formosa"
+    ],
+    "bounded_pages_per_term": 4,
+    "index_pages_http_200": 12,
+    "search_hit_occurrences": 437,
+    "unique_urls": 423,
+    "previously_known_unique_urls": 235,
+    "new_unique_unfetched_candidate_urls": 188,
+    "within_index_repeated_observations": 14,
+    "repeat_observations_including_previously_known_urls": 249,
+    "candidate_registration": "Discovery files and all index evidence preserved. Index observations registered in the next batch, after this immutable workbook/delivery checkpoint; no duplicate same-host refetch planned.",
+    "not_formal": true
+  },
+  "superseded_delivery_note": "Earlier workbooks and ZIPs are historical checkpoints. Five formerly incomplete research articles now include original substantive footnotes, and ten author-conflict records are withheld. Older files retained, not current accepted deliveries.",
+  "pending_or_unreviewed_working_materials": 5786,
+  "not_yet_source_audited_working_materials": 0,
+  "private_delivery_verification": {
+    "generated_at": "2026-11-09T12:35:31.555125+00:00",
+    "formal_records": 1452,
+    "columns": 9,
+    "all_nine_fields_verified": true,
+    "long_body_sidecars_verified": 158,
+    "positive_review_manifests_verified": 1452,
+    "formal_raw_evidence_hashes_verified": 1698,
+    "zip_bytes": 1058788651,
+    "zip_sha256": "8357346851fd57c877ef2dcbe89fc09d2a95aece604d2e2a94de12a7ff3053a1",
+    "builder_crc_check": "passed during delivery generation; not redundantly rerun",
+    "private_only": true
+  },
+  "public_staged_tree_tests": {
+    "passed": 328,
+    "skipped": 10,
+    "failed": 0,
+    "note": "Ten original-capture checks require locally retained copyrighted fixtures; private fixtures were not added to the public tree. All 535 tests pass in the working tree with local captures."
+  }
+}

@@ -5328,7 +5328,7 @@ class PMCFulTextArticleAdapter:
         keywords = "; ".join(
             value.strip() for value in re.split(r"[,;]", keyword_text) if value.strip()
         )
-        body = "\n\n".join(_pmc_body_blocks(body_nodes[0])) if len(body_nodes) == 1 else ""
+        body = "\n\n".join(_pmc_body_blocks(content_root, body_nodes[0])) if len(body_nodes) == 1 else ""
         body_text = body_nodes[0].xpath(".//text()").getall() if len(body_nodes) == 1 else []
         body_tokens = re.findall(r"\w+", _normalized_text(body_text), flags=re.UNICODE)
         relevance_text = " ".join((title, abstract, keywords, body)).casefold()
@@ -6910,18 +6910,70 @@ def _pmc_publication_date(value: str) -> str:
     return ""
 
 
-def _pmc_body_blocks(container) -> list[str]:
+def _pmc_note_blocks(note) -> list[str]:
+    block_tags = {"p", "li", "blockquote", "caption", "figcaption", "td", "th",
+                  "h2", "h3", "h4", "ul", "ol", "table", "tr", "div", "section"}
+    blocks, inline = [], []
+
+    def flush():
+        text = _normalized_text(inline)
+        if text:
+            blocks.append(text)
+        inline.clear()
+
+    def visit(element):
+        if element.text:
+            inline.append(element.text)
+        for child in element:
+            if not isinstance(child.tag, str):
+                if child.tail:
+                    inline.append(child.tail)
+                continue
+            boundary = child.tag.lower() in block_tags
+            # A leading note label belongs with its first paragraph.
+            if boundary and (blocks or not re.fullmatch(r"\d+[a-z]?|[*†‡]+", _normalized_text(inline), re.I)):
+                flush()
+            visit(child)
+            if boundary:
+                flush()
+            if child.tail:
+                inline.append(child.tail)
+
+    visit(note.root)
+    flush()
+    return blocks
+
+
+def _pmc_body_blocks(container, main_body=None) -> list[str]:
     block_tags = {"p", "li", "blockquote", "caption", "figcaption", "td", "th"}
     excluded_classes = {
         "abstract", "kwd-group", "ack", "glossary", "ref-list", "fn-group", "app",
         "notes", "associated-data",
     }
     blocks = []
+    emitted = set()
     nodes = container.xpath(
         ".//*[self::h2 or self::h3 or self::h4 or self::p or self::li or self::blockquote "
-        "or self::caption or self::figcaption or self::td or self::th]"
+        "or self::caption or self::figcaption or self::td or self::th "
+        "or contains(concat(' ', normalize-space(@class), ' '), ' fn ')]"
     )
     for node in nodes:
+        ancestors = node.xpath("ancestor::*")
+        if "fn" in node.root.attrib.get("class", "").split():
+            if any(a.root in emitted for a in ancestors):
+                continue
+            ancestor_classes = [set(a.root.attrib.get("class", "").split()) for a in ancestors]
+            if (not any("fn-group" in classes for classes in ancestor_classes)
+                    or any(classes.intersection({"abstract", "ref-list", "associated-data", "sub-article", "fn"})
+                           for classes in ancestor_classes)):
+                continue
+            note_text = _normalized_text(node.xpath(".//text()").getall())
+            if re.match(r"^(?:\d+\s*)?Publisher[’']s\s+Note\b", note_text, re.I):
+                continue
+            blocks.extend(_pmc_note_blocks(node))
+            continue
+        if main_body is not None and not any(a.root is main_body.root for a in ancestors):
+            continue
         if any(
             ancestor.root.tag.lower() in block_tags
             or excluded_classes.intersection(ancestor.root.attrib.get("class", "").split())
@@ -6930,12 +6982,13 @@ def _pmc_body_blocks(container) -> list[str]:
                     "./h2[1]//text() | ./h3[1]//text() | ./h4[1]//text()"
                 ).getall()
             ).casefold() in {"references", "declarations", "footnotes", "appendix", "appendices"}
-            for ancestor in node.xpath("ancestor::*")
+            for ancestor in ancestors
         ):
             continue
         text = _normalized_text(node.xpath(".//text()").getall())
         if text:
             blocks.append(text)
+            emitted.add(node.root)
     return blocks
 
 

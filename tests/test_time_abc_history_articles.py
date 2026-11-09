@@ -106,6 +106,8 @@ CASES = (
 
 def _extract(case, raw=None, url=None):
     fixture, source_url, period, *_ = case
+    if raw is None and not (FIXTURES / fixture).exists():
+        pytest.skip("Requires a locally retained original source capture; full copyrighted HTML is not published with this test.")
     response_url = url or source_url
     return GovernmentArticleAdapter().extract(
         HtmlResponse(
