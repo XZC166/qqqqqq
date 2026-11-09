@@ -1,0 +1,385 @@
+{
+  "generated_at": "2026-11-09T10:31:29.775919+00:00",
+  "quantity_goal": 10000,
+  "previous_formal": 873,
+  "formal_unique_fulltext": 1013,
+  "net_formal_increase": 140,
+  "new_promotions": 145,
+  "withdrawn_formal": 5,
+  "working_material_rows": 6607,
+  "pending_full_review_working_materials": 5594,
+  "quality_review_counts": [
+    {
+      "status": "pass",
+      "source_pass": 1,
+      "count": 1013
+    },
+    {
+      "status": "pending",
+      "source_pass": 0,
+      "count": 1195
+    },
+    {
+      "status": "pending",
+      "source_pass": 1,
+      "count": 4388
+    }
+  ],
+  "not_yet_source_audited_new_rows": 11,
+  "period_boundary": "1972 is assigned to first period; second begins 1973.",
+  "formal_by_period": {
+    "2017-2025": 237,
+    "1992-2016": 131,
+    "1949-1972": 395,
+    "1972-1991": 250
+  },
+  "formal_by_category": {
+    "government": 685,
+    "think_tank": 84,
+    "media": 104,
+    "research_literature": 8,
+    "new_media": 132
+  },
+  "formal_by_year": {
+    "1949": 22,
+    "1950": 28,
+    "1951": 26,
+    "1952": 15,
+    "1953": 10,
+    "1954": 19,
+    "1955": 23,
+    "1956": 9,
+    "1957": 11,
+    "1958": 21,
+    "1959": 11,
+    "1960": 71,
+    "1961": 20,
+    "1962": 17,
+    "1963": 18,
+    "1964": 18,
+    "1965": 9,
+    "1966": 12,
+    "1967": 5,
+    "1968": 2,
+    "1969": 5,
+    "1970": 7,
+    "1971": 10,
+    "1972": 6,
+    "1973": 34,
+    "1974": 38,
+    "1975": 19,
+    "1976": 41,
+    "1977": 26,
+    "1978": 18,
+    "1979": 10,
+    "1980": 5,
+    "1981": 1,
+    "1982": 2,
+    "1983": 1,
+    "1984": 12,
+    "1985": 4,
+    "1986": 1,
+    "1987": 3,
+    "1988": 6,
+    "1989": 17,
+    "1990": 6,
+    "1991": 6,
+    "1992": 2,
+    "1993": 3,
+    "1994": 4,
+    "1996": 3,
+    "1997": 2,
+    "1998": 3,
+    "1999": 16,
+    "2000": 12,
+    "2001": 13,
+    "2002": 1,
+    "2004": 1,
+    "2005": 3,
+    "2006": 4,
+    "2008": 7,
+    "2009": 7,
+    "2010": 3,
+    "2011": 5,
+    "2012": 7,
+    "2013": 3,
+    "2014": 11,
+    "2015": 13,
+    "2016": 8,
+    "2017": 6,
+    "2018": 17,
+    "2019": 24,
+    "2020": 10,
+    "2021": 7,
+    "2022": 2,
+    "2023": 17,
+    "2024": 17,
+    "2025": 137
+  },
+  "formal_by_source": {
+    "United States Department of State": 9,
+    "Voice of America (VOA News)": 23,
+    "Office of the United States Trade Representative": 2,
+    "Brookings": 41,
+    "Center for Strategic and International Studies (CSIS)": 37,
+    "U.S. Department of State": 4,
+    "The American Presidency Project": 631,
+    "PLOS One": 1,
+    "The White House, Office of the Press Secretary": 7,
+    "Editorials on Voice of America": 1,
+    "The White House": 6,
+    "Orbis": 1,
+    "U.S. Government Publishing Office": 5,
+    "PBS News": 10,
+    "The New York Times": 45,
+    "Voice of America Office of Public Relations": 1,
+    "វីអូអេ - VOA Khmer": 1,
+    "International Journal of Communication": 2,
+    "Humanities and Social Sciences Communications": 1,
+    "Radio Free Asia": 2,
+    "CBS News": 5,
+    "China Leadership Monitor": 1,
+    "Carnegie Endowment for International Peace": 1,
+    "The Daily Iowan": 4,
+    "Voice of America": 1,
+    "Friends Journal": 1,
+    "PBS": 1,
+    "The Guardian": 9,
+    "ABC Radio (The World Today)": 4,
+    "ABC News (Four Corners)": 1,
+    "The Guardian (The Observer)": 1,
+    "TIME": 55,
+    "ABC Radio (PM)": 3,
+    "ABC News (Lateline)": 1,
+    "ABC News": 5,
+    "Pew Research Center": 9,
+    "The Associated Press": 28,
+    "CSIS": 7,
+    "Foreign Affairs": 4,
+    "Foreign Policy": 4,
+    "Lawfare": 2,
+    "Axios": 3,
+    "U.S. Institute of Peace": 2,
+    "Human Rights Watch": 3,
+    "Amnesty International": 4,
+    "Just Security": 2,
+    "Gallup": 2,
+    "CNN": 1,
+    "The Diplomat": 3,
+    "Politico": 3,
+    "NPR": 4,
+    "Council on Foreign Relations": 3,
+    "RAND": 2,
+    "European Council on Foreign Relations": 2,
+    "German Council on Foreign Relations": 2
+  },
+  "coverage_matrix": [
+    {
+      "period": "1949-1972",
+      "category": "government",
+      "working_materials": 490,
+      "formal_fulltexts": 346
+    },
+    {
+      "period": "1949-1972",
+      "category": "media",
+      "working_materials": 49,
+      "formal_fulltexts": 48
+    },
+    {
+      "period": "1949-1972",
+      "category": "think_tank",
+      "working_materials": 0,
+      "formal_fulltexts": 0
+    },
+    {
+      "period": "1949-1972",
+      "category": "new_media",
+      "working_materials": 0,
+      "formal_fulltexts": 0
+    },
+    {
+      "period": "1949-1972",
+      "category": "research_literature",
+      "working_materials": 1,
+      "formal_fulltexts": 1
+    },
+    {
+      "period": "1972-1991",
+      "category": "government",
+      "working_materials": 511,
+      "formal_fulltexts": 237
+    },
+    {
+      "period": "1972-1991",
+      "category": "media",
+      "working_materials": 13,
+      "formal_fulltexts": 13
+    },
+    {
+      "period": "1972-1991",
+      "category": "think_tank",
+      "working_materials": 1,
+      "formal_fulltexts": 0
+    },
+    {
+      "period": "1972-1991",
+      "category": "new_media",
+      "working_materials": 0,
+      "formal_fulltexts": 0
+    },
+    {
+      "period": "1972-1991",
+      "category": "research_literature",
+      "working_materials": 0,
+      "formal_fulltexts": 0
+    },
+    {
+      "period": "1992-2016",
+      "category": "government",
+      "working_materials": 114,
+      "formal_fulltexts": 62
+    },
+    {
+      "period": "1992-2016",
+      "category": "media",
+      "working_materials": 34,
+      "formal_fulltexts": 27
+    },
+    {
+      "period": "1992-2016",
+      "category": "think_tank",
+      "working_materials": 49,
+      "formal_fulltexts": 37
+    },
+    {
+      "period": "1992-2016",
+      "category": "new_media",
+      "working_materials": 3,
+      "formal_fulltexts": 3
+    },
+    {
+      "period": "1992-2016",
+      "category": "research_literature",
+      "working_materials": 405,
+      "formal_fulltexts": 2
+    },
+    {
+      "period": "2017-2025",
+      "category": "government",
+      "working_materials": 44,
+      "formal_fulltexts": 40
+    },
+    {
+      "period": "2017-2025",
+      "category": "media",
+      "working_materials": 32,
+      "formal_fulltexts": 16
+    },
+    {
+      "period": "2017-2025",
+      "category": "think_tank",
+      "working_materials": 233,
+      "formal_fulltexts": 47
+    },
+    {
+      "period": "2017-2025",
+      "category": "new_media",
+      "working_materials": 3414,
+      "formal_fulltexts": 129
+    },
+    {
+      "period": "2017-2025",
+      "category": "research_literature",
+      "working_materials": 1214,
+      "formal_fulltexts": 5
+    }
+  ],
+  "event_text_cue_counts": {
+    "Korean War": 56,
+    "Taiwan Strait": 82,
+    "Nixon China visit": 16,
+    "normalization/Shanghai Communique": 84,
+    "1989 events": 65,
+    "WTO": 68,
+    "Belgrade embassy": 5,
+    "South China Sea": 42,
+    "cybersecurity": 16,
+    "trade war": 137,
+    "Huawei/5G": 18,
+    "COVID-19": 29,
+    "Xinjiang/Hong Kong": 90,
+    "chips/AI": 38
+  },
+  "event_count_notice": "Non-exclusive literal body cues only, not completed historical-event or political classification.",
+  "completed_app300": {
+    "queued_candidates": 300,
+    "newly_discovered_unique_urls": 0,
+    "http_article_responses": 300,
+    "http_200": 300,
+    "robots_responses": 1,
+    "source_technical_materials": 283,
+    "formal_fulltexts": 186,
+    "pending": 114,
+    "pending_source_or_metadata": 17,
+    "restricted": 0,
+    "http_failed": 0,
+    "duplicate_discoveries_since_start": 0,
+    "withdrawn_formal": 0,
+    "all_283_materials_individually_reviewed": true,
+    "pending_after_individual_review": 97
+  },
+  "this_turn_review": {
+    "records": 241,
+    "promoted": 145,
+    "pending": 96,
+    "withdrawn_formal": 5,
+    "includes": "223 remaining APP records, 13 later media/polling records, five prior formal TIME records"
+  },
+  "workbook": {
+    "path": "data/materials.xlsx",
+    "rows": 1013,
+    "columns": 9,
+    "long_body_files": 119,
+    "sha256": "0b5644fd4b5676c36ffcc0b920dd307ced7052231327169079bb1ac5bf2b6caf",
+    "roundtrip_all_nine_fields": true,
+    "all_formal_decision_manifests_sha256_checked": true
+  },
+  "next_early_batch": {
+    "csv": "data/candidates-app-fulltext-early-next300b-20261109.csv",
+    "queued": 300,
+    "periods": {
+      "1949-1972": 138,
+      "1972-1991": 162
+    },
+    "started_at": "2026-11-09T10:29:20+00:00",
+    "min_delay_seconds": 10,
+    "per_domain_connections": 1,
+    "status": "running; no future formal count claimed"
+  },
+  "private_zip": {
+    "path": "data/materials-quality-reviewed-20261109-1013.zip",
+    "status": "verified",
+    "size_bytes": 1026738259,
+    "formal_rows": 1013,
+    "columns": 9,
+    "long_body_files": 119,
+    "topic_decision_manifest_entries": 1013,
+    "all_topic_manifest_hashes_checked": true,
+    "zip_crc_checked_by_builder": true,
+    "progress_database_included": true,
+    "raw_evidence_files": 1160,
+    "review_files": 380,
+    "notice": "Private research package; not public redistribution. Its progress database is a separate snapshot from the live report timestamp."
+  },
+  "remaining_gaps": [
+    "Thousands of working records still require complete individual topic/field review.",
+    "FRUS, GovInfo/Congress, NARA, presidential archives, VOA and early media coverage remain incomplete; this APP increment does not close those gaps.",
+    "AP/Reuters/CNN/NYT and Five Eyes media remain in scope; source-specific access/coverage gaps persist.",
+    "CNKI, WoS, Scopus, JSTOR and other authorization-dependent records cannot be counted without lawful complete documents.",
+    "TIME/VOA template cleanup and Pew multi-chapter completeness remain pending.",
+    "X and YouTube: no video-body collection; summaries/descriptions are not full text.",
+    "No saturation or absolute-exhaustiveness claim."
+  ],
+  "public_redistribution": "Only code and aggregate reports go to Git. Full text, evidence, workbook and ZIP stay private subject to source licenses/authorization."
+}
