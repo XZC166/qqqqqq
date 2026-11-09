@@ -733,6 +733,10 @@ class GovernmentArticleAdapter:
         hostname = (urlsplit(response.url).hostname or "").lower()
         if response.url in PUBLIC_MEDIA_REVIEWED_ARTICLES:
             return ReviewedPublicMediaAdapter().extract(response, candidate)
+        if hostname == "api.parliament.uk" and response.url.startswith(
+            "https://api.parliament.uk/historic-hansard/"
+        ):
+            return HistoricHansardAdapter().extract(response, candidate)
         if hostname == "ciaotest.cc.columbia.edu":
             return CiaoConferenceAdapter().extract(response, candidate)
         if hostname == "bsky.app":
@@ -2859,6 +2863,20 @@ class BlueskyPostAdapter:
         "amnesty.org": "Amnesty International",
         "justsecurity.org": "Just Security",
         "gallup.com": "Gallup",
+        "state-department.bsky.social": "U.S. Department of State",
+        "deptofdefense.bsky.social": "U.S. Department of Defense",
+        "whitehouse.bsky.social": "The White House",
+        "financialtimes.com": "Financial Times",
+        "scmpnews.bsky.social": "South China Morning Post",
+        "scmp.com": "South China Morning Post",
+        "chinadaily.bsky.social": "China Daily",
+        "peoplesdaily.bsky.social": "People's Daily, China",
+        "hrwchinese.bsky.social": "Human Rights Watch Chinese",
+        "radiofreeasiapr.bsky.social": "Radio Free Asia",
+        "ununiversity.bsky.social": "United Nations University",
+        "globalcompact.bsky.social": "United Nations Global Compact",
+        "ecfr.eu": "European Council on Foreign Relations",
+        "dgap.org": "German Council on Foreign Relations",
     }
 
     def extract(self, response: Response, candidate: MaterialCandidate, metadata_response: Response | None) -> dict:
@@ -3623,20 +3641,74 @@ class BrookingsArticleAdapter:
                 author = _jsonld_name(author_value)
 
         blocks = response.css(
-            ".byo-blocks.article-content > .byo-block.wysiwyg-block:not(.medium):not(.border-t)"
+            ".byo-blocks.article-content > .byo-block.wysiwyg-block:not(.medium):not(.border-t):not(.archived)"
         )
         body_parts = []
+        footnote_parts = []
+        footnotes_seen = False
+        structure_valid = True
+        article_roots = response.css(".byo-blocks.article-content")
+        if len(article_roots) != 1 or article_roots[0].xpath("./text()[normalize-space()]"):
+            structure_valid = False
+        for sibling in article_roots.xpath("./*"):
+            classes = set(sibling.attrib.get("class", "").split())
+            if sibling.root.tag.lower() == "aside" and "sidebar" in classes:
+                continue
+            if "footnotes" in classes:
+                footnotes_seen = True
+                if footnote_parts:
+                    structure_valid = False
+                source_notes = []
+                expected_text = []
+                for section in sibling.css(".accordion > .accordion-item"):
+                    headings = section.css("a .h3")
+                    content = section.css(":scope > .accordion-content")
+                    if len(headings) != 1 or len(content) != 1:
+                        structure_valid = False
+                        continue
+                    heading = _normalized_text(headings[0].xpath(".//text()").getall())
+                    nodes = content[0].xpath(".//*[self::p or self::li[not(.//p)] or self::h2 or self::h3]")
+                    texts = [_normalized_text(n.xpath(".//text()").getall()) for n in nodes]
+                    if (not texts or _normalized_text(texts) != _normalized_text(content[0].xpath(".//text()").getall())
+                            or content[0].xpath(".//table|.//img|.//iframe|.//video|.//audio|.//object")):
+                        structure_valid = False
+                    footnote_parts.extend([heading, *texts])
+                    expected_text.extend([heading, *texts])
+                    source_notes.extend(texts)
+                if not source_notes:
+                    structure_valid = False
+                for tooltip in sibling.css("[role='tooltip']"):
+                    tooltip_text = _normalized_text(tooltip.xpath(".//text()").getall())
+                    expected_text.append(tooltip_text)
+                    if tooltip_text not in source_notes:
+                        structure_valid = False
+                if (_normalized_text(expected_text) != _normalized_text(sibling.xpath(".//text()").getall())
+                        or sibling.xpath(".//table|.//img|.//iframe|.//video|.//audio|.//object")):
+                    structure_valid = False
+                continue
+            if "wysiwyg-block" in classes or classes & {"authors", "related-content"}:
+                if footnotes_seen and "wysiwyg-block" in classes and not classes & {"medium", "border-t", "archived"}:
+                    structure_valid = False
+                continue
+            if (_normalized_text(sibling.xpath(".//text()").getall())
+                    or sibling.xpath(".//table|.//img|.//iframe|.//video|.//audio|.//svg|.//object")):
+                structure_valid = False
         for block in blocks:
             nodes = block.xpath(
                 ".//*[self::p or self::h2 or self::h3 or self::li[not(.//p)] "
                 "or self::blockquote[not(.//p)] "
                 "or self::strong[ancestor::div[contains(@class,'editors-note')]]]"
             )
-            body_parts.extend(
+            parts = [
                 text
                 for node in nodes
                 if (text := _normalized_text(node.xpath(".//text()").getall()))
-            )
+            ]
+            if (_normalized_text(parts) != _normalized_text(block.xpath(".//text()").getall())
+                    or block.xpath(".//table|.//img|.//iframe|.//object|.//video|.//script|.//svg")):
+                structure_valid = False
+            body_parts.extend(parts)
+        body_parts.extend(footnote_parts)
         body = "\n\n".join(body_parts)
         abstract = response.css("meta[name='description']::attr(content)").get(default="").strip()
         publisher_abstract = bool(abstract)
@@ -3658,6 +3730,7 @@ class BrookingsArticleAdapter:
             and author
             and blocks
             and body
+            and structure_valid
             and not (has_expansion_control and has_download)
         )
         material = None
@@ -3733,25 +3806,60 @@ class CSISArticleAdapter:
 
         blocks = column.xpath(
             "./div[contains(concat(' ',normalize-space(@class),' '),' text-block ') "
-            "or contains(concat(' ',normalize-space(@class),' '),' quote-block ')]"
+            "or contains(concat(' ',normalize-space(@class),' '),' quote-block ') "
+            "or contains(concat(' ',normalize-space(@class),' '),' block--migrated-content ')]"
         )
         body_parts = []
         body_finished = False
-        for block in blocks:
+        migrated_structure_valid = True
+        has_migrated = any("block--migrated-content" in b.attrib.get("class", "").split() for b in blocks)
+        if has_migrated:
+            known_blocks = {"article-hero-block", "byline-block", "downloads-block", "text-block", "quote-block", "block--migrated-content", "content-footer-block"}
+            for sibling in column.xpath("./*"):
+                if not (set(sibling.attrib.get("class", "").split()) & known_blocks):
+                    if (_normalized_text(sibling.xpath(".//text()").getall())
+                            or sibling.xpath(".//table|.//img|.//iframe|.//video|.//audio|.//svg|.//object")):
+                        migrated_structure_valid = False
+        for block_index, block in enumerate(blocks):
+            migrated = "block--migrated-content" in block.attrib.get("class", "").split()
             containers = block.css(".wysiwyg-wrapper") or block.css("blockquote")
+            if migrated and len(containers) != 1:
+                migrated_structure_valid = False
+            if has_migrated and _normalized_text(block.xpath(".//text()").getall()) != _normalized_text([
+                _normalized_text(n.xpath(".//text()").getall()) for n in containers
+            ]):
+                migrated_structure_valid = False
+            if has_migrated and block.xpath(".//table|.//img|.//iframe|.//object|.//script|.//svg|.//video|.//audio|.//embed|.//canvas"):
+                migrated_structure_valid = False
             for container in containers:
                 nodes = container.xpath(
                     ".//*[self::p or self::h2 or self::h3 or self::h4 "
                     "or self::li[not(.//p)] or self::blockquote[not(.//p)]]"
                 )
+                if has_migrated:
+                    # A migrated preview with a separate report download is not
+                    # evidence that the page includes the report in full.
+                    if column.css(".downloads-block a[href]"):
+                        migrated_structure_valid = False
+                    consumed = [_normalized_text(node.xpath(".//text()").getall()) for node in nodes]
+                    if (_normalized_text(consumed) != _normalized_text(container.xpath(".//text()").getall())
+                            or container.xpath(".//table|.//img|.//iframe|.//object|.//script|.//svg|.//video|.//audio|.//embed|.//canvas")):
+                        migrated_structure_valid = False
+                    for position, text in enumerate(consumed):
+                        if _is_csis_author_bio(text, author) and any(consumed[position + 1:]):
+                            migrated_structure_valid = False
                 for node in nodes:
                     text = _normalized_text(node.xpath(".//text()").getall())
                     if not text:
                         continue
                     if re.match(r"^For additional .+ studies see:?$", text, flags=re.IGNORECASE):
+                        if has_migrated:
+                            migrated_structure_valid = False
                         body_finished = True
                         break
                     if node.root.tag.lower() == "p" and _is_csis_author_bio(text, author):
+                        if has_migrated and any(_normalized_text(b.xpath(".//text()").getall()) for b in blocks[block_index + 1:]):
+                            migrated_structure_valid = False
                         body_finished = True
                         break
                     body_parts.append(text)
@@ -3771,6 +3879,7 @@ class CSISArticleAdapter:
             and publication_date
             and blocks
             and body
+            and migrated_structure_valid
         )
         material = None
         if complete:
@@ -4651,6 +4760,139 @@ class TrumpWhiteHouseStatementAdapter:
                 result["abstract_origin"] = "derived"
             else:
                 result["abstract_origin"] = "none"
+        return result
+
+
+class HistoricHansardAdapter:
+    """Whole published debate section; reject unhandled structures/subsections."""
+
+    def extract(self, response: Response, candidate: MaterialCandidate) -> dict:
+        from copy import deepcopy
+        from parsel import Selector
+
+        decision = classify_response(response.url, response.status, response.text)
+        evidence = SourceEvidence(
+            response.url, datetime.now(timezone.utc).isoformat(), response.status,
+            sha256(response.body).hexdigest(),
+        )
+        result = {"decision": decision, "evidence": evidence, "material": None}
+        if decision is not AccessDecision.ALLOW or candidate.source_category != "government":
+            return result
+        roots = response.css("div#content")
+        headings = [_normalized_text(n.xpath(".//text()").getall()) for n in response.css("h1")]
+        title = headings[0] if len(headings) == 1 else ""
+        citations = roots[0].css(":scope > cite.section") if len(roots) == 1 else []
+        citation = _normalized_text(citations[0].xpath(".//text()").getall()) if len(citations) == 1 else ""
+        date_match = re.match(r"^(?:HC|HL) Deb (\d{2} [A-Za-z]+ \d{4}) vol ", citation)
+        try:
+            day = datetime.strptime(date_match.group(1), "%d %B %Y") if date_match else None
+        except ValueError:
+            day = None
+        path_match = re.fullmatch(
+            r"/historic-hansard/(?:commons|lords|written-answers|written-statements)/(\d{4})/([a-z]{3})/(\d{2})/[^/]+/?",
+            urlsplit(response.url).path,
+        )
+        page_title = _normalized_text(response.xpath("string(//title)").getall())
+        date_valid = bool(
+            day and path_match
+            and path_match.groups() == (day.strftime("%Y"), day.strftime("%b").lower(), day.strftime("%d"))
+            and page_title == f"{title} (Hansard, {day.day} {day:%B %Y})"
+        )
+        source_valid = response.css("meta::attr(author)").getall() == ["UK Parliament"]
+        blocks = []
+        structure_valid = len(roots) == 1
+        contributions = []
+        inline_tags = {"a", "em", "strong", "b", "i", "u", "s", "sup", "sub", "span", "br", "small", "abbr", "cite", "q"}
+
+        def cleaned(node):
+            cloned = deepcopy(node.root)
+            for link in cloned.xpath('.//a[contains(concat(" ",normalize-space(@class)," ")," permalink ")]'):
+                link.drop_tree()
+            return Selector(root=cloned)
+
+        def paragraph_text(node):
+            if any(child.root.tag.lower() not in inline_tags for child in node.xpath(".//*")):
+                return None
+            return _normalized_text(node.xpath(".//text()").getall())
+
+        if len(roots) == 1:
+            if roots[0].xpath("./text()[normalize-space()]"):
+                structure_valid = False
+            for node in roots[0].xpath("./*"):
+                tag, attrs = node.root.tag.lower(), node.attrib
+                classes = attrs.get("class", "").split()
+                if tag == "cite" and "section" in classes:
+                    continue
+                if tag == "a" and "permalink" in classes:
+                    continue
+                if tag == "div" and attrs.get("id") == "section-navigation":
+                    continue
+                if tag == "ol" and "xoxo" in classes and not node.xpath("./*") and not _normalized_text(node.xpath(".//text()").getall()):
+                    continue
+                if tag == "p" and "procedural" in classes:
+                    text = paragraph_text(cleaned(node))
+                    if text is None:
+                        structure_valid = False
+                    elif text:
+                        blocks.append(text)
+                    continue
+                if tag != "div" or "member_contribution" not in classes:
+                    structure_valid = False
+                    continue
+                contributions.append(node)
+                quotes = node.xpath('./blockquote[contains(concat(" ",normalize-space(@class)," ")," contribution_text ")]')
+                if len(quotes) != 1 or node.xpath("./text()[normalize-space()]"):
+                    structure_valid = False
+                    continue
+                for sibling in node.xpath("./*"):
+                    if sibling.root is quotes[0].root:
+                        continue
+                    if sibling.root.tag.lower() == "a" and not sibling.xpath("./*") and not _normalized_text(sibling.xpath(".//text()").getall()):
+                        continue
+                    structure_valid = False
+                quote = cleaned(quotes[0])
+                authors = quote.css(":scope > cite.member.author")
+                if len(authors) != 1 or quote.xpath("./text()[normalize-space()]"):
+                    structure_valid = False
+                header = []
+                paragraph_count = 0
+                for part in quote.xpath("./*"):
+                    part_tag, part_classes = part.root.tag.lower(), part.attrib.get("class", "").split()
+                    if (part_tag == "cite" and "member" in part_classes) or (part_tag == "span" and ({"question_no", "member_constituency"} & set(part_classes))):
+                        if paragraph_count:
+                            structure_valid = False
+                        text = paragraph_text(part)
+                        if text is None:
+                            structure_valid = False
+                        elif text:
+                            header.append(text)
+                    elif part_tag == "p":
+                        if header:
+                            blocks.append(" ".join(header))
+                            header = []
+                        text = paragraph_text(part)
+                        if text is None or not text:
+                            structure_valid = False
+                        else:
+                            blocks.append(text)
+                            paragraph_count += 1
+                    else:
+                        structure_valid = False
+                if header or not paragraph_count:
+                    structure_valid = False
+        body = "\n\n".join(block for block in blocks if block)
+        complete = bool(source_valid and title and date_valid and structure_valid and contributions and body)
+        if not complete:
+            return result
+        # The Hansard citation, URL and title establish a sitting date, not
+        # independently the publication day. Historic daily parts were normally
+        # published the following morning. Do not infer a date or promote this
+        # extracted text until exact publication evidence is available.
+        result.update({
+            "evidence": replace(evidence, body_complete=True, metadata_verified=False, original_page_verified=True),
+            "extracted_body": body,
+            "pending_reason": "Exact publication date unverified; Hansard sitting date is not publication evidence.",
+        })
         return result
 
 

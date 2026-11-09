@@ -15,7 +15,6 @@ from research_crawler.discovery import (
     screen_pmc_records,
 )
 from research_crawler.export import export_verified
-from research_crawler.delivery import build_delivery
 from research_crawler.coverage import (
     coverage_gaps,
     coverage_matrix,
@@ -63,16 +62,20 @@ def main(argv: list[str] | None = None) -> int:
             store.close()
         return 0
     if args.command == "export":
+        from research_crawler.quality_audit import ReviewedExportStore
+
         store = ResearchStore(args.db)
         try:
-            export_verified(store, args.output)
+            export_verified(ReviewedExportStore(store), args.output)
         finally:
             store.close()
         return 0
     if args.command == "deliver":
+        from research_crawler.quality_audit import build_reviewed_delivery
+
         store = ResearchStore(args.db)
         try:
-            print(build_delivery(store, args.output))
+            print(build_reviewed_delivery(store, args.output))
         finally:
             store.close()
         return 0
@@ -172,7 +175,7 @@ def _build_parser() -> argparse.ArgumentParser:
     report.add_argument("--db", default="data/research.sqlite3")
     report.add_argument("--batch-id", required=True, type=int)
 
-    export = commands.add_parser("export", help="export verified materials to nine-column XLSX")
+    export = commands.add_parser("export", help="export individually quality-reviewed full texts to nine-column XLSX")
     export.add_argument("--db", default="data/research.sqlite3")
     export.add_argument("--output", required=True)
 
@@ -368,8 +371,7 @@ def _import_candidates(csv_path: str, database_path: str) -> int:
     try:
         for (period, category, label), grouped in groups.items():
             batch_id = store.create_batch(period, category, label)
-            for candidate in grouped:
-                store.add_candidate(batch_id, candidate)
+            store.add_candidates(batch_id, grouped)
     finally:
         store.close()
     print(f"Imported {len(candidates)} candidate URL(s) in {len(groups)} batch(es)")

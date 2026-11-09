@@ -188,7 +188,7 @@ BROOKINGS_REVIEWED_KEYWORDS: dict[str, tuple[str, str]] = {
         'Asian regionalism; Taiwan; APEC; regional security',
     ),
     'https://www.brookings.edu/articles/chinese-citizens-affection-for-taiwanese-may-reduce-risk-of-cross-strait-conflict/': (
-        '278f008504ea5423902c2e274bf7601e56c326cf7c9ed363437f33098d35df7a',
+        'a7d085e6f82dcaee2f09fa904395839ec06fa40ba4934b13e6ba7ffdb1c07438',
         'public opinion; Taiwan; cross-Strait; survey data; state media',
     ),
     'https://www.brookings.edu/wp-content/uploads/2019/11/DollarAndSense_Transcript_Prasad.pdf': (
@@ -632,6 +632,46 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
         "time", "17464", "15ef392bb93d7d281a1593831ac6061f216104f8cb774d37f5f6d64d230834d3",
         "", "China; Tiananmen Square; Deng Xiaoping; martial law; 1989 protests", "31", "31",
     ),
+    "https://time.com/archive/6614797/foreign-news-backs-to-the-wall/": (
+        "1949-1972", "TIME", "TIME", "1950-05-22", "Foreign News: Backs to the Wall",
+        "time_clean", "6359", "f3b5033d2d3723c4d6029fdc9cd9cbc9dd87492c9ee2944849b997c43e2faf33",
+        "", "Formosa; Chiang Kai-shek; U.S. aid; Taiwan Strait; Nationalist China", "15", "16",
+    ),
+    "https://time.com/archive/6776583/national-affairs-drawing-a-line/": (
+        "1949-1972", "TIME", "TIME", "1950-01-02", "National Affairs: Drawing a Line",
+        "time_clean", "2321", "7a4360b41a85165b8189b97756eeed3c18cc534860bfe38c17525206e3cd6975",
+        "", "Formosa; U.S. policy; Joint Chiefs of Staff; China; military strategy", "6", "6",
+    ),
+    "https://time.com/archive/6603495/china-report-on-formosa/": (
+        "1949-1972", "TIME", "TIME", "1949-12-26", "CHINA: Report on Formosa",
+        "time_clean", "5645", "679ec14925f86779b5a1477edc13aa2d695ffc6e7b28cc9362704bf951382f3a",
+        "", "Formosa; Nationalist China; Chinese Communists; U.S. security; civil war", "12", "12",
+    ),
+    "https://time.com/archive/6614462/china-return-of-the-gimo/": (
+        "1949-1972", "TIME", "TIME", "1950-03-13", "CHINA: Return of the Gimo",
+        "time_clean", "2413", "e5302a691a0cf19bf951433505f1a84c1f071f3c7b5f8be10182f1957167de20",
+        "", "Chiang Kai-shek; Formosa; Nationalist China; Chinese Communist press", "5", "5",
+    ),
+    "https://time.com/archive/6801420/formosa-the-guns-are-silent/": (
+        "1949-1972", "TIME", "TIME", "1958-10-20", "FORMOSA: The Guns Are Silent",
+        "time_clean", "3981", "c9aea88ecd8815ff05e785d57392058018cc373f183202a5be336b5f675d4866",
+        "", "Quemoy; Taiwan Strait crisis; Peking; Washington; public statements", "7", "7",
+    ),
+    "https://time.com/archive/6618946/foreign-news-progress-on-formosa/": (
+        "1949-1972", "TIME", "TIME", "1952-07-28", "Foreign News: PROGRESS ON FORMOSA",
+        "time_clean", "7319", "471a11d6001e1904d1e80fcb50128d084a030acf4a72a17442ad8117515d8076",
+        "", "Formosa; Nationalist government; Chiang Kai-shek; U.S. economic aid", "16", "17",
+    ),
+    "https://time.com/archive/6801244/formosa-the-turn-of-the-screw/": (
+        "1949-1972", "TIME", "TIME", "1958-09-15", "FORMOSA: The Turn of the Screw",
+        "time_clean", "3946", "ac8108ad4da4689512b074339623cb282567d3e31dd62ee9525f3c2bee6a32de",
+        "", "Quemoy; Taiwan Strait crisis; U.S. allies; Chinese Communist statements", "7", "7",
+    ),
+    "https://time.com/archive/6608261/danger-zones-another-chinese-revolution/": (
+        "1949-1972", "TIME", "TIME", "1951-03-26", "DANGER ZONES: Another Chinese Revolution?",
+        "time_clean", "7788", "1bcf579e6dfcff8c2a87ddafef6dc503024ccaa39ba04a6b9fd272144439c099",
+        "", "Formosa; Chinese Communist government; guerrillas; U.S. aid; mainland China", "22", "22",
+    ),
     "https://time.com/archive/6955373/collateral-damage-8/": (
         "1992-2016", "TIME", "TIME Staff", "1999-05-24", "Collateral Damage (24 May 1999)",
         "time", "9542", "25f65f1a4b25545e8cf7e1b425a06d7bc9b3f0f3d11b1d412276c89d60a3df38",
@@ -1040,6 +1080,22 @@ PUBLIC_MEDIA_REVIEWED_META_TITLES: dict[str, str] = {
 }
 
 PUBLIC_MEDIA_REVIEWED_DERIVED_ABSTRACTS: dict[str, str] = {
+    "https://time.com/archive/6614797/foreign-news-backs-to-the-wall/":
+        "据正文整理：报道介绍国民党政府在台湾的处境及其对美国经济和军事援助的期待，并呈现台湾海峡局势与美国政策讨论。",
+    "https://time.com/archive/6776583/national-affairs-drawing-a-line/":
+        "据正文整理：文章报道美国军方围绕台湾防务的不同判断，以及联合参谋长联席会议对美国部署和援助方案的讨论。",
+    "https://time.com/archive/6603495/china-report-on-formosa/":
+        "据正文整理：文章描述国民党政府迁台后的军事、政治和经济状况，并讨论台湾防务及美国支持的作用。",
+    "https://time.com/archive/6614462/china-return-of-the-gimo/":
+        "据正文整理：报道蒋介石返回台北并恢复中华民国总统职务，以及相关政治反应。",
+    "https://time.com/archive/6801420/formosa-the-guns-are-silent/":
+        "据正文整理：文章报道金门炮击停火后北京、台北与华盛顿围绕谈判、台湾海峡及美国立场的公开表态。",
+    "https://time.com/archive/6618946/foreign-news-progress-on-formosa/":
+        "据正文整理：文章介绍台湾经济与政治状况、国民党政府的治理措施及美国援助，并讨论其军事处境。",
+    "https://time.com/archive/6801244/formosa-the-turn-of-the-screw/":
+        "据正文整理：报道1958年台湾海峡危机期间金门局势、美国及盟国反应和中国方面的公开表述。",
+    "https://time.com/archive/6608261/danger-zones-another-chinese-revolution/":
+        "据正文整理：文章报道台湾方面对大陆游击活动、军事行动和美国援助的讨论，并描述相关政治与安全背景。",
     "https://time.com/4644775/donald-trump-china-trade-cold-war/":
         "据正文整理：文章讨论特朗普政府初期对华贸易、台湾和南海政策，以及这些议题如何被置于美国对华竞争叙事中。",
     "https://time.com/5228991/president-trumps-tariff-tussle-with-china-is-just-the-beginning/":

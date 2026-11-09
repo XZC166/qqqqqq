@@ -46,6 +46,22 @@ FEED_HANDLES = {
     "amnesty.org": "Amnesty International",
     "justsecurity.org": "Just Security",
     "gallup.com": "Gallup",
+    # Additional institutional accounts verified through the public AppView
+    # profile endpoint during the 2026-11-09 expansion batch.
+    "state-department.bsky.social": "U.S. Department of State",
+    "deptofdefense.bsky.social": "U.S. Department of Defense",
+    "whitehouse.bsky.social": "The White House",
+    "financialtimes.com": "Financial Times",
+    "scmpnews.bsky.social": "South China Morning Post",
+    "scmp.com": "South China Morning Post",
+    "chinadaily.bsky.social": "China Daily",
+    "peoplesdaily.bsky.social": "People's Daily, China",
+    "hrwchinese.bsky.social": "Human Rights Watch Chinese",
+    "radiofreeasiapr.bsky.social": "Radio Free Asia",
+    "ununiversity.bsky.social": "United Nations University",
+    "globalcompact.bsky.social": "United Nations Global Compact",
+    "ecfr.eu": "European Council on Foreign Relations",
+    "dgap.org": "German Council on Foreign Relations",
 }
 TOPIC_PATTERN = re.compile(
     r"\b(?:china|chinese|taiwan(?:ese)?|hong kong|xinjiang|tibet|beijing|peking|"

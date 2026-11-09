@@ -33,6 +33,59 @@ class ResearchStore:
 
     def add_candidate(self, batch_id: int, candidate: MaterialCandidate) -> int:
         identity = self._resolve_identity_key(candidate.source_url, candidate.platform_id)
+        return self._insert_candidate(batch_id, candidate, identity, commit=True)
+
+    def add_candidates(
+        self, batch_id: int, candidates: list[MaterialCandidate]
+    ) -> list[int]:
+        """Resolve a bounded batch once and commit all candidates atomically."""
+        identities_by_url = {}
+        identities_by_platform = {}
+        candidate_ids = []
+        with self.connection:
+            self.connection.execute("BEGIN IMMEDIATE")
+            rank = 0
+            for table in ("materials", "candidates"):
+                for row in self.connection.execute(
+                    f"SELECT identity_key, source_url FROM {table} ORDER BY id"
+                ):
+                    entry = (rank, row["identity_key"])
+                    identities_by_url.setdefault(canonicalize_url(row["source_url"]), entry)
+                    key = _normalized_platform_key(row["identity_key"])
+                    if key:
+                        identities_by_platform.setdefault(key, entry)
+                    rank += 1
+            cached_candidate_ids = {
+                row[0] for row in self.connection.execute("SELECT id FROM candidates")
+            }
+            for candidate in candidates:
+                url = canonicalize_url(candidate.source_url)
+                platform = _platform_identity_key(candidate.source_url, candidate.platform_id)
+                matches = [entry for entry in (
+                    identities_by_url.get(url),
+                    identities_by_platform.get(platform) if platform else None,
+                ) if entry is not None]
+                identity = min(matches)[1] if matches else _identity_key(
+                    candidate.source_url, candidate.platform_id
+                )
+                candidate_id = self._insert_candidate(
+                    batch_id, candidate, identity, commit=False
+                )
+                candidate_ids.append(candidate_id)
+                if candidate_id in cached_candidate_ids:
+                    continue
+                cached_candidate_ids.add(candidate_id)
+                entry = (rank, identity)
+                identities_by_url.setdefault(url, entry)
+                key = _normalized_platform_key(identity)
+                if key:
+                    identities_by_platform.setdefault(key, entry)
+                rank += 1
+        return candidate_ids
+
+    def _insert_candidate(
+        self, batch_id: int, candidate: MaterialCandidate, identity: str, *, commit: bool
+    ) -> int:
         existing_in_batch = self.connection.execute(
             "SELECT id FROM candidates WHERE batch_id = ? AND identity_key = ? LIMIT 1",
             (batch_id, identity),
@@ -43,7 +96,8 @@ class ResearchStore:
                     "UPDATE candidates SET metadata_url = ? WHERE id = ? AND (metadata_url IS NULL OR metadata_url = '')",
                     (candidate.metadata_url, existing_in_batch["id"]),
                 )
-                self.connection.commit()
+                if commit:
+                    self.connection.commit()
             return int(existing_in_batch["id"])
         previously_seen = self.connection.execute(
             "SELECT 1 FROM candidates WHERE identity_key = ? LIMIT 1", (identity,)
@@ -74,7 +128,8 @@ class ResearchStore:
                 "UPDATE materials SET duplicate_count = duplicate_count + 1 WHERE identity_key = ?",
                 (identity,),
             )
-        self.connection.commit()
+        if commit:
+            self.connection.commit()
         return candidate_id
 
     def update_candidate_status(
@@ -423,6 +478,10 @@ class ResearchStore:
                 retrieval_method TEXT NOT NULL DEFAULT 'scrapy',
                 retrieval_id TEXT NOT NULL DEFAULT ''
             );
+            CREATE INDEX IF NOT EXISTS ix_candidates_batch_identity
+                ON candidates(batch_id, identity_key);
+            CREATE INDEX IF NOT EXISTS ix_candidates_identity
+                ON candidates(identity_key);
             CREATE TABLE IF NOT EXISTS duplicate_discoveries (
                 id INTEGER PRIMARY KEY,
                 batch_id INTEGER NOT NULL REFERENCES batches(id),

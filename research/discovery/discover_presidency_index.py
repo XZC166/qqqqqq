@@ -24,7 +24,15 @@ TOPIC_PATTERN = re.compile(
 DATE_PATTERN = re.compile(r"([A-Z][a-z]+ \d{1,2}, \d{4})")
 
 
-def discover(start_page: int, end_page: int, output: Path, *, concurrency: int, delay: float) -> dict:
+def discover(
+    start_page: int,
+    end_page: int,
+    output: Path,
+    *,
+    concurrency: int,
+    delay: float,
+    timeout: float = 30,
+) -> dict:
     if start_page < 0 or end_page < start_page or end_page > 1512:
         raise ValueError("page range must be between 0 and 1512")
     if concurrency not in {1, 2}:
@@ -42,7 +50,7 @@ def discover(start_page: int, end_page: int, output: Path, *, concurrency: int, 
             return page, [], "blocked by robots.txt"
         request = Request(url, headers={"User-Agent": USER_AGENT})
         try:
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=timeout) as response:
                 raw = response.read()
                 status = response.status
             if status != 200:
@@ -134,10 +142,11 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--concurrency", type=int, default=2)
     parser.add_argument("--delay", type=float, default=0.5)
+    parser.add_argument("--timeout", type=float, default=30)
     args = parser.parse_args()
     print(json.dumps(discover(
         args.start_page, args.end_page, args.output,
-        concurrency=args.concurrency, delay=args.delay,
+        concurrency=args.concurrency, delay=args.delay, timeout=args.timeout,
     ), ensure_ascii=False, indent=2))
     return 0
 
