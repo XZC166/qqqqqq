@@ -1,0 +1,1252 @@
+{
+  "generated_at": "2026-11-09T01:35:07.827129+00:00",
+  "input_verified_bsky": 148,
+  "retained": 92,
+  "withdrawn": 56,
+  "retained_records": [
+    {
+      "candidate_id": 6969,
+      "source": "Human Rights Watch",
+      "published_on": "2025-12-17",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3ma77c5jxtk2x",
+      "material_id": 5357
+    },
+    {
+      "candidate_id": 6971,
+      "source": "Human Rights Watch",
+      "published_on": "2025-12-02",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3m6z74bw3ta2q",
+      "material_id": 5358
+    },
+    {
+      "candidate_id": 6970,
+      "source": "Human Rights Watch",
+      "published_on": "2025-12-09",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3m7jki2qrpy2k",
+      "material_id": 5359
+    },
+    {
+      "candidate_id": 6972,
+      "source": "Human Rights Watch",
+      "published_on": "2025-11-24",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3m6faqp6gme2s",
+      "material_id": 5360
+    },
+    {
+      "candidate_id": 6973,
+      "source": "Human Rights Watch",
+      "published_on": "2025-11-13",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3m5jhdn5alk2y",
+      "material_id": 5361
+    },
+    {
+      "candidate_id": 6974,
+      "source": "Human Rights Watch",
+      "published_on": "2025-10-29",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3m4e3krk5xi2j",
+      "material_id": 5362
+    },
+    {
+      "candidate_id": 6975,
+      "source": "Human Rights Watch",
+      "published_on": "2025-09-29",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lzyc4xn2li2o",
+      "material_id": 5363
+    },
+    {
+      "candidate_id": 6976,
+      "source": "Human Rights Watch",
+      "published_on": "2025-09-03",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lxwtsns4wm2j",
+      "material_id": 5364
+    },
+    {
+      "candidate_id": 6977,
+      "source": "Human Rights Watch",
+      "published_on": "2025-08-15",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lwhl4djyif2d",
+      "material_id": 5365
+    },
+    {
+      "candidate_id": 6978,
+      "source": "Human Rights Watch",
+      "published_on": "2025-05-12",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3loxmn52vnk2e",
+      "material_id": 5366
+    },
+    {
+      "candidate_id": 6979,
+      "source": "Human Rights Watch",
+      "published_on": "2025-04-30",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lnzj3upnqs2n",
+      "material_id": 5367
+    },
+    {
+      "candidate_id": 6981,
+      "source": "Human Rights Watch",
+      "published_on": "2025-04-07",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lm7rgqfnqc2t",
+      "material_id": 5369
+    },
+    {
+      "candidate_id": 6983,
+      "source": "Human Rights Watch",
+      "published_on": "2025-02-05",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lhgxomdbrc2t",
+      "material_id": 5371
+    },
+    {
+      "candidate_id": 6984,
+      "source": "Human Rights Watch",
+      "published_on": "2024-12-03",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lcgcg222u226",
+      "material_id": 5372
+    },
+    {
+      "candidate_id": 6985,
+      "source": "Human Rights Watch",
+      "published_on": "2024-06-24",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3kvoolzq4632h",
+      "material_id": 5373
+    },
+    {
+      "candidate_id": 6987,
+      "source": "Human Rights Watch",
+      "published_on": "2024-03-20",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3ko5ckng3652l",
+      "material_id": 5375
+    },
+    {
+      "candidate_id": 6990,
+      "source": "Human Rights Watch",
+      "published_on": "2023-08-16",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3k53cceyfqz2k",
+      "material_id": 5378
+    },
+    {
+      "candidate_id": 6992,
+      "source": "Amnesty International",
+      "published_on": "2025-09-10",
+      "title": "@amnesty.org on Bluesky",
+      "source_url": "https://bsky.app/profile/amnesty.org/post/3lyi7ag37d22v",
+      "material_id": 5380
+    },
+    {
+      "candidate_id": 6993,
+      "source": "Amnesty International",
+      "published_on": "2025-09-10",
+      "title": "@amnesty.org on Bluesky",
+      "source_url": "https://bsky.app/profile/amnesty.org/post/3lyi756r33c2i",
+      "material_id": 5381
+    },
+    {
+      "candidate_id": 6994,
+      "source": "Amnesty International",
+      "published_on": "2025-08-28",
+      "title": "@amnesty.org on Bluesky",
+      "source_url": "https://bsky.app/profile/amnesty.org/post/3lxhgas75xt2n",
+      "material_id": 5382
+    },
+    {
+      "candidate_id": 6995,
+      "source": "Amnesty International",
+      "published_on": "2025-03-19",
+      "title": "@amnesty.org on Bluesky",
+      "source_url": "https://bsky.app/profile/amnesty.org/post/3lkq3ozrixo22",
+      "material_id": 5383
+    },
+    {
+      "candidate_id": 6996,
+      "source": "Amnesty International",
+      "published_on": "2025-02-21",
+      "title": "@amnesty.org on Bluesky",
+      "source_url": "https://bsky.app/profile/amnesty.org/post/3lip3kk4cxw27",
+      "material_id": 5384
+    },
+    {
+      "candidate_id": 6997,
+      "source": "Just Security",
+      "published_on": "2025-12-22",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3maliw3ccxk2e",
+      "material_id": 5385
+    },
+    {
+      "candidate_id": 6998,
+      "source": "Just Security",
+      "published_on": "2025-12-15",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m7zrq6rxz22d",
+      "material_id": 5386
+    },
+    {
+      "candidate_id": 6999,
+      "source": "Just Security",
+      "published_on": "2025-12-09",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m7km67ery223",
+      "material_id": 5387
+    },
+    {
+      "candidate_id": 7001,
+      "source": "Just Security",
+      "published_on": "2025-11-26",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m6jwur42pk2s",
+      "material_id": 5389
+    },
+    {
+      "candidate_id": 7002,
+      "source": "Just Security",
+      "published_on": "2025-11-24",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m6exugeeok2k",
+      "material_id": 5390
+    },
+    {
+      "candidate_id": 7004,
+      "source": "Just Security",
+      "published_on": "2025-11-18",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m5vvpomm3c2n",
+      "material_id": 5392
+    },
+    {
+      "candidate_id": 7005,
+      "source": "Just Security",
+      "published_on": "2025-11-18",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m5vsxx6iqk2a",
+      "material_id": 5393
+    },
+    {
+      "candidate_id": 7006,
+      "source": "Just Security",
+      "published_on": "2025-11-17",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m5tcppnm4s2a",
+      "material_id": 5394
+    },
+    {
+      "candidate_id": 7007,
+      "source": "Just Security",
+      "published_on": "2025-11-14",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m5lrmpldqk25",
+      "material_id": 5395
+    },
+    {
+      "candidate_id": 7008,
+      "source": "Just Security",
+      "published_on": "2025-11-13",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m5jbcyo7ls23",
+      "material_id": 5396
+    },
+    {
+      "candidate_id": 7010,
+      "source": "Just Security",
+      "published_on": "2025-11-06",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4xnstihpk2r",
+      "material_id": 5398
+    },
+    {
+      "candidate_id": 7011,
+      "source": "Just Security",
+      "published_on": "2025-11-05",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4v5nnkvf22g",
+      "material_id": 5399
+    },
+    {
+      "candidate_id": 7015,
+      "source": "Just Security",
+      "published_on": "2025-11-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4q5hqkhgc2d",
+      "material_id": 5404
+    },
+    {
+      "candidate_id": 7018,
+      "source": "Just Security",
+      "published_on": "2025-10-28",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4axzco5ds2z",
+      "material_id": 5407
+    },
+    {
+      "candidate_id": 7022,
+      "source": "Just Security",
+      "published_on": "2025-09-29",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lzy32r6lmc2h",
+      "material_id": 5410
+    },
+    {
+      "candidate_id": 7023,
+      "source": "Just Security",
+      "published_on": "2025-09-29",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lzxydo4uas25",
+      "material_id": 5411
+    },
+    {
+      "candidate_id": 7025,
+      "source": "Just Security",
+      "published_on": "2025-09-25",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lznwsqcqgk2b",
+      "material_id": 5413
+    },
+    {
+      "candidate_id": 7026,
+      "source": "Just Security",
+      "published_on": "2025-09-19",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lz6tsbjiuk2q",
+      "material_id": 5414
+    },
+    {
+      "candidate_id": 7030,
+      "source": "Just Security",
+      "published_on": "2025-09-09",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lyfq4frpgs2g",
+      "material_id": 5418
+    },
+    {
+      "candidate_id": 7031,
+      "source": "Just Security",
+      "published_on": "2025-09-08",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lyd6fmmj3c2l",
+      "material_id": 5419
+    },
+    {
+      "candidate_id": 7033,
+      "source": "Just Security",
+      "published_on": "2025-09-05",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ly3pnh2r3223",
+      "material_id": 5421
+    },
+    {
+      "candidate_id": 7034,
+      "source": "Just Security",
+      "published_on": "2025-09-04",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lxz756ds5k2l",
+      "material_id": 5422
+    },
+    {
+      "candidate_id": 7035,
+      "source": "Just Security",
+      "published_on": "2025-09-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lxwpfjisgk2t",
+      "material_id": 5423
+    },
+    {
+      "candidate_id": 7036,
+      "source": "Just Security",
+      "published_on": "2025-09-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lxwld74bxk2t",
+      "material_id": 5424
+    },
+    {
+      "candidate_id": 7038,
+      "source": "Just Security",
+      "published_on": "2025-08-28",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lxhj3zx5xs22",
+      "material_id": 5426
+    },
+    {
+      "candidate_id": 7039,
+      "source": "Just Security",
+      "published_on": "2025-08-26",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lxckniove22s",
+      "material_id": 5427
+    },
+    {
+      "candidate_id": 7040,
+      "source": "Just Security",
+      "published_on": "2025-08-25",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lxa2wpxetk2x",
+      "material_id": 5428
+    },
+    {
+      "candidate_id": 7041,
+      "source": "Just Security",
+      "published_on": "2025-08-20",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lws7kfcopc2p",
+      "material_id": 5429
+    },
+    {
+      "candidate_id": 7042,
+      "source": "Just Security",
+      "published_on": "2025-08-19",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lwqufdilvs27",
+      "material_id": 5430
+    },
+    {
+      "candidate_id": 7045,
+      "source": "Just Security",
+      "published_on": "2025-07-31",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lvb6labc3c2x",
+      "material_id": 5433
+    },
+    {
+      "candidate_id": 7046,
+      "source": "Just Security",
+      "published_on": "2025-07-31",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lvb47mxb4s26",
+      "material_id": 5434
+    },
+    {
+      "candidate_id": 7047,
+      "source": "Just Security",
+      "published_on": "2025-07-28",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3luzn3rjgjs25",
+      "material_id": 5435
+    },
+    {
+      "candidate_id": 7050,
+      "source": "Just Security",
+      "published_on": "2025-07-16",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lu3fipkdyk2s",
+      "material_id": 5438
+    },
+    {
+      "candidate_id": 7051,
+      "source": "Just Security",
+      "published_on": "2025-07-15",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ltywzb3m522u",
+      "material_id": 5439
+    },
+    {
+      "candidate_id": 7052,
+      "source": "Just Security",
+      "published_on": "2025-07-15",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ltyu7iyskk2m",
+      "material_id": 5440
+    },
+    {
+      "candidate_id": 7056,
+      "source": "Just Security",
+      "published_on": "2025-07-08",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lthdoxg6yk24",
+      "material_id": 5444
+    },
+    {
+      "candidate_id": 7057,
+      "source": "Just Security",
+      "published_on": "2025-07-02",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lsy6hskl6c22",
+      "material_id": 5445
+    },
+    {
+      "candidate_id": 7060,
+      "source": "Just Security",
+      "published_on": "2025-06-06",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lqwtuixei22w",
+      "material_id": 5448
+    },
+    {
+      "candidate_id": 7063,
+      "source": "Just Security",
+      "published_on": "2025-06-02",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lqmtjshids2a",
+      "material_id": 5451
+    },
+    {
+      "candidate_id": 7065,
+      "source": "Just Security",
+      "published_on": "2025-05-20",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lpm4vyoyo22q",
+      "material_id": 5453
+    },
+    {
+      "candidate_id": 7068,
+      "source": "Just Security",
+      "published_on": "2025-05-12",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3loxxhoucuk2f",
+      "material_id": 5456
+    },
+    {
+      "candidate_id": 7071,
+      "source": "Just Security",
+      "published_on": "2025-05-07",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lolex4glwk2h",
+      "material_id": 5459
+    },
+    {
+      "candidate_id": 7072,
+      "source": "Just Security",
+      "published_on": "2025-05-05",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3loggf27boc2n",
+      "material_id": 5460
+    },
+    {
+      "candidate_id": 7073,
+      "source": "Just Security",
+      "published_on": "2025-05-02",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lo6tgyh37c23",
+      "material_id": 5461
+    },
+    {
+      "candidate_id": 7076,
+      "source": "Just Security",
+      "published_on": "2025-04-25",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lnnc66hpg22t",
+      "material_id": 5464
+    },
+    {
+      "candidate_id": 7079,
+      "source": "Just Security",
+      "published_on": "2025-04-11",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lmjyq2gsqs2y",
+      "material_id": 5467
+    },
+    {
+      "candidate_id": 7080,
+      "source": "Just Security",
+      "published_on": "2025-04-08",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lmd36tuqjs2n",
+      "material_id": 5468
+    },
+    {
+      "candidate_id": 7083,
+      "source": "Just Security",
+      "published_on": "2025-03-20",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lksqzh3pq22u",
+      "material_id": 5471
+    },
+    {
+      "candidate_id": 7084,
+      "source": "Just Security",
+      "published_on": "2025-03-18",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lknngsypnc2l",
+      "material_id": 5472
+    },
+    {
+      "candidate_id": 7087,
+      "source": "Just Security",
+      "published_on": "2025-03-06",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ljpl7dk56s2t",
+      "material_id": 5474
+    },
+    {
+      "candidate_id": 7088,
+      "source": "Just Security",
+      "published_on": "2025-02-27",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lj62wbv2c225",
+      "material_id": 5475
+    },
+    {
+      "candidate_id": 7091,
+      "source": "Just Security",
+      "published_on": "2025-02-14",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3li5egulsbc22",
+      "material_id": 5478
+    },
+    {
+      "candidate_id": 7094,
+      "source": "Just Security",
+      "published_on": "2025-02-06",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lhk7sl64us2s",
+      "material_id": 5481
+    },
+    {
+      "candidate_id": 7095,
+      "source": "Just Security",
+      "published_on": "2025-02-05",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lhgt3zdmjk2l",
+      "material_id": 5482
+    },
+    {
+      "candidate_id": 7096,
+      "source": "Just Security",
+      "published_on": "2025-02-04",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lhe6ptt6gk2y",
+      "material_id": 5483
+    },
+    {
+      "candidate_id": 7097,
+      "source": "Just Security",
+      "published_on": "2025-02-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lhbpjqi2fc2n",
+      "material_id": 5484
+    },
+    {
+      "candidate_id": 7099,
+      "source": "Just Security",
+      "published_on": "2025-01-27",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lgq2k3rw222w",
+      "material_id": 5486
+    },
+    {
+      "candidate_id": 7101,
+      "source": "Just Security",
+      "published_on": "2025-01-21",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lgb36yta7c2q",
+      "material_id": 5488
+    },
+    {
+      "candidate_id": 7102,
+      "source": "Just Security",
+      "published_on": "2025-01-17",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lfwxyrxvfk2f",
+      "material_id": 5489
+    },
+    {
+      "candidate_id": 7103,
+      "source": "Just Security",
+      "published_on": "2025-01-13",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lfmsvkwqg22c",
+      "material_id": 5490
+    },
+    {
+      "candidate_id": 7106,
+      "source": "Just Security",
+      "published_on": "2025-01-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3letmyzhzw22k",
+      "material_id": 5493
+    },
+    {
+      "candidate_id": 7107,
+      "source": "Just Security",
+      "published_on": "2025-01-02",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ler5dbdw322o",
+      "material_id": 5494
+    },
+    {
+      "candidate_id": 7108,
+      "source": "Just Security",
+      "published_on": "2024-12-23",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ldy7iau5l22l",
+      "material_id": 5495
+    },
+    {
+      "candidate_id": 7109,
+      "source": "Just Security",
+      "published_on": "2024-12-21",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ldt2qtgdqc22",
+      "material_id": 5496
+    },
+    {
+      "candidate_id": 7110,
+      "source": "Just Security",
+      "published_on": "2024-12-20",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ldqkaf66vc2c",
+      "material_id": 5497
+    },
+    {
+      "candidate_id": 7111,
+      "source": "Just Security",
+      "published_on": "2024-12-19",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ldnytajbmk2k",
+      "material_id": 5498
+    },
+    {
+      "candidate_id": 7112,
+      "source": "Just Security",
+      "published_on": "2024-12-16",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ldgkc34cvs2t",
+      "material_id": 5499
+    },
+    {
+      "candidate_id": 7113,
+      "source": "Just Security",
+      "published_on": "2024-12-04",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lci7lup77s2h",
+      "material_id": 5500
+    },
+    {
+      "candidate_id": 7114,
+      "source": "Gallup",
+      "published_on": "2025-07-10",
+      "title": "@gallup.com on Bluesky",
+      "source_url": "https://bsky.app/profile/gallup.com/post/3ltmmoak75c2x",
+      "material_id": 5501
+    },
+    {
+      "candidate_id": 7117,
+      "source": "Gallup",
+      "published_on": "2025-04-21",
+      "title": "@gallup.com on Bluesky",
+      "source_url": "https://bsky.app/profile/gallup.com/post/3lndda3ge5b2k",
+      "material_id": 5504
+    }
+  ],
+  "withdrawn_records": [
+    {
+      "candidate_id": 6980,
+      "source": "Human Rights Watch",
+      "published_on": "2025-04-16",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lmwx6xbqqs2v",
+      "material_id": 5368,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6982,
+      "source": "Human Rights Watch",
+      "published_on": "2025-02-27",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3lj5jpxkplk2h",
+      "material_id": 5370,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6986,
+      "source": "Human Rights Watch",
+      "published_on": "2024-06-20",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3kvebvrlzxs25",
+      "material_id": 5374,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6988,
+      "source": "Human Rights Watch",
+      "published_on": "2023-11-14",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3ke5rl67jgk2p",
+      "material_id": 5376,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6989,
+      "source": "Human Rights Watch",
+      "published_on": "2023-10-12",
+      "title": "@hrw.org on Bluesky",
+      "source_url": "https://bsky.app/profile/hrw.org/post/3kbkouel5q52y",
+      "material_id": 5377,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6991,
+      "source": "Amnesty International",
+      "published_on": "2025-09-30",
+      "title": "@amnesty.org on Bluesky",
+      "source_url": "https://bsky.app/profile/amnesty.org/post/3m22gdv3thn2l",
+      "material_id": 5379,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7000,
+      "source": "Just Security",
+      "published_on": "2025-12-01",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m6wloxoqrk25",
+      "material_id": 5388,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7003,
+      "source": "Just Security",
+      "published_on": "2025-11-20",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m62uhwh35s2w",
+      "material_id": 5391,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7009,
+      "source": "Just Security",
+      "published_on": "2025-11-10",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m5brhe4egc27",
+      "material_id": 5397,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7012,
+      "source": "Just Security",
+      "published_on": "2025-11-04",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4smi7spe22z",
+      "material_id": 5400,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7013,
+      "source": "Just Security",
+      "published_on": "2025-11-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4qixgihqc2p",
+      "material_id": 5401,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7014,
+      "source": "Just Security",
+      "published_on": "2025-11-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4q6qgxkg22m",
+      "material_id": 5402,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7016,
+      "source": "Just Security",
+      "published_on": "2025-10-30",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4fzcvpqmk2z",
+      "material_id": 5403,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7017,
+      "source": "Just Security",
+      "published_on": "2025-10-29",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m4digxsv322t",
+      "material_id": 5405,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7019,
+      "source": "Just Security",
+      "published_on": "2025-10-24",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m3xjba2zfk25",
+      "material_id": 5406,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7020,
+      "source": "Just Security",
+      "published_on": "2025-10-18",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m3hp5inzuc23",
+      "material_id": 5408,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7021,
+      "source": "Just Security",
+      "published_on": "2025-10-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3m2c2vdfbz22o",
+      "material_id": 5409,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7024,
+      "source": "Just Security",
+      "published_on": "2025-09-26",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lzqillszbc2y",
+      "material_id": 5412,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7027,
+      "source": "Just Security",
+      "published_on": "2025-09-18",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lz4fxga3dk2d",
+      "material_id": 5415,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7028,
+      "source": "Just Security",
+      "published_on": "2025-09-18",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lz4dlg2t7c2w",
+      "material_id": 5416,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7029,
+      "source": "Just Security",
+      "published_on": "2025-09-17",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lyztcvvktk2s",
+      "material_id": 5417,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7032,
+      "source": "Just Security",
+      "published_on": "2025-09-06",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ly63fpngx22u",
+      "material_id": 5420,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7037,
+      "source": "Just Security",
+      "published_on": "2025-08-30",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lxmeo33vbc2c",
+      "material_id": 5425,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7043,
+      "source": "Just Security",
+      "published_on": "2025-08-07",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lvspgq4gik27",
+      "material_id": 5431,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7044,
+      "source": "Just Security",
+      "published_on": "2025-08-02",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lvfxz4kvus2y",
+      "material_id": 5432,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7048,
+      "source": "Just Security",
+      "published_on": "2025-07-26",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3luuenynvkc2u",
+      "material_id": 5436,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7049,
+      "source": "Just Security",
+      "published_on": "2025-07-17",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lu5vlqd3rk2s",
+      "material_id": 5437,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7053,
+      "source": "Just Security",
+      "published_on": "2025-07-14",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ltwghs237k2f",
+      "material_id": 5441,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7054,
+      "source": "Just Security",
+      "published_on": "2025-07-12",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ltrafgxk5c2y",
+      "material_id": 5442,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7055,
+      "source": "Just Security",
+      "published_on": "2025-07-10",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3ltmepqmsts2h",
+      "material_id": 5443,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7058,
+      "source": "Just Security",
+      "published_on": "2025-06-26",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lsj7hao2ks2l",
+      "material_id": 5446,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7059,
+      "source": "Just Security",
+      "published_on": "2025-06-07",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lqz7e2tons2m",
+      "material_id": 5447,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7061,
+      "source": "Just Security",
+      "published_on": "2025-06-04",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lqrutbzxxc22",
+      "material_id": 5449,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7062,
+      "source": "Just Security",
+      "published_on": "2025-06-04",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lqrtydw2i22h",
+      "material_id": 5450,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7064,
+      "source": "Just Security",
+      "published_on": "2025-05-31",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lqhnegvy322d",
+      "material_id": 5452,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7066,
+      "source": "Just Security",
+      "published_on": "2025-05-17",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lpego5gbnc2a",
+      "material_id": 5454,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7067,
+      "source": "Just Security",
+      "published_on": "2025-05-13",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lp2jp3udrc2q",
+      "material_id": 5455,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7069,
+      "source": "Just Security",
+      "published_on": "2025-05-10",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3losu2zkmvk2j",
+      "material_id": 5457,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7070,
+      "source": "Just Security",
+      "published_on": "2025-05-08",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lonv5vwfus27",
+      "material_id": 5458,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7074,
+      "source": "Just Security",
+      "published_on": "2025-05-01",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lo4ce3uj722z",
+      "material_id": 5462,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7075,
+      "source": "Just Security",
+      "published_on": "2025-04-26",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lnpovfcvjc2p",
+      "material_id": 5463,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7077,
+      "source": "Just Security",
+      "published_on": "2025-04-23",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lni5sywldk2n",
+      "material_id": 5465,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7078,
+      "source": "Just Security",
+      "published_on": "2025-04-17",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lmz3jcvwks27",
+      "material_id": 5466,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7081,
+      "source": "Just Security",
+      "published_on": "2025-04-03",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3llvxtiuwq227",
+      "material_id": 5469,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7082,
+      "source": "Just Security",
+      "published_on": "2025-03-22",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lkxnbl6m7c2z",
+      "material_id": 5470,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7085,
+      "source": "Just Security",
+      "published_on": "2025-03-15",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lkg3qn3mx222",
+      "material_id": 5473,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7089,
+      "source": "Just Security",
+      "published_on": "2025-02-26",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lj3kbr74vk2r",
+      "material_id": 5476,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7090,
+      "source": "Just Security",
+      "published_on": "2025-02-15",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3li7q5oyzt222",
+      "material_id": 5477,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7092,
+      "source": "Just Security",
+      "published_on": "2025-02-12",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lhysysx2ck2o",
+      "material_id": 5479,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7093,
+      "source": "Just Security",
+      "published_on": "2025-02-08",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lho5h5bxw226",
+      "material_id": 5480,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7098,
+      "source": "Just Security",
+      "published_on": "2025-02-01",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lh4l5gb4s223",
+      "material_id": 5485,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7100,
+      "source": "Just Security",
+      "published_on": "2025-01-25",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lgkvslqnck2e",
+      "material_id": 5487,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7104,
+      "source": "Just Security",
+      "published_on": "2025-01-11",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lfhpr4khws2z",
+      "material_id": 5491,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7105,
+      "source": "Just Security",
+      "published_on": "2025-01-06",
+      "title": "@justsecurity.org on Bluesky",
+      "source_url": "https://bsky.app/profile/justsecurity.org/post/3lf3ck6ncr22s",
+      "material_id": 5492,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7115,
+      "source": "Gallup",
+      "published_on": "2025-04-30",
+      "title": "@gallup.com on Bluesky",
+      "source_url": "https://bsky.app/profile/gallup.com/post/3lo2erwrajy2y",
+      "material_id": 5502,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 7116,
+      "source": "Gallup",
+      "published_on": "2025-04-28",
+      "title": "@gallup.com on Bluesky",
+      "source_url": "https://bsky.app/profile/gallup.com/post/3lnv6tlhtan2t",
+      "material_id": 5503,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    }
+  ],
+  "backup": "data/research-pre-bluesky-rights-polling-20261109.sqlite3",
+  "rule": "Keep only posts whose body directly mentions China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US or TikTok; video posts remain excluded at discovery."
+}

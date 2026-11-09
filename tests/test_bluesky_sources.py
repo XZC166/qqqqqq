@@ -35,3 +35,15 @@ def test_bluesky_adapter_supports_verified_policy_and_media_handles():
     }
     for handle, source in expected.items():
         assert sources[handle] == source
+
+
+def test_bluesky_adapter_supports_verified_rights_and_polling_handles():
+    sources = BlueskyPostAdapter.sources
+    expected = {
+        "hrw.org": "Human Rights Watch",
+        "amnesty.org": "Amnesty International",
+        "justsecurity.org": "Just Security",
+        "gallup.com": "Gallup",
+    }
+    for handle, source in expected.items():
+        assert sources[handle] == source

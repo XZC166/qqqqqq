@@ -1,0 +1,52 @@
+{
+  "source": "Bluesky public AppView API: getAuthorFeed and getProfile",
+  "window": [
+    "2017-01-01",
+    "2025-12-31"
+  ],
+  "accounts": {
+    "hrw.org": {
+      "profile_verified": true,
+      "pages": 25,
+      "posts_scanned": 2474,
+      "video_posts_skipped": 395,
+      "candidates": 22,
+      "oldest_post": "2023-05-09T19:11:55.623Z",
+      "page_limit_reached": false,
+      "error": null
+    },
+    "amnesty.org": {
+      "profile_verified": true,
+      "pages": 4,
+      "posts_scanned": 352,
+      "video_posts_skipped": 41,
+      "candidates": 6,
+      "oldest_post": "2024-12-05T15:08:56.816Z",
+      "page_limit_reached": false,
+      "error": null
+    },
+    "justsecurity.org": {
+      "profile_verified": true,
+      "pages": 31,
+      "posts_scanned": 2998,
+      "video_posts_skipped": 40,
+      "candidates": 117,
+      "oldest_post": "2024-11-11T13:44:02.886Z",
+      "page_limit_reached": false,
+      "error": null
+    },
+    "gallup.com": {
+      "profile_verified": true,
+      "pages": 3,
+      "posts_scanned": 227,
+      "video_posts_skipped": 0,
+      "candidates": 4,
+      "oldest_post": "2024-12-05T17:45:25.978Z",
+      "page_limit_reached": false,
+      "error": null
+    }
+  },
+  "candidate_urls": 149,
+  "candidate_csv": "data\\candidates-bluesky-rights-polling-20261109.csv",
+  "note": "Discovery metadata only. Candidate posts must pass original-page and getPosts body/date/author checks before formal export; video posts are skipped."
+}

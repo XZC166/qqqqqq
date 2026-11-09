@@ -42,6 +42,10 @@ FEED_HANDLES = {
     "economist.com": "The Economist",
     "usip.org": "U.S. Institute of Peace",
     "wilsoncenter.org": "The Wilson Center",
+    "hrw.org": "Human Rights Watch",
+    "amnesty.org": "Amnesty International",
+    "justsecurity.org": "Just Security",
+    "gallup.com": "Gallup",
 }
 TOPIC_PATTERN = re.compile(
     r"\b(?:china|chinese|taiwan(?:ese)?|hong kong|xinjiang|tibet|beijing|peking|"

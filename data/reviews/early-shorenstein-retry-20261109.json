@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-11-09T09:28:27+00:00",
+  "candidate_count": 2,
+  "technical_verified": 0,
+  "formal_new": 0,
+  "pending": 2,
+  "restricted": 0,
+  "reason": "Both public pages returned HTTP 200 but the current response/adapter could not verify a complete single-material body together with an exact source-page publication date; no summary or archive date was substituted."
+}

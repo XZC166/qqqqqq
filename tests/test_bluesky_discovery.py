@@ -84,3 +84,14 @@ def test_bluesky_discovery_includes_verified_policy_and_media_accounts():
     }
     for handle, source in expected.items():
         assert module.FEED_HANDLES[handle] == source
+
+
+def test_bluesky_discovery_includes_verified_rights_and_polling_accounts():
+    expected = {
+        "hrw.org": "Human Rights Watch",
+        "amnesty.org": "Amnesty International",
+        "justsecurity.org": "Just Security",
+        "gallup.com": "Gallup",
+    }
+    for handle, source in expected.items():
+        assert module.FEED_HANDLES[handle] == source

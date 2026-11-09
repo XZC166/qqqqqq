@@ -2855,6 +2855,10 @@ class BlueskyPostAdapter:
         "economist.com": "The Economist",
         "usip.org": "U.S. Institute of Peace",
         "wilsoncenter.org": "The Wilson Center",
+        "hrw.org": "Human Rights Watch",
+        "amnesty.org": "Amnesty International",
+        "justsecurity.org": "Just Security",
+        "gallup.com": "Gallup",
     }
 
     def extract(self, response: Response, candidate: MaterialCandidate, metadata_response: Response | None) -> dict:
