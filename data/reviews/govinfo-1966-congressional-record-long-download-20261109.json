@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-11-09T00:00:00Z",
+  "source_url": "https://www.govinfo.gov/content/pkg/GPO-CRECB-1966-pt10/pdf/GPO-CRECB-1966-pt10-9.pdf",
+  "candidate_id": 3037,
+  "http_status": 200,
+  "download_size_bytes": 55334014,
+  "scrapy_download_timeout_seconds": 600,
+  "formal_new": 0,
+  "candidate_status": "pending",
+  "status_detail": "full text or metadata not verified",
+  "decision": "pending",
+  "reason": "The PDF was downloaded completely, but the record is a Congressional Record volume/page file and the adapter cannot establish a standalone article-level body with independently verified publication date and metadata. It remains pending rather than entering the formal table.",
+  "period": "1949-1972"
+}
