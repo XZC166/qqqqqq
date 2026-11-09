@@ -27,6 +27,11 @@ FEED_HANDLES = {
     "cnn.com": "CNN",
     "foreignaffairs.com": "Foreign Affairs",
     "chathamhouse.org": "Chatham House",
+    "pbs.org": "PBS",
+    "npr.org": "NPR",
+    "foreignpolicy.com": "Foreign Policy",
+    "theguardian.com": "The Guardian",
+    "washingtonpost.com": "The Washington Post",
 }
 TOPIC_PATTERN = re.compile(
     r"\b(?:china|chinese|taiwan(?:ese)?|hong kong|xinjiang|tibet|beijing|peking|"

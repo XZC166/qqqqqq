@@ -2840,6 +2840,11 @@ class BlueskyPostAdapter:
         "cnn.com": "CNN",
         "foreignaffairs.com": "Foreign Affairs",
         "chathamhouse.org": "Chatham House",
+        "pbs.org": "PBS",
+        "npr.org": "NPR",
+        "foreignpolicy.com": "Foreign Policy",
+        "theguardian.com": "The Guardian",
+        "washingtonpost.com": "The Washington Post",
     }
 
     def extract(self, response: Response, candidate: MaterialCandidate, metadata_response: Response | None) -> dict:

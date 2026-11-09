@@ -1,0 +1,2644 @@
+{
+  "generated_at": "2026-11-09T01:03:10.856682+00:00",
+  "input_verified_bsky": 321,
+  "retained": 257,
+  "withdrawn": 64,
+  "retained_records": [
+    {
+      "candidate_id": 6437,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-31",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3mbamdzhpnt24",
+      "material_id": 4828
+    },
+    {
+      "candidate_id": 6439,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3maw53cjpvb24",
+      "material_id": 4829
+    },
+    {
+      "candidate_id": 6438,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3mb7rjqh5g624",
+      "material_id": 4830
+    },
+    {
+      "candidate_id": 6440,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-24",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3map7s4urcy2g",
+      "material_id": 4831
+    },
+    {
+      "candidate_id": 6441,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-20",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3maex7vwyfp2i",
+      "material_id": 4832
+    },
+    {
+      "candidate_id": 6443,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3maduy5fjsw2e",
+      "material_id": 4834
+    },
+    {
+      "candidate_id": 6444,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3mabfb6d45t24",
+      "material_id": 4835
+    },
+    {
+      "candidate_id": 6445,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ma45lwbsbh2b",
+      "material_id": 4836
+    },
+    {
+      "candidate_id": 6446,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ma342rvxlm24",
+      "material_id": 4837
+    },
+    {
+      "candidate_id": 6447,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ma22jwyc4z24",
+      "material_id": 4838
+    },
+    {
+      "candidate_id": 6448,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7xxi5qfej2d",
+      "material_id": 4839
+    },
+    {
+      "candidate_id": 6449,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-12",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7s3qbic2i2p",
+      "material_id": 4840
+    },
+    {
+      "candidate_id": 6451,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7o4d7td6h2e",
+      "material_id": 4842
+    },
+    {
+      "candidate_id": 6452,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7nvmlfw3g2x",
+      "material_id": 4843
+    },
+    {
+      "candidate_id": 6454,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7nbjrcoov2x",
+      "material_id": 4845
+    },
+    {
+      "candidate_id": 6455,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7lzbdlm5l2e",
+      "material_id": 4846
+    },
+    {
+      "candidate_id": 6456,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7avvnzku52y",
+      "material_id": 4847
+    },
+    {
+      "candidate_id": 6457,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m74prb2o2o23",
+      "material_id": 4848
+    },
+    {
+      "candidate_id": 6458,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m74j2moux72a",
+      "material_id": 4849
+    },
+    {
+      "candidate_id": 6459,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6xvjy7pfh2y",
+      "material_id": 4850
+    },
+    {
+      "candidate_id": 6460,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6xbgixmkg2o",
+      "material_id": 4851
+    },
+    {
+      "candidate_id": 6462,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6sum3nbdp2e",
+      "material_id": 4853
+    },
+    {
+      "candidate_id": 6463,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6saieimjg2f",
+      "material_id": 4854
+    },
+    {
+      "candidate_id": 6464,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-28",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6p3wig3rq2e",
+      "material_id": 4855
+    },
+    {
+      "candidate_id": 6465,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-28",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6ov7uk42l23",
+      "material_id": 4856
+    },
+    {
+      "candidate_id": 6466,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6kif5ndl62g",
+      "material_id": 4857
+    },
+    {
+      "candidate_id": 6467,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6im22f5ot2e",
+      "material_id": 4858
+    },
+    {
+      "candidate_id": 6468,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m67sfmh5bv2f",
+      "material_id": 4859
+    },
+    {
+      "candidate_id": 6469,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m66k6blpo62e",
+      "material_id": 4860
+    },
+    {
+      "candidate_id": 6470,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m64afxaiyk2i",
+      "material_id": 4861
+    },
+    {
+      "candidate_id": 6471,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-20",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m62y6w7caz2f",
+      "material_id": 4862
+    },
+    {
+      "candidate_id": 6472,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5tu7huuex2g",
+      "material_id": 4863
+    },
+    {
+      "candidate_id": 6473,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5tnj3zaqj2s",
+      "material_id": 4864
+    },
+    {
+      "candidate_id": 6476,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5lvf5mzcf2e",
+      "material_id": 4867
+    },
+    {
+      "candidate_id": 6477,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5jexdabg62x",
+      "material_id": 4868
+    },
+    {
+      "candidate_id": 6478,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5j67w5ynq23",
+      "material_id": 4869
+    },
+    {
+      "candidate_id": 6479,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5hvxuqbcz2e",
+      "material_id": 4870
+    },
+    {
+      "candidate_id": 6480,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5ey4dudkf2g",
+      "material_id": 4871
+    },
+    {
+      "candidate_id": 6481,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5bmtkizvj2j",
+      "material_id": 4872
+    },
+    {
+      "candidate_id": 6482,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m54zbyqh6b23",
+      "material_id": 4873
+    },
+    {
+      "candidate_id": 6484,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-06",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4wcpq6wyt2a",
+      "material_id": 4875
+    },
+    {
+      "candidate_id": 6485,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4vvckoz642e",
+      "material_id": 4876
+    },
+    {
+      "candidate_id": 6486,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4t64ts5zb2g",
+      "material_id": 4877
+    },
+    {
+      "candidate_id": 6487,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4sjzocckb2a",
+      "material_id": 4878
+    },
+    {
+      "candidate_id": 6488,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4quejlwem2e",
+      "material_id": 4879
+    },
+    {
+      "candidate_id": 6489,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4qinhmggs24",
+      "material_id": 4880
+    },
+    {
+      "candidate_id": 6490,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4qgxd77dg23",
+      "material_id": 4881
+    },
+    {
+      "candidate_id": 6491,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4qabo72qc2o",
+      "material_id": 4882
+    },
+    {
+      "candidate_id": 6492,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4pzkisied2g",
+      "material_id": 4883
+    },
+    {
+      "candidate_id": 6493,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4nwijou2t2f",
+      "material_id": 4884
+    },
+    {
+      "candidate_id": 6494,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4m5igtbo52y",
+      "material_id": 4885
+    },
+    {
+      "candidate_id": 6495,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4lcogjtlk2e",
+      "material_id": 4886
+    },
+    {
+      "candidate_id": 6497,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4gih2vg7k2f",
+      "material_id": 4888
+    },
+    {
+      "candidate_id": 6499,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4em3ue7q52q",
+      "material_id": 4890
+    },
+    {
+      "candidate_id": 6501,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m475ri6nca2k",
+      "material_id": 4892
+    },
+    {
+      "candidate_id": 6502,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m46x2vfqzq2s",
+      "material_id": 4893
+    },
+    {
+      "candidate_id": 6503,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m42ka3d4g52h",
+      "material_id": 4894
+    },
+    {
+      "candidate_id": 6504,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3zbz5qwux2b",
+      "material_id": 4895
+    },
+    {
+      "candidate_id": 6505,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-23",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3uojhfpp72b",
+      "material_id": 4896
+    },
+    {
+      "candidate_id": 6506,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3sepzifzc2t",
+      "material_id": 4897
+    },
+    {
+      "candidate_id": 6507,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-20",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3nxvkjapq2v",
+      "material_id": 4898
+    },
+    {
+      "candidate_id": 6508,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-20",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3ne4nu6qs2m",
+      "material_id": 4899
+    },
+    {
+      "candidate_id": 6509,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3kzzwc7py2t",
+      "material_id": 4900
+    },
+    {
+      "candidate_id": 6510,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3iqb2ceck2r",
+      "material_id": 4901
+    },
+    {
+      "candidate_id": 6511,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3gn7uugeu22",
+      "material_id": 4902
+    },
+    {
+      "candidate_id": 6512,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3flqxohh222",
+      "material_id": 4903
+    },
+    {
+      "candidate_id": 6513,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3dbxh5rby27",
+      "material_id": 4904
+    },
+    {
+      "candidate_id": 6514,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m3cukb6ktu2r",
+      "material_id": 4905
+    },
+    {
+      "candidate_id": 6515,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m373sjcbdm22",
+      "material_id": 4906
+    },
+    {
+      "candidate_id": 6516,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m36v3ype2g2u",
+      "material_id": 4907
+    },
+    {
+      "candidate_id": 6517,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-12",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2yzdywbvl25",
+      "material_id": 4908
+    },
+    {
+      "candidate_id": 6518,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-12",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2ylwqs42622",
+      "material_id": 4909
+    },
+    {
+      "candidate_id": 6519,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2wc6mjptb22",
+      "material_id": 4910
+    },
+    {
+      "candidate_id": 6520,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-09",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2rvem763e2h",
+      "material_id": 4911
+    },
+    {
+      "candidate_id": 6521,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2plm56bi32j",
+      "material_id": 4912
+    },
+    {
+      "candidate_id": 6522,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2oxibiuvy2h",
+      "material_id": 4913
+    },
+    {
+      "candidate_id": 6523,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2mnq6ph5e22",
+      "material_id": 4914
+    },
+    {
+      "candidate_id": 6524,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2fqgmus3s2j",
+      "material_id": 4915
+    },
+    {
+      "candidate_id": 6525,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m2fczog7dx25",
+      "material_id": 4916
+    },
+    {
+      "candidate_id": 6526,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m27upijzmm2h",
+      "material_id": 4917
+    },
+    {
+      "candidate_id": 6528,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m25rnpe43x2j",
+      "material_id": 4919
+    },
+    {
+      "candidate_id": 6530,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lzz644uzco2j",
+      "material_id": 4921
+    },
+    {
+      "candidate_id": 6531,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lzo2qkdf5f2p",
+      "material_id": 4922
+    },
+    {
+      "candidate_id": 6532,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-24",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lzmf32iaxc2k",
+      "material_id": 4923
+    },
+    {
+      "candidate_id": 6533,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-23",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lzit3yzihk22",
+      "material_id": 4924
+    },
+    {
+      "candidate_id": 6534,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-23",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lzhrkdh72w2b",
+      "material_id": 4925
+    },
+    {
+      "candidate_id": 6535,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lzgq2zhv7r2k",
+      "material_id": 4926
+    },
+    {
+      "candidate_id": 6536,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lzemxnbbb52m",
+      "material_id": 4927
+    },
+    {
+      "candidate_id": 6537,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-20",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lzbbotozmw2h",
+      "material_id": 4928
+    },
+    {
+      "candidate_id": 6538,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lz53l5knx427",
+      "material_id": 4929
+    },
+    {
+      "candidate_id": 6540,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lyszpajywu2w",
+      "material_id": 4931
+    },
+    {
+      "candidate_id": 6541,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lyqpwrdicc2h",
+      "material_id": 4932
+    },
+    {
+      "candidate_id": 6542,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lyqcjrjlr32i",
+      "material_id": 4933
+    },
+    {
+      "candidate_id": 6543,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lypogaul442n",
+      "material_id": 4934
+    },
+    {
+      "candidate_id": 6544,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-12",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lyo7ieoyod2n",
+      "material_id": 4935
+    },
+    {
+      "candidate_id": 6545,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lyl2wdu3cl2s",
+      "material_id": 4936
+    },
+    {
+      "candidate_id": 6546,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lyea4o2rzy2i",
+      "material_id": 4937
+    },
+    {
+      "candidate_id": 6548,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ly46se5br42i",
+      "material_id": 4939
+    },
+    {
+      "candidate_id": 6549,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxzhodngh42w",
+      "material_id": 4940
+    },
+    {
+      "candidate_id": 6550,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxzawu4gtm2z",
+      "material_id": 4941
+    },
+    {
+      "candidate_id": 6551,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxz27sawev2b",
+      "material_id": 4942
+    },
+    {
+      "candidate_id": 6552,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxxyounqrw2u",
+      "material_id": 4943
+    },
+    {
+      "candidate_id": 6553,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxtzc2t33q2f",
+      "material_id": 4944
+    },
+    {
+      "candidate_id": 6554,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxsr2fwqyt22",
+      "material_id": 4945
+    },
+    {
+      "candidate_id": 6555,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxs4x334kv22",
+      "material_id": 4946
+    },
+    {
+      "candidate_id": 6556,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-31",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxpt6dzwlw22",
+      "material_id": 4947
+    },
+    {
+      "candidate_id": 6557,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-31",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxnwsxty5e2n",
+      "material_id": 4948
+    },
+    {
+      "candidate_id": 6559,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxmhv5ddsl2n",
+      "material_id": 4950
+    },
+    {
+      "candidate_id": 6561,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-28",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxiii3etxe2d",
+      "material_id": 4952
+    },
+    {
+      "candidate_id": 6562,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxfxz6f5n425",
+      "material_id": 4953
+    },
+    {
+      "candidate_id": 6564,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxax3e5hav23",
+      "material_id": 4955
+    },
+    {
+      "candidate_id": 6565,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxaqewal4l2m",
+      "material_id": 4956
+    },
+    {
+      "candidate_id": 6566,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxa4bbjwlc23",
+      "material_id": 4957
+    },
+    {
+      "candidate_id": 6567,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwzmfas7d72a",
+      "material_id": 4958
+    },
+    {
+      "candidate_id": 6568,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwz6xzgn3z2p",
+      "material_id": 4959
+    },
+    {
+      "candidate_id": 6570,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwykvsy5ts24",
+      "material_id": 4961
+    },
+    {
+      "candidate_id": 6572,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-20",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwu625h6ue2g",
+      "material_id": 4963
+    },
+    {
+      "candidate_id": 6573,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-20",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwtqnbv6p326",
+      "material_id": 4964
+    },
+    {
+      "candidate_id": 6574,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwrgut7ghi2x",
+      "material_id": 4965
+    },
+    {
+      "candidate_id": 6575,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwqssn6yt32n",
+      "material_id": 4966
+    },
+    {
+      "candidate_id": 6576,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwoptqlg4l26",
+      "material_id": 4967
+    },
+    {
+      "candidate_id": 6580,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwf3amf4r52o",
+      "material_id": 4971
+    },
+    {
+      "candidate_id": 6581,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lweagszmzi2a",
+      "material_id": 4972
+    },
+    {
+      "candidate_id": 6583,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lw5xay53t22p",
+      "material_id": 4974
+    },
+    {
+      "candidate_id": 6587,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lw26kokuot2u",
+      "material_id": 4978
+    },
+    {
+      "candidate_id": 6590,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvt2ljgo662o",
+      "material_id": 4981
+    },
+    {
+      "candidate_id": 6591,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvstwdoeo62o",
+      "material_id": 4982
+    },
+    {
+      "candidate_id": 6592,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvouht2zyf2g",
+      "material_id": 4983
+    },
+    {
+      "candidate_id": 6593,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvoh2ls3zt2g",
+      "material_id": 4984
+    },
+    {
+      "candidate_id": 6597,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvdr3esfi42o",
+      "material_id": 4988
+    },
+    {
+      "candidate_id": 6598,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-31",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvbnz7z7z22j",
+      "material_id": 4989
+    },
+    {
+      "candidate_id": 6599,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-31",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvbfrbtebc24",
+      "material_id": 4990
+    },
+    {
+      "candidate_id": 6603,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lv75kjbdqt2r",
+      "material_id": 4994
+    },
+    {
+      "candidate_id": 6604,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lv5hvo2uxf2a",
+      "material_id": 4995
+    },
+    {
+      "candidate_id": 6605,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lv4trx2xqk2a",
+      "material_id": 4996
+    },
+    {
+      "candidate_id": 6606,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lv2xgpsmkp2c",
+      "material_id": 4997
+    },
+    {
+      "candidate_id": 6607,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-28",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3luzvw2s2kr2n",
+      "material_id": 4998
+    },
+    {
+      "candidate_id": 6608,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3luxsu3enmv2l",
+      "material_id": 4999
+    },
+    {
+      "candidate_id": 6610,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lusejemntn2e",
+      "material_id": 5001
+    },
+    {
+      "candidate_id": 6611,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lurx44s5he2e",
+      "material_id": 5002
+    },
+    {
+      "candidate_id": 6612,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-24",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lupnegikrp2c",
+      "material_id": 5003
+    },
+    {
+      "candidate_id": 6613,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-23",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lundlo7goj2q",
+      "material_id": 5004
+    },
+    {
+      "candidate_id": 6614,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-23",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lulun7q2352q",
+      "material_id": 5005
+    },
+    {
+      "candidate_id": 6615,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lulha27ubb24",
+      "material_id": 5006
+    },
+    {
+      "candidate_id": 6616,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3luijgkcffk2c",
+      "material_id": 5007
+    },
+    {
+      "candidate_id": 6617,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ludbq4kofv2q",
+      "material_id": 5008
+    },
+    {
+      "candidate_id": 6618,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lub6ofeps62c",
+      "material_id": 5009
+    },
+    {
+      "candidate_id": 6619,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3luaxy65rhk2n",
+      "material_id": 5010
+    },
+    {
+      "candidate_id": 6620,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lu6uw2gxar2n",
+      "material_id": 5011
+    },
+    {
+      "candidate_id": 6621,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lu4rtygh2n2d",
+      "material_id": 5012
+    },
+    {
+      "candidate_id": 6622,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lu4egtrabn2g",
+      "material_id": 5013
+    },
+    {
+      "candidate_id": 6623,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lu22oq57i62p",
+      "material_id": 5014
+    },
+    {
+      "candidate_id": 6624,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltzgktecdu2p",
+      "material_id": 5015
+    },
+    {
+      "candidate_id": 6625,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltu6wpyabl24",
+      "material_id": 5016
+    },
+    {
+      "candidate_id": 6627,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltplfxzq3m2j",
+      "material_id": 5018
+    },
+    {
+      "candidate_id": 6628,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltp5zgttnp2b",
+      "material_id": 5019
+    },
+    {
+      "candidate_id": 6629,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltoqlwyfuk2d",
+      "material_id": 5020
+    },
+    {
+      "candidate_id": 6630,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltn2xh33fs2e",
+      "material_id": 5021
+    },
+    {
+      "candidate_id": 6631,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltmnlfqzaf2p",
+      "material_id": 5022
+    },
+    {
+      "candidate_id": 6632,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-09",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltjpp5xa5r2y",
+      "material_id": 5023
+    },
+    {
+      "candidate_id": 6633,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lth77fgeey2p",
+      "material_id": 5024
+    },
+    {
+      "candidate_id": 6634,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltfwxgeleu2p",
+      "material_id": 5025
+    },
+    {
+      "candidate_id": 6635,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lt3hotwpfh2x",
+      "material_id": 5026
+    },
+    {
+      "candidate_id": 6636,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lt32cjvrbx27",
+      "material_id": 5027
+    },
+    {
+      "candidate_id": 6637,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lt2tlynvj42p",
+      "material_id": 5028
+    },
+    {
+      "candidate_id": 6638,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lsyx7mmxie25",
+      "material_id": 5029
+    },
+    {
+      "candidate_id": 6639,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lsyd4vxj7x2e",
+      "material_id": 5030
+    },
+    {
+      "candidate_id": 6640,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lsy4fn5ckx23",
+      "material_id": 5031
+    },
+    {
+      "candidate_id": 6641,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lsx2uarxbu2j",
+      "material_id": 5032
+    },
+    {
+      "candidate_id": 6642,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lsqyfub2lo25",
+      "material_id": 5033
+    },
+    {
+      "candidate_id": 6643,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-28",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lsmyyoavdx2y",
+      "material_id": 5034
+    },
+    {
+      "candidate_id": 6644,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lskijrinag2x",
+      "material_id": 5035
+    },
+    {
+      "candidate_id": 6645,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lsjadq3hsf2y",
+      "material_id": 5036
+    },
+    {
+      "candidate_id": 6646,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-24",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lsemsftijt2s",
+      "material_id": 5037
+    },
+    {
+      "candidate_id": 6647,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ls3fpzj7sa24",
+      "material_id": 5038
+    },
+    {
+      "candidate_id": 6648,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lryol3ethl2s",
+      "material_id": 5039
+    },
+    {
+      "candidate_id": 6649,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lrvqqq2nzy2d",
+      "material_id": 5040
+    },
+    {
+      "candidate_id": 6650,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lrsm7mez542o",
+      "material_id": 5041
+    },
+    {
+      "candidate_id": 6651,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lrmcwqfxlc2l",
+      "material_id": 5042
+    },
+    {
+      "candidate_id": 6653,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lridk7qvry2r",
+      "material_id": 5044
+    },
+    {
+      "candidate_id": 6654,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lrbtnw75xu2j",
+      "material_id": 5045
+    },
+    {
+      "candidate_id": 6655,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lrbmxlxelq2p",
+      "material_id": 5046
+    },
+    {
+      "candidate_id": 6656,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lrayveehsb27",
+      "material_id": 5047
+    },
+    {
+      "candidate_id": 6657,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-09",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lr74ilbxqi2o",
+      "material_id": 5048
+    },
+    {
+      "candidate_id": 6658,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lr2ixjnczg2s",
+      "material_id": 5049
+    },
+    {
+      "candidate_id": 6659,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqzo5mjttd2w",
+      "material_id": 5050
+    },
+    {
+      "candidate_id": 6661,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqy77drgid23",
+      "material_id": 5052
+    },
+    {
+      "candidate_id": 6664,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-06",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqvoqd6wdf2a",
+      "material_id": 5054
+    },
+    {
+      "candidate_id": 6665,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqv2mlzxdm24",
+      "material_id": 5055
+    },
+    {
+      "candidate_id": 6666,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqt6bcox7t2a",
+      "material_id": 5056
+    },
+    {
+      "candidate_id": 6667,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqsdi3raq227",
+      "material_id": 5057
+    },
+    {
+      "candidate_id": 6669,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqpfnfwuib22",
+      "material_id": 5059
+    },
+    {
+      "candidate_id": 6670,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqp6vkojxs2a",
+      "material_id": 5060
+    },
+    {
+      "candidate_id": 6671,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqnpwm357r2p",
+      "material_id": 5061
+    },
+    {
+      "candidate_id": 6672,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqfr52enqf2d",
+      "material_id": 5062
+    },
+    {
+      "candidate_id": 6675,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-28",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqaq6tv6lo2a",
+      "material_id": 5065
+    },
+    {
+      "candidate_id": 6676,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lq6ttvxyye2s",
+      "material_id": 5066
+    },
+    {
+      "candidate_id": 6677,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lq6ggjxd752n",
+      "material_id": 5067
+    },
+    {
+      "candidate_id": 6679,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lq3vymdgjv27",
+      "material_id": 5069
+    },
+    {
+      "candidate_id": 6680,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lq3ilf64nj2l",
+      "material_id": 5070
+    },
+    {
+      "candidate_id": 6681,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpzfiiw6ui2s",
+      "material_id": 5071
+    },
+    {
+      "candidate_id": 6682,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpykohoyf423",
+      "material_id": 5072
+    },
+    {
+      "candidate_id": 6683,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-24",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpwhmfkxuu2n",
+      "material_id": 5073
+    },
+    {
+      "candidate_id": 6684,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-24",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpuyoispyr2q",
+      "material_id": 5074
+    },
+    {
+      "candidate_id": 6685,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-23",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpu5urv5hm2r",
+      "material_id": 5075
+    },
+    {
+      "candidate_id": 6686,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lprgpjpxo723",
+      "material_id": 5076
+    },
+    {
+      "candidate_id": 6688,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lppxqmavcw2y",
+      "material_id": 5078
+    },
+    {
+      "candidate_id": 6689,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lppdmuc77z2o",
+      "material_id": 5079
+    },
+    {
+      "candidate_id": 6690,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpnhbmbie42s",
+      "material_id": 5080
+    },
+    {
+      "candidate_id": 6691,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpjomasbvp23",
+      "material_id": 5081
+    },
+    {
+      "candidate_id": 6692,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lphs7zgpig2e",
+      "material_id": 5082
+    },
+    {
+      "candidate_id": 6694,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpcrcpbcon24",
+      "material_id": 5084
+    },
+    {
+      "candidate_id": 6695,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lp65rhx3sc2a",
+      "material_id": 5085
+    },
+    {
+      "candidate_id": 6696,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lp5qeieucf2d",
+      "material_id": 5086
+    },
+    {
+      "candidate_id": 6697,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-12",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3loyph5qqcc2w",
+      "material_id": 5087
+    },
+    {
+      "candidate_id": 6698,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3low6xrurau2u",
+      "material_id": 5088
+    },
+    {
+      "candidate_id": 6699,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lou3vqlsxn2u",
+      "material_id": 5089
+    },
+    {
+      "candidate_id": 6700,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lostoiuf7x22",
+      "material_id": 5090
+    },
+    {
+      "candidate_id": 6701,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lors5dgxys23",
+      "material_id": 5091
+    },
+    {
+      "candidate_id": 6702,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-09",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3loqqn7oecw2d",
+      "material_id": 5092
+    },
+    {
+      "candidate_id": 6703,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lomr7om55b2h",
+      "material_id": 5093
+    },
+    {
+      "candidate_id": 6705,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3logvhsvtw423",
+      "material_id": 5095
+    },
+    {
+      "candidate_id": 6706,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3loc3amnwfg22",
+      "material_id": 5096
+    },
+    {
+      "candidate_id": 6707,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lo75esckgu2a",
+      "material_id": 5097
+    },
+    {
+      "candidate_id": 6708,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lo47ijjv3w22",
+      "material_id": 5098
+    },
+    {
+      "candidate_id": 6709,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lo2qkjiv7j2f",
+      "material_id": 5099
+    },
+    {
+      "candidate_id": 6711,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lo2d5q627i2u",
+      "material_id": 5101
+    },
+    {
+      "candidate_id": 6712,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lnzvqte2222d",
+      "material_id": 5102
+    },
+    {
+      "candidate_id": 6714,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-28",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lnuo47k33e27",
+      "material_id": 5104
+    },
+    {
+      "candidate_id": 6715,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lnt75estfn2c",
+      "material_id": 5105
+    },
+    {
+      "candidate_id": 6718,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-23",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lnij6dtfug2d",
+      "material_id": 5108
+    },
+    {
+      "candidate_id": 6720,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lngg4tem6c2k",
+      "material_id": 5110
+    },
+    {
+      "candidate_id": 6721,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lne4dx3efh27",
+      "material_id": 5111
+    },
+    {
+      "candidate_id": 6722,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lndgna6fd22u",
+      "material_id": 5112
+    },
+    {
+      "candidate_id": 6725,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmz7oggpwi2d",
+      "material_id": 5115
+    },
+    {
+      "candidate_id": 6726,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmx2yysvck2z",
+      "material_id": 5116
+    },
+    {
+      "candidate_id": 6727,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmwvvzekod2e",
+      "material_id": 5117
+    },
+    {
+      "candidate_id": 6728,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmvaawkiug2f",
+      "material_id": 5118
+    },
+    {
+      "candidate_id": 6729,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmtxztss3z2k",
+      "material_id": 5119
+    },
+    {
+      "candidate_id": 6731,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmscf2jpcy2u",
+      "material_id": 5121
+    },
+    {
+      "candidate_id": 6732,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmq7ctrvjj2c",
+      "material_id": 5122
+    },
+    {
+      "candidate_id": 6736,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lml6f2yy2l2z",
+      "material_id": 5126
+    },
+    {
+      "candidate_id": 6737,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmkqxdjdtj2l",
+      "material_id": 5127
+    },
+    {
+      "candidate_id": 6738,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lminvmq55k2l",
+      "material_id": 5128
+    },
+    {
+      "candidate_id": 6739,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmhzryzlkf2s",
+      "material_id": 5129
+    },
+    {
+      "candidate_id": 6740,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmht3t3ful2s",
+      "material_id": 5130
+    },
+    {
+      "candidate_id": 6741,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmhmet4k2y2h",
+      "material_id": 5131
+    },
+    {
+      "candidate_id": 6744,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-09",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmfpzpu56m26",
+      "material_id": 5133
+    },
+    {
+      "candidate_id": 6745,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-09",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmfjd7d3fk2h",
+      "material_id": 5134
+    },
+    {
+      "candidate_id": 6749,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmavsd36yu2h",
+      "material_id": 5138
+    },
+    {
+      "candidate_id": 6750,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmaifcry6p2z",
+      "material_id": 5139
+    },
+    {
+      "candidate_id": 6752,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lma2ym4ze626",
+      "material_id": 5141
+    },
+    {
+      "candidate_id": 6742,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmhfoomrbz2f",
+      "material_id": 5142
+    },
+    {
+      "candidate_id": 6662,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-06",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqx5oscieb2l",
+      "material_id": 5144
+    },
+    {
+      "candidate_id": 6754,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-06",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lm5r7mv43o2m",
+      "material_id": 5145
+    },
+    {
+      "candidate_id": 6755,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-06",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lm5dstfbyk26",
+      "material_id": 5146
+    },
+    {
+      "candidate_id": 6757,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lm2tdo3zpe2w",
+      "material_id": 5148
+    }
+  ],
+  "withdrawn_records": [
+    {
+      "candidate_id": 6442,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3mae4frupcd2e",
+      "material_id": 4833,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6450,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7oczqffi32n",
+      "material_id": 4841,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6453,
+      "source": "Foreign Policy",
+      "published_on": "2025-12-10",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m7ni7fu6vz24",
+      "material_id": 4844,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6461,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m6tw52ox652e",
+      "material_id": 4852,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6474,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5ta44qvbc23",
+      "material_id": 4865,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6475,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m5n5mas3zb23",
+      "material_id": 4866,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6483,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-06",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4wjg5bjnw2s",
+      "material_id": 4874,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6496,
+      "source": "Foreign Policy",
+      "published_on": "2025-11-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4jtq5umxt2f",
+      "material_id": 4887,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6498,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4gbqhqedg2y",
+      "material_id": 4889,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6500,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m4dduscj6b2d",
+      "material_id": 4891,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6527,
+      "source": "Foreign Policy",
+      "published_on": "2025-10-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m27hbnvy5s25",
+      "material_id": 4918,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6529,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3m23hus4jlg22",
+      "material_id": 4920,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6539,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lyy2ne7xjq27",
+      "material_id": 4930,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6547,
+      "source": "Foreign Policy",
+      "published_on": "2025-09-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lye3wl7a2a2l",
+      "material_id": 4938,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6558,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxmom3eq3x2r",
+      "material_id": 4949,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6560,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxk65guxx72n",
+      "material_id": 4951,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6563,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-27",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lxfrcl4l2o2r",
+      "material_id": 4954,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6569,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwyrlb33u52y",
+      "material_id": 4960,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6571,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-21",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwvtoxsuwh2c",
+      "material_id": 4962,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6577,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwlrtfrsnp2n",
+      "material_id": 4968,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6578,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-16",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwjorh3i532b",
+      "material_id": 4969,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6579,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-15",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwhez5zm7p2s",
+      "material_id": 4970,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6582,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lwc5ek6eew2z",
+      "material_id": 4973,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6584,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lw54hbuefe2u",
+      "material_id": 4975,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6585,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lw4xhjqdjs2l",
+      "material_id": 4976,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6586,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lw4ozogxtj2u",
+      "material_id": 4977,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6588,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvvrqlcvz62t",
+      "material_id": 4979,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6589,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvu43w6j7r2o",
+      "material_id": 4980,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6594,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-04",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvlwlpnvdt2r",
+      "material_id": 4985,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6595,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-02",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lvezcfxyaw2r",
+      "material_id": 4986,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6596,
+      "source": "Foreign Policy",
+      "published_on": "2025-08-01",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lveslphfws2r",
+      "material_id": 4987,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6600,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-31",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lv7yeiqckf2o",
+      "material_id": 4991,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6601,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lv7ro4qyzd2n",
+      "material_id": 4992,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6602,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lv7eawt64l2n",
+      "material_id": 4993,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6609,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-25",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lusl7usvnp2y",
+      "material_id": 5000,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6626,
+      "source": "Foreign Policy",
+      "published_on": "2025-07-11",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ltpysu5wty2d",
+      "material_id": 5017,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6652,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lrj6dz4jz62j",
+      "material_id": 5043,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6660,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqzaqerbrb2p",
+      "material_id": 5051,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6663,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-06",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqwqbxtwdk2l",
+      "material_id": 5053,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6668,
+      "source": "Foreign Policy",
+      "published_on": "2025-06-03",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqqh3xwvzy2a",
+      "material_id": 5058,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6673,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqf4zckl3j2s",
+      "material_id": 5063,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6674,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-29",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lqdap3ozlq27",
+      "material_id": 5064,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6678,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lq4dfdirmz27",
+      "material_id": 5068,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6687,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-22",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lprf2e7y4s2b",
+      "material_id": 5077,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6693,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-17",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lpdffvhbwa2a",
+      "material_id": 5083,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6704,
+      "source": "Foreign Policy",
+      "published_on": "2025-05-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lolwgb7ost2h",
+      "material_id": 5094,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6710,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-30",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lo2jtpgfkh2w",
+      "material_id": 5100,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6713,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-28",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lnvwcrcgui2g",
+      "material_id": 5103,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6716,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lnqbbaaalo2u",
+      "material_id": 5106,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6717,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-26",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lnq2kxph5q2c",
+      "material_id": 5107,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6719,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-23",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lni3r6ixcl27",
+      "material_id": 5109,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6723,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-19",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ln6nywwhjg2z",
+      "material_id": 5113,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6724,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-18",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3ln4kx2sbzl2k",
+      "material_id": 5114,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6730,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-14",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmsj3cq6ll2e",
+      "material_id": 5120,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6733,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-13",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmprvurzry2s",
+      "material_id": 5123,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6734,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-12",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmmtzxhn2a2c",
+      "material_id": 5124,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6735,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-12",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmmgmnz4yy2s",
+      "material_id": 5125,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6743,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-09",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmfwq4vu7o2p",
+      "material_id": 5132,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6746,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-09",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmfcmpu47b2k",
+      "material_id": 5135,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6747,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmdgbdsic62r",
+      "material_id": 5136,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6748,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-08",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lmcsabivkc22",
+      "material_id": 5137,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6751,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-07",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lma7bideps2w",
+      "material_id": 5140,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6753,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-06",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lm66mqvkhi2h",
+      "material_id": 5143,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6756,
+      "source": "Foreign Policy",
+      "published_on": "2025-04-05",
+      "title": "@foreignpolicy.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignpolicy.com/post/3lm3o5qzbna2z",
+      "material_id": 5147,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    }
+  ],
+  "backup": "data/research-pre-bluesky-additional-media-20261109.sqlite3",
+  "rule": "Keep only posts whose body directly mentions China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US or TikTok; video posts remain excluded at discovery."
+}

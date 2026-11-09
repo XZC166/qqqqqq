@@ -59,3 +59,11 @@ def test_bluesky_discovery_includes_verified_media_and_policy_accounts():
     assert module.FEED_HANDLES["cnn.com"] == "CNN"
     assert module.FEED_HANDLES["foreignaffairs.com"] == "Foreign Affairs"
     assert module.FEED_HANDLES["chathamhouse.org"] == "Chatham House"
+
+
+def test_bluesky_discovery_includes_additional_verified_media_accounts():
+    assert module.FEED_HANDLES["pbs.org"] == "PBS"
+    assert module.FEED_HANDLES["npr.org"] == "NPR"
+    assert module.FEED_HANDLES["foreignpolicy.com"] == "Foreign Policy"
+    assert module.FEED_HANDLES["theguardian.com"] == "The Guardian"
+    assert module.FEED_HANDLES["washingtonpost.com"] == "The Washington Post"

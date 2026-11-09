@@ -1,0 +1,62 @@
+{
+  "source": "Bluesky public AppView API: getAuthorFeed and getProfile",
+  "window": [
+    "2017-01-01",
+    "2025-12-31"
+  ],
+  "accounts": {
+    "pbs.org": {
+      "profile_verified": true,
+      "pages": 1,
+      "posts_scanned": 3,
+      "video_posts_skipped": 2,
+      "candidates": 0,
+      "oldest_post": "2025-06-04T14:57:45.769Z",
+      "page_limit_reached": false,
+      "error": null
+    },
+    "npr.org": {
+      "profile_verified": true,
+      "pages": 40,
+      "posts_scanned": 4000,
+      "video_posts_skipped": 10,
+      "candidates": 0,
+      "oldest_post": "2026-05-21T21:18:22.529729Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "foreignpolicy.com": {
+      "profile_verified": true,
+      "pages": 40,
+      "posts_scanned": 4000,
+      "video_posts_skipped": 1,
+      "candidates": 321,
+      "oldest_post": "2025-04-05T11:30:07.369Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "theguardian.com": {
+      "profile_verified": true,
+      "pages": 40,
+      "posts_scanned": 4000,
+      "video_posts_skipped": 2,
+      "candidates": 0,
+      "oldest_post": "2026-09-23T21:13:09Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "washingtonpost.com": {
+      "profile_verified": true,
+      "pages": 40,
+      "posts_scanned": 4000,
+      "video_posts_skipped": 139,
+      "candidates": 0,
+      "oldest_post": "2026-08-20T19:30:08.10605098Z",
+      "page_limit_reached": true,
+      "error": null
+    }
+  },
+  "candidate_urls": 321,
+  "candidate_csv": "data\\candidates-bluesky-additional-media-20261109.csv",
+  "note": "Discovery metadata only. Candidate posts must pass original-page and getPosts body/date/author checks before formal export; video posts are skipped."
+}
