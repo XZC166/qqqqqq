@@ -52,3 +52,10 @@ def test_bluesky_discovery_rejects_reposts_from_an_official_timeline():
     }
 
     assert module.build_candidate("nytimes.com", post) is None
+
+
+def test_bluesky_discovery_includes_verified_media_and_policy_accounts():
+    assert module.FEED_HANDLES["reuters.com"] == "Reuters"
+    assert module.FEED_HANDLES["cnn.com"] == "CNN"
+    assert module.FEED_HANDLES["foreignaffairs.com"] == "Foreign Affairs"
+    assert module.FEED_HANDLES["chathamhouse.org"] == "Chatham House"

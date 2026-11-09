@@ -1,0 +1,4111 @@
+{
+  "generated_at": "2026-11-09T00:18:06.931848+00:00",
+  "input_verified_bsky": 503,
+  "retained": 428,
+  "withdrawn": 75,
+  "retained_records": [
+    {
+      "candidate_id": 5635,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-31",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3mbcokwgnrs2m",
+      "material_id": 4325
+    },
+    {
+      "candidate_id": 5637,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3mb5d4v4rmh2m",
+      "material_id": 4326
+    },
+    {
+      "candidate_id": 5638,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3mavwhrkj362o",
+      "material_id": 4328
+    },
+    {
+      "candidate_id": 5639,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3malu2hvvkk2q",
+      "material_id": 4329
+    },
+    {
+      "candidate_id": 5640,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3maecwpzy6f22",
+      "material_id": 4330
+    },
+    {
+      "candidate_id": 5641,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3mae52hmr472u",
+      "material_id": 4331
+    },
+    {
+      "candidate_id": 5642,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3mac26mj2n42c",
+      "material_id": 4332
+    },
+    {
+      "candidate_id": 5643,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ma4x5axcw22c",
+      "material_id": 4333
+    },
+    {
+      "candidate_id": 5644,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ma4rqnerfs27",
+      "material_id": 4334
+    },
+    {
+      "candidate_id": 5645,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ma4nmuzvsi2x",
+      "material_id": 4335
+    },
+    {
+      "candidate_id": 5646,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ma2d7h6uxy2x",
+      "material_id": 4336
+    },
+    {
+      "candidate_id": 5647,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m7suei5dad2u",
+      "material_id": 4337
+    },
+    {
+      "candidate_id": 5648,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m7sryzravl2c",
+      "material_id": 4338
+    },
+    {
+      "candidate_id": 5650,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m7li7rxwkj2q",
+      "material_id": 4340
+    },
+    {
+      "candidate_id": 5651,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-08",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m7iloo66tv2a",
+      "material_id": 4341
+    },
+    {
+      "candidate_id": 5652,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m7ded4f4kb2q",
+      "material_id": 4342
+    },
+    {
+      "candidate_id": 5653,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m74eygumnr2n",
+      "material_id": 4343
+    },
+    {
+      "candidate_id": 5655,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m6p6sk2afe26",
+      "material_id": 4345
+    },
+    {
+      "candidate_id": 5656,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m6mu227g4j2s",
+      "material_id": 4346
+    },
+    {
+      "candidate_id": 5657,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m6kwfotvy42a",
+      "material_id": 4347
+    },
+    {
+      "candidate_id": 5658,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m6husfs2352s",
+      "material_id": 4348
+    },
+    {
+      "candidate_id": 5659,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m6fjhfp36p2s",
+      "material_id": 4349
+    },
+    {
+      "candidate_id": 5660,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m662y2szsn2n",
+      "material_id": 4350
+    },
+    {
+      "candidate_id": 5661,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m63o36elqp2x",
+      "material_id": 4351
+    },
+    {
+      "candidate_id": 5663,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5yqr5346v2k",
+      "material_id": 4353
+    },
+    {
+      "candidate_id": 5664,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5mt5psymh2w",
+      "material_id": 4354
+    },
+    {
+      "candidate_id": 5665,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5moc5pv332s",
+      "material_id": 4355
+    },
+    {
+      "candidate_id": 5666,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5mfdjjm4o2w",
+      "material_id": 4356
+    },
+    {
+      "candidate_id": 5667,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5k5rknddw2n",
+      "material_id": 4357
+    },
+    {
+      "candidate_id": 5669,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5gyu6y4ip2q",
+      "material_id": 4359
+    },
+    {
+      "candidate_id": 5670,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5fb5brwrw2k",
+      "material_id": 4360
+    },
+    {
+      "candidate_id": 5671,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5ep3qef2e2k",
+      "material_id": 4361
+    },
+    {
+      "candidate_id": 5672,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5coma5xhw2b",
+      "material_id": 4362
+    },
+    {
+      "candidate_id": 5673,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5bxasokam2b",
+      "material_id": 4363
+    },
+    {
+      "candidate_id": 5674,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5a5n6mzeg2k",
+      "material_id": 4364
+    },
+    {
+      "candidate_id": 5675,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4yheuuseo2n",
+      "material_id": 4365
+    },
+    {
+      "candidate_id": 5676,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4y35zsfop2u",
+      "material_id": 4366
+    },
+    {
+      "candidate_id": 5677,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4w5iwiq7y2s",
+      "material_id": 4367
+    },
+    {
+      "candidate_id": 5678,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4syi2q72m2n",
+      "material_id": 4368
+    },
+    {
+      "candidate_id": 5680,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4qyooblm22a",
+      "material_id": 4370
+    },
+    {
+      "candidate_id": 5681,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4g5rknpbd2u",
+      "material_id": 4371
+    },
+    {
+      "candidate_id": 5682,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4eac7sr452k",
+      "material_id": 4372
+    },
+    {
+      "candidate_id": 5683,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4bqs3yoho2p",
+      "material_id": 4373
+    },
+    {
+      "candidate_id": 5684,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m46xcxdhab2u",
+      "material_id": 4374
+    },
+    {
+      "candidate_id": 5685,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m44mgrdiug2f",
+      "material_id": 4375
+    },
+    {
+      "candidate_id": 5686,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3zgqdzxis2o",
+      "material_id": 4376
+    },
+    {
+      "candidate_id": 5687,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3y4m3hyve22",
+      "material_id": 4377
+    },
+    {
+      "candidate_id": 5688,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3sul5vcic23",
+      "material_id": 4378
+    },
+    {
+      "candidate_id": 5689,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3sob4qzsz2f",
+      "material_id": 4379
+    },
+    {
+      "candidate_id": 5690,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3sddomahw22",
+      "material_id": 4380
+    },
+    {
+      "candidate_id": 5691,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3qhaf667p2o",
+      "material_id": 4381
+    },
+    {
+      "candidate_id": 5692,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3q6ge26a222",
+      "material_id": 4382
+    },
+    {
+      "candidate_id": 5693,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3q4oyzrms22",
+      "material_id": 4383
+    },
+    {
+      "candidate_id": 5696,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3pp7pvne723",
+      "material_id": 4386
+    },
+    {
+      "candidate_id": 5698,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3inhgjuhf23",
+      "material_id": 4388
+    },
+    {
+      "candidate_id": 5700,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3ddb4ql3o2o",
+      "material_id": 4390
+    },
+    {
+      "candidate_id": 5701,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3aqgssdgi2c",
+      "material_id": 4391
+    },
+    {
+      "candidate_id": 5702,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3475jr2p32u",
+      "material_id": 4392
+    },
+    {
+      "candidate_id": 5703,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m2rv7gjzh22c",
+      "material_id": 4393
+    },
+    {
+      "candidate_id": 5704,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m2moazjghp2q",
+      "material_id": 4394
+    },
+    {
+      "candidate_id": 5705,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m2kd4i2i6y2f",
+      "material_id": 4395
+    },
+    {
+      "candidate_id": 5706,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m2fhnqznf62u",
+      "material_id": 4396
+    },
+    {
+      "candidate_id": 5707,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m2ahfhpepb2o",
+      "material_id": 4397
+    },
+    {
+      "candidate_id": 5708,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-01",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m26a7ccnxr2o",
+      "material_id": 4398
+    },
+    {
+      "candidate_id": 5709,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lzyr57d7yf2o",
+      "material_id": 4399
+    },
+    {
+      "candidate_id": 5711,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lzp2mdpqut2t",
+      "material_id": 4401
+    },
+    {
+      "candidate_id": 5712,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lzodwnabci2i",
+      "material_id": 4402
+    },
+    {
+      "candidate_id": 5713,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lzme73tbvg2x",
+      "material_id": 4403
+    },
+    {
+      "candidate_id": 5714,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lzgx7g3fam2c",
+      "material_id": 4404
+    },
+    {
+      "candidate_id": 5715,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lz7nffltln2u",
+      "material_id": 4405
+    },
+    {
+      "candidate_id": 5716,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lz4sdgt6ml2x",
+      "material_id": 4406
+    },
+    {
+      "candidate_id": 5717,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-17",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lz2nnp7bdc2c",
+      "material_id": 4407
+    },
+    {
+      "candidate_id": 5718,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lyya3yy2uj2f",
+      "material_id": 4408
+    },
+    {
+      "candidate_id": 5719,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lyvek5w4ep2x",
+      "material_id": 4409
+    },
+    {
+      "candidate_id": 5720,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lynxxynejk2t",
+      "material_id": 4410
+    },
+    {
+      "candidate_id": 5722,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lygnvxpweq2d",
+      "material_id": 4412
+    },
+    {
+      "candidate_id": 5723,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ly653tez5l2t",
+      "material_id": 4413
+    },
+    {
+      "candidate_id": 5724,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ly4mnjevat26",
+      "material_id": 4414
+    },
+    {
+      "candidate_id": 5726,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxxgdzi6bg2p",
+      "material_id": 4416
+    },
+    {
+      "candidate_id": 5727,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxx4ld7b742r",
+      "material_id": 4417
+    },
+    {
+      "candidate_id": 5728,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxuzjd435i2p",
+      "material_id": 4418
+    },
+    {
+      "candidate_id": 5729,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxuyi5idj62j",
+      "material_id": 4419
+    },
+    {
+      "candidate_id": 5730,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-01",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxs24g6szo2p",
+      "material_id": 4420
+    },
+    {
+      "candidate_id": 5731,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxndgfaohi2n",
+      "material_id": 4421
+    },
+    {
+      "candidate_id": 5732,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxku3bt5uj2j",
+      "material_id": 4422
+    },
+    {
+      "candidate_id": 5733,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxfiufrqc42p",
+      "material_id": 4423
+    },
+    {
+      "candidate_id": 5734,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxd6uxa7vm2o",
+      "material_id": 4424
+    },
+    {
+      "candidate_id": 5735,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxcymn5bra2a",
+      "material_id": 4425
+    },
+    {
+      "candidate_id": 5736,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lx6clfxomo22",
+      "material_id": 4426
+    },
+    {
+      "candidate_id": 5737,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwyqhzzlsc2x",
+      "material_id": 4427
+    },
+    {
+      "candidate_id": 5738,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwwcd4h7zv2u",
+      "material_id": 4428
+    },
+    {
+      "candidate_id": 5739,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwu5uoiuco26",
+      "material_id": 4429
+    },
+    {
+      "candidate_id": 5740,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwrswnzl3k2e",
+      "material_id": 4430
+    },
+    {
+      "candidate_id": 5741,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwrkdotiwk2n",
+      "material_id": 4431
+    },
+    {
+      "candidate_id": 5742,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwrivek7p22n",
+      "material_id": 4432
+    },
+    {
+      "candidate_id": 5743,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwr5xsczec2m",
+      "material_id": 4433
+    },
+    {
+      "candidate_id": 5744,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwpbmkzrfy2a",
+      "material_id": 4434
+    },
+    {
+      "candidate_id": 5745,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwhlyeri332t",
+      "material_id": 4435
+    },
+    {
+      "candidate_id": 5746,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lwhekgqip72e",
+      "material_id": 4436
+    },
+    {
+      "candidate_id": 5747,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lw7njklluk23",
+      "material_id": 4437
+    },
+    {
+      "candidate_id": 5748,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lw4zl2eyj22p",
+      "material_id": 4438
+    },
+    {
+      "candidate_id": 5749,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-08",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lvvriyty6k2f",
+      "material_id": 4439
+    },
+    {
+      "candidate_id": 5750,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lvti7orwkk2f",
+      "material_id": 4440
+    },
+    {
+      "candidate_id": 5751,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lvqtk446vs2m",
+      "material_id": 4441
+    },
+    {
+      "candidate_id": 5753,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lvixarb6ws2g",
+      "material_id": 4443
+    },
+    {
+      "candidate_id": 5754,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lv7jgouypk25",
+      "material_id": 4444
+    },
+    {
+      "candidate_id": 5755,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lv4rtfodvk26",
+      "material_id": 4445
+    },
+    {
+      "candidate_id": 5757,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lut4vlgfck26",
+      "material_id": 4447
+    },
+    {
+      "candidate_id": 5758,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3luspdzlrls2w",
+      "material_id": 4448
+    },
+    {
+      "candidate_id": 5759,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3luofrjvb6s2m",
+      "material_id": 4449
+    },
+    {
+      "candidate_id": 5761,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3luba3fa45k27",
+      "material_id": 4451
+    },
+    {
+      "candidate_id": 5762,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ltz6dp5scc2k",
+      "material_id": 4452
+    },
+    {
+      "candidate_id": 5765,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ltkecfvjtk2e",
+      "material_id": 4455
+    },
+    {
+      "candidate_id": 5766,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ltfjmwhiac2h",
+      "material_id": 4456
+    },
+    {
+      "candidate_id": 5767,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lt3lnmhvbs2s",
+      "material_id": 4457
+    },
+    {
+      "candidate_id": 5768,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lsyq7mlofs2z",
+      "material_id": 4458
+    },
+    {
+      "candidate_id": 5769,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-01",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lsw62kqeok2c",
+      "material_id": 4459
+    },
+    {
+      "candidate_id": 5770,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lsmdw7aioc2y",
+      "material_id": 4460
+    },
+    {
+      "candidate_id": 5771,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lshetd6ia225",
+      "material_id": 4461
+    },
+    {
+      "candidate_id": 5772,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lshcwyfacc25",
+      "material_id": 4462
+    },
+    {
+      "candidate_id": 5773,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lsewz5m2wk2c",
+      "material_id": 4463
+    },
+    {
+      "candidate_id": 5774,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lsc6jxqzl22c",
+      "material_id": 4464
+    },
+    {
+      "candidate_id": 5775,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lrxu5olbbs2x",
+      "material_id": 4465
+    },
+    {
+      "candidate_id": 5779,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lqvai4h6zc24",
+      "material_id": 4469
+    },
+    {
+      "candidate_id": 5780,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lqus5yplq22h",
+      "material_id": 4470
+    },
+    {
+      "candidate_id": 5782,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lqfm4dzdak2k",
+      "material_id": 4472
+    },
+    {
+      "candidate_id": 5784,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lqb2j2enyc27",
+      "material_id": 4474
+    },
+    {
+      "candidate_id": 5785,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lq6af4ewjc2h",
+      "material_id": 4475
+    },
+    {
+      "candidate_id": 5786,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lq64ho55kk2j",
+      "material_id": 4476
+    },
+    {
+      "candidate_id": 5788,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lps5ebhjxc26",
+      "material_id": 4478
+    },
+    {
+      "candidate_id": 5789,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lpmizvypd22d",
+      "material_id": 4479
+    },
+    {
+      "candidate_id": 5790,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lpki7pv2kc2q",
+      "material_id": 4480
+    },
+    {
+      "candidate_id": 5791,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lpcbihhpac2h",
+      "material_id": 4481
+    },
+    {
+      "candidate_id": 5792,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lpaasa4bc226",
+      "material_id": 4482
+    },
+    {
+      "candidate_id": 5793,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3loyntylfnc2v",
+      "material_id": 4483
+    },
+    {
+      "candidate_id": 5794,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3loquckbrmk2l",
+      "material_id": 4484
+    },
+    {
+      "candidate_id": 5795,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lom72otos22y",
+      "material_id": 4485
+    },
+    {
+      "candidate_id": 5796,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3loh6kc3ss225",
+      "material_id": 4486
+    },
+    {
+      "candidate_id": 5797,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lo7rza775k2v",
+      "material_id": 4487
+    },
+    {
+      "candidate_id": 5798,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lnxzzt2uus2k",
+      "material_id": 4488
+    },
+    {
+      "candidate_id": 5799,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lnvpseqb3s2j",
+      "material_id": 4489
+    },
+    {
+      "candidate_id": 5800,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lnvkl5v2lk23",
+      "material_id": 4490
+    },
+    {
+      "candidate_id": 5801,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lnnpgjltqc2m",
+      "material_id": 4491
+    },
+    {
+      "candidate_id": 5802,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lnl6qyq4ak26",
+      "material_id": 4492
+    },
+    {
+      "candidate_id": 5803,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lnj7ck236s2o",
+      "material_id": 4493
+    },
+    {
+      "candidate_id": 5805,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lndjpvnyvk2o",
+      "material_id": 4495
+    },
+    {
+      "candidate_id": 5806,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-17",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ln24i6l3gs2h",
+      "material_id": 4496
+    },
+    {
+      "candidate_id": 5807,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-17",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmzmhn5mqs2v",
+      "material_id": 4497
+    },
+    {
+      "candidate_id": 5808,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmwspz7rv225",
+      "material_id": 4498
+    },
+    {
+      "candidate_id": 5809,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmuygr52bk2s",
+      "material_id": 4499
+    },
+    {
+      "candidate_id": 5810,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmusuvpbuc2e",
+      "material_id": 4500
+    },
+    {
+      "candidate_id": 5811,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmsixenxe22w",
+      "material_id": 4501
+    },
+    {
+      "candidate_id": 5812,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lms34op7yk23",
+      "material_id": 4502
+    },
+    {
+      "candidate_id": 5813,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmpujxovws2c",
+      "material_id": 4503
+    },
+    {
+      "candidate_id": 5814,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmiogoekv226",
+      "material_id": 4504
+    },
+    {
+      "candidate_id": 5815,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmifdrfsvs2t",
+      "material_id": 4505
+    },
+    {
+      "candidate_id": 5816,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmg2mywzl22z",
+      "material_id": 4506
+    },
+    {
+      "candidate_id": 5818,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3llz7y4c76c27",
+      "material_id": 4508
+    },
+    {
+      "candidate_id": 5823,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lltro4xrck2u",
+      "material_id": 4513
+    },
+    {
+      "candidate_id": 5825,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lletj46nms2y",
+      "material_id": 4515
+    },
+    {
+      "candidate_id": 5826,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ll7txbqukc2w",
+      "material_id": 4516
+    },
+    {
+      "candidate_id": 5827,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lktb77bm222b",
+      "material_id": 4517
+    },
+    {
+      "candidate_id": 5828,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lksubwuyqk2q",
+      "material_id": 4518
+    },
+    {
+      "candidate_id": 5829,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lkqttw42ok26",
+      "material_id": 4519
+    },
+    {
+      "candidate_id": 5830,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lkoiqlwfus2k",
+      "material_id": 4520
+    },
+    {
+      "candidate_id": 5831,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lkblg6m5uk2x",
+      "material_id": 4521
+    },
+    {
+      "candidate_id": 5832,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lk7iz3zp7225",
+      "material_id": 4522
+    },
+    {
+      "candidate_id": 5835,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ljsssqlqfc25",
+      "material_id": 4525
+    },
+    {
+      "candidate_id": 5836,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ljnkgb6ygs2u",
+      "material_id": 4526
+    },
+    {
+      "candidate_id": 5837,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ljilw27wts2z",
+      "material_id": 4527
+    },
+    {
+      "candidate_id": 5838,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ljawyoyods2z",
+      "material_id": 4528
+    },
+    {
+      "candidate_id": 5839,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lj6emzih7s26",
+      "material_id": 4529
+    },
+    {
+      "candidate_id": 5840,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lj6a4qxj2c2f",
+      "material_id": 4530
+    },
+    {
+      "candidate_id": 5842,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3limzwtylc22g",
+      "material_id": 4532
+    },
+    {
+      "candidate_id": 5843,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3likxb5lqbs23",
+      "material_id": 4533
+    },
+    {
+      "candidate_id": 5844,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lii6ip65ns2i",
+      "material_id": 4534
+    },
+    {
+      "candidate_id": 5845,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lihuk36xwc2n",
+      "material_id": 4535
+    },
+    {
+      "candidate_id": 5846,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lhju6bspjs2h",
+      "material_id": 4536
+    },
+    {
+      "candidate_id": 5847,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lhgvweo4as25",
+      "material_id": 4537
+    },
+    {
+      "candidate_id": 5848,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lhek5ckuik2x",
+      "material_id": 4538
+    },
+    {
+      "candidate_id": 5849,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lgyeega4rk27",
+      "material_id": 4539
+    },
+    {
+      "candidate_id": 5850,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lgvhx263oc22",
+      "material_id": 4540
+    },
+    {
+      "candidate_id": 5851,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lgqmqxqarc26",
+      "material_id": 4541
+    },
+    {
+      "candidate_id": 5853,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lgga3vkxmk2t",
+      "material_id": 4543
+    },
+    {
+      "candidate_id": 5854,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lge7nixl7c2s",
+      "material_id": 4544
+    },
+    {
+      "candidate_id": 5855,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lgdxxycrak2r",
+      "material_id": 4545
+    },
+    {
+      "candidate_id": 5856,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lgdncgs3622s",
+      "material_id": 4546
+    },
+    {
+      "candidate_id": 5857,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lgbrwfef2k2g",
+      "material_id": 4547
+    },
+    {
+      "candidate_id": 5859,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lffpkajuu22z",
+      "material_id": 4549
+    },
+    {
+      "candidate_id": 5860,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lfdix4cko22e",
+      "material_id": 4550
+    },
+    {
+      "candidate_id": 5861,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lfd3qjssgs2q",
+      "material_id": 4551
+    },
+    {
+      "candidate_id": 5862,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-08",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lfavazagw22d",
+      "material_id": 4552
+    },
+    {
+      "candidate_id": 5863,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-08",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lfaomhw3as2w",
+      "material_id": 4553
+    },
+    {
+      "candidate_id": 5864,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-01",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3leovtnlyes2h",
+      "material_id": 4554
+    },
+    {
+      "candidate_id": 5865,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-31",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lemsbsn5lk2r",
+      "material_id": 4555
+    },
+    {
+      "candidate_id": 5866,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lekent7pgc2d",
+      "material_id": 4556
+    },
+    {
+      "candidate_id": 5869,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3leanaquwq22t",
+      "material_id": 4559
+    },
+    {
+      "candidate_id": 5870,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-25",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3le5m5jfyhk2h",
+      "material_id": 4560
+    },
+    {
+      "candidate_id": 5871,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ldyl524yoc2l",
+      "material_id": 4561
+    },
+    {
+      "candidate_id": 5872,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ldrcxuz6sk2h",
+      "material_id": 4562
+    },
+    {
+      "candidate_id": 5874,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-17",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ldjifwb4vs2w",
+      "material_id": 4564
+    },
+    {
+      "candidate_id": 5875,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ld7vzrzeis2b",
+      "material_id": 4565
+    },
+    {
+      "candidate_id": 5876,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ld75ueb7i22w",
+      "material_id": 4566
+    },
+    {
+      "candidate_id": 5877,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ld2pvo6t4s2n",
+      "material_id": 4567
+    },
+    {
+      "candidate_id": 5878,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ld2ixn35gk2z",
+      "material_id": 4568
+    },
+    {
+      "candidate_id": 5879,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lcy5yxcyys22",
+      "material_id": 4569
+    },
+    {
+      "candidate_id": 5881,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lcj3afxwtc2n",
+      "material_id": 4571
+    },
+    {
+      "candidate_id": 5882,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lcdzggg2us2e",
+      "material_id": 4572
+    },
+    {
+      "candidate_id": 5883,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lc4b6pz6ss2l",
+      "material_id": 4573
+    },
+    {
+      "candidate_id": 5884,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lbv6hnl2xs2j",
+      "material_id": 4574
+    },
+    {
+      "candidate_id": 5885,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lbhwmxk27k2g",
+      "material_id": 4575
+    },
+    {
+      "candidate_id": 5886,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lbfwrjziy223",
+      "material_id": 4576
+    },
+    {
+      "candidate_id": 5887,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lbdgqctgzc23",
+      "material_id": 4577
+    },
+    {
+      "candidate_id": 5889,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3layujb6bfc27",
+      "material_id": 4579
+    },
+    {
+      "candidate_id": 5890,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lawsqeaeg22z",
+      "material_id": 4580
+    },
+    {
+      "candidate_id": 5891,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3latkqzhqe22v",
+      "material_id": 4581
+    },
+    {
+      "candidate_id": 5892,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lafa4eqf6n2m",
+      "material_id": 4582
+    },
+    {
+      "candidate_id": 5893,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3laenk2wcvj2o",
+      "material_id": 4583
+    },
+    {
+      "candidate_id": 5894,
+      "source": "Foreign Affairs",
+      "published_on": "2024-05-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ks3csvsslr2d",
+      "material_id": 4584
+    },
+    {
+      "candidate_id": 5895,
+      "source": "Foreign Affairs",
+      "published_on": "2024-05-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3krwbafa5ks2x",
+      "material_id": 4585
+    },
+    {
+      "candidate_id": 5897,
+      "source": "Foreign Affairs",
+      "published_on": "2024-05-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3krma3rzfw224",
+      "material_id": 4587
+    },
+    {
+      "candidate_id": 5898,
+      "source": "Foreign Affairs",
+      "published_on": "2024-05-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3krjkzjdeec2c",
+      "material_id": 4588
+    },
+    {
+      "candidate_id": 5899,
+      "source": "Foreign Affairs",
+      "published_on": "2024-05-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3krhrhybrok2f",
+      "material_id": 4589
+    },
+    {
+      "candidate_id": 5902,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kr2nncznj22p",
+      "material_id": 4592
+    },
+    {
+      "candidate_id": 5903,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kqvb44zvtk2h",
+      "material_id": 4593
+    },
+    {
+      "candidate_id": 5904,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kqsxk7lbbs2t",
+      "material_id": 4594
+    },
+    {
+      "candidate_id": 5905,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kqssdg6yss2h",
+      "material_id": 4595
+    },
+    {
+      "candidate_id": 5906,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kqbmyvhaxt2l",
+      "material_id": 4596
+    },
+    {
+      "candidate_id": 5907,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kq6q32wdcn2r",
+      "material_id": 4597
+    },
+    {
+      "candidate_id": 5908,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kps3axlfko23",
+      "material_id": 4598
+    },
+    {
+      "candidate_id": 5909,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kppylvdpax2o",
+      "material_id": 4599
+    },
+    {
+      "candidate_id": 5911,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kp6e6xqdk32e",
+      "material_id": 4601
+    },
+    {
+      "candidate_id": 5912,
+      "source": "Foreign Affairs",
+      "published_on": "2024-03-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3korghvyjnk2h",
+      "material_id": 4602
+    },
+    {
+      "candidate_id": 5913,
+      "source": "Foreign Affairs",
+      "published_on": "2024-03-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kopkmtb57q22",
+      "material_id": 4603
+    },
+    {
+      "candidate_id": 5914,
+      "source": "Foreign Affairs",
+      "published_on": "2024-03-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kom6juooec23",
+      "material_id": 4604
+    },
+    {
+      "candidate_id": 5915,
+      "source": "Foreign Affairs",
+      "published_on": "2024-03-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ko5eljvi6k2r",
+      "material_id": 4605
+    },
+    {
+      "candidate_id": 5916,
+      "source": "Foreign Affairs",
+      "published_on": "2024-03-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3knymq2ne5l2e",
+      "material_id": 4606
+    },
+    {
+      "candidate_id": 5917,
+      "source": "Foreign Affairs",
+      "published_on": "2024-03-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3knqqc4idkc2x",
+      "material_id": 4607
+    },
+    {
+      "candidate_id": 5918,
+      "source": "Foreign Affairs",
+      "published_on": "2024-03-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kno437fq2s2a",
+      "material_id": 4608
+    },
+    {
+      "candidate_id": 5919,
+      "source": "Foreign Affairs",
+      "published_on": "2024-03-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kngmijrdkm2n",
+      "material_id": 4609
+    },
+    {
+      "candidate_id": 5920,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kmgc7xhlui2i",
+      "material_id": 4610
+    },
+    {
+      "candidate_id": 5921,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kmg5cvw4oc2h",
+      "material_id": 4611
+    },
+    {
+      "candidate_id": 5923,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3klxdyipdi22f",
+      "material_id": 4613
+    },
+    {
+      "candidate_id": 5924,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kluwhc2b3422",
+      "material_id": 4614
+    },
+    {
+      "candidate_id": 5925,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3klsoalt63w25",
+      "material_id": 4615
+    },
+    {
+      "candidate_id": 5926,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3klktzcxtoy27",
+      "material_id": 4616
+    },
+    {
+      "candidate_id": 5927,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3klajty2j4t2a",
+      "material_id": 4617
+    },
+    {
+      "candidate_id": 5928,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kl3pfjsqvl27",
+      "material_id": 4618
+    },
+    {
+      "candidate_id": 5929,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kkzgggqmxz22",
+      "material_id": 4619
+    },
+    {
+      "candidate_id": 5930,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kkrojk2xen2u",
+      "material_id": 4620
+    },
+    {
+      "candidate_id": 5931,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-31",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kkc4p3ssgz2j",
+      "material_id": 4621
+    },
+    {
+      "candidate_id": 5933,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kjo5fvtskj2d",
+      "material_id": 4623
+    },
+    {
+      "candidate_id": 5934,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kjnydfnvcu2p",
+      "material_id": 4624
+    },
+    {
+      "candidate_id": 5935,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kjnxhvlqt322",
+      "material_id": 4625
+    },
+    {
+      "candidate_id": 5936,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kjbfskqtq52q",
+      "material_id": 4626
+    },
+    {
+      "candidate_id": 5937,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kj4dc6p5dz2x",
+      "material_id": 4627
+    },
+    {
+      "candidate_id": 5938,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-15",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kj2efqllds23",
+      "material_id": 4628
+    },
+    {
+      "candidate_id": 5939,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kisxqeutob23",
+      "material_id": 4629
+    },
+    {
+      "candidate_id": 5940,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kinwlpmgmo2f",
+      "material_id": 4630
+    },
+    {
+      "candidate_id": 5941,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-08",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kiiz4mn2po2k",
+      "material_id": 4631
+    },
+    {
+      "candidate_id": 5942,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kiayeiwqwk27",
+      "material_id": 4632
+    },
+    {
+      "candidate_id": 5943,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kiartyeigl2u",
+      "material_id": 4633
+    },
+    {
+      "candidate_id": 5945,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ki65lfqley2v",
+      "material_id": 4635
+    },
+    {
+      "candidate_id": 5946,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3khkd24hvw726",
+      "material_id": 4636
+    },
+    {
+      "candidate_id": 5947,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kgwtxt64wj2g",
+      "material_id": 4637
+    },
+    {
+      "candidate_id": 5948,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kgu2ppve5c2k",
+      "material_id": 4638
+    },
+    {
+      "candidate_id": 5949,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kgjkvy42pm2h",
+      "material_id": 4639
+    },
+    {
+      "candidate_id": 5950,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kghgxuhgg52b",
+      "material_id": 4640
+    },
+    {
+      "candidate_id": 5951,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kgheojzmbw24",
+      "material_id": 4641
+    },
+    {
+      "candidate_id": 5952,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kgenaizuha2j",
+      "material_id": 4642
+    },
+    {
+      "candidate_id": 5953,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kgc3agrkj42y",
+      "material_id": 4643
+    },
+    {
+      "candidate_id": 5954,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kfxxfah2th2h",
+      "material_id": 4644
+    },
+    {
+      "candidate_id": 5957,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kfgq2h3gos25",
+      "material_id": 4647
+    },
+    {
+      "candidate_id": 5958,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kfegxvvyit2d",
+      "material_id": 4648
+    },
+    {
+      "candidate_id": 5959,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kfbp27wlx22z",
+      "material_id": 4649
+    },
+    {
+      "candidate_id": 5961,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kf7ca6yoq725",
+      "material_id": 4651
+    },
+    {
+      "candidate_id": 5962,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kf7aojxwkw2v",
+      "material_id": 4652
+    },
+    {
+      "candidate_id": 5963,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3keufet57kt2o",
+      "material_id": 4653
+    },
+    {
+      "candidate_id": 5964,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kepyxzhebu25",
+      "material_id": 4654
+    },
+    {
+      "candidate_id": 5965,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kepnvqnqik2f",
+      "material_id": 4655
+    },
+    {
+      "candidate_id": 5966,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kecxaollwb2n",
+      "material_id": 4656
+    },
+    {
+      "candidate_id": 5967,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ke6kehkxus2p",
+      "material_id": 4657
+    },
+    {
+      "candidate_id": 5969,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ke47laakol22",
+      "material_id": 4659
+    },
+    {
+      "candidate_id": 5970,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ke43y5d54c23",
+      "material_id": 4660
+    },
+    {
+      "candidate_id": 5971,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-13",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ke3u4ytxit2r",
+      "material_id": 4661
+    },
+    {
+      "candidate_id": 5973,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kdukv7gztz2x",
+      "material_id": 4663
+    },
+    {
+      "candidate_id": 5974,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kdrtnihfgy2v",
+      "material_id": 4664
+    },
+    {
+      "candidate_id": 5975,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-08",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kdp52wgsp22e",
+      "material_id": 4665
+    },
+    {
+      "candidate_id": 5976,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-07",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kdm6hkrxwt2t",
+      "material_id": 4666
+    },
+    {
+      "candidate_id": 5977,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kdjza3heqo23",
+      "material_id": 4667
+    },
+    {
+      "candidate_id": 5978,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kdchndmc4l2u",
+      "material_id": 4668
+    },
+    {
+      "candidate_id": 5979,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kdaak2ictv2y",
+      "material_id": 4669
+    },
+    {
+      "candidate_id": 5981,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kcyrvebyfh2r",
+      "material_id": 4671
+    },
+    {
+      "candidate_id": 5982,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kcp76pg3hy23",
+      "material_id": 4672
+    },
+    {
+      "candidate_id": 5983,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kcjjfrahaw2j",
+      "material_id": 4673
+    },
+    {
+      "candidate_id": 5985,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kc74xf2ngq2x",
+      "material_id": 4675
+    },
+    {
+      "candidate_id": 5986,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-17",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kbxqumqpud2i",
+      "material_id": 4676
+    },
+    {
+      "candidate_id": 5987,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kbl4beevax2k",
+      "material_id": 4677
+    },
+    {
+      "candidate_id": 5988,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kbivrck6as2p",
+      "material_id": 4678
+    },
+    {
+      "candidate_id": 5989,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kbilpwra2e2d",
+      "material_id": 4679
+    },
+    {
+      "candidate_id": 5990,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kbgf5m5rpo2f",
+      "material_id": 4680
+    },
+    {
+      "candidate_id": 5991,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kbdr7e2niq2x",
+      "material_id": 4681
+    },
+    {
+      "candidate_id": 5992,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kb3ykdv5wn2y",
+      "material_id": 4682
+    },
+    {
+      "candidate_id": 5993,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kb3viho4ps2f",
+      "material_id": 4683
+    },
+    {
+      "candidate_id": 5994,
+      "source": "Chatham House",
+      "published_on": "2025-12-30",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3mb722lcexs26",
+      "material_id": 4684
+    },
+    {
+      "candidate_id": 5995,
+      "source": "Chatham House",
+      "published_on": "2025-12-21",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3maiatmpe5k2u",
+      "material_id": 4685
+    },
+    {
+      "candidate_id": 5996,
+      "source": "Chatham House",
+      "published_on": "2025-12-19",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3maebghemk22w",
+      "material_id": 4686
+    },
+    {
+      "candidate_id": 5997,
+      "source": "Chatham House",
+      "published_on": "2025-12-18",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3mab2mxz2vk2q",
+      "material_id": 4687
+    },
+    {
+      "candidate_id": 5998,
+      "source": "Chatham House",
+      "published_on": "2025-12-16",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3ma3vatp6wk2p",
+      "material_id": 4688
+    },
+    {
+      "candidate_id": 5999,
+      "source": "Chatham House",
+      "published_on": "2025-12-12",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m7rwyxokm223",
+      "material_id": 4689
+    },
+    {
+      "candidate_id": 6000,
+      "source": "Chatham House",
+      "published_on": "2025-12-11",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m7p4jzvftc2g",
+      "material_id": 4690
+    },
+    {
+      "candidate_id": 6001,
+      "source": "Chatham House",
+      "published_on": "2025-12-10",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m7mvyxt2sk2k",
+      "material_id": 4691
+    },
+    {
+      "candidate_id": 6002,
+      "source": "Chatham House",
+      "published_on": "2025-12-09",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m7jz22et7k2d",
+      "material_id": 4692
+    },
+    {
+      "candidate_id": 6003,
+      "source": "Chatham House",
+      "published_on": "2025-12-08",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m7idwvx7wk25",
+      "material_id": 4693
+    },
+    {
+      "candidate_id": 6004,
+      "source": "Chatham House",
+      "published_on": "2025-12-05",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m7aihfisjk2b",
+      "material_id": 4694
+    },
+    {
+      "candidate_id": 6005,
+      "source": "Chatham House",
+      "published_on": "2025-12-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m76zjgozzk2l",
+      "material_id": 4695
+    },
+    {
+      "candidate_id": 6006,
+      "source": "Chatham House",
+      "published_on": "2025-12-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m76phr5o5226",
+      "material_id": 4696
+    },
+    {
+      "candidate_id": 6007,
+      "source": "Chatham House",
+      "published_on": "2025-12-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m76kguoss22p",
+      "material_id": 4697
+    },
+    {
+      "candidate_id": 6008,
+      "source": "Chatham House",
+      "published_on": "2025-12-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m75iwo3cdk2h",
+      "material_id": 4698
+    },
+    {
+      "candidate_id": 6009,
+      "source": "Chatham House",
+      "published_on": "2025-12-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m73fumzs5c2u",
+      "material_id": 4699
+    },
+    {
+      "candidate_id": 6010,
+      "source": "Chatham House",
+      "published_on": "2025-12-01",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m6x7qme6us2f",
+      "material_id": 4700
+    },
+    {
+      "candidate_id": 6011,
+      "source": "Chatham House",
+      "published_on": "2025-11-29",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m6r7s6hplc2f",
+      "material_id": 4701
+    },
+    {
+      "candidate_id": 6012,
+      "source": "Chatham House",
+      "published_on": "2025-11-28",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m6og5upu2s2o",
+      "material_id": 4702
+    },
+    {
+      "candidate_id": 6013,
+      "source": "Chatham House",
+      "published_on": "2025-11-27",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m6mzgkr4zs2x",
+      "material_id": 4703
+    },
+    {
+      "candidate_id": 6014,
+      "source": "Chatham House",
+      "published_on": "2025-11-27",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m6mgg4bmo22t",
+      "material_id": 4704
+    },
+    {
+      "candidate_id": 6015,
+      "source": "Chatham House",
+      "published_on": "2025-11-25",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m6hh5jy6qs2p",
+      "material_id": 4705
+    },
+    {
+      "candidate_id": 6016,
+      "source": "Chatham House",
+      "published_on": "2025-11-05",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4v45ozuzs25",
+      "material_id": 4706
+    },
+    {
+      "candidate_id": 6017,
+      "source": "Chatham House",
+      "published_on": "2025-11-05",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4uoqbdb7s25",
+      "material_id": 4707
+    },
+    {
+      "candidate_id": 6018,
+      "source": "Chatham House",
+      "published_on": "2025-11-05",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4ulezacdc2d",
+      "material_id": 4708
+    },
+    {
+      "candidate_id": 6019,
+      "source": "Chatham House",
+      "published_on": "2025-11-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4tiahtapk24",
+      "material_id": 4709
+    },
+    {
+      "candidate_id": 6020,
+      "source": "Chatham House",
+      "published_on": "2025-11-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4tda2rgpk2r",
+      "material_id": 4710
+    },
+    {
+      "candidate_id": 6021,
+      "source": "Chatham House",
+      "published_on": "2025-11-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4sbmsniqk25",
+      "material_id": 4711
+    },
+    {
+      "candidate_id": 6022,
+      "source": "Chatham House",
+      "published_on": "2025-11-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4qiny3wd22f",
+      "material_id": 4712
+    },
+    {
+      "candidate_id": 6023,
+      "source": "Chatham House",
+      "published_on": "2025-11-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4pvetufws2i",
+      "material_id": 4713
+    },
+    {
+      "candidate_id": 6024,
+      "source": "Chatham House",
+      "published_on": "2025-10-31",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4i63oyda22e",
+      "material_id": 4714
+    },
+    {
+      "candidate_id": 6025,
+      "source": "Chatham House",
+      "published_on": "2025-10-30",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4ghlx7rcs2e",
+      "material_id": 4715
+    },
+    {
+      "candidate_id": 6026,
+      "source": "Chatham House",
+      "published_on": "2025-10-30",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4fud7qdjk27",
+      "material_id": 4716
+    },
+    {
+      "candidate_id": 6027,
+      "source": "Chatham House",
+      "published_on": "2025-10-30",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4fn2izf2c2i",
+      "material_id": 4717
+    },
+    {
+      "candidate_id": 6028,
+      "source": "Chatham House",
+      "published_on": "2025-10-29",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4dwcelsnc25",
+      "material_id": 4718
+    },
+    {
+      "candidate_id": 6029,
+      "source": "Chatham House",
+      "published_on": "2025-10-29",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4dlfs3a3c2m",
+      "material_id": 4719
+    },
+    {
+      "candidate_id": 6030,
+      "source": "Chatham House",
+      "published_on": "2025-10-28",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4bchxyf3s27",
+      "material_id": 4720
+    },
+    {
+      "candidate_id": 6033,
+      "source": "Chatham House",
+      "published_on": "2025-10-24",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m3wo6x2acc2m",
+      "material_id": 4723
+    },
+    {
+      "candidate_id": 6034,
+      "source": "Chatham House",
+      "published_on": "2025-10-20",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m3mjkdv5r22s",
+      "material_id": 4724
+    },
+    {
+      "candidate_id": 6035,
+      "source": "Chatham House",
+      "published_on": "2025-10-18",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m3hgdsiqy22y",
+      "material_id": 4725
+    },
+    {
+      "candidate_id": 6036,
+      "source": "Chatham House",
+      "published_on": "2025-10-17",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m3f73ywjvk2k",
+      "material_id": 4726
+    },
+    {
+      "candidate_id": 6037,
+      "source": "Chatham House",
+      "published_on": "2025-10-11",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m2vwgsxgts23",
+      "material_id": 4727
+    },
+    {
+      "candidate_id": 6038,
+      "source": "Chatham House",
+      "published_on": "2025-10-10",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m2tjd25ajs2y",
+      "material_id": 4728
+    },
+    {
+      "candidate_id": 6039,
+      "source": "Chatham House",
+      "published_on": "2025-10-07",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m2mstpccs22l",
+      "material_id": 4729
+    },
+    {
+      "candidate_id": 6040,
+      "source": "Chatham House",
+      "published_on": "2025-10-06",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m2kfnzumys24",
+      "material_id": 4730
+    },
+    {
+      "candidate_id": 6041,
+      "source": "Chatham House",
+      "published_on": "2025-10-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m2egjot4mc2n",
+      "material_id": 4731
+    },
+    {
+      "candidate_id": 6042,
+      "source": "Chatham House",
+      "published_on": "2025-10-02",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m27kms322c2t",
+      "material_id": 4732
+    },
+    {
+      "candidate_id": 6043,
+      "source": "Chatham House",
+      "published_on": "2025-10-02",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m275a4obtk2w",
+      "material_id": 4733
+    },
+    {
+      "candidate_id": 6044,
+      "source": "Chatham House",
+      "published_on": "2025-09-18",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lz4aqxuxnk27",
+      "material_id": 4734
+    },
+    {
+      "candidate_id": 6045,
+      "source": "Chatham House",
+      "published_on": "2025-09-17",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lz2oh2me2k2q",
+      "material_id": 4735
+    },
+    {
+      "candidate_id": 6046,
+      "source": "Chatham House",
+      "published_on": "2025-09-15",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lyukdxdoas2p",
+      "material_id": 4736
+    },
+    {
+      "candidate_id": 6047,
+      "source": "Chatham House",
+      "published_on": "2025-09-14",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lysnxomdfs2c",
+      "material_id": 4737
+    },
+    {
+      "candidate_id": 6048,
+      "source": "Chatham House",
+      "published_on": "2025-09-14",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lyrt56vztc2s",
+      "material_id": 4738
+    },
+    {
+      "candidate_id": 6049,
+      "source": "Chatham House",
+      "published_on": "2025-09-13",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lypg26wia22u",
+      "material_id": 4739
+    },
+    {
+      "candidate_id": 6050,
+      "source": "Chatham House",
+      "published_on": "2025-09-12",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lynkjjisec2x",
+      "material_id": 4740
+    },
+    {
+      "candidate_id": 6051,
+      "source": "Chatham House",
+      "published_on": "2025-09-09",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lygj2ajyj22b",
+      "material_id": 4741
+    },
+    {
+      "candidate_id": 6052,
+      "source": "Chatham House",
+      "published_on": "2025-09-09",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lyfo7upgvc2d",
+      "material_id": 4742
+    },
+    {
+      "candidate_id": 6053,
+      "source": "Chatham House",
+      "published_on": "2025-09-08",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lydojjh3322h",
+      "material_id": 4743
+    },
+    {
+      "candidate_id": 6054,
+      "source": "Chatham House",
+      "published_on": "2025-09-08",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lydb4gv4ds2x",
+      "material_id": 4744
+    },
+    {
+      "candidate_id": 6055,
+      "source": "Chatham House",
+      "published_on": "2025-09-08",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lyctprx5rc2d",
+      "material_id": 4745
+    },
+    {
+      "candidate_id": 6056,
+      "source": "Chatham House",
+      "published_on": "2025-09-07",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lybli63d322u",
+      "material_id": 4746
+    },
+    {
+      "candidate_id": 6057,
+      "source": "Chatham House",
+      "published_on": "2025-09-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxyyjvavpc2s",
+      "material_id": 4747
+    },
+    {
+      "candidate_id": 6058,
+      "source": "Chatham House",
+      "published_on": "2025-09-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxyjh3by3c2i",
+      "material_id": 4748
+    },
+    {
+      "candidate_id": 6059,
+      "source": "Chatham House",
+      "published_on": "2025-09-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxwytgyrgk2d",
+      "material_id": 4749
+    },
+    {
+      "candidate_id": 6060,
+      "source": "Chatham House",
+      "published_on": "2025-09-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxwlgq5osc2f",
+      "material_id": 4750
+    },
+    {
+      "candidate_id": 6061,
+      "source": "Chatham House",
+      "published_on": "2025-09-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxw2nxsbwk2d",
+      "material_id": 4751
+    },
+    {
+      "candidate_id": 6062,
+      "source": "Chatham House",
+      "published_on": "2025-09-02",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxucs3ti4s2u",
+      "material_id": 4752
+    },
+    {
+      "candidate_id": 6063,
+      "source": "Chatham House",
+      "published_on": "2025-09-02",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxtijcrkus2g",
+      "material_id": 4753
+    },
+    {
+      "candidate_id": 6064,
+      "source": "Chatham House",
+      "published_on": "2025-09-01",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxs6mq5ub223",
+      "material_id": 4754
+    },
+    {
+      "candidate_id": 6065,
+      "source": "Chatham House",
+      "published_on": "2025-09-01",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxrofgzvos2p",
+      "material_id": 4755
+    },
+    {
+      "candidate_id": 6066,
+      "source": "Chatham House",
+      "published_on": "2025-08-27",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxevlrdzlc24",
+      "material_id": 4756
+    },
+    {
+      "candidate_id": 6067,
+      "source": "Chatham House",
+      "published_on": "2025-08-26",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lxc2bsfgac2x",
+      "material_id": 4757
+    },
+    {
+      "candidate_id": 6068,
+      "source": "Chatham House",
+      "published_on": "2025-08-13",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lwbaumeu4k2w",
+      "material_id": 4758
+    },
+    {
+      "candidate_id": 6069,
+      "source": "Chatham House",
+      "published_on": "2025-08-12",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lwa3yaghkk2d",
+      "material_id": 4759
+    },
+    {
+      "candidate_id": 6070,
+      "source": "Chatham House",
+      "published_on": "2025-08-12",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lw7olbm2ys2r",
+      "material_id": 4760
+    },
+    {
+      "candidate_id": 6071,
+      "source": "Chatham House",
+      "published_on": "2025-08-12",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lw7ejci5k22j",
+      "material_id": 4761
+    },
+    {
+      "candidate_id": 6072,
+      "source": "Chatham House",
+      "published_on": "2025-08-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lvitomehkk2y",
+      "material_id": 4762
+    },
+    {
+      "candidate_id": 6074,
+      "source": "Chatham House",
+      "published_on": "2025-08-01",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lvcyikklok24",
+      "material_id": 4764
+    },
+    {
+      "candidate_id": 6075,
+      "source": "Chatham House",
+      "published_on": "2025-07-26",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3luu4ews5vs2p",
+      "material_id": 4765
+    },
+    {
+      "candidate_id": 6076,
+      "source": "Chatham House",
+      "published_on": "2025-07-25",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3luroppc5qs2w",
+      "material_id": 4766
+    },
+    {
+      "candidate_id": 6077,
+      "source": "Chatham House",
+      "published_on": "2025-07-25",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lurmihykt22m",
+      "material_id": 4767
+    },
+    {
+      "candidate_id": 6078,
+      "source": "Chatham House",
+      "published_on": "2025-07-24",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lup3z2scjc2p",
+      "material_id": 4768
+    },
+    {
+      "candidate_id": 6079,
+      "source": "Chatham House",
+      "published_on": "2025-07-16",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lu32oclg522f",
+      "material_id": 4769
+    },
+    {
+      "candidate_id": 6080,
+      "source": "Chatham House",
+      "published_on": "2025-07-16",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lu2s6a234c2l",
+      "material_id": 4770
+    },
+    {
+      "candidate_id": 6081,
+      "source": "Chatham House",
+      "published_on": "2025-07-11",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3ltozkryhh225",
+      "material_id": 4771
+    },
+    {
+      "candidate_id": 6082,
+      "source": "Chatham House",
+      "published_on": "2025-07-10",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3ltmiuiqswc2m",
+      "material_id": 4772
+    },
+    {
+      "candidate_id": 6083,
+      "source": "Chatham House",
+      "published_on": "2025-07-08",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lthn5s5kmc2i",
+      "material_id": 4773
+    },
+    {
+      "candidate_id": 6084,
+      "source": "Chatham House",
+      "published_on": "2025-07-08",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3ltgws4jrrk2t",
+      "material_id": 4774
+    },
+    {
+      "candidate_id": 6085,
+      "source": "Chatham House",
+      "published_on": "2025-07-06",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3ltbrwy4e6s2p",
+      "material_id": 4775
+    },
+    {
+      "candidate_id": 6086,
+      "source": "Chatham House",
+      "published_on": "2025-07-05",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lt76onak5s2j",
+      "material_id": 4776
+    },
+    {
+      "candidate_id": 6088,
+      "source": "Chatham House",
+      "published_on": "2025-07-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lt2jifs3ns2c",
+      "material_id": 4778
+    },
+    {
+      "candidate_id": 6089,
+      "source": "Chatham House",
+      "published_on": "2025-06-19",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lrx6gj2gdk2x",
+      "material_id": 4779
+    },
+    {
+      "candidate_id": 6090,
+      "source": "Chatham House",
+      "published_on": "2025-06-19",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lrx6egih5s2x",
+      "material_id": 4780
+    },
+    {
+      "candidate_id": 6091,
+      "source": "Chatham House",
+      "published_on": "2025-06-11",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lrduzucjsc2u",
+      "material_id": 4781
+    },
+    {
+      "candidate_id": 6092,
+      "source": "Chatham House",
+      "published_on": "2025-06-10",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lrbf73wvus2g",
+      "material_id": 4782
+    },
+    {
+      "candidate_id": 6094,
+      "source": "Chatham House",
+      "published_on": "2025-06-08",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lr3yh3dju22q",
+      "material_id": 4784
+    },
+    {
+      "candidate_id": 6096,
+      "source": "Chatham House",
+      "published_on": "2025-06-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lqs5drrbvs2l",
+      "material_id": 4786
+    },
+    {
+      "candidate_id": 6102,
+      "source": "Chatham House",
+      "published_on": "2025-05-20",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lplrnukfz22j",
+      "material_id": 4792
+    },
+    {
+      "candidate_id": 6103,
+      "source": "Chatham House",
+      "published_on": "2025-05-20",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lpljbmbk7c2x",
+      "material_id": 4793
+    },
+    {
+      "candidate_id": 6104,
+      "source": "Chatham House",
+      "published_on": "2025-05-16",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lpc4czy5ws2y",
+      "material_id": 4794
+    },
+    {
+      "candidate_id": 6105,
+      "source": "Chatham House",
+      "published_on": "2025-05-14",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lp4jrzhiqs26",
+      "material_id": 4795
+    },
+    {
+      "candidate_id": 6106,
+      "source": "Chatham House",
+      "published_on": "2025-05-12",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3loxpm3zp4c2c",
+      "material_id": 4796
+    },
+    {
+      "candidate_id": 6108,
+      "source": "Chatham House",
+      "published_on": "2025-05-10",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3losyon55ac2c",
+      "material_id": 4798
+    },
+    {
+      "candidate_id": 6109,
+      "source": "Chatham House",
+      "published_on": "2025-05-09",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lopu6753nk2i",
+      "material_id": 4799
+    },
+    {
+      "candidate_id": 6110,
+      "source": "Chatham House",
+      "published_on": "2025-05-06",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3loj32nax5s2z",
+      "material_id": 4800
+    },
+    {
+      "candidate_id": 6111,
+      "source": "Chatham House",
+      "published_on": "2025-04-29",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lny33cpuu22n",
+      "material_id": 4801
+    },
+    {
+      "candidate_id": 6112,
+      "source": "Chatham House",
+      "published_on": "2025-04-28",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lnupsjf73c27",
+      "material_id": 4802
+    },
+    {
+      "candidate_id": 6113,
+      "source": "Chatham House",
+      "published_on": "2025-04-28",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lnufux6pes2z",
+      "material_id": 4803
+    },
+    {
+      "candidate_id": 6114,
+      "source": "Chatham House",
+      "published_on": "2025-04-25",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lnmthuqihs2c",
+      "material_id": 4804
+    },
+    {
+      "candidate_id": 6115,
+      "source": "Chatham House",
+      "published_on": "2025-04-24",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lnlbywekds2w",
+      "material_id": 4805
+    },
+    {
+      "candidate_id": 6116,
+      "source": "Chatham House",
+      "published_on": "2025-04-24",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lnl3dbv4q22a",
+      "material_id": 4806
+    },
+    {
+      "candidate_id": 6117,
+      "source": "Chatham House",
+      "published_on": "2025-04-24",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lnk54j4vhs2a",
+      "material_id": 4807
+    },
+    {
+      "candidate_id": 6118,
+      "source": "Chatham House",
+      "published_on": "2025-04-22",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lngfbhzdis2l",
+      "material_id": 4808
+    },
+    {
+      "candidate_id": 6121,
+      "source": "Chatham House",
+      "published_on": "2025-04-18",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3ln3cagkpbc2b",
+      "material_id": 4811
+    },
+    {
+      "candidate_id": 6122,
+      "source": "Chatham House",
+      "published_on": "2025-04-16",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmxbmid33k23",
+      "material_id": 4812
+    },
+    {
+      "candidate_id": 6124,
+      "source": "Chatham House",
+      "published_on": "2025-04-15",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmuh3wsgq22c",
+      "material_id": 4814
+    },
+    {
+      "candidate_id": 6126,
+      "source": "Chatham House",
+      "published_on": "2025-04-15",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmtupgewdk2m",
+      "material_id": 4816
+    },
+    {
+      "candidate_id": 6129,
+      "source": "Chatham House",
+      "published_on": "2025-04-14",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmr24xby6c2m",
+      "material_id": 4819
+    },
+    {
+      "candidate_id": 6131,
+      "source": "Chatham House",
+      "published_on": "2025-04-13",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmos5kbunc2n",
+      "material_id": 4821
+    },
+    {
+      "candidate_id": 6132,
+      "source": "Chatham House",
+      "published_on": "2025-04-11",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmk46ualzk2j",
+      "material_id": 4822
+    },
+    {
+      "candidate_id": 6133,
+      "source": "Chatham House",
+      "published_on": "2025-04-11",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmjwy4kqrc25",
+      "material_id": 4823
+    },
+    {
+      "candidate_id": 6134,
+      "source": "Chatham House",
+      "published_on": "2025-04-11",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmjkyokqcc2c",
+      "material_id": 4824
+    },
+    {
+      "candidate_id": 6136,
+      "source": "Chatham House",
+      "published_on": "2025-04-10",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmhrfpjuks2z",
+      "material_id": 4826
+    },
+    {
+      "candidate_id": 6137,
+      "source": "Chatham House",
+      "published_on": "2025-04-09",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmfv2mcpxs2c",
+      "material_id": 4827
+    }
+  ],
+  "withdrawn_records": [
+    {
+      "candidate_id": 5636,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3mb7w7twmfe2e",
+      "material_id": 4327,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5649,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m7nmtmu4wp2c",
+      "material_id": 4339,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5654,
+      "source": "Foreign Affairs",
+      "published_on": "2025-12-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m73xodx2rk2s",
+      "material_id": 4344,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5662,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-19",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5z5gujijx2s",
+      "material_id": 4352,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5668,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m5hcai3pmp26",
+      "material_id": 4358,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5679,
+      "source": "Foreign Affairs",
+      "published_on": "2025-11-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m4rarbtgxs2u",
+      "material_id": 4369,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5694,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3pw23sskq2e",
+      "material_id": 4384,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5695,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3putubxnk26",
+      "material_id": 4385,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5697,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-21",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3pmhxdemk2y",
+      "material_id": 4387,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5699,
+      "source": "Foreign Affairs",
+      "published_on": "2025-10-16",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3m3dlw2u4nm2u",
+      "material_id": 4389,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5710,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lzqtpd2ved2c",
+      "material_id": 4400,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5721,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lyl2arc2ru2f",
+      "material_id": 4411,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5725,
+      "source": "Foreign Affairs",
+      "published_on": "2025-09-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lxzoewvqqa2y",
+      "material_id": 4415,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5752,
+      "source": "Foreign Affairs",
+      "published_on": "2025-08-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lvohdymzis2y",
+      "material_id": 4442,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5756,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lv4lidpdy22e",
+      "material_id": 4446,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5760,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3luld4uaoic2o",
+      "material_id": 4450,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5763,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ltwtgwqckk2n",
+      "material_id": 4453,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5764,
+      "source": "Foreign Affairs",
+      "published_on": "2025-07-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ltklovfqs223",
+      "material_id": 4454,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5776,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-12",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lrggy4ai2s2m",
+      "material_id": 4466,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5777,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lr7edxgxt22b",
+      "material_id": 4467,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5778,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lqxamfxksc2u",
+      "material_id": 4468,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5781,
+      "source": "Foreign Affairs",
+      "published_on": "2025-06-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lqumbojxzc2o",
+      "material_id": 4471,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5783,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lqdm23mxws2u",
+      "material_id": 4473,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5787,
+      "source": "Foreign Affairs",
+      "published_on": "2025-05-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lps7irhck223",
+      "material_id": 4477,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5804,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lng6tiwg5s2m",
+      "material_id": 4494,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5817,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-08",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lmdk4pjsqc23",
+      "material_id": 4507,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5819,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3llz4dna5is2v",
+      "material_id": 4509,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5820,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3llwx4xyfyc2m",
+      "material_id": 4510,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5821,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3llwah2jkck2d",
+      "material_id": 4511,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5822,
+      "source": "Foreign Affairs",
+      "published_on": "2025-04-02",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lltzo6vefs2u",
+      "material_id": 4512,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5824,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-31",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3llot3vgeo22z",
+      "material_id": 4514,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5833,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lk54o3nspc2r",
+      "material_id": 4523,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5834,
+      "source": "Foreign Affairs",
+      "published_on": "2025-03-10",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ljzphf4abs2g",
+      "material_id": 4524,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5841,
+      "source": "Foreign Affairs",
+      "published_on": "2025-02-22",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lisfyvjeac2x",
+      "material_id": 4531,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5852,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lgj35gvt3225",
+      "material_id": 4542,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5858,
+      "source": "Foreign Affairs",
+      "published_on": "2025-01-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lfq4mto4fk2c",
+      "material_id": 4548,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5867,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lecv3ihtac2i",
+      "material_id": 4557,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5868,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-27",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lecn3mpeq222",
+      "material_id": 4558,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5873,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-20",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ldqwbsqnvk2a",
+      "material_id": 4563,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5880,
+      "source": "Foreign Affairs",
+      "published_on": "2024-12-06",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lco4gcodoc2z",
+      "material_id": 4570,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5888,
+      "source": "Foreign Affairs",
+      "published_on": "2024-11-18",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3lbauqeuza22a",
+      "material_id": 4578,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5896,
+      "source": "Foreign Affairs",
+      "published_on": "2024-05-03",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3krmdzfbhrz2x",
+      "material_id": 4586,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5900,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-30",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kreok3vki22u",
+      "material_id": 4590,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5901,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-29",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3krcav3qa4d2u",
+      "material_id": 4591,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5910,
+      "source": "Foreign Affairs",
+      "published_on": "2024-04-09",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kppnovq6ak2r",
+      "material_id": 4600,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5922,
+      "source": "Foreign Affairs",
+      "published_on": "2024-02-26",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kme2wrpklq2p",
+      "material_id": 4612,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5932,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-23",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kjokcmzd6j2o",
+      "material_id": 4622,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5944,
+      "source": "Foreign Affairs",
+      "published_on": "2024-01-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ki6epfio4n2u",
+      "material_id": 4634,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5955,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-05",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kfta3xcmp32s",
+      "material_id": 4645,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5956,
+      "source": "Foreign Affairs",
+      "published_on": "2023-12-04",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kfqvxqmqrt2k",
+      "material_id": 4646,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5960,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-28",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kfb6ff4yrn23",
+      "material_id": 4650,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5968,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-14",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3ke6fsnqxv22d",
+      "material_id": 4658,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5972,
+      "source": "Foreign Affairs",
+      "published_on": "2023-11-11",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kdurbek2jo2i",
+      "material_id": 4662,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5980,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-31",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kd33uyg6ih2a",
+      "material_id": 4670,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 5984,
+      "source": "Foreign Affairs",
+      "published_on": "2023-10-24",
+      "title": "@foreignaffairs.com on Bluesky",
+      "source_url": "https://bsky.app/profile/foreignaffairs.com/post/3kcjgme47322n",
+      "material_id": 4674,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6031,
+      "source": "Chatham House",
+      "published_on": "2025-10-28",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m4ahobhntk2m",
+      "material_id": 4721,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6032,
+      "source": "Chatham House",
+      "published_on": "2025-10-27",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3m46onzjptc2j",
+      "material_id": 4722,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6073,
+      "source": "Chatham House",
+      "published_on": "2025-08-01",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lvdrnu6ocs2o",
+      "material_id": 4763,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6087,
+      "source": "Chatham House",
+      "published_on": "2025-07-05",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lt72rsx7uc2c",
+      "material_id": 4777,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6093,
+      "source": "Chatham House",
+      "published_on": "2025-06-08",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lr44w5ojic2j",
+      "material_id": 4783,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6095,
+      "source": "Chatham House",
+      "published_on": "2025-06-07",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lqyyvgsk2c27",
+      "material_id": 4785,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6097,
+      "source": "Chatham House",
+      "published_on": "2025-06-04",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lqrkccpxnk2t",
+      "material_id": 4787,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6098,
+      "source": "Chatham House",
+      "published_on": "2025-06-03",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lqpha4yza22n",
+      "material_id": 4788,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6099,
+      "source": "Chatham House",
+      "published_on": "2025-05-30",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lqfcuuvr2s24",
+      "material_id": 4789,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6100,
+      "source": "Chatham House",
+      "published_on": "2025-05-24",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lpvohjltn22j",
+      "material_id": 4790,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6101,
+      "source": "Chatham House",
+      "published_on": "2025-05-23",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lptqgi7hak2h",
+      "material_id": 4791,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6107,
+      "source": "Chatham House",
+      "published_on": "2025-05-11",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lowansymy22u",
+      "material_id": 4797,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6119,
+      "source": "Chatham House",
+      "published_on": "2025-04-22",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lnftltwq422u",
+      "material_id": 4809,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6120,
+      "source": "Chatham House",
+      "published_on": "2025-04-21",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lnd7t7mrzc2r",
+      "material_id": 4810,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6123,
+      "source": "Chatham House",
+      "published_on": "2025-04-16",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmwcvcpllk22",
+      "material_id": 4813,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6125,
+      "source": "Chatham House",
+      "published_on": "2025-04-15",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmu4zopknk2h",
+      "material_id": 4815,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6127,
+      "source": "Chatham House",
+      "published_on": "2025-04-14",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmsaohbycc2k",
+      "material_id": 4817,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6128,
+      "source": "Chatham House",
+      "published_on": "2025-04-14",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lms3nl6ces2d",
+      "material_id": 4818,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6130,
+      "source": "Chatham House",
+      "published_on": "2025-04-13",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmpcvb5crk23",
+      "material_id": 4820,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    },
+    {
+      "candidate_id": 6135,
+      "source": "Chatham House",
+      "published_on": "2025-04-10",
+      "title": "@chathamhouse.org on Bluesky",
+      "source_url": "https://bsky.app/profile/chathamhouse.org/post/3lmi5zdc6ts2e",
+      "material_id": 4825,
+      "reason": "topic-screen: Bluesky body has no direct China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US/TikTok reference"
+    }
+  ],
+  "backup": "data/research-pre-new-bluesky-topic-screen-20261109.sqlite3",
+  "rule": "Keep only posts whose body directly mentions China/Taiwan/Hong Kong/Beijing/Xinjiang/Tibet/PRC/Sino-US or TikTok; video posts remain excluded at discovery."
+}

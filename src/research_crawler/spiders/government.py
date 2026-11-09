@@ -2836,6 +2836,10 @@ class BlueskyPostAdapter:
         "brookings.edu": "Brookings Institution",
         "cfr.org": "Council on Foreign Relations",
         "rand.org": "RAND",
+        "reuters.com": "Reuters",
+        "cnn.com": "CNN",
+        "foreignaffairs.com": "Foreign Affairs",
+        "chathamhouse.org": "Chatham House",
     }
 
     def extract(self, response: Response, candidate: MaterialCandidate, metadata_response: Response | None) -> dict:

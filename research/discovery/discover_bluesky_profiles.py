@@ -23,6 +23,10 @@ FEED_HANDLES = {
     "brookings.edu": "Brookings Institution",
     "cfr.org": "Council on Foreign Relations",
     "rand.org": "RAND",
+    "reuters.com": "Reuters",
+    "cnn.com": "CNN",
+    "foreignaffairs.com": "Foreign Affairs",
+    "chathamhouse.org": "Chatham House",
 }
 TOPIC_PATTERN = re.compile(
     r"\b(?:china|chinese|taiwan(?:ese)?|hong kong|xinjiang|tibet|beijing|peking|"
