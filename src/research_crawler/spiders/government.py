@@ -6466,7 +6466,10 @@ class ClintonWhiteHouseArchiveAdapter:
         body_parts = []
         footer_seen = False
         if content is not None:
-            for node in content.xpath(".//p | .//li"):
+            selector = ".//p | .//li | .//blockquote" if is_work_page else ".//p | .//li"
+            for node in content.xpath(selector):
+                if is_work_page and node.xpath("ancestor::blockquote"):
+                    continue
                 if node.root.tag.lower() == "p" and node.xpath("ancestor::li"):
                     continue
                 value = _normalized_text(node.xpath(".//text()").getall())
@@ -6474,10 +6477,14 @@ class ClintonWhiteHouseArchiveAdapter:
                     continue
                 if is_work_page and node.xpath(".//font[@size='4']"):
                     continue
-                if value.startswith(("President and First Lady", "Privacy Statement")):
-                    footer_seen = True
+                parts = _legacy_ordered_text_blocks(node.root) if node.root.tag.lower() == "blockquote" else [value]
+                for part in parts:
+                    if part.startswith(("President and First Lady", "Privacy Statement")):
+                        footer_seen = True
+                        break
+                    body_parts.append(part)
+                if footer_seen:
                     break
-                body_parts.append(value)
         body = "\n\n".join(body_parts)
         source = "The White House" if is_work_page else "The White House, Office of the Press Secretary"
         source_valid = (
@@ -6764,16 +6771,19 @@ class ArchivedStateDepartmentRemarksAdapter:
         body_nodes = response.css("#centerblock")
         body_parts = []
         if len(body_nodes) == 1:
-            body_parts = [
-                text
-                for node in body_nodes.xpath(
-                    ".//*[self::h2 or self::h3 or self::h4 or self::p or self::li or self::blockquote[not(.//p)]]"
-                )
-                if not node.xpath(
-                    "ancestor::*[contains(concat(' ', normalize-space(@class), ' '), ' flex-video ')]"
-                )
-                if (text := _normalized_text(node.xpath(".//text()").getall()))
-            ]
+            from copy import deepcopy
+            body_scope = deepcopy(body_nodes[0].root)
+            # Observed archive language switcher precedes the article but is
+            # unwrapped just like real opening remarks. Remove only this exact
+            # source template, not arbitrary unwrapped text.
+            if (body_scope.text or "").strip() == "Also available in":
+                first = body_scope[0] if len(body_scope) else None
+                if (first is not None and first.tag == "a"
+                        and "/texttrans/" in first.get("href", "")
+                        and not (first.tail or "").strip()):
+                    body_scope.text = first.tail
+                    body_scope.remove(first)
+            body_parts = _legacy_ordered_text_blocks(body_scope)
         body = "\n\n".join(body_parts)
         complete = bool(
             title
@@ -6818,6 +6828,47 @@ class ArchivedStateDepartmentRemarksAdapter:
             else:
                 result["abstract_origin"] = "none"
         return result
+
+
+def _legacy_ordered_text_blocks(container) -> list[str]:
+    """Keep source text and tails once, including text outside paragraph tags.
+
+    Only use inside a source adapter's already identified article/quote scope.
+    Excluding a player/script never excludes the following source text tail.
+    """
+    blocks, fragments = [], []
+    block_tags = {"p", "li", "blockquote", "h2", "h3", "h4", "div"}
+    excluded = {"script", "style", "iframe", "object", "video", "audio", "noscript"}
+
+    def flush():
+        text = " ".join("".join(fragments).split())
+        if text:
+            blocks.append(text)
+        fragments.clear()
+
+    def walk(node):
+        if not isinstance(node.tag, str):
+            return
+        tag = node.tag.lower()
+        if tag in excluded or "flex-video" in node.get("class", "").split():
+            return
+        boundary = tag in block_tags
+        if boundary:
+            flush()
+        if tag == "br":
+            fragments.append(" ")
+        if node.text:
+            fragments.append(node.text)
+        for child in node:
+            walk(child)
+            if child.tail:
+                fragments.append(child.tail)
+        if boundary:
+            flush()
+
+    walk(container)
+    flush()
+    return blocks
 
 
 def _normalized_text(values: list[str]) -> str:
