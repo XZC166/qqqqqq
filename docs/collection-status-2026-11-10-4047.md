@@ -20,7 +20,7 @@ This checkpoint records actual rows in the local nine-column workbook, not candi
 | Research literature | 26 |
 | Official institutional social posts | 809 |
 
-Automatic source and topic checks are used; this is not a claim of manual full-document reading. Every admitted record has retained original evidence and a located, verbatim topic passage. Existing evidence is reused. Affected adapter changes trigger corresponding checks again, while unchanged successful check results no longer require identical database writes. Raw evidence hashes, ownership, identity, field bindings and topic decision manifests are still checked.
+Automatic source and topic checks are used; this is not a claim of manual full-document reading. Every admitted record has retained original evidence and a bound topic decision. New automatic decisions retain located, verbatim supporting passages; earlier individually bound decisions retain their original separate review evidence. Existing evidence is reused. Affected adapter changes trigger corresponding checks again, while unchanged successful check results no longer require identical database writes. Raw evidence hashes, ownership, identity, field bindings and topic decision manifests are still checked.
 
 The archive-body coverage correction was independently applied to all 257 previously formal Obama archive records: 257 passed, zero withdrawn. Original captures, prior decisions and exception histories remain local. The current regression suite has 626 passing tests, including date conflicts, missing source body blocks, truncated documents, missing declared pages and source evidence changes.
 
