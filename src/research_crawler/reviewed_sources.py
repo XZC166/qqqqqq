@@ -699,23 +699,23 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
     ),
     "https://time.com/2918689/how-to-hunt-a-chinese-hacker/": (
         "1992-2016", "TIME", "Sam Frizell", "2014-07-03", "How to Hunt a Chinese Hacker",
-        "time", "11266", "0d811fe185f45cfb95851cd99b6e6296207413120cae37a63a3aa22bee8d4823",
-        "", "China; United States; cyberwar; PLA Unit 61486; CrowdStrike; hacking", "32", "32",
+        "time_ads", "11146", "8bfdf2be80264970c7802a92e00814570a2aa25221f667de26f440afa996caf9",
+        "", "China; United States; cyberwar; PLA Unit 61486; CrowdStrike; hacking", "24", "32",
     ),
     "https://time.com/4004397/the-china-decade/": (
         "1992-2016", "TIME", "Ian Bremmer", "2015-08-20", "The China Decade",
-        "time", "12036", "6f869c5cebd8b5931bf2358ccd801d1e521af39a3bd28a42284267e222f81169",
-        "", "China; United States; global influence; economic power; information control; international order", "28", "28",
+        "time_ads", "11901", "426cc9f67bbdd1eca307ed0fb39063a37b74d240a3182fdd938c679d35e3dd09",
+        "", "China; United States; global influence; economic power; information control; international order", "19", "28",
     ),
     "https://time.com/4644775/donald-trump-china-trade-cold-war/": (
         "2017-2025", "TIME", "Charlie Campbell", "2017-01-24", "Donald Trump Could Be Starting a New Cold War With China. But He Has Little Chance of Winning",
-        "time", "22931", "faab7ab7572223f24674ecedca81f949c4965912787139018140cb1172bb73ab",
-        "", "Donald Trump; China; Taiwan; trade; South China Sea; strategic competition", "65", "65",
+        "time_ads", "22661", "64ad2a7cea1acaeee9a37e9b793975a3e4ea2a658a6f7d6d3bfa083dcb32dbc4",
+        "", "Donald Trump; China; Taiwan; trade; South China Sea; strategic competition", "47", "65",
     ),
     "https://time.com/5228991/president-trumps-tariff-tussle-with-china-is-just-the-beginning/": (
         "2017-2025", "TIME", "Ian Bremmer", "2018-04-05", "Why President Trump’s Tariff Tussle With China Is Just the Beginning",
-        "time", "4227", "8095cab3a0c9fc0670025cb14fd0319653f9fb97f17caffb1d09742ff5909910",
-        "", "Donald Trump; China; tariffs; trade war; One China policy; U.S. politics", "14", "14",
+        "time_ads", "4182", "f01cddd8f7eef871fef0cd25108e27ea7543469edf1bf08053a4a21579257d0e",
+        "", "Donald Trump; China; tariffs; trade war; One China policy; U.S. politics", "11", "14",
     ),
     "https://time.com/5590699/u-s-china-trade-war-reveals-world-status/": (
         "2017-2025", "TIME", "Peter Frankopan", "2019-05-17", "The U.S.-China Trade War Reveals America's New World Status",
@@ -724,8 +724,8 @@ PUBLIC_MEDIA_REVIEWED_ARTICLES: dict[str, tuple[str, ...]] = {
     ),
     "https://time.com/5759394/taiwan-election-2020/": (
         "2017-2025", "TIME", "Charlie Campbell", "2020-01-06", "Here's What's at Stake in Taiwan's Presidential Election",
-        "time", "10070", "e33b39106122533eaa7741e0d6aeaeadaf34b3410342f1a7ca15837058629d70",
-        "", "Taiwan; China; United States; presidential election; One China; Taiwan Relations Act", "39", "39",
+        "time_ads", "9950", "5e5671014da587c516b8cbbd5eaad3320e2ce5bce31a60e265471f0a60a6844b",
+        "", "Taiwan; China; United States; presidential election; One China; Taiwan Relations Act", "31", "39",
     ),
     "https://time.com/6201447/joe-biden-xi-jinping-taiwan-china/": (
         "2017-2025", "TIME", "Charlie Campbell", "2022-07-28", "China’s Xi Jinping Warns President Joe Biden Against ‘Playing With Fire’ Over Taiwan",

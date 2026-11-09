@@ -15,8 +15,8 @@ CASES = (
     ("time_crouching_tiger_2001.html", "https://time.com/archive/6670779/crouching-tiger-hidden-message/", "2001-03-12", "TIME", "Crouching Tiger, Hidden Message", 8, 4154, "3c20cfe0307b49642529894f7df20d6200f6c9c3a0c14392b2a17dc1f2cf8da4"),
     ("time_saving_face_2001.html", "https://time.com/archive/6672669/saving-face/", "2001-04-02", "TIME Staff", "Saving Face", 32, 23106, "9f1bc5363dcced36baeef7a80972532b7095b7f5503524926ae5d6ab7aa218d8"),
     ("time_hu_visit_2010.html", "https://time.com/archive/6691358/hus-visit-finding-a-way-forward-on-u-s-china-relations/", "2010-04-08", "TIME", "Hu's Visit: Finding a Way Forward on U.S.-China Relations", 36, 25473, "f11a22e04b66d5d953d51e610ec69c85413de6b43fd37e2f5291ac81b71b1b80"),
-    ("time_chinese_hacker_2014.html", "https://time.com/2918689/how-to-hunt-a-chinese-hacker/", "2014-07-03", "Sam Frizell", "How to Hunt a Chinese Hacker", 32, 11266, "0d811fe185f45cfb95851cd99b6e6296207413120cae37a63a3aa22bee8d4823"),
-    ("time_china_decade_2015.html", "https://time.com/4004397/the-china-decade/", "2015-08-20", "Ian Bremmer", "The China Decade", 28, 12036, "6f869c5cebd8b5931bf2358ccd801d1e521af39a3bd28a42284267e222f81169"),
+    ("time_chinese_hacker_2014.html", "https://time.com/2918689/how-to-hunt-a-chinese-hacker/", "2014-07-03", "Sam Frizell", "How to Hunt a Chinese Hacker", 24, 11146, "8bfdf2be80264970c7802a92e00814570a2aa25221f667de26f440afa996caf9"),
+    ("time_china_decade_2015.html", "https://time.com/4004397/the-china-decade/", "2015-08-20", "Ian Bremmer", "The China Decade", 19, 11901, "426cc9f67bbdd1eca307ed0fb39063a37b74d240a3182fdd938c679d35e3dd09"),
 )
 
 

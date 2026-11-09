@@ -4,11 +4,11 @@
 
 ## 最新口径：复核合格正式表（2026-11-09）
 
-正式 Excel 当前仅含 **1,013 条**来源与逐篇主题审核共同通过的唯一全文，四时期为 **395、250、131、237**，其中 1949—1991 年 645 条。1972 年归第一段，第二段从 1973 年开始。源库 materials 表是采集工作池；旧日志中的 verified 或材料数量不等于当前正式全文数。
+正式 Excel 当前仅含 **1,145 条**来源与逐篇主题审核共同通过的唯一全文，四时期为 **443、291、133、278**，其中 1949—1991 年 734 条。1972 年归第一段，第二段从 1973 年开始。源库 materials 表是采集工作池；旧日志中的 verified 或材料数量不等于当前正式全文数。
 
 本轮逐条来源检查覆盖启动时全部 6,149 条工作记录，4,964 条通过程序来源核验、1,185 条需继续处理；来源核验通过本身不授予主题批准。审核记录写入 quality_reviews，并绑定正文、全部导出字段与审核证据哈希。CLI export/deliver 默认只将当前复核合格记录写入正式 Excel；导出时重新核验，未审或过期审核不混入正式表。原始采集池、历史证据、操作前备份和 pending 均保留。
 
-详见 [最新早期采集与复核批次](docs/reports/2026-11-09-quality-app300-batch.md) 和 [逐年、来源、事件线索统计](docs/reports/2026-11-09-quality-app300-batch.json)；[873 条快照](docs/reports/2026-11-09-quality-followup-batch.md)及[此前 614 条快照](docs/reports/2026-11-09-quality-gate-batch.md)保留。本地 data/materials.xlsx 与 ZIP 仅供授权范围内私人研究；不随 GitHub 公开提交。10,000 条仍是扩展目标，尚未达成；继续全库主题复核、早期资料补充和其余时期并行检索。
+详见 [最新逐条复核批次](docs/reports/2026-11-09-quality-continued-batch.md) 和 [逐年、来源、事件线索统计](docs/reports/2026-11-09-quality-continued-batch.json)；[1,013 条快照](docs/reports/2026-11-09-quality-app300-batch.md)、[873 条快照](docs/reports/2026-11-09-quality-followup-batch.md)及[此前 614 条快照](docs/reports/2026-11-09-quality-gate-batch.md)保留。本地 data/materials.xlsx 与 ZIP 仅供授权范围内私人研究；不随 GitHub 公开提交。10,000 条仍是扩展目标，尚未达成；继续全库主题复核、早期资料补充和其余时期并行检索。
 
 ## 历史运行日志（以下为当时工作池及技术核验口径，不能作为当前正式数量）
 
