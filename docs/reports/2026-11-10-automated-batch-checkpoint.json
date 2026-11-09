@@ -580,5 +580,20 @@
     "5,548 working records remain nonformal for topic, source/body, metadata or completeness reasons. A completed automated sweep does not resolve every exception."
   ],
   "plateau_established": false,
-  "privacy": "Fulltext, quotes, workbook, raw evidence and SQLite are local private research copies; Git contains only code, synthetic tests and aggregate reports. No blanket public redistribution license asserted."
+  "privacy": "Fulltext, quotes, workbook, raw evidence and SQLite are local private research copies; Git contains only code, synthetic tests and aggregate reports. No blanket public redistribution license asserted.",
+  "private_delivery": {
+    "path": "data/materials-quality-reviewed-20261110-2257.zip",
+    "generated_at": "2026-11-09T16:28:17.102151+00:00",
+    "formal_records": 2257,
+    "columns": 9,
+    "all_nine_fields_verified": true,
+    "long_body_sidecars_verified": 185,
+    "positive_review_manifests_verified": 2257,
+    "formal_raw_evidence_hashes_verified": 2865,
+    "zip_bytes": 1137207521,
+    "zip_sha256": "ec26c621e8287cf789f579c965ac60236e628a847fa46c6cb9b2db84fb210249",
+    "builder_crc_check": "passed during delivery generation; not redundantly rerun",
+    "private_only": true
+  },
+  "code_checkpoint": "f90f498"
 }
