@@ -6136,6 +6136,11 @@ class ObamaWhiteHouseArchiveAdapter:
             publication_date, title, sha256(body.encode("utf-8")).hexdigest()
         )
         body_metadata = _normalized_text(body_nodes.xpath(".//text()").getall()) if body_nodes else ""
+        body_covered = bool(
+            len(body_nodes) == 1
+            and _normalized_text(body_parts) == body_metadata
+            and not body_nodes.xpath(".//table|.//img|.//object|.//embed|.//script")
+        )
         source_verified = (
             source_site.casefold() == "whitehouse.gov"
             and "The White House" in source_header
@@ -6152,6 +6157,7 @@ class ObamaWhiteHouseArchiveAdapter:
             and len(date_nodes) == 1
             and len(body_nodes) == 1
             and body
+            and body_covered
             and (transcript_ending or statement_complete)
         )
         material = None

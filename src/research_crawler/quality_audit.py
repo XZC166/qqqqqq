@@ -150,6 +150,7 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
     topic_pass = False
     status = "pending"
     reason = "Source checks have not completed."
+    previous = None
     try:
         if not row["evidence_path"] or not row["candidate_id"]:
             raise ValueError("Missing source evidence or owning candidate")
@@ -198,7 +199,7 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
                 raise ValueError("Latest declared metadata evidence hash mismatch")
         source_signature = _source_signature(store, row, checked_support, latest)
         previous = store.connection.execute(
-            "SELECT source_pass,input_fingerprint,checks_json FROM quality_reviews WHERE material_id=?",
+            "SELECT * FROM quality_reviews WHERE material_id=?",
             (material_id,),
         ).fetchone()
         previous_checks = json.loads(previous["checks_json"]) if previous is not None else {}
@@ -272,6 +273,19 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
         "body_sha256":hashlib.sha256(row["body"].encode()).hexdigest(),"source_sha256":row["content_sha256"] or "",
         "status":status,"source_pass":source_pass,"topic_pass":topic_pass,"reason":reason,"checks":checks,
         "reviewed_at":datetime.now(timezone.utc).isoformat(),"review_version":"2026-11-09-batch-cache-v2"}
+    # All evidence, ownership, fields, counters and topic bindings have already
+    # been checked above. An identical pass needs no database state change.
+    # Keep its persisted state timestamp; the returned check has today's time.
+    if previous is not None and status == "pass" and checks.get("source_cache_reused"):
+        previous_checks = json.loads(previous["checks_json"])
+        comparable_checks = dict(checks)
+        previous_checks.pop("source_cache_reused", None)
+        comparable_checks.pop("source_cache_reused", None)
+        stable_fields = ("identity_key", "input_fingerprint", "body_sha256", "source_sha256",
+                         "status", "source_pass", "topic_pass", "reason", "review_version")
+        if (all(previous[key] == result[key] for key in stable_fields)
+                and previous_checks == comparable_checks):
+            return result
     with store.connection:
         store.connection.execute("""INSERT INTO quality_reviews VALUES(?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(material_id) DO UPDATE SET identity_key=excluded.identity_key,
