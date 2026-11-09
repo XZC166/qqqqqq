@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-11-09T00:00:00Z",
+  "batch": "The Diplomat Bluesky keyword repair",
+  "records": [
+    {
+      "material_id": 8191,
+      "url": "https://bsky.app/profile/thediplomat.com/post/3lvw3smn3fj27",
+      "old_keywords": "",
+      "new_keywords": "Vietnam; chip manufacturing",
+      "body_sha256": "0651a3eb81cc97a4e119530e56f28f78e9aa90a26813879edd0b1536f9e80f7c"
+    },
+    {
+      "material_id": 8196,
+      "url": "https://bsky.app/profile/thediplomat.com/post/3lvtldjo3ws2z",
+      "old_keywords": "",
+      "new_keywords": "Vietnam; chip manufacturing",
+      "body_sha256": "0651a3eb81cc97a4e119530e56f28f78e9aa90a26813879edd0b1536f9e80f7c"
+    },
+    {
+      "material_id": 8201,
+      "url": "https://bsky.app/profile/thediplomat.com/post/3lvrblasppv2x",
+      "old_keywords": "",
+      "new_keywords": "Vietnam; chip manufacturing",
+      "body_sha256": "0651a3eb81cc97a4e119530e56f28f78e9aa90a26813879edd0b1536f9e80f7c"
+    },
+    {
+      "material_id": 8206,
+      "url": "https://bsky.app/profile/thediplomat.com/post/3lvp6hcrijw2z",
+      "old_keywords": "",
+      "new_keywords": "Vietnam; chip manufacturing",
+      "body_sha256": "0651a3eb81cc97a4e119530e56f28f78e9aa90a26813879edd0b1536f9e80f7c"
+    },
+    {
+      "material_id": 8291,
+      "url": "https://bsky.app/profile/thediplomat.com/post/3lufbe72ams2k",
+      "old_keywords": "",
+      "new_keywords": "Donald Trump; chip war; Taipei",
+      "body_sha256": "a086a8cdf21dbd7dc3e692d6f81de63a8c4de63889e58c8bf962c39f3fb98dfc"
+    }
+  ],
+  "method": "Keywords were derived only from explicit terms in each same-record body; no source metadata or external summary was used.",
+  "backup": "data\\research-pre-diplomat-keywords-20261109.sqlite3",
+  "backup_sha256": "36338f2f0a650ffa458fc56c3011f7f6cd29d79f8e6047a84d0b38f8c47391eb"
+}

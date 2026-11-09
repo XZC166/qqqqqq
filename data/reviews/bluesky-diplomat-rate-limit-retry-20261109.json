@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-11-09T00:00:00Z",
+  "source": "The Diplomat official Bluesky feed",
+  "retry_batches": [
+    "retry1",
+    "retry2",
+    "retry3",
+    "retry4",
+    "retry5"
+  ],
+  "low_concurrency_profile": {
+    "concurrency": 4,
+    "per_domain": 2,
+    "delay_seconds": 1.0,
+    "target_concurrency": 1
+  },
+  "formal_total": 5442,
+  "periods": [
+    [
+      "1949-1972",
+      126
+    ],
+    [
+      "1973-1991",
+      177
+    ],
+    [
+      "1992-2016",
+      707
+    ],
+    [
+      "2017-2025",
+      4432
+    ]
+  ],
+  "source_candidate_statuses": [
+    [
+      "excluded",
+      780
+    ],
+    [
+      "pending",
+      55
+    ],
+    [
+      "verified",
+      647
+    ]
+  ],
+  "new_formal_from_retries": 196,
+  "remaining_pending": 55,
+  "note": "Initial high-throughput requests received HTTP 429. Five low-concurrency retries received HTTP 200 for 196 previously candidate posts; remaining records stay pending and no access controls were bypassed."
+}
