@@ -1,0 +1,32 @@
+{
+  "source": "Bluesky public AppView API: getAuthorFeed and getProfile",
+  "window": [
+    "2017-01-01",
+    "2025-12-31"
+  ],
+  "accounts": {
+    "reuters.com": {
+      "profile_verified": true,
+      "pages": 250,
+      "posts_scanned": 25000,
+      "video_posts_skipped": 780,
+      "candidates": 0,
+      "oldest_post": "2026-05-27T10:40:23Z",
+      "page_limit_reached": true,
+      "error": null
+    },
+    "cnn.com": {
+      "profile_verified": true,
+      "pages": 250,
+      "posts_scanned": 25000,
+      "video_posts_skipped": 1968,
+      "candidates": 745,
+      "oldest_post": "2024-07-20T17:39:35.187Z",
+      "page_limit_reached": true,
+      "error": null
+    }
+  },
+  "candidate_urls": 745,
+  "candidate_csv": "data\\candidates-bluesky-reuters-cnn-backfill-20261109.csv",
+  "note": "Discovery metadata only. Candidate posts must pass original-page and getPosts body/date/author checks before formal export; video posts are skipped."
+}
