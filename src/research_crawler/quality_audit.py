@@ -119,7 +119,8 @@ def _adapter_revision():
     root = Path(__file__).parent
     files = sorted(root / name for name in (
         'quality_audit.py', 'revalidation.py', 'validation.py', 'policy.py',
-        'items.py', 'adapters.py', 'reviewed_sources.py', 'spiders/government.py'))
+        'items.py', 'adapters.py', 'reviewed_sources.py', 'spiders/government.py',
+        'govinfo_compilation.py'))
     return _revision_for_files(tuple((str(p), p.stat().st_size, p.stat().st_mtime_ns) for p in files))
 
 
