@@ -7,6 +7,7 @@ all nine exported values except the separately checked discovery counter.
 
 import hashlib
 import json
+import re
 from dataclasses import replace
 from datetime import datetime, timezone
 from pathlib import Path
@@ -14,12 +15,41 @@ from pathlib import Path
 from research_crawler.items import SourceEvidence, VerifiedMaterial
 from research_crawler.policy import AccessDecision
 from research_crawler.revalidation import _extract_existing
-from research_crawler.spiders.government import GovernmentArticleAdapter
+from research_crawler.spiders.government import GovernmentArticleAdapter, _presidency_explicit_release_dates
 from research_crawler.store import canonicalize_url
 from research_crawler.validation import validate_material
 
 
 FIELDS = ("source", "published_on", "author", "title", "abstract", "keywords", "body", "source_url")
+
+
+def _app_editorial_risks(raw: bytes, body: str, published_on: str) -> list[str]:
+    """Hold unresolved source notes; never infer or repair missing source text.
+
+    APP sometimes places a second speaker's entire statement in its editorial
+    note field. It also records release dates that differ from the event date.
+    These conservative flags require individual resolution, not auto-approval.
+    """
+    from lxml import html
+
+    document = html.fromstring(raw)
+    nodes = document.xpath('//*[contains(concat(" ", normalize-space(@class), " "), " field-docs-footnote ")]')
+    notes = "\n\n".join(node.text_content().strip() for node in nodes)
+    # text_content() omits the boundary for a source <br>; the body extractor
+    # preserves it as a newline. Compare non-whitespace characters here only.
+    normalized_notes = "".join(notes.split())
+    normalized_body = "".join(body.split())
+    risks = []
+    if (re.search(r"\bas follows\b|\bread(?:s)? as\b|\bresponded:", notes, re.I)
+            and normalized_notes not in normalized_body):
+        risks.append("APP editorial note contains potentially omitted source speech/text; completeness pending")
+    if re.search(r"could not be verified|(?:complete )?tape was not available|tape was incomplete", notes, re.I):
+        risks.append("APP source explicitly limits verification of its transcript; completeness pending")
+    for release in _presidency_explicit_release_dates(notes, published_on):
+        if release != published_on:
+            risks.append("APP explicit text release date differs from stored date; publication date pending")
+            break
+    return risks
 
 
 def material_fingerprint(row) -> str:
@@ -72,6 +102,11 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
             raise ValueError("Raw source evidence SHA-256 hash mismatch")
         checks["primary_raw_sha256"] = row["content_sha256"]
         checks["primary_evidence_path"] = row["evidence_path"]
+        if row["source"] == "The American Presidency Project":
+            editorial_risks = _app_editorial_risks(raw, row["body"], row["published_on"])
+            checks["app_editorial_risks"] = editorial_risks
+            if editorial_risks:
+                raise ValueError("; ".join(editorial_risks))
         if row["access_status"] != "allow" or not 200 <= row["status_code"] < 300:
             raise ValueError("Source evidence is not an allowed successful response")
         duplicate_rows = store.connection.execute("SELECT count(*) FROM materials WHERE identity_key=?",(row["identity_key"],)).fetchone()[0]

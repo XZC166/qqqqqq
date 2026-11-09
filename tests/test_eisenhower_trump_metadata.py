@@ -34,8 +34,8 @@ def test_public_china_records_have_hash_bound_derived_metadata():
             "presidency_johnson_yen_china_1967.html",
             "1949-1972",
             "1967-05-09",
-            "据正文整理：约翰逊欢迎中华民国副总统严家淦访白宫，谈及双方关系、东亚局势、台湾的经济发展及美国援助。",
-            "Lyndon B. Johnson; Yen Chia-kan; Republic of China; Taiwan; U.S. assistance; East Asia",
+            "据正文整理：约翰逊欢迎严家淦访美，谈及台湾经济发展与合作；同页注释区保存严家淦有关双边友谊、自由与亚洲事务的完整回应。",
+            "Republic of China; Free China; economic assistance; freedom and democracy",
         ),
         (
             "https://www.presidency.ucsb.edu/documents/remarks-signing-ceremony-for-four-united-states-china-agreements",
@@ -94,3 +94,6 @@ def test_public_china_records_have_hash_bound_derived_metadata():
         assert result["abstract_origin"] == "derived"
         assert result["field_sources"]["abstract"] == url
         assert result["field_sources"]["keywords"] == url
+        if fixture == "presidency_johnson_yen_china_1967.html":
+            assert "Vice President Yen responded as follows:" in material.body
+            assert material.body.endswith("Thank you, Mr. President. Thank you very much.")

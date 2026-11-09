@@ -1545,9 +1545,9 @@ PRESIDENCY_REVIEWED_HASHED_METADATA: dict[str, tuple[str, str, str]] = {
         "Dwight D. Eisenhower; China; United Nations; detained U.S. airmen; public opinion",
     ),
     "https://www.presidency.ucsb.edu/documents/remarks-welcome-the-white-house-vice-president-yen-the-republic-china": (
-        "a76e90d24aea29572c9cbc7dfe75b3f94696909d8f63d9582c4f35ce614e7c51",
-        "据正文整理：约翰逊欢迎中华民国副总统严家淦访白宫，谈及双方关系、东亚局势、台湾的经济发展及美国援助。",
-        "Lyndon B. Johnson; Yen Chia-kan; Republic of China; Taiwan; U.S. assistance; East Asia",
+        "d776de88918d06a8a8f54a8fdcc9a87e582686dcadd85af58637622833686ccd",
+        "据正文整理：约翰逊欢迎严家淦访美，谈及台湾经济发展与合作；同页注释区保存严家淦有关双边友谊、自由与亚洲事务的完整回应。",
+        "Republic of China; Free China; economic assistance; freedom and democracy",
     ),
     "https://www.presidency.ucsb.edu/documents/remarks-signing-ceremony-for-four-united-states-china-agreements": (
         "d6a6cce040f6065e05a8355c2d699306729c1393e912a752e9b12e784bdfe5d2",

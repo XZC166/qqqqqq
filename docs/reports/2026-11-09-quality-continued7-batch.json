@@ -1,0 +1,496 @@
+{
+  "generated_at": "2026-11-09T14:39:39.736263+00:00",
+  "quantity_goal": 10000,
+  "database_material_rows": 7682,
+  "formal_unique_fulltexts": 1523,
+  "pending_or_nonformal_material_rows": 6159,
+  "source_audited_material_rows": 7682,
+  "not_yet_source_audited_material_rows": 0,
+  "individual_decision_material_rows": 2367,
+  "not_yet_individually_decided_material_rows": 5315,
+  "individual_decision_note": "Includes positive and negative/pending decisions. Not every existing positive body was reread in this checkpoint; full-corpus individual review remains unfinished.",
+  "previous_checkpoint_formal": 1479,
+  "formal_net_increase": 44,
+  "newly_read_review_operations": 135,
+  "newly_read_unique_records": 127,
+  "metadata_only_revalidation_records": 28,
+  "unique_records_touched_by_review_batches": 155,
+  "technical_2025_covid_revalidations": 3,
+  "gross_promotions": 99,
+  "gross_formal_withdrawals": 55,
+  "withdrawn_then_reinstated": 32,
+  "still_withdrawn_this_gate": 23,
+  "review_batches": [
+    {
+      "file": "early-diplomatic17-quality-review-20261109.json",
+      "reviewed_records": 17,
+      "formal_fulltexts": 6,
+      "new_formal_promotions": 6,
+      "pending": 11,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "early-highrelevance-next6-quality-review-20261109.json",
+      "reviewed_records": 6,
+      "formal_fulltexts": 6,
+      "new_formal_promotions": 6,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "early-historical-next18-quality-review-20261109.json",
+      "reviewed_records": 18,
+      "formal_fulltexts": 5,
+      "new_formal_promotions": 5,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "early-core-next10-quality-review-20261109.json",
+      "reviewed_records": 10,
+      "formal_fulltexts": 10,
+      "new_formal_promotions": 10,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "early-truman-korea-formosa-2582-quality-review-20261109.json",
+      "reviewed_records": 1,
+      "formal_fulltexts": 1,
+      "new_formal_promotions": 1,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "early-executive-communications-next5-quality-review-20261109.json",
+      "reviewed_records": 5,
+      "formal_fulltexts": 4,
+      "new_formal_promotions": 4,
+      "pending": 1,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "early-diplomacy-administrative35-quality-review-20261109.json",
+      "reviewed_records": 35,
+      "formal_fulltexts": 5,
+      "new_formal_promotions": 5,
+      "pending": 30,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "early-diplomatic-communications24-quality-review-20261109.json",
+      "reviewed_records": 24,
+      "formal_fulltexts": 18,
+      "new_formal_promotions": 18,
+      "pending": 6,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "app-six-note-speeches-recovery-20261109-quality-review.json",
+      "reviewed_records": 6,
+      "formal_fulltexts": 6,
+      "new_formal_promotions": 6,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 4
+    },
+    {
+      "file": "biomedical-corrections-two-quality-review-20261109.json",
+      "reviewed_records": 2,
+      "formal_fulltexts": 0,
+      "new_formal_promotions": 0,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "app-explicit-release-date-recovery-20261109-quality-review.json",
+      "reviewed_records": 28,
+      "formal_fulltexts": 28,
+      "new_formal_promotions": 28,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 28
+    },
+    {
+      "file": "app-three-dated-transcripts-20261109-quality-review.json",
+      "reviewed_records": 3,
+      "formal_fulltexts": 3,
+      "new_formal_promotions": 3,
+      "pending": 0,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    },
+    {
+      "file": "early-diplomacy-eight-20261109-quality-review.json",
+      "reviewed_records": 8,
+      "formal_fulltexts": 7,
+      "new_formal_promotions": 7,
+      "pending": 1,
+      "withdrawn_formal": 0,
+      "reinstated_previously_withdrawn": 0
+    }
+  ],
+  "new_candidate_unique_urls": 300,
+  "duplicate_discoveries_added": 434,
+  "new_working_material_rows": 267,
+  "restricted_new_urls": 6,
+  "failed_nonrestricted_requests": 0,
+  "queues": {
+    "app226": {
+      "new_candidates": 226,
+      "working_materials": 214,
+      "formal_fulltexts": 11,
+      "pending_urls": 215,
+      "restricted_urls": 0,
+      "failed_urls": 0,
+      "without_accepted_working_text": 12
+    },
+    "app58": {
+      "new_candidates": 58,
+      "working_materials": 52,
+      "formal_fulltexts": 0,
+      "pending_urls": 58,
+      "restricted_urls": 0,
+      "failed_urls": 0,
+      "without_accepted_working_text": 6
+    },
+    "mixed_sources16": {
+      "new_candidates": 16,
+      "working_materials": 1,
+      "formal_fulltexts": 0,
+      "pending_urls": 10,
+      "restricted_urls": 6,
+      "failed_urls": 0,
+      "without_accepted_working_text": 15
+    }
+  },
+  "source_guard_scope": {
+    "app_working_materials_checked": 2058,
+    "source_passes_before_repairs": 1878,
+    "source_pending_before_repairs": 180,
+    "note": "Source-level technical screen is distinct from individual full-body topic review."
+  },
+  "formal_by_period": {
+    "2017-2025": 348,
+    "1992-2016": 130,
+    "1949-1972": 553,
+    "1972-1991": 492
+  },
+  "formal_by_source_type": {
+    "government": 1079,
+    "media": 111,
+    "think_tank": 85,
+    "research_literature": 14,
+    "new_media": 234
+  },
+  "formal_by_year": {
+    "1949": 22,
+    "1950": 38,
+    "1951": 31,
+    "1952": 16,
+    "1953": 10,
+    "1954": 19,
+    "1955": 24,
+    "1956": 11,
+    "1957": 12,
+    "1958": 23,
+    "1959": 13,
+    "1960": 86,
+    "1961": 23,
+    "1962": 18,
+    "1963": 19,
+    "1964": 20,
+    "1965": 10,
+    "1966": 25,
+    "1967": 11,
+    "1968": 3,
+    "1969": 14,
+    "1970": 7,
+    "1971": 44,
+    "1972": 54,
+    "1973": 33,
+    "1974": 32,
+    "1975": 21,
+    "1976": 44,
+    "1977": 27,
+    "1978": 24,
+    "1979": 49,
+    "1980": 56,
+    "1981": 8,
+    "1982": 8,
+    "1983": 11,
+    "1984": 43,
+    "1985": 10,
+    "1986": 7,
+    "1987": 10,
+    "1988": 19,
+    "1989": 58,
+    "1990": 19,
+    "1991": 13,
+    "1992": 2,
+    "1993": 3,
+    "1994": 3,
+    "1996": 2,
+    "1997": 2,
+    "1998": 3,
+    "1999": 15,
+    "2000": 12,
+    "2001": 13,
+    "2002": 1,
+    "2004": 1,
+    "2005": 3,
+    "2006": 4,
+    "2008": 7,
+    "2009": 7,
+    "2010": 3,
+    "2011": 5,
+    "2012": 7,
+    "2013": 3,
+    "2014": 12,
+    "2015": 13,
+    "2016": 9,
+    "2017": 7,
+    "2018": 17,
+    "2019": 24,
+    "2020": 14,
+    "2021": 9,
+    "2022": 3,
+    "2023": 17,
+    "2024": 17,
+    "2025": 240
+  },
+  "formal_by_source": {
+    "United States Department of State": 9,
+    "AP News": 1,
+    "Voice of America (VOA News)": 24,
+    "Office of the United States Trade Representative": 2,
+    "Brookings": 41,
+    "Center for Strategic and International Studies (CSIS)": 38,
+    "U.S. Department of State": 5,
+    "The American Presidency Project": 1017,
+    "Journal of Psycholinguistic Research": 1,
+    "PLOS One": 1,
+    "The White House, Office of the Press Secretary": 7,
+    "Editorials on Voice of America": 1,
+    "The White House": 6,
+    "International Politics (Hague, Netherlands)": 1,
+    "Orbis": 1,
+    "U.S. Government Publishing Office": 5,
+    "PBS News": 10,
+    "The New York Times": 49,
+    "Voice of America Office of Public Relations": 1,
+    "វីអូអេ - VOA Khmer": 1,
+    "International Journal of Communication": 2,
+    "Humanities and Social Sciences Communications": 1,
+    "Radio Free Asia": 2,
+    "CBS News": 5,
+    "China Leadership Monitor": 1,
+    "Carnegie Endowment for International Peace": 1,
+    "East Asia (Piscataway, N.j.)": 1,
+    "The Daily Iowan": 4,
+    "Voice of America": 1,
+    "Friends Journal": 1,
+    "Harry S. Truman Library & Museum": 7,
+    "PBS": 1,
+    "The Guardian": 9,
+    "ABC Radio (The World Today)": 4,
+    "ABC News (Four Corners)": 1,
+    "The Guardian (The Observer)": 1,
+    "TIME": 60,
+    "ABC Radio (PM)": 3,
+    "ABC News (Lateline)": 1,
+    "ABC News": 5,
+    "Pew Research Center": 13,
+    "China International Strategy Review": 2,
+    "Asia Europe Journal": 1,
+    "CSIS": 47,
+    "The Associated Press": 29,
+    "Foreign Affairs": 8,
+    "Chatham House": 4,
+    "Foreign Policy": 6,
+    "Lawfare": 6,
+    "Axios": 8,
+    "U.S. Institute of Peace": 2,
+    "Human Rights Watch": 8,
+    "Amnesty International": 4,
+    "Just Security": 3,
+    "Gallup": 2,
+    "CNN": 5,
+    "The Diplomat": 8,
+    "Politico": 8,
+    "NPR": 7,
+    "Council on Foreign Relations": 8,
+    "RAND": 5,
+    "European Council on Foreign Relations": 4,
+    "German Council on Foreign Relations": 3
+  },
+  "formal_period_source_type": {
+    "2017-2025": {
+      "government": 38,
+      "media": 20,
+      "think_tank": 48,
+      "research_literature": 11,
+      "new_media": 231
+    },
+    "1992-2016": {
+      "government": 58,
+      "think_tank": 37,
+      "media": 30,
+      "research_literature": 2,
+      "new_media": 3
+    },
+    "1949-1972": {
+      "government": 504,
+      "media": 48,
+      "research_literature": 1
+    },
+    "1972-1991": {
+      "government": 479,
+      "media": 13
+    }
+  },
+  "period_boundary": "1972 belongs only to first period; second starts 1973.",
+  "candidate_status_counts": {
+    "candidate": 284,
+    "excluded": 2956,
+    "pending": 12524,
+    "restricted": 123,
+    "verified": 8063
+  },
+  "candidate_verified_note": "Acquisition verified status denotes an extracted working record; it does not count as formal. Bound quality pass plus source and topic pass governs acceptance.",
+  "event_cue_method": "Nonexclusive case-insensitive literal body references using listed terms only. Not completed event classification or political labeling; broad cues such as Korea do not prove a specific historical event.",
+  "event_cue_terms": {
+    "Korean War": [
+      "Korean War",
+      "Korea",
+      "Chinese Communist aggression"
+    ],
+    "Taiwan / Strait": [
+      "Taiwan",
+      "Formosa",
+      "Quemoy",
+      "Matsu"
+    ],
+    "Nixon visit / opening": [
+      "Peking",
+      "visit to China",
+      "opening to China"
+    ],
+    "Normalization": [
+      "normalization",
+      "normalize relations",
+      "normal relations with China"
+    ],
+    "1989 / Tiananmen": [
+      "Tiananmen",
+      "June 4",
+      "June 1989"
+    ],
+    "WTO": [
+      "WTO",
+      "World Trade Organization"
+    ],
+    "South China Sea": [
+      "South China Sea"
+    ],
+    "cybersecurity": [
+      "cybersecurity",
+      "cyber attack",
+      "cybersecurity"
+    ],
+    "trade conflict": [
+      "tariff",
+      "trade war",
+      "trade conflict"
+    ],
+    "Huawei / 5G": [
+      "Huawei",
+      "5G"
+    ],
+    "COVID-19": [
+      "COVID",
+      "coronavirus"
+    ],
+    "Xinjiang / Hong Kong": [
+      "Xinjiang",
+      "Hong Kong",
+      "Uyghur",
+      "Uighur"
+    ],
+    "chips / AI": [
+      "semiconductor",
+      "artificial intelligence",
+      "CHIPS"
+    ],
+    "broadcasting / public diplomacy": [
+      "Voice of America",
+      "public diplomacy",
+      "broadcasting",
+      "people-to-people"
+    ]
+  },
+  "event_literal_cues": {
+    "Korean War": 472,
+    "Taiwan / Strait": 384,
+    "Nixon visit / opening": 183,
+    "Normalization": 96,
+    "1989 / Tiananmen": 88,
+    "WTO": 78,
+    "South China Sea": 55,
+    "cybersecurity": 18,
+    "trade conflict": 168,
+    "Huawei / 5G": 21,
+    "COVID-19": 35,
+    "Xinjiang / Hong Kong": 116,
+    "chips / AI": 72,
+    "broadcasting / public diplomacy": 165
+  },
+  "workbook": {
+    "generated_at": "2026-11-09T14:38:44.800168+00:00",
+    "formal_records": 1523,
+    "columns": 9,
+    "all_nine_fields_verified": true,
+    "long_body_sidecars_verified": 158,
+    "positive_bound_reviews_verified": 1523,
+    "formal_raw_evidence_hashes_verified": 1773,
+    "excel_sha256": "f6d380e81e4be12eb283fc5e1ed6921d11720ca51bc575e49067e113782a92f8",
+    "private_only": true
+  },
+  "verification": {
+    "full_test_suite_passed": 551,
+    "full_formal_workbook_readback": true,
+    "raw_hashes_and_signed_topic_bindings_checked": true
+  },
+  "remaining_gaps": [
+    "Entire pending pool still needs individual full-body thematic/field/completeness review; no sample substitutes for complete coverage.",
+    "The 23 unresolved APP gate withdrawals remain pending for omitted note text, source transcript limitations or unresolved completeness, preserving all old evidence.",
+    "FRUS six-volume inventory remains pending precise publication-day and single-document/notes review; historical datelines are not guessed publication days.",
+    "New NARA/CIA/UK/GovInfo/media candidates retain actual pending or restricted status; finding aids and video/audio descriptions are not formal full texts.",
+    "NYT/AP/Reuters/CNN/Five Eyes media, Congress, VOA, think tanks, open research, public official accounts and Chinese comparison sources remain in scope.",
+    "1992-2025 coverage continues, including separately checked complete original institutional posts; linked videos and summaries never substitute for full documents.",
+    "No plateau or exhaustion established; 10,000 remains an aspirational target."
+  ],
+  "privacy": "Full texts, Excel, SQLite, raw evidence and ZIP remain local/private. Git includes code and aggregate reports only.",
+  "private_delivery": {
+    "generated_at": "2026-11-09T14:42:18.834703+00:00",
+    "formal_records": 1523,
+    "columns": 9,
+    "all_nine_fields_verified": true,
+    "long_body_sidecars_verified": 158,
+    "positive_review_manifests_verified": 1523,
+    "formal_raw_evidence_hashes_verified": 1773,
+    "zip_bytes": 1089953371,
+    "zip_sha256": "d1d7d89ef6024ffb248a92d608a012f0a5e6744cccba3947f34ea5495d48dcad",
+    "builder_crc_check": "passed during delivery generation; not redundantly rerun",
+    "private_only": true
+  }
+}

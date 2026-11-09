@@ -5119,7 +5119,27 @@ class PresidencyProjectDocumentAdapter:
                 date_valid = False
             else:
                 publication_date = next(iter(released_dates))
+        if visible_publication_date:
+            text_releases = _presidency_explicit_release_dates(notes, visible_publication_date)
+            if text_releases:
+                if (len(text_releases) != 1 or min(text_releases) < visible_publication_date
+                        or (release_pairs and text_releases != {publication_date})):
+                    date_valid = False
+                else:
+                    publication_date = next(iter(text_releases))
         body_parts = _presidency_body_blocks(body_nodes[0]) if len(body_nodes) == 1 else None
+        # A note can contain an entire second speech named in the title. Keep
+        # that same-page source text and its attribution context, in page order.
+        # Ordinary editorial timing/location notes remain outside the body.
+        if re.search(r"\bas follows\b|\bread(?:s)? as\b|\bresponded:", notes, re.I):
+            note_nodes = documents.css(".field-docs-footnote")
+            note_parts = None
+            if len(note_nodes) == 1:
+                if not note_nodes[0].xpath("./*"):
+                    note_parts = [_normalized_text(note_nodes[0].xpath("./text()").getall())]
+                else:
+                    note_parts = _presidency_body_blocks(note_nodes[0])
+            body_parts = body_parts + note_parts if body_parts is not None and note_parts else None
         body = "\n\n".join(part for part in (body_parts or []) if part)
         body_structure_valid = body_parts is not None
         author_nodes = documents.css(".field-docs-person .diet-title a") if len(documents) == 1 else []
@@ -5193,6 +5213,20 @@ def _presidency_paragraph_text(paragraph) -> str:
             child.tail = "\n\n" + (child.tail or "")
     text = "".join(node.itertext())
     return "\n".join(" ".join(line.split()) for line in text.split("\n")).strip()
+
+
+def _presidency_explicit_release_dates(notes: str, document_date: str) -> set[str]:
+    """Read an explicit text/transcript release, distinct from an event date.
+
+    An omitted year is anchored to the dated source document. A release that
+    would precede it is rejected by the adapter; no cross-year date is guessed.
+    """
+    months = "January|February|March|April|May|June|July|August|September|October|November|December"
+    pattern = (r"\b(?:text|transcript|letters?|interview)\b[^.!?\n]{0,180}?\b(?:was|were)\s+released\b"
+               r"[^.!?\n]{0,120}?\bon\s+(" + months + r")\s+(\d{1,2})(?:,\s*(\d{4}))?")
+    return {datetime.strptime(f"{m.group(1)} {m.group(2)} {m.group(3) or document_date[:4]}",
+                              "%B %d %Y").date().isoformat()
+            for m in re.finditer(pattern, notes, re.I)}
 
 
 def _presidency_body_blocks(container) -> list[str] | None:

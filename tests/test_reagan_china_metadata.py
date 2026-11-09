@@ -44,7 +44,7 @@ def test_reagan_china_materials_have_hash_bound_summaries_and_keywords():
         (
             "https://www.presidency.ucsb.edu/documents/letter-the-speaker-the-house-representatives-and-the-president-the-senate-trade-with-0",
             "presidency_reagan_china_waiver_1988.html",
-            "1988-06-03",
+            "1988-06-04",
             "据正文整理：里根向国会提交继续对中国和匈牙利贸易法豁免的文件，说明延长豁免的理由，并介绍中国移民政策、对外开放和对美人员往来。",
             "China; trade waiver; Jackson-Vanik amendment; emigration; human rights; U.S.-China relations",
         ),
