@@ -27,12 +27,18 @@ INSTITUTIONAL_SOURCES = frozenset({
     'The Wilson Center', 'Human Rights Watch', 'Just Security',
     'Pew Research Center', 'Gallup', 'The Guardian', 'Reuters',
     'Chatham House', 'Financial Times', 'The Economist'})
+# A short complete post can distribute its argument across paragraphs. These
+# explicit frames also anchor a response such as "the U.S. can counter China";
+# a country-only paragraph must never borrow an unrelated paragraph's policy.
+POST_POLICY_FRAME = re.compile(
+    r'\b(?:counter(?:ing)? China|deter(?:ring)? (?:China|Chinese)|'
+    r'nuclear (?:stockpile|arsenal|triad|balance)|strategic (?:superiority|competition))\b', re.I)
 TERMS = ('United States','China','Chinese','Taiwan','Formosa','Beijing','Peking','Hong Kong','Xinjiang','Tiananmen','relations','trade','tariffs','sanctions','export controls','propaganda','disinformation','public diplomacy','human rights','Voice of America','normalization','diplomacy','communism','security','nuclear','semiconductors','artificial intelligence','news','media','framing','public opinion')
 
 
 def assess_topic(row, previous_reason=''):
     body = row['body']
-    result = {'approved': False, 'method': 'automated-paragraph-policy-link-v2',
+    result = {'approved': False, 'method': 'automated-paragraph-policy-link-v3',
               'body_sha256': hashlib.sha256(body.encode()).hexdigest(),
               'supporting_passages': [], 'reason': ''}
     def hold(reason):
@@ -69,7 +75,8 @@ def assess_topic(row, previous_reason=''):
     institutional_us = row['source'] in {
         'The American Presidency Project', 'Harry S. Truman Library & Museum',
         'U.S. Department of State', 'The White House', 'U.S. Department of Defense'}
-    for m in re.finditer(r'[^\n]+(?:\n(?!\n)[^\n]+)*', substantive):
+    paragraphs = list(re.finditer(r'[^\n]+(?:\n(?!\n)[^\n]+)*', substantive))
+    for m in paragraphs:
         text = m.group()
         institutional_frame = (category == 'new_media' and row['source'] in INSTITUTIONAL_SOURCES
                                and INSTITUTIONAL_DISCOURSE.search(text))
@@ -87,6 +94,26 @@ def assess_topic(row, previous_reason=''):
             'context_kind': 'institutional political/security/communication discourse' if institutional_frame else 'explicit US policy/actor or government context'})
         if len(result['supporting_passages']) == 3:
             break
+    if (not result['supporting_passages'] and category == 'new_media'
+            and row['source'] in INSTITUTIONAL_SOURCES and 80 <= len(body) <= 2000
+            and substantive == body):
+        def frame(text):
+            return POLICY.search(text) or INSTITUTIONAL_DISCOURSE.search(text) or POST_POLICY_FRAME.search(text)
+        china_anchor = next((m for m in paragraphs if CHINA.search(m.group()) and frame(m.group())), None)
+        # The US response must itself identify China. Two unrelated trade
+        # headlines about China/Brazil and US/Canada do not establish a link.
+        us_anchor = next((m for m in paragraphs
+                          if US.search(m.group()) and CHINA.search(m.group()) and frame(m.group())), None)
+        if china_anchor is not None and us_anchor is not None:
+            result['supporting_passages'].append({
+                'start': 0, 'end': len(body), 'text': body,
+                'china_cue': CHINA.search(china_anchor.group()).group(),
+                'policy_cue': frame(china_anchor.group()).group(),
+                'us_context': US.search(us_anchor.group()).group(),
+                'context_kind': 'complete short institutional post with separate China-policy and US-policy anchors',
+                'china_policy_anchor': {'start': china_anchor.start(), 'end': china_anchor.end(), 'text': china_anchor.group()},
+                'us_policy_anchor': {'start': us_anchor.start(), 'end': us_anchor.end(), 'text': us_anchor.group()},
+            })
     if not result['supporting_passages']:
         return hold('No substantive same-paragraph China/US-policy or communication link established; not approved on a country keyword alone.')
     result.update(approved=True, reason='Automated batch review: verbatim body passage establishes a China-related bilateral policy or institutional political/security/communication discourse; independent same-document source/field/completeness gate required.',
