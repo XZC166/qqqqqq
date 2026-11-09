@@ -127,6 +127,13 @@ class GovInfoCongressionalRecordAdapter:
             actual = re.findall(r'^\s*\[\[Page ([SHE]?\d+)\]\]\s*$', text, re.M)
             expected = [prefix+str(i) for i in range(start+1,end+1)]
             page_complete = end >= start and (not end_prefix or end_prefix == prefix) and actual in (expected, [prefix+str(start)]+expected)
+        else:
+            # The publisher's 1994 legacy exports print [Page S/H/E] without
+            # numerals. They do not assert a missing page range. A matching
+            # indexed granule, full HTTP document and explicit article-ending
+            # rule still establish the complete published textual object.
+            page_complete = bool(any(re.fullmatch(r'\[Page [SHE]\]', line) for line in lines[:4])
+                                 and not re.search(r'\[\[Page ', text))
         metadata_ok = bool(
             decision is AccessDecision.ALLOW and md.status == 200
             and response.url == candidate.source_url and urlsplit(response.url).hostname == 'www.govinfo.gov'
@@ -140,6 +147,11 @@ class GovInfoCongressionalRecordAdapter:
             and re.search(r'\n\s*_{10,}\s*$', content)
             and re.search(r'</pre>\s*</body>\s*</html>\s*$', response.text, re.I)
             and not re.search(r'could not be verified|tape was incomplete|text (?:is )?(?:missing|omitted)', text, re.I))
+        result['completion_checks'] = dict(metadata_issue_title_identity=metadata_ok,
+            declared_pages_accounted_for=page_complete,
+            publisher_pagination='numbered page range' if pages else 'legacy chamber label without page numerals',
+            explicit_granule_end=bool(re.search(r'\n\s*_{10,}\s*$', content)),
+            closed_source_document=bool(re.search(r'</pre>\s*</body>\s*</html>\s*$', response.text,re.I)))
         body = re.sub(r'^\s*\[\[Page [SHE]?\d+\]\]\s*$', '', content, flags=re.M)
         body = re.sub(r'\n\s*_{10,}\s*$', '', body).strip()
         result['evidence'] = SourceEvidence(response.url, now, response.status, sha256(response.body).hexdigest(), body_complete=complete)

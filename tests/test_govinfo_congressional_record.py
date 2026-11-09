@@ -52,3 +52,13 @@ def test_record_uses_actual_issue_date_and_full_original_granule():
 ])
 def test_mismatch_or_unproven_complete_record_is_held(kwargs):
     assert extract(**kwargs)['material'] is None
+
+
+def test_legacy_publisher_without_printed_page_numbers_uses_explicit_granule_end():
+    # 1994 publisher exports label the chamber only: [Page S], not a range.
+    # No page is silently excused from a range that the publisher does assert.
+    legacy=TEXT.replace('[Pages S100-S101]','[Page S]').replace('[[Page S101]]','')
+    r=extract(text=legacy)
+    assert r['material'] is not None
+    assert 'final statement.' in r['material'].body
+    assert extract(text=legacy.replace('____________________',''))['material'] is None
