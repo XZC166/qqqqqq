@@ -18,7 +18,30 @@ _PERIOD_BOUNDS = {
     "2017-2025": (date(2017, 1, 1), date(2025, 12, 31)),
 }
 _MARKDOWN_LINK = re.compile(r"\[[^\]]+\]\(https?://[^)]+\)")
-_HTML_TAG = re.compile(r"</?[A-Za-z][A-Za-z0-9]*(?:\s[^>]*)?>")
+_HTML_TAG = re.compile(r"<(?P<closing>/)?(?P<name>[A-Za-z][A-Za-z0-9:-]*)(?P<attributes>\s[^<>]*?)?\s*/?>")
+_HTML_ELEMENTS = frozenset((
+    "html head title base link meta style body article section nav aside h1 h2 h3 h4 h5 h6 "
+    "header footer address main p hr pre blockquote ol ul menu li dl dt dd figure figcaption "
+    "div a em strong small s cite q dfn abbr ruby rt rp data time code var samp kbd sub sup "
+    "i b u mark bdi bdo span br wbr ins del picture source img iframe embed object param "
+    "video audio track map area table caption colgroup col tbody thead tfoot tr td th "
+    "form label input button select datalist optgroup option textarea output progress meter "
+    "fieldset legend details summary dialog script noscript template slot canvas svg path "
+    "g circle rect polygon polyline line text math mrow mi mn mo mfrac msup msub "
+    "font center big tt strike frame frameset marquee"
+).split())
+
+
+def _contains_html_markup(text: str) -> bool:
+    """Keep literal angle-quoted citations; reject real tags without deleting text."""
+    for match in _HTML_TAG.finditer(text):
+        name = match['name'].casefold().rsplit(':', 1)[-1]
+        attributes = match['attributes'] or ''
+        if (name in _HTML_ELEMENTS or match['closing']
+                or re.search(r"/\s*>$", match.group())
+                or re.search(r"\b[A-Za-z_:][\w:.-]*\s*=", attributes)):
+            return True
+    return False
 
 
 def validate_material(
@@ -93,7 +116,7 @@ def validate_material(
         raise ValidationError("abstract origin must be publisher, derived, or none")
     if _MARKDOWN_LINK.search(material.body):
         raise ValidationError("body contains markdown link syntax")
-    if _HTML_TAG.search(material.body):
+    if _contains_html_markup(material.body):
         raise ValidationError("body contains HTML markup")
 
     author = material.author.strip() or "未注明"
