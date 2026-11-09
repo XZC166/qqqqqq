@@ -33,3 +33,5 @@ Remaining coverage gaps include early media and VOA broadcast archives; exact pu
 Full texts, long attachments, raw originals, databases and review evidence remain local private research materials. Public Git changes contain aggregate progress and verification information only. This checkpoint grants no public redistribution rights for source texts. A private milestone ZIP is built from the consistent snapshot and independently checked before being described as a verified delivery.
 
 Workbook SHA-256: `aee36b4653f19c761a884c9d122929286c9a90e9ebb896958518ccb14ade78f8`.
+
+The private milestone ZIP completed independent verification at 2026-11-09T20:05:16.879831+00:00. All 8,083 rows, 947 long-body attachments, 8,083 positive review bindings and 9,741 original/supporting evidence hashes matched. Archive size: 1,761,930,274 bytes. Private archive SHA-256: `a436e759e2c56be8d0196ab32f154f38116dd1f846253ab7277c0db166d187db`. The publisher-status ledger and private-use notice are included. The archive itself is not published to GitHub.
