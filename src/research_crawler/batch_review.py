@@ -155,4 +155,9 @@ def derived_fields(row, assessment):
             keywords.append(match.group())
         if len(keywords) == 12:
             break
+    # A source paragraph can be a single very long sentence. Summarize its
+    # literal terms instead of letting the spreadsheet writer truncate it.
+    if len(synopsis.encode('utf-16-le')) // 2 > 1800:
+        synopsis = ('正文涉及以下词项：' + '; '.join(keywords) + '。'
+                    if keywords else '正文涉及中国与美国之间的政策或传播议题。')
     return '据正文整理：' + synopsis, '; '.join(keywords)
