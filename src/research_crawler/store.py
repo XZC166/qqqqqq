@@ -512,6 +512,8 @@ class ResearchStore:
                 ON candidates(batch_id, identity_key);
             CREATE INDEX IF NOT EXISTS ix_candidates_identity
                 ON candidates(identity_key);
+            CREATE INDEX IF NOT EXISTS ix_evidence_candidate
+                ON evidence(candidate_id);
             CREATE TABLE IF NOT EXISTS duplicate_discoveries (
                 id INTEGER PRIMARY KEY,
                 batch_id INTEGER NOT NULL REFERENCES batches(id),

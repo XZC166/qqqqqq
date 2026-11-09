@@ -12,15 +12,27 @@ US = re.compile(r'\b(?:United States|(?-i:U\.?S\.?)|American|Washington|White Ho
 POLICY = re.compile(r'\b(?:relations?|diploma\w*|normaliz\w*|normalis\w*|recognition|trade|tariffs?|sanctions?|export controls?|containment|communis\w*|propaganda|disinformation|information warfare|political warfare|psychological warfare|public diplomacy|broadcast\w*|Voice of America|human rights|democra\w*|strategic competition|technology competition|security|aggression|invasion|cease-fire|negotiat\w*|peace|arms|alliance|Taiwan Relations Act|military aid|nuclear|semiconductors?|chip restrictions|artificial intelligence)\b', re.I)
 RELATION = re.compile(r'\b(?:relations?|diploma\w*|normaliz\w*|normalis\w*|recognition|trade|tariffs?|sanctions?|export controls?|containment|propaganda|disinformation|information warfare|political warfare|psychological warfare|public diplomacy|Voice of America|human rights|strategic competition|technology competition|negotiat\w*|military aid|Taiwan Relations Act|chip restrictions)\b', re.I)
 COMMUNICATION = re.compile(r'\b(?:news|media|journalis\w*|discourse|framing|rhetoric|propaganda|disinformation|perception\w*|public opinion|public diplomacy|communication|political|diplomacy|foreign policy|international relations|great power|Sino-American|U\.?S\.?[-–— ]China)\b', re.I)
-PROMO = re.compile(r'\b(?:podcast|episode|watch (?:the|our|this)|watch:|video|livestream|live stream|tune in|join us|register (?:now|here|for)|trailer)\b', re.I)
+PROMO = re.compile(r'\b(?:podcast|episode|Pekingology|listen here|listen:|watch (?:the|our|this)|watch:|video|livestream|live stream|tune in|join us|register (?:now|here|for)|trailer)\b', re.I)
 BAD_BODY = re.compile(r'(?:^|\n)\s*(?:Advertisement|Read [Mm]ore:|Related (?:Stories|Articles)|Recommended for you|Subscribe to our newsletter|WATCH:)\b|\ufffd', re.M)
 UNRESOLVED = re.compile(r'date (?:conflict|pending)|publication date|migration.date|attribution conflict|collection.*author|author.*(?:conflict|mismatch|pending|verify)|byline|truncat|incomplete|fragment|omitt|ownership.*(?:lack|unverif)|page numbers|replacement character|advertisement|recommendation blocks|title.*mismatch|作者.*冲突|署名.*不明|日期.*冲突|迁移日期|正文.*不完整|模板|推荐阅读', re.I)
+# Explicit political/security/communication frames from an established
+# institutional source are thesis evidence even when a post does not repeat
+# the United States name. Ordinary China news and country keywords cannot pass.
+INSTITUTIONAL_DISCOURSE = re.compile(r'\b(?:censorship|censor(?:s|ed|ing)?|propaganda|disinformation|human rights|dissidents?|authoritarian|repression|crackdown|repress\w*|invasion|invad\w*|intimidat\w*|coerci\w*|annex\w*|espionage|cyberattack\w*|foreign interference|Taiwan Strait|blockade|military drills|seize Taiwan|nuclear weapons|arms race|media framing|public opinion)\b', re.I)
+INSTITUTIONAL_SOURCES = frozenset({
+    'The Associated Press', 'The New York Times', 'CNN', 'CSIS',
+    'Brookings Institution', 'Council on Foreign Relations', 'RAND', 'PBS',
+    'NPR', 'Carnegie Endowment', 'The Washington Post', 'Foreign Affairs',
+    'Foreign Policy', 'Politico', 'Axios', 'U.S. Institute of Peace',
+    'The Wilson Center', 'Human Rights Watch', 'Just Security',
+    'Pew Research Center', 'Gallup', 'The Guardian', 'Reuters',
+    'Chatham House', 'Financial Times', 'The Economist'})
 TERMS = ('United States','China','Chinese','Taiwan','Formosa','Beijing','Peking','Hong Kong','Xinjiang','Tiananmen','relations','trade','tariffs','sanctions','export controls','propaganda','disinformation','public diplomacy','human rights','Voice of America','normalization','diplomacy','communism','security','nuclear','semiconductors','artificial intelligence','news','media','framing','public opinion')
 
 
 def assess_topic(row, previous_reason=''):
     body = row['body']
-    result = {'approved': False, 'method': 'automated-paragraph-policy-link-v1',
+    result = {'approved': False, 'method': 'automated-paragraph-policy-link-v2',
               'body_sha256': hashlib.sha256(body.encode()).hexdigest(),
               'supporting_passages': [], 'reason': ''}
     def hold(reason):
@@ -59,22 +71,25 @@ def assess_topic(row, previous_reason=''):
         'U.S. Department of State', 'The White House', 'U.S. Department of Defense'}
     for m in re.finditer(r'[^\n]+(?:\n(?!\n)[^\n]+)*', substantive):
         text = m.group()
-        if len(text) < 80 or not CHINA.search(text) or not POLICY.search(text):
+        institutional_frame = (category == 'new_media' and row['source'] in INSTITUTIONAL_SOURCES
+                               and INSTITUTIONAL_DISCOURSE.search(text))
+        if len(text) < 80 or not CHINA.search(text) or not (POLICY.search(text) or institutional_frame):
             continue
-        if not (US.search(text) or institutional_us):
+        if not (US.search(text) or institutional_us or institutional_frame):
             continue
-        if category == 'new_media' and not RELATION.search(text):
+        if category == 'new_media' and not (RELATION.search(text) or institutional_frame):
             continue
         if category == 'research_literature' and not RELATION.search(text):
             continue
         result['supporting_passages'].append({'start': m.start(), 'end': m.end(), 'text': text,
-            'china_cue': CHINA.search(text).group(), 'policy_cue': POLICY.search(text).group(),
-            'us_context': US.search(text).group() if US.search(text) else row['source']})
+            'china_cue': CHINA.search(text).group(), 'policy_cue': (POLICY.search(text) or institutional_frame).group(),
+            'us_context': US.search(text).group() if US.search(text) else row['source'],
+            'context_kind': 'institutional political/security/communication discourse' if institutional_frame else 'explicit US policy/actor or government context'})
         if len(result['supporting_passages']) == 3:
             break
     if not result['supporting_passages']:
         return hold('No substantive same-paragraph China/US-policy or communication link established; not approved on a country keyword alone.')
-    result.update(approved=True, reason='Automated batch review: verbatim body passage establishes a China/US policy or communication relationship; independent same-document source/field/completeness gate required.',
+    result.update(approved=True, reason='Automated batch review: verbatim body passage establishes a China-related bilateral policy or institutional political/security/communication discourse; independent same-document source/field/completeness gate required.',
                   document_scope='complete original platform post, not linked article' if category == 'new_media' else 'same published textual document')
     return result
 

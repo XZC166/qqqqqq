@@ -73,7 +73,7 @@ def _has_video_embed(payload):
                 parts = urlsplit(address)
                 host = (parts.hostname or '').removeprefix('www.')
                 if (host in {'youtube.com', 'youtu.be', 'vimeo.com', 'podcasts.apple.com'}
-                        or re.search(r'/videos?/', parts.path)
+                        or re.search(r'/(?:videos?|podcasts?)/', parts.path)
                         or (host == 'open.spotify.com' and '/episode/' in parts.path)):
                     return True
         return any(contains(item) for item in value.values() if isinstance(item, (list, dict)))
@@ -221,9 +221,16 @@ def audit_material(store, material_id: int, topic_decision: dict | None = None) 
                 raise ValueError("Current source adapter cannot verify a complete same-article body and metadata")
             if not parsed_evidence.body_complete:
                 raise ValueError("Current source adapter cannot confirm completeness")
-            mismatches = [name for name,field in (("source","source"),("time","published_on"),("author","author"),("title","title"),("body","body"),("source_url","source_url")) if getattr(parsed,name)!=row[field]]
+            # Layout changes do not change source text. Collapse whitespace only;
+            # words, punctuation and their order must still match exactly.
+            def same_field(name, value, saved):
+                if name in {"author", "title", "body"}:
+                    return " ".join(value.split()) == " ".join(saved.split())
+                return value == saved
+            mismatches = [name for name,field in (("source","source"),("time","published_on"),("author","author"),("title","title"),("body","body"),("source_url","source_url")) if not same_field(name,getattr(parsed,name),row[field])]
             if mismatches:
                 raise ValueError("Source re-extraction differs in: "+", ".join(mismatches))
+            checks["body_text_comparison"] = "whitespace-normalized-exact-text"
             snapshot=store.connection.execute("SELECT * FROM material_verifications WHERE material_id=?",(material_id,)).fetchone()
             if snapshot is None or snapshot["primary_evidence_id"]!=row["evidence_id"]:
                 raise ValueError("Missing or mismatched field-provenance snapshot")

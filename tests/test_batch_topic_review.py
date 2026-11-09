@@ -55,3 +55,37 @@ def test_us_pronoun_and_medical_media_title_are_not_us_policy_evidence():
 def test_explicit_partial_transcript_is_never_promoted():
     body = 'The United States will improve relations with China through diplomatic negotiations and consultations on trade policy.'
     assert not assess_topic(row(body, title='Partial Transcript of Presidential Remarks'))['approved']
+
+
+def official_post(body, source='CSIS'):
+    return dict(body=body, source_category='new_media', title='@csis.org on Bluesky',
+                source=source, source_url='https://bsky.app/profile/csis.org/post/example',
+                platform_id='at://did:plc:example/app.bsky.feed.post/example')
+
+
+def test_institutional_china_threat_narrative_does_not_require_us_in_every_paragraph():
+    body = 'China’s military buildup in the Taiwan Strait raises the danger of a blockade and coercion against Taiwan, according to this assessment.'
+    result = assess_topic(official_post(body))
+    assert result['approved']
+    assert result['supporting_passages'][0]['us_context'] == 'CSIS'
+    assert result['supporting_passages'][0]['text'] == body
+
+
+def test_institutional_control_discourse_can_pass_with_its_explicit_source_context():
+    body = 'China uses censorship and propaganda to limit criticism and influence political debate, according to this account of authoritarian repression.'
+    assert assess_topic(official_post(body, source='CNN'))['approved']
+
+
+def test_institutional_source_does_not_make_ordinary_china_news_topical():
+    body = 'China recorded higher retail sales this month as customers purchased clothing, electronics and other household goods in stores across the country.'
+    assert not assess_topic(official_post(body))['approved']
+
+
+def test_weak_geographic_reference_is_not_political_discourse():
+    body = 'A helicopter crashed in the South China Sea on Tuesday during a training flight; its crew was rescued safely by another military aircraft.'
+    assert not assess_topic(official_post(body))['approved']
+
+
+def test_listen_here_and_named_audio_series_are_kept_outside_transcript_fulltexts():
+    body = 'China uses censorship and propaganda to control political discussion. Join Pekingology to discuss authoritarian repression. Listen here: example.org'
+    assert not assess_topic(official_post(body))['approved']

@@ -83,3 +83,91 @@ def test_video_target_is_detected_even_when_post_text_does_not_say_video():
     assert not _has_video_embed({'posts': [{'record': {'embed': {
         '$type': 'app.bsky.embed.external',
         'external': {'uri': 'https://example.org/china-policy'}}}}]})
+
+
+def test_audio_series_url_is_not_a_verified_transcript():
+    from research_crawler.quality_audit import _has_video_embed
+    assert _has_video_embed({'posts': [{'record': {'embed': {
+        '$type': 'app.bsky.embed.external',
+        'external': {'uri': 'https://www.csis.org/podcasts/pekingology/example'}}}}]})
+
+
+def test_source_author_trailing_whitespace_matches_validated_author(tmp_path, monkeypatch):
+    from dataclasses import replace
+    import research_crawler.quality_audit as quality
+    store, mid, _ = populated(tmp_path)
+    original = quality._extract_existing
+    def extract(*args, **kwargs):
+        result, ids = original(*args, **kwargs)
+        result['material'] = replace(result['material'], author=result['material'].author + ' ')
+        return result, ids
+    monkeypatch.setattr(quality, '_extract_existing', extract)
+    assert audit_material(store, mid, approval(store, mid))['status'] == 'pass'
+    store.close()
+
+
+def test_body_layout_only_differences_preserve_exact_text(tmp_path, monkeypatch):
+    from dataclasses import replace
+    import research_crawler.quality_audit as quality
+    store, mid, _ = populated(tmp_path)
+    original = quality._extract_existing
+    def extract(*args, **kwargs):
+        result, ids = original(*args, **kwargs)
+        result['material'] = replace(result['material'], body=result['material'].body.replace(' ', ' \n'))
+        return result, ids
+    monkeypatch.setattr(quality, '_extract_existing', extract)
+    out = audit_material(store, mid, approval(store, mid))
+    assert out['status'] == 'pass', out['reason']
+    assert out['checks']['body_text_comparison'] == 'whitespace-normalized-exact-text'
+    store.close()
+
+
+def test_missing_body_words_remain_a_source_mismatch(tmp_path, monkeypatch):
+    from dataclasses import replace
+    import research_crawler.quality_audit as quality
+    store, mid, _ = populated(tmp_path)
+    original = quality._extract_existing
+    def extract(*args, **kwargs):
+        result, ids = original(*args, **kwargs)
+        result['material'] = replace(result['material'], body=result['material'].body + ' Missing sentence.')
+        return result, ids
+    monkeypatch.setattr(quality, '_extract_existing', extract)
+    out = audit_material(store, mid, approval(store, mid))
+    assert out['status'] == 'pending'
+    assert 'differs in: body' in out['reason']
+    store.close()
+
+
+def test_body_paragraph_order_changes_remain_a_source_mismatch(tmp_path, monkeypatch):
+    from dataclasses import replace
+    import research_crawler.quality_audit as quality
+    store, mid, _ = populated(tmp_path)
+    store.connection.execute('UPDATE materials SET body=? WHERE id=?',
+                             ('Second paragraph.\n\nChina policy statement.', mid))
+    store.connection.commit()
+    original = quality._extract_existing
+    def extract(*args, **kwargs):
+        result, ids = original(*args, **kwargs)
+        result['material'] = replace(result['material'], body='China policy statement.\n\nSecond paragraph.')
+        return result, ids
+    monkeypatch.setattr(quality, '_extract_existing', extract)
+    out = audit_material(store, mid, approval(store, mid))
+    assert out['status'] == 'pending'
+    assert 'differs in: body' in out['reason']
+    store.close()
+
+
+def test_substantively_different_author_is_not_a_layout_change(tmp_path, monkeypatch):
+    from dataclasses import replace
+    import research_crawler.quality_audit as quality
+    store, mid, _ = populated(tmp_path)
+    original = quality._extract_existing
+    def extract(*args, **kwargs):
+        result, ids = original(*args, **kwargs)
+        result['material'] = replace(result['material'], author='A different author')
+        return result, ids
+    monkeypatch.setattr(quality, '_extract_existing', extract)
+    out = audit_material(store, mid, approval(store, mid))
+    assert out['status'] == 'pending'
+    assert 'differs in: author' in out['reason']
+    store.close()
