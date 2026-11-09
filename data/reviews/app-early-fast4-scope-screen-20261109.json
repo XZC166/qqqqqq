@@ -1,0 +1,249 @@
+{
+  "generated_at": "2026-11-09T02:01:38.297930+00:00",
+  "input_pending": 40,
+  "excluded": 40,
+  "formal_new": 0,
+  "records": [
+    {
+      "candidate_id": 7224,
+      "url": "https://www.presidency.ucsb.edu/documents/special-message-the-congress-the-need-for-assistance-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7225,
+      "url": "https://www.presidency.ucsb.edu/documents/executive-order-9843-authorizing-the-secretary-the-navy-transfer-certain-vessels-and",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7226,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-united-states-policy-toward-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7227,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-united-states-policy-toward-china-0",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7228,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-the-34th-anniversary-the-chinese-republic",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7229,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-announcing-the-termination-the-american-production-mission-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7230,
+      "url": "https://www.presidency.ucsb.edu/documents/proclamation-the-heads-governments-united-states-china-and-the-united-kingdom",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7231,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-announcing-vice-president-wallaces-mission-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7232,
+      "url": "https://www.presidency.ucsb.edu/documents/proclamation-2603-immigration-quota-for-chinese",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7233,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-signing-the-bill-repeal-the-chinese-exclusion-laws",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7234,
+      "url": "https://www.presidency.ucsb.edu/documents/message-congress-repeal-the-chinese-exclusion-laws",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7235,
+      "url": "https://www.presidency.ucsb.edu/documents/transmittal-congress-treaty-for-the-relinquishment-extraterritorial-rights-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7236,
+      "url": "https://www.presidency.ucsb.edu/documents/message-generalissimo-chiang-kai-shek-aid-for-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7237,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-executive-order-freezing-japanese-and-chinese-assets-the-united-states",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7238,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-financial-aid-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7239,
+      "url": "https://www.presidency.ucsb.edu/documents/executive-order-8062-tariff-fees-officers-united-states-court-for-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7240,
+      "url": "https://www.presidency.ucsb.edu/documents/letter-the-red-cross-requesting-aid-for-chinese-civilians",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7241,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-transportation-arms-and-munitions-china-or-japan",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7242,
+      "url": "https://www.presidency.ucsb.edu/documents/joint-statement-with-finance-minister-soong-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7243,
+      "url": "https://www.presidency.ucsb.edu/documents/message-president-lin-sen-chinas-independence-day",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7244,
+      "url": "https://www.presidency.ucsb.edu/documents/message-president-chiang-chung-cheng-chinas-independence-day-0",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7245,
+      "url": "https://www.presidency.ucsb.edu/documents/statement-famine-relief-for-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7246,
+      "url": "https://www.presidency.ucsb.edu/documents/message-sympathy-president-chiang-chung-cheng-china-about-the-flood-the-yangtze-valley",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7247,
+      "url": "https://www.presidency.ucsb.edu/documents/message-the-congress-recommending-payment-claims-certain-chinese-citizens-against-the-navy",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7248,
+      "url": "https://www.presidency.ucsb.edu/documents/message-president-chiang-kai-shek-the-inauguration-direct-radiotelegraphic-service-between",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7249,
+      "url": "https://www.presidency.ucsb.edu/documents/message-president-chiang-chung-cheng-chinas-independence-day",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7250,
+      "url": "https://www.presidency.ucsb.edu/documents/message-the-congress-recommending-payment-claim-presented-chinese-citizen",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7251,
+      "url": "https://www.presidency.ucsb.edu/documents/message-the-congress-recommending-payment-claim-presented-the-government-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7252,
+      "url": "https://www.presidency.ucsb.edu/documents/new-years-message-president-chiang-chung-cheng-the-republic-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7253,
+      "url": "https://www.presidency.ucsb.edu/documents/message-president-chiang-kai-shek-chinas-independence-day",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7254,
+      "url": "https://www.presidency.ucsb.edu/documents/address-the-dinner-the-united-press-new-york-city-difficulties-with-mexico-nicaragua-and",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7255,
+      "url": "https://www.presidency.ucsb.edu/documents/executive-order-4268-remission-further-payments-installments-the-chinese-indemnity",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7256,
+      "url": "https://www.presidency.ucsb.edu/documents/special-message-the-senate-the-effect-the-lansing-ishii-agreement-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7257,
+      "url": "https://www.presidency.ucsb.edu/documents/proclamation-1621-exportation-arms-or-munitions-war-china-unlawful",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7258,
+      "url": "https://www.presidency.ucsb.edu/documents/executive-order-2526-relating-the-exclusion-chinese-from-the-panama-canal-zone",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7259,
+      "url": "https://www.presidency.ucsb.edu/documents/proclamation-997-minimum-tariff-imports-from-french-indo-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7260,
+      "url": "https://www.presidency.ucsb.edu/documents/proclamation-988-minimum-tariff-imports-from-the-chinese-empire",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7261,
+      "url": "https://www.presidency.ucsb.edu/documents/proclamation-248-suspending-duties-certain-goods-imported-vessels-from-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7262,
+      "url": "https://www.presidency.ucsb.edu/documents/message-congress-related-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    },
+    {
+      "candidate_id": 7263,
+      "url": "https://www.presidency.ucsb.edu/documents/message-the-senate-affairs-china",
+      "old_status": "pending",
+      "reason": "scope-screen: APP source page date is before 1949-01-01; excluded from 1949-2025 research range"
+    }
+  ],
+  "rule": "Do not include APP documents whose source-page publication date is outside 1949-2025."
+}
