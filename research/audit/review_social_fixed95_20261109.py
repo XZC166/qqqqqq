@@ -9,6 +9,8 @@ ROOT=Path(__file__).resolve().parents[2]
 APPROVED={222,2880,*range(2885,2890),*range(2892,2897),*range(2898,2913),2913,2914,2915,2916,2917,2919,*range(2920,2932),*range(2933,2943),3170,3174,3176,3193,3196,3211,3213,3214,3216,3217,3221,3223,3224,3230,3231,3232,3233,3236,3239,3240,3241,3243,3244,3246,3248}
 ALL_IDS={222,*range(2880,2891),*range(2892,2920),*range(2920,2943),3170,3174,3176,3177,3193,3196,3211,3213,3214,3215,3216,3217,3220,3221,3223,3224,3230,3231,3232,3233,3236,3237,3239,3240,3241,3242,3243,3244,3245,3246,3247,3248}
 def main():
+ report_path=ROOT/'data/reviews/social-fixed95-quality-review-20261109.json'
+ if report_path.exists():raise SystemExit('Fixed batch already reviewed; preserve later approvals and its report.')
  s=ResearchStore(ROOT/'data/research.sqlite3');c=s.connection
  rows=[c.execute('SELECT * FROM materials WHERE id=?',(i,)).fetchone() for i in sorted(ALL_IDS)]
  assert all(rows)

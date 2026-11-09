@@ -7,7 +7,10 @@ ROBOTSTXT_OBEY = True
 CONCURRENT_REQUESTS = 2
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
 DOWNLOAD_DELAY = 1.0
-DOWNLOAD_DELAY_JITTER = 0.5
+# Scrapy's default jitter can reduce a configured delay by half. Treat the
+# selected per-source delay as a minimum, including APP's declared ten seconds.
+RANDOMIZE_DOWNLOAD_DELAY = False
+DOWNLOAD_DELAY_JITTER = 0.0
 AUTOTHROTTLE_ENABLED = True
 AUTOTHROTTLE_START_DELAY = 1.0
 AUTOTHROTTLE_MAX_DELAY = 30.0

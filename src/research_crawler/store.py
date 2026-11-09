@@ -35,6 +35,36 @@ class ResearchStore:
         identity = self._resolve_identity_key(candidate.source_url, candidate.platform_id)
         return self._insert_candidate(batch_id, candidate, identity, commit=True)
 
+    def resolve_candidate_identities(self, candidates: list[MaterialCandidate]) -> list[str]:
+        """Resolve a bounded read batch with the same precedence as single lookup.
+
+        The index is local to this call, so subsequent calls see new database
+        state. Resolution creates no candidates or duplicate discoveries.
+        """
+        by_url, by_platform = {}, {}
+        rank = 0
+        for table in ("materials", "candidates"):
+            for row in self.connection.execute(
+                f"SELECT identity_key, source_url FROM {table} ORDER BY id"
+            ):
+                entry = (rank, row["identity_key"])
+                by_url.setdefault(canonicalize_url(row["source_url"]), entry)
+                key = _normalized_platform_key(row["identity_key"])
+                if key:
+                    by_platform.setdefault(key, entry)
+                rank += 1
+        result = []
+        for candidate in candidates:
+            platform = _platform_identity_key(candidate.source_url, candidate.platform_id)
+            matches = [entry for entry in (
+                by_url.get(canonicalize_url(candidate.source_url)),
+                by_platform.get(platform) if platform else None,
+            ) if entry is not None]
+            result.append(min(matches)[1] if matches else _identity_key(
+                candidate.source_url, candidate.platform_id
+            ))
+        return result
+
     def add_candidates(
         self, batch_id: int, candidates: list[MaterialCandidate]
     ) -> list[int]:

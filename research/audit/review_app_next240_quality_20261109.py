@@ -19,6 +19,8 @@ GROUPS={
 }
 # Each ID was read in its actual source/topic context; this is not a search-hit rule.
 def main():
+ report_path=ROOT/'data/reviews/app-next240-quality-review-20261109.json'
+ if report_path.exists():raise SystemExit('Fixed batch already reviewed; preserve later approvals and its report.')
  s=ResearchStore(ROOT/'data/research.sqlite3');c=s.connection
  urls={r['url'] for r in csv.DictReader((ROOT/'data/candidates-app-fulltext-early-next240-20261109.csv').open(encoding='utf-8-sig'))}
  rows=[r for r in c.execute('SELECT * FROM materials ORDER BY id') if r['source_url'] in urls]
